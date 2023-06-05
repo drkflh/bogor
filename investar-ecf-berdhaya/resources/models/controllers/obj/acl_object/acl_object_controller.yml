@@ -1,0 +1,824 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: false
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Active'
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        filter: true
+        datatype: boolean
+        row_text_alignment: text-left
+        column_classes: text-center text-50
+    -
+        label: 'Object Name'
+        name: objectName
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: 'Object Key'
+        name: objectKey
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: 'Group'
+        name: group
+        show: false
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Check Method'
+        name: checkMethod
+        show: false
+        search: false
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: 'Entity Type'
+        name: objectType
+        show: false
+        search: false
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: 'Form Type'
+        name: formType
+        show: false
+        search: false
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: 'Standard CRUD'
+        name: standardCrud
+        show: true
+        search: false
+        sort: true
+        filter: true
+        datatype: boolean
+        row_text_alignment: text-left
+        column_classes: text-center text-150
+        thClass: ''
+    -
+        label: 'Value Array'
+        name: valueArray
+        show: false
+        search: false
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-250
+        thClass: ''
+    -
+        label: 'Lookup To'
+        name: lookupTo
+        show: false
+        search: false
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: Parameter
+        name: lookupParam
+        show: false
+        search: false
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Object Description'
+        name: objectDescription
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-left
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Object Name'
+        name: objectName
+        create: true
+        edit: true
+        type: text
+        model: objectName
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Object Key'
+        name: objectKey
+        create: true
+        edit: true
+        type: text
+        model: objectKey
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Group'
+        name: group
+        create: true
+        edit: true
+        type: text
+        model: group
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Check Method'
+        name: checkMethod
+        create: true
+        edit: true
+        type: radioselect
+        model: checkMethod
+        default: ''
+        validator: ''
+        text: true
+        param:
+            -
+                text: 'Boolean Check'
+                value: BooleanCheck
+            -
+                text: 'In Array'
+                value: InArray
+            -
+                text: 'Look Up'
+                value: LookUp
+        attr: {}
+    -
+        label: 'Match Subject'
+        name: textMatchSubject
+        create: true
+        edit: true
+        type: text
+        model: textMatchSubject
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Match Mode'
+        name: textMatchMode
+        create: true
+        edit: true
+        type: radioselect
+        model: textMatchMode
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Match Direction'
+        name: textMatchDir
+        create: true
+        edit: true
+        type: radioselect
+        model: textMatchDir
+        default: ''
+        validator: ''
+        param: '[ { text: "Text", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'User Field'
+        name: textMatchField
+        create: true
+        edit: true
+        type: text
+        model: textMatchField
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Match Literal'
+        name: textMatchLiteral
+        create: true
+        edit: true
+        type: text
+        model: textMatchLiteral
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Entity Type'
+        name: objectType
+        create: false
+        edit: false
+        type: radio
+        model: objectType
+        default: ''
+        validator: ''
+        text: true
+        param:
+            -
+                text: Boolean
+                value: Boolean
+            -
+                text: String
+                value: String
+            -
+                text: Object
+                value: Object
+            -
+                text: Array
+                value: Array
+        attr: {}
+    -
+        label: 'Form Type'
+        name: formType
+        create: true
+        edit: true
+        type: radio
+        model: formType
+        default: ''
+        validator: ''
+        text: true
+        param:
+            -
+                text: Radio
+                value: Radio
+            -
+                text: Checkbox
+                value: Checkbox
+            -
+                text: Select
+                value: Select
+            -
+                text: Multiselect
+                value: Multiselect
+            -
+                text: Tag
+                value: Tag
+        attr: {}
+    -
+        label: 'Use Standard CRUD'
+        name: standardCrud
+        create: VO
+        edit: VO
+        type: simpleswitch
+        model: standardCrud
+        default: ''
+        validator: ''
+        text: true
+        position: left
+        param:
+            -
+                text: Radio
+                value: Radio
+            -
+                text: Checkbox
+                value: Checkbox
+            -
+                text: Select
+                value: Select
+            -
+                text: Multiselect
+                value: Multiselect
+            -
+                text: Tag
+                value: Tag
+        attr: {}
+    -
+        label: 'Value Array'
+        name: valueArray
+        create: false
+        edit: false
+        type: tagsinput
+        model: valueArray
+        default: ''
+        validator: ''
+        text: true
+        position: left
+        param:
+            url: opt/tags
+        attr: {}
+    -
+        label: 'Lookup To'
+        name: lookupTo
+        create: RO
+        edit: RO
+        type: radio
+        model: lookupTo
+        default: ''
+        validator: ''
+        text: true
+        position: left
+        param:
+            -
+                text: Db
+                value: Db
+            -
+                text: Config
+                value: Config
+        attr: {}
+    -
+        label: Parameter
+        name: lookupParam
+        create: RO
+        edit: RO
+        type: text
+        model: lookupParam
+        default: ''
+        validator: ''
+        text: true
+        position: left
+        param:
+            -
+                text: Object
+                value: Object
+            -
+                text: Action
+                value: Action
+            -
+                text: Value
+                value: Value
+            -
+                text: Lookup
+                value: Lookup
+        attr: {}
+    -
+        label: 'Object Description'
+        name: objectDescription
+        create: true
+        edit: true
+        type: textarea
+        model: objectDescription
+        default: ''
+        validator: ''
+        text: true
+        position: left
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr:
+            cols: 10
+    -
+        label: Active
+        name: isActive
+        create: true
+        edit: true
+        type: simpleswitch
+        model: isActive
+        default: ''
+        validator: required
+        position: top
+        param: ''
+        attr: {}
+vue:
+    -
+        model: objectName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: objectKey
+        visible: true
+        type: string
+        default: ''
+    -
+        model: group
+        visible: true
+        type: string
+        default: ''
+    -
+        model: checkMethod
+        visible: true
+        type: string
+        default: 'BooleanCheck'
+    -
+        model: objectType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: formType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: standardCrud
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: valueArray
+        visible: true
+        type: string
+        default: ''
+    -
+        model: lookupTo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: lookupParam
+        visible: true
+        type: string
+        default: ''
+    -
+        model: textMatchSubject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: textMatchMode
+        visible: true
+        type: string
+        default: 'CONTAINS'
+    -
+        model: textMatchDir
+        visible: true
+        type: string
+        default: 'SUBJECT_USERFIELD'
+    -
+        model: textMatchField
+        visible: true
+        type: string
+        default: ''
+    -
+        model: textMatchLiteral
+        visible: true
+        type: string
+        default: ''
+    -
+        model: objectDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: isActive
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+
+view:
+    -
+        label: Action
+        name: _id
+        model: _id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Object Name'
+        name: objectName
+        model: objectName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Object Key'
+        name: objectKey
+        model: objectKey
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Group'
+        name: group
+        model: group
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Check Method'
+        name: checkMethod
+        model: checkMethod
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Entity Type'
+        name: objectType
+        model: objectType
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Form Type'
+        name: formType
+        model: formType
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Use Standard CRUD'
+        name: standardCrud
+        model: standardCrud
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Value Array'
+        name: valueArray
+        model: valueArray
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Lookup To'
+        name: lookupTo
+        model: lookupTo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Parameter
+        name: lookupParam
+        model: lookupParam
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Object Description'
+        name: objectDescription
+        model: objectDescription
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Active'
+        name: isActive
+        model: isActive
+        visible: true
+        type: simpleswitch
+        default: ''

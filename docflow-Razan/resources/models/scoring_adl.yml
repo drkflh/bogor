@@ -1,0 +1,260 @@
+-
+    ' ': null
+    type: object
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: integer
+    default: 0
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    ' ': null
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false

@@ -1,0 +1,1073 @@
+- label: Action
+  name: _id
+  show: true
+  sort: false
+  uniqueId: true
+  row_text_alignment: text-left
+  column_classes: col_action
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: id
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Created
+  name: createdAt
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-150
+  row_classes: date
+  datatype: true
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: createdAt
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: updatedAt
+  name: updatedAt
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  row_classes: date
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: updatedAt
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ownerId
+  name: ownerId
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerId
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ownerName
+  name: ownerName
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerName
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: handle
+  name: handle
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: handle
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: deleted
+  name: deleted
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: deleted
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: "Photo"
+  name: avatar
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100 text-center
+  datatype: image
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: avatarupload
+    model: avatar
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+    attr: { class: "form-data", buttonlabel: "Upload Avatar" }
+  vue:
+    visible: true
+    type: text
+  view:
+    label: false
+    visible: true
+    type: squaresingleimage
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Role Name
+  name: roleName
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: roleName
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Role'
+  name: roleId
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: roleId
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Name
+  name: name
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-200
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+    type: simple
+  form:
+    create: true
+    edit: true
+    type: text
+    model: name
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Email
+  name: email
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: "text-250"
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: email
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Phone
+  name: phone
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: "text-200"
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: phone
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Place Of Birth
+  name: placeOfBirth
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: "text-200"
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: placeOfBirth
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Date of Birth
+  name: dateOfBirth
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: "text-200"
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: dateOfBirth
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: dateview
+  api:
+    visible: false
+    type: text
+    default: na
+
+
+- label: Mobile
+  name: mobile
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: "text-200"
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: mobile
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Alamat
+  name: address
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  row_classes: "text-500"
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: textarea
+    model: address
+    row: 1
+    col: 2
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Kelurahan
+  name: kelurahan
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: kelurahan
+    row: 1
+    col: 2
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Province
+  name: province
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    model: province
+    type: text
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: City
+  name: city
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    selector: city
+    model: city
+    ref: 'city'
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ZIP
+  name: ZIP
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: ZIP
+    row: 1
+    col: 2
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'ID Number'
+  name: idNumber
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  row_classes: "text-200"
+  column_classes: "text-center text-200"
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: idNumber
+    row: 1
+    col: 3
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'ID Type'
+  name: idType
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: idType
+    row: 1
+    col: 3
+    options: [ { text: "KTP", value: "KTP" }, { text: "SIM", value: "SIM" }, { text: "KITAS", value: "KITAS" }, { text: "PASSPORT", value: "PASSPORT" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+    default: KTP
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'ID Pic'
+  name: idPic
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: image
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: imagecardupload
+    model: idPic
+    row: 1
+    col: 3
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+    attr: { class: "form-data", buttonlabel: "Upload ID Picture" }
+  vue:
+    visible: true
+    type: text
+  view:
+    label: false
+    visible: true
+    type: singleimage
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Signature Specimen'
+  name: signatureSpecimen
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: image
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: imagecardupload
+    model: signatureSpecimen
+    row: 1
+    col: 3
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+    attr: { class: "form-data", buttonlabel: "Upload ID Picture" }
+  vue:
+    visible: true
+    type: text
+  view:
+    label: false
+    visible: true
+    type: singleimage
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: PIN
+  name: pin
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: pin
+    model: pin
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Confirm PIN
+  name: confirm_pin
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: pin
+    model: confirm_pin
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Signature Pad
+  name: signatureInput
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: signpad
+    model: signatureSpecimen
+    options:
+      url: "api/v1/core/form-upload"
+      paramName: "file"
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Username
+  name: username
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-left text-200
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: false
+    type: text
+    model: username
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Password
+  name: password
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: false
+    type: password
+    model: password
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Confirm Password'
+  name: confirm_password
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: false
+    type: password
+    model: confirm_password
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Location
+  name: locationCoord
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: locationCoord
+    row: 1
+    col: 3
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Created
+  name: created_at
+  show: true
+  sort: true
+  row_text_alignment: text-center
+  column_classes: 'text-center text-150'
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: created_at
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: dateview
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Updated
+  name: updated_at
+  show: true
+  sort: true
+  row_text_alignment: text-center
+  column_classes: 'text-center text-150'
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: updated_at
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: dateview
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ""
+  name: filler
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: filler
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na

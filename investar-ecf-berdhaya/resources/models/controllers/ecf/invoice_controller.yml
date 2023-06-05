@@ -1,0 +1,589 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Cart Session
+        name: cartSession
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-150'
+    -
+        label: Buyer
+        name: buyer
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-150'
+    -
+        label: First Name
+        name: fname
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-100'
+    -
+        label: Last Name
+        name: lname
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-100'
+    -
+        label: Email
+        name: email
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-200'
+    # -
+    #     label: Mobile
+    #     name: mobile
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-150'
+    #     thClass: 'text-center text-50'
+    -
+        label: Delivery
+        name: delivery_option
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-125'
+    # -
+    #     label: Payment
+    #     name: payment_option
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-125'
+    #     thClass: 'text-center text-50'
+    -
+        label: Shipping Cost
+        name: shippingCost
+        show: true
+        search: false
+        sort: false
+        datatype: double
+        column_classes: 'text-right text-100'
+    # -
+    #     label: Status
+    #     name: status
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-100'
+    #     thClass: 'text-center text-50'
+    -
+        label: City
+        name: city
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    # -
+    #     label: ZIP Code
+    #     name: zipcode
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-100'
+    #     thClass: 'text-center text-50'
+    -
+        label: Address
+        name: billing_address
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-50'
+    # -
+    #     label: Address
+    #     name: billing_address2
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-150'
+    #     thClass: 'text-center text-50'
+    -
+        label: Additional Info
+        name: add_info
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Invoice Code
+        name: invCode
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Status
+        name: status
+        show: true
+        search: false
+        sort: false
+        datatype: text
+
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Buyer
+        name: buyer
+        create: true
+        edit: true
+        type: text
+        model: buyer
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: cartSession
+        name: cartSession
+        create: true
+        edit: true
+        type: text
+        model: cartSession
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: First Name
+        name: fname
+        create: true
+        edit: true
+        type: text
+        model: fname
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Last Name
+        name: lname
+        create: true
+        edit: true
+        type: text
+        model: lname
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Email
+        name: email
+        create: true
+        edit: true
+        type: text
+        model: email
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Mobile
+        name: mobile
+        create: true
+        edit: true
+        type: text
+        model: mobile
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Delivery
+        name: delivery_option
+        create: true
+        edit: true
+        type: text
+        model: delivery_option
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Payment
+        name: payment_option
+        create: true
+        edit: true
+        type: text
+        model: payment_option
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Shipping Cost
+        name: shippingCost
+        create: true
+        edit: true
+        type: nominal
+        model: shippingCost
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Status
+        name: status
+        create: true
+        edit: true
+        type: simpleselect
+        model: status
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: City
+        name: city
+        create: true
+        edit: true
+        type: text
+        model: city
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: ZIP Code
+        name: zipcode
+        create: true
+        edit: true
+        type: text
+        model: zipcode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Address
+        name: billing_address
+        create: true
+        edit: true
+        type: text
+        model: billing_address
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Address
+        name: billing_address2
+        create: true
+        edit: true
+        type: text
+        model: billing_address2
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Invoice Code
+        name: invCode
+        create: true
+        edit: true
+        type: text
+        model: invCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Additional Info
+        name: add_info
+        create: true
+        edit: true
+        type: text
+        model: add_info
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: cartSession
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: buyer
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: fname
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: lname
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: email
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: mobile
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: delivery_option
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: payment_option
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: shippingCost
+        visible: true
+        type: double
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: status
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: city
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: zipcode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: invCode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+
+    -
+        model: billing_address
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: billing_address2
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: add_info
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Cart Session
+        name: cartSession
+        visible: true
+        type: text
+        model: cartSession
+    -
+        label: Buyer
+        name: buyer
+        visible: true
+        type: text
+        model: buyer
+    -
+        label: First Name
+        name: fname   
+        visible: true
+        type: text
+        model: fname
+    -
+        label: Last Name
+        name: lname
+        visible: true
+        type: text
+        model: lname
+    -
+        label: Email
+        name: email
+        visible: true
+        type: text
+        model: email
+    -
+        label: Mobile
+        name: mobile
+        visible: true
+        type: text
+        model: mobile
+    -
+        label: Delivery
+        name: delivery_option
+        visible: true
+        type: text
+        model: delivery_option
+    -
+        label: Payment
+        name: payment_option
+        visible: true
+        type: text
+        model: payment_option
+    -
+        label: Shipping Cost
+        name: shippingCost
+        visible: true
+        type: text
+        model: shippingCost
+    -
+        label: Status
+        name: status
+        visible: true
+        type: text
+        model: status
+    -
+        label: City
+        name: city
+        visible: true
+        type: text
+        model: city
+    -
+        label: Invoice Code
+        name: invCode
+        visible: true
+        type: text
+        model: invCode
+    -
+        label: ZIP Code
+        name: zipcode
+        visible: true
+        type: text
+        model: zipcode
+    -
+        label: Address
+        name: billing_address
+        visible: true
+        type: text
+        model: billing_address
+    -
+        label: Address
+        name: billing_address2
+        visible: true
+        type: text
+        model: billing_address2
+    -
+        label: Additional Info
+        name: add_info
+        visible: true
+        type: text
+        model: add_info

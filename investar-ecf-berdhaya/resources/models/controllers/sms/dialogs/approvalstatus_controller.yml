@@ -1,0 +1,269 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: 'text-left text-top'
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+form:
+    -
+        label: 'Change Date'
+        name: changeDate
+        create: true
+        edit: true
+        type: text
+        model: 'value.changeDate'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: false
+        class: text-150
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+    -
+        label: 'Change By'
+        name: changeBy
+        create: true
+        edit: true
+        type: text
+        model: 'value.changeBy'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: false
+        class: text-200
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+    -
+        label: 'Current Status'
+        name: currentStatus
+        create: true
+        edit: true
+        type: text
+        model: 'value.currentStatus'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: false
+        class: text-200
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+    -
+        label: 'Change Status To'
+        name: changeStatusTo
+        create: true
+        edit: true
+        type: radioselect
+        model: 'value.changeStatusTo'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: false
+        class: text-200
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+    -
+        label: 'Remarks'
+        name: changeRemarks
+        create: true
+        edit: true
+        type: textarea
+        model: 'value.changeRemarks'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: false
+        column_classes: 'text-left text-100'
+        param: [ ]
+        attr: { }
+
+    -
+        label: 'Signature'
+        name: approvalSignature
+        create: true
+        edit: true
+        type: signaturecardupload
+        model: 'value.approvalSignature'
+        default: ''
+        validator: ''
+        ns: signature
+        specimen: 'params.specimenSignature'
+        selector: approvalSignature
+        sign_width: '100%'
+        sign_height: '200px'
+        sign_ref: signaturePadRef
+        ref: approvalSignature
+        hide_upload_button: true
+        bucket: signature
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload ID Picture'
+    -
+        label: 'Initial'
+        name: approvalInitial
+        create: true
+        edit: true
+        type: signaturecardupload
+        model: 'value.approvalInitial'
+        default: ''
+        validator: ''
+        ns: signature
+        specimen: 'params.specimenInitial'
+        selector: approvalInitial
+        sign_width: '100%'
+        sign_height: '200px'
+        sign_ref: initialPadRef
+        ref: approvalInitial
+        hide_upload_button: true
+        bucket: signature
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload ID Picture'
+    -
+        label: 'Signature Pad'
+        name: signatureInput
+        create: true
+        edit: true
+        type: signpad
+        model: 'value.approvalSignature'
+        ns: signature
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        width: '100%'
+        height: 200px
+        bucket: signature
+        param:
+            url: api/v1/core/form-upload
+            paramName: file
+        attr:
+            class: form-data
+    -
+        label: 'Initial Pad'
+        name: initialInput
+        create: true
+        edit: true
+        type: signpad
+        model: 'value.approvalInitial'
+        ns: initial
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        width: '100%'
+        height: 200px
+        bucket: signature
+        param:
+            url: api/v1/core/form-upload
+            paramName: file
+        attr:
+            class: form-data
+
+
+vue:
+    -
+        model: pdfDocList
+        visible: true
+        type: array
+        default: []
+    -
+        model: pdfDocUrl
+        visible: true
+        type: string
+        default: ''
+    -
+        model: changeDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: changeBy
+        visible: true
+        type: string
+        default: ''
+    -
+        model: currentStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: changeStatusTo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: changeRemarks
+        visible: true
+        type: string
+        default: ''
+    -
+        model: signType
+        visible: true
+        type: string
+        default: 'signature'
+    -
+        model: approvalSignature
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalInitial
+        visible: true
+        type: string
+        default: ''
+
+view:
+    -
+        label: Change Date
+        name: changeDate
+        model: changeDate
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Change By
+        name: changeBy
+        model: changeBy
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Current Status'
+        name: currentStatus
+        model: currentStatus
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Change To'
+        name: changeStatusTo
+        model: changeStatusTo
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Remarks & Explanation'
+        name: changeRemarks
+        model: changeRemarks
+        visible: false
+        type: text
+        default: ''

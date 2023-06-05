@@ -1,0 +1,52 @@
+- title: "HRM"
+  auth: "hrm-main-menu"
+  icon: "<i data-feather=\"users\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Dashboard
+      url: "central/hrm/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+      auth: "dashboard-hrm"
+    - title: Organizer
+      auth: "hrm-organizer-menu"
+      icon: "<i class=\"link-icon\"  data-feather=\"hard-drive\"></i>"
+      children:
+        - title: My Resume
+          url: ""
+        - title: My Schedule
+          url: ""
+        - title: My Document
+          url: ""
+    - title: Employee
+      auth: employee
+      url: "central/hrm/employee"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    - title: Recruitment
+      auth: "hrm-recruitment-menu"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+      children:
+        - title: Applicant
+          auth: applicant
+          url: "central/hrm/recruitment/applicant"
+        - title: Schedule
+          auth: recruitment-schedule
+          url: "central/hrm/recruitment/schedule"
+    - title: Employment
+      auth: "hrm-employment-menu"
+      icon: '<i   data-feather="server" class="fa fa-comment-dots uil-comment-alt-exclamation  link-icon"></i>'
+      children:
+        - title: Fulltime
+          auth: employee-fulltime
+          url: "central/hrm/employment/fulltime"
+        - title: Temporary
+          auth: employee-temporary
+          url: "central/hrm/employment/temporary"
+    - title: Reference
+      auth: "hrm-reference-menu"
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: Department
+          auth: "hrm-department"
+          url: "central/hrm/reference/department"
+        - title: Position
+          auth: "hrm-position"
+          url: "central/hrm/reference/position"

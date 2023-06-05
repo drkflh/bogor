@@ -1,0 +1,247 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-50
+        thClass: ''
+        uniqueId: true
+    -
+        label: Connection
+        name: connection
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-200'
+        thClass: ''
+    -
+        label: Queue
+        name: queue
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Failed At
+        name: failed_at
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: datetime
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Actor
+        name: actor
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: pre
+        row_text_alignment: text-left
+        column_classes: 'text-center text-500 h-300'
+        thClass: ''
+    -
+        label: Payload
+        name: payload
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: pre
+        row_text_alignment: text-left
+        column_classes: 'text-left text-300 h-300'
+        thClass: ''
+    -
+        label: Exception
+        name: exception
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: pre
+        row_text_alignment: text-left
+        column_classes: 'text-left text-300 h-300'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Connection
+        name: connection
+        create: false
+        edit: true
+        type: text
+        model: connection
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Queue
+        name: queue
+        create: false
+        edit: true
+        type: text
+        model: queue
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Timestamp
+        name: failed_at
+        create: false
+        edit: true
+        type: text
+        model: failed_at
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Payload
+        name: payload
+        create: false
+        edit: true
+        type: pre
+        model: payload
+        default: ''
+        validator: ''
+        lang: json
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Exception
+        name: exception
+        create: false
+        edit: true
+        type: pre
+        model: exception
+        default: ''
+        validator: ''
+        lang: json
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+            rows: 25
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: connection
+        visible: true
+        type: string
+        default: ''
+    -
+        model: queue
+        visible: true
+        type: string
+        default: ''
+    -
+        model: failed_at
+        visible: true
+        type: string
+        default: ''
+    -
+        model: payload
+        visible: true
+        type: function
+        default: ''
+    -
+        model: exception
+        visible: true
+        type: function
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Connection
+        name: connection
+        model: connection
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Queue
+        name: queue
+        model: queue
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Failed At
+        name: failed_at
+        model: failed_at
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Payload
+        name: payload
+        model: payload
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Exception
+        name: exception
+        model: exception
+        visible: true
+        type: pre
+        default: ''

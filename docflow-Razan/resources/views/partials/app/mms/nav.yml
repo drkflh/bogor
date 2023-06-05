@@ -1,0 +1,13 @@
+- title: "Messaging"
+  auth: messaging-menu
+  icon: "<i class=\"link-icon\"  data-feather=\"message-square\"></i>"
+  id: messagingMenu
+  children:
+    - title: "Notification"
+      auth: messaging-log
+      url: "mms/notification"
+      icon: "<i class=\"las la-sms link-icon\"></i>"
+    - title: "Message Log"
+      auth: messaging-log
+      url: "mms/message-log"
+      icon: "<i class=\"las la-envelope link-icon\"></i>"

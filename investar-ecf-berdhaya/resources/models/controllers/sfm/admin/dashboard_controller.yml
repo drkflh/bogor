@@ -1,0 +1,833 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Repository
+        name: repoCount
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Dispatch
+        name: dispatchCount
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Dispose
+        name: disposeCount
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Search
+        name: searchDoc
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'User Profile'
+        name: userProfile
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Settings
+        name: userProfile
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: User
+        name: totalUser
+        create: true
+        edit: true
+        type: panels.nobleui.chartpanel
+        model: totalUser
+        delta: totalUserDelta
+        default: ''
+        validator: ''
+        chart_type: pie-chart
+        legend: true
+        stacked: true
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Buyer
+        name: totalBuyer
+        create: true
+        edit: true
+        type: panels.nobleui.totalblockpanel
+        model: totalBuyer
+        delta: totalBuyerDelta
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Customer
+        name: totalCustomer
+        create: true
+        edit: true
+        type: panels.nobleui.totalblockpanel
+        model: totalCustomer
+        delta: totalCustomerDelta
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Revenue
+        name: totalRevenue
+        create: true
+        edit: true
+        type: panels.nobleui.totalblockpanelRp
+        model: totalRevenue
+        delta: totalRevenueDelta
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Sales
+        name: totalSales
+        create: true
+        edit: true
+        type: panels.nobleui.totalblockpanel
+        model: totalSales
+        delta: totalSalesDelta
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Produk
+        name: totalProduct
+        create: true
+        edit: true
+        type: panels.nobleui.totalblockpanel
+        model: totalProduct
+        delta: totalProductDelta
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Permohonan Baru
+        name: totalNew
+        create: true
+        edit: true
+        type: panels.nobleui.totalblockpanel
+        model: totalNew
+        delta: totalNewDelta
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Sales
+        name: salesByPeriod
+        create: true
+        edit: true
+        type: panels.nobleui.chartpanel
+        model: salesByPeriod
+        delta: totalInProgressDelta
+        default: ''
+        validator: ''
+        legend: false
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Revenue
+        name: revenueByPeriod
+        create: true
+        edit: true
+        type: panels.nobleui.chartpanel
+        model: revenueByPeriod
+        delta: totalInProgressDelta
+        default: ''
+        validator: ''
+        legend: false
+        stacked: true
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Product Sales
+        name: productSalesByPeriod
+        create: true
+        edit: true
+        type: panels.nobleui.chartpanel
+        model: salesByPeriod
+        delta: salesByPeriodDelta
+        default: ''
+        validator: ''
+        chart_type: pie-chart
+        legend: false
+        stacked: true
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Product Revenue
+        name: productRevenueByPeriod
+        create: true
+        edit: true
+        type: panels.nobleui.chartpanel
+        model: revenueByPeriod
+        delta: revenueByPeriodDelta
+        default: ''
+        validator: ''
+        chart_type: pie-chart
+        legend: false
+        stacked: true
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Produk Tersertifikasi
+        name: totalCertified
+        create: true
+        edit: true
+        type: panels.nobleui.totalblockpanel
+        model: totalCertified
+        delta: totalCertifiedDelta
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Search
+        name: searchDoc
+        create: true
+        edit: true
+        type: df.infoblock
+        model: searchDoc
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'User Profile'
+        name: userProfile
+        create: true
+        edit: true
+        type: df.infoblock
+        model: userProfile
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Settings
+        name: userProfile
+        create: true
+        edit: true
+        type: df.infoblock
+        model: userProfile
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: salesByPeriod
+        visible: true
+        type: array
+        default: []
+    -
+        model: revenueByPeriod
+        visible: true
+        type: array
+        default: []
+    -
+        model: totalUser
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalBusiness
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalCustomer
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalBuyer
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalSales
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalRevenue
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalProduct
+        visible: true
+        type: number
+        default: 0
+    -
+        model: totalUserDelta
+        visible: true
+        type: number
+        default: 0
+    -
+        model: totalBusinessDelta
+        visible: true
+        type: number
+        default: 0
+    -
+        model: totalProductDelta
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalBuyerDelta
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalSalesDelta
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalRevenueDelta
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalNew
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalInProgress
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalCertified
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalNewDelta
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalInProgressDelta
+        visible: true
+        type: number
+        default: 15
+    -
+        model: totalCertifiedDelta
+        visible: true
+        type: number
+        default: 15
+    -
+        model: submitter
+        visible: true
+        type: array
+        default: []
+    -
+        model: submission
+        visible: true
+        type: array
+        default: []
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Repository
+        name: repoCount
+        model: repoCount
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Dispatch
+        name: dispatchCount
+        model: dispatchCount
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Dispose
+        name: disposeCount
+        model: disposeCount
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Search
+        name: searchDoc
+        model: searchDoc
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'User Profile'
+        name: userProfile
+        model: userProfile
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Settings
+        name: userProfile
+        model: userProfile
+        visible: true
+        type: text
+        default: ''

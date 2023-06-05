@@ -1,0 +1,390 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'ID Pendamping'
+        name: id_pendamping
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'ID Lembaga'
+        name: id_lembaga
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Nama
+        name: nama
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Lembaga'
+        name: nama_lembaga
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Provinsi'
+        name: nama_provinsi
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'        
+    -
+        label: 'Nama Kabupaten'
+        name: nama_kabupaten
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Kecamatan'
+        name: nama_kecamatan
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Alamat
+        name: alamat
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'No Handphone'
+        name: no_hp
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Email
+        name: email
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'ID Pendamping'
+        name: id_pendamping
+        create: true
+        edit: true
+        type: text
+        model: id_pendamping
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'ID Lembaga'
+        name: id_lembaga
+        create: true
+        edit: true
+        type: text
+        model: id_lembaga
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Nama
+        name: nama
+        create: true
+        edit: true
+        type: text
+        model: nama
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Lembaga'
+        name: nama_lembaga
+        create: true
+        edit: true
+        type: text
+        model: nama_lembaga
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Provinsi'
+        name: nama_provinsi
+        create: true
+        edit: true
+        type: text
+        model: nama_provinsi
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Kabupaten'
+        name: nama_kabupaten
+        create: true
+        edit: true
+        type: text
+        model: nama_kabupaten
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Kecamatan'
+        name: nama_kecamatan
+        create: true
+        edit: true
+        type: text
+        model: nama_kecamatan
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Alamat
+        name: alamat
+        create: true
+        edit: true
+        type: textarea
+        model: alamat
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'No Handphone'
+        name: no_hp
+        create: true
+        edit: true
+        type: text
+        model: no_hp
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Email
+        name: email
+        create: true
+        edit: true
+        type: text
+        model: email
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: id_pendamping
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: id_lembaga
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: nama
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: nama_lembaga
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: nama_kecamatan
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: nama_kabupaten
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: nama_provinsi
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: alamat
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: no_hp
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: email
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'ID Pendamping'
+        name: id_pendamping
+        visible: true
+        type: text
+        model: id_pendamping
+    -
+        label: 'ID Lembaga'
+        name: id_lembaga
+        visible: true
+        type: text
+        model: id_lembaga
+    -
+        label: Nama
+        name: nama
+        visible: true
+        type: text
+        model: nama
+    -
+        label: 'Nama Lembaga'
+        name: nama_lembaga
+        visible: true
+        type: text
+        model: nama_lembaga
+    -
+        label: 'Nama Kecamatan'
+        name: nama_kecamatan
+        visible: true
+        type: text
+        model: nama_kecamatan
+    -
+        label: 'Nama Kabupaten'
+        name: nama_kabupaten
+        visible: true
+        type: text
+        model: nama_kabupaten
+    -
+        label: 'Nama Provinsi'
+        name: nama_provinsi
+        visible: true
+        type: text
+        model: nama_provinsi
+    -
+        label: Alamat
+        name: alamat
+        visible: true
+        type: text
+        model: alamat
+    -
+        label: 'No Handphone'
+        name: no_hp
+        visible: true
+        type: text
+        model: no_hp
+    -
+        label: Email
+        name: email
+        visible: true
+        type: text
+        model: email

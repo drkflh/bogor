@@ -1,0 +1,15 @@
+- title: "CMS :: Content Management"
+  icon: "<i   data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Section
+      url: "cms/section"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Category
+      url: "cms/category"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Group
+      url: "cms/group"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Article
+      url: "cms/article"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"

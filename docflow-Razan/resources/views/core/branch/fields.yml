@@ -1,0 +1,426 @@
+- label: "Action"
+  name: "_id"
+  sort: false
+  show: true
+  column_classes: "col-action"
+  uniqueId: true
+- label: "Code"
+  name: "name"
+  sort: false
+  show: false
+  form:
+    edit: true
+    create: true
+    type: text
+    model: "employeeId"
+    row: 1
+    col: 1
+- label: "NIK"
+  name: "employeeId"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: "simple"
+    placeholder: "Enter NIK"
+  form:
+    edit: true
+    create: true
+    type: text
+    default: null
+    model: employeeId
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+      class: "form-control col-6"
+  view:
+    type: text
+    show: true
+  api:
+    type: text
+- label: "Name"
+  name: "name"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  search:
+    visible: true
+  filter:
+    type: "simple"
+    placeholder: "Enter first name"
+  form:
+    edit: true
+    create: true
+    type: text
+    default: null
+    model: name
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+- label: "Phone"
+  name: "mobile"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+    placeholder: "Enter phone number"
+  form:
+    edit: true
+    create: true
+    type: text
+    default: null
+    model: mobile
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+- label: "Email"
+  name: "email"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+    mode: "single"
+    closeDropdownOnSelection: true
+    placeholder: "Select options"
+    options:
+      - name: "option one"
+        value: "option one"
+      - name: "option two"
+        value: "option two"
+      - name: "option three"
+        value: "option three"
+  form:
+    edit: true
+    create: true
+    type: text
+    default: null
+    model: email
+    col: 2
+    attr:
+      autocomplete: "off"
+- label: "Start"
+  name: "employmentStart"
+  datatype: date
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+  form:
+    edit: true
+    create: true
+    type: datepicker
+    default: null
+    model: employmentStart
+    row : 2
+    col: 1
+    attr:
+      autocomplete: "off"
+      class: "col-10"
+- label: "Start Time"
+  name: "startTime"
+  datatype: time
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+  form:
+    edit: true
+    create: true
+    type: timepicker
+    default: null
+    model: startTime
+    row : 2
+    col: 1
+    attr:
+      autocomplete: "off"
+      class: "col-10"
+- label: "Working Period"
+  name: "workingPeriod"
+  datatype: daterange
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+  form:
+    edit: true
+    create: true
+    type: daterange
+    default: null
+    model: workingPeriod
+    row : 2
+    col: 1
+    attr:
+      autocomplete: "off"
+      class: "col-10"
+
+- label: "Address"
+  name: "address"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+    mode: "multi"
+    closeDropdownOnSelection: true
+    placeholder: "Select options"
+    options:
+      - name: "option one"
+        value: "option one"
+      - name: "option two"
+        value: "option two"
+      - name: "option three"
+        value: "option three"
+    select_all_checkbox:
+      - visibility: true
+        text: "Select all items"
+    init:
+      value: ""
+  form:
+    edit: true
+    create: true
+    type: textarea
+    default: null
+    model: address
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+- label: "City"
+  name: "city"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+    mode: "single"
+    closeDropdownOnSelection: true
+    placeholder: "Select options"
+    options:
+    - name: "option one"
+      value: "option one"
+    - name: "option two"
+      value: "option two"
+    - name: "option three"
+      value: "option three"
+    select_all_checkbox:
+    - visibility: true
+      text: "Select all items"
+    init:
+      value: ""
+  form:
+    edit: true
+    create: true
+    type: select
+    default: null
+    model: city
+    options:
+      - 1
+      - 2
+      - 3
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+- label: "Province"
+  name: "province"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+    mode: "multi"
+    closeDropdownOnSelection: true
+    placeholder: "Select options"
+    options:
+    - name: "option one"
+      value: "option one"
+    - name: "option two"
+      value: "option two"
+    - name: "option three"
+      value: "option three"
+    select_all_checkbox:
+    - visibility: true
+      text: "Select all items"
+    init:
+      value: ""
+  form:
+    edit: true
+    create: true
+    type: text
+    default: null
+    model: province
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+
+- label: "Country"
+  name: "country"
+  sort: true
+  show: false
+  row_text_alignment: "text-left"
+  filter:
+    type: "select"
+    mode: "multi"
+    closeDropdownOnSelection: true
+    placeholder: "Select options"
+    options:
+    - name: "option one"
+      value: "option one"
+    - name: "option two"
+      value: "option two"
+    - name: "option three"
+      value: "option three"
+    select_all_checkbox:
+    - visibility: true
+      text: "Select all items"
+    init:
+      value: ""
+  form:
+    edit: true
+    create: true
+    type: text
+    default: null
+    model: province
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+- label: "Location"
+  name: "location"
+  sort: true
+  show: false
+  row_text_alignment: "text-left"
+  filter:
+    type: "select"
+    mode: "multi"
+    closeDropdownOnSelection: true
+    placeholder: "Select options"
+    options:
+    - name: "option one"
+      value: "option one"
+    - name: "option two"
+      value: "option two"
+    - name: "option three"
+      value: "option three"
+    select_all_checkbox:
+    - visibility: true
+      text: "Select all items"
+    init:
+      value: ""
+  form:
+    edit: true
+    create: true
+    type: crud
+    default: null
+    model: location
+    col: 2
+    attr:
+      autocomplete: "off"
+- label: "Location"
+  name: "location"
+  sort: true
+  show: false
+  row_text_alignment: "text-left"
+  filter:
+    type: "select"
+    mode: "multi"
+    closeDropdownOnSelection: true
+    placeholder: "Select options"
+    options:
+    - name: "option one"
+      value: "option one"
+    - name: "option two"
+      value: "option two"
+    - name: "option three"
+      value: "option three"
+    select_all_checkbox:
+    - visibility: true
+      text: "Select all items"
+    init:
+      value: ""
+  form:
+    edit: true
+    create: true
+    type: mapsingle
+    default: null
+    model: location
+    col: 3
+    attr:
+      autocomplete: "off"
+- label: "Location 2"
+  name: "location2"
+  sort: true
+  show: false
+  row_text_alignment: "text-left"
+  filter:
+    type: "select"
+    mode: "multi"
+    closeDropdownOnSelection: true
+    placeholder: "Select options"
+    options:
+    - name: "option one"
+      value: "option one"
+    - name: "option two"
+      value: "option two"
+    - name: "option three"
+      value: "option three"
+    select_all_checkbox:
+    - visibility: true
+      text: "Select all items"
+    init:
+      value: ""
+  form:
+    edit: true
+    create: true
+    type: editor
+    default: null
+    model: location
+    row: 1
+    col: 3
+    attr:
+      autocomplete: "off"
+-
+  label: "Logo"
+  name: avatar
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: image
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: avatarupload
+    model: avatar
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+    attr: { class: "form-data", buttonlabel: "Upload Avatar" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na

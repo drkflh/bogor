@@ -1,0 +1,42 @@
+- title: "Workflow"
+  auth: workflow-menu
+  icon: "<i  data-feather=\"edit\" class=\"mdi mdi-alert link-icon\" style=\"color:red;\"></i>"
+  id: workflowMenu
+  children:
+    - title: Dashboard
+      url: "workflow/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Approval
+      auth: approval-menu
+      icon: "<i  data-feather=\"check-square\"  class=\"mdi mdi-account-multiple  link-icon\"></i>"
+      id: approvalMenu
+      children:
+      - title: "Approval Request"
+        url: "workflow/approval/approval-request"
+        auth: approval-request
+        icon: "<i class=\"mdi mdi-file\"></i>"
+      - title: "Approval Log"
+        url: "workflow/approval/approval-log"
+        auth: approval-log
+        icon: "<i class=\"mdi mdi-file\"></i>"
+      - title: "Approvers"
+        url: "workflow/approval/approver"
+        auth: approval-approver
+        icon: "<i class=\"mdi mdi-file\"></i>"
+      - title: "Default Approvers"
+        url: "workflow/approval/default-approver"
+        auth: approval-default-approver
+        icon: "<i class=\"mdi mdi-file\"></i>"
+      - title: "Approval Policy"
+        auth: approval-policy
+        url: "workflow/approval/approval-policy"
+        icon: "<i class=\"mdi mdi-file\"></i>"
+    - title: Organizer
+      auth: organizer-menu
+      icon: "<i  data-feather=\"inbox\"  class=\"mdi mdi-calendar  link-icon\"></i>"
+      id: organizerMenu
+      children:
+      - title: "File Downloads"
+        auth: file-download
+        url: "workflow/utility/file-download"
+        icon: "<i class=\"mdi mdi-file\"></i>"

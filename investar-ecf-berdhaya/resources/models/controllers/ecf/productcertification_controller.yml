@@ -1,0 +1,328 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Product _Id'
+        name: productExtId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Product Classification'
+        name: productClassification
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Product Detail'
+        name: productDetail
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Product Trademark'
+        name: producTradeMark
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Product Status'
+        name: productStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Product Pictures'
+        name: productPictures
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Product Process'
+        name: productionProcess
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Product BOM'
+        name: productBOM
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product _Id'
+        name: productExtId
+        create: true
+        edit: true
+        type: text
+        model: productExtId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product Classification'
+        name: productClassification
+        create: true
+        edit: true
+        type: text
+        model: productClassification
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product Detail'
+        name: productDetail
+        create: true
+        edit: true
+        type: text
+        model: productDetail
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product Trademark'
+        name: producTradeMark
+        create: true
+        edit: true
+        type: text
+        model: producTradeMark
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product Status'
+        name: productStatus
+        create: true
+        edit: true
+        type: text
+        model: productStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product Pictures'
+        name: productPictures
+        create: true
+        edit: true
+        type: text
+        model: productPictures
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product Process'
+        name: productionProcess
+        create: true
+        edit: true
+        type: text
+        model: productionProcess
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product BOM'
+        name: productBOM
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: productBOM
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        use_dms: false
+        entity_name_key: ''
+        modal_entity: 'Bill Of Material'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productExtId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productClassification
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productDetail
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: producTradeMark
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productStatus
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productPictures
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productionProcess
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productBOM
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Product _Id'
+        name: productExtId
+        visible: true
+        type: text
+        model: productExtId
+    -
+        label: 'Product Classification'
+        name: productClassification
+        visible: true
+        type: text
+        model: productClassification
+    -
+        label: 'Product Detail'
+        name: productDetail
+        visible: true
+        type: text
+        model: productDetail
+    -
+        label: 'Product Trademark'
+        name: producTradeMark
+        visible: true
+        type: text
+        model: producTradeMark
+    -
+        label: 'Product Status'
+        name: productStatus
+        visible: true
+        type: text
+        model: productStatus
+    -
+        label: 'Product Pictures'
+        name: productPictures
+        visible: true
+        type: text
+        model: productPictures
+    -
+        label: 'Product Process'
+        name: productionProcess
+        visible: true
+        type: text
+        model: productionProcess
+    -
+        label: 'Product BOM'
+        name: productBOM
+        visible: true
+        type: text
+        model: productBOM

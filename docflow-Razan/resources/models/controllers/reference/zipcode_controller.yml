@@ -1,0 +1,428 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Postal Code'
+        name: zipCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: Kecamatan
+        name: kecamatanName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: Kelurahan
+        name: kelurahanName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: Active
+        name: active
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: boolean
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Active From'
+        name: activeFrom
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Postal Code'
+        name: zipCode
+        create: true
+        edit: true
+        type: text
+        model: zipCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: District
+        name: kecamatanName
+        create: true
+        edit: true
+        type: text
+        model: kecamatanName
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Village
+        name: kelurahanName
+        create: true
+        edit: true
+        type: text
+        model: kelurahanName
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Active
+        name: active
+        create: true
+        edit: true
+        type: simpleswitch
+        model: active
+        default: ''
+        validator: ''
+        position: left
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Active From'
+        name: activeFrom
+        create: true
+        edit: true
+        type: datepicker
+        model: activeFrom
+        default: ''
+        validator: required
+        position: left
+        dateConstraint: minToday
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        create: true
+        edit: true
+        type: datepicker
+        model: inactiveDate
+        default: ''
+        validator: required
+        position: left
+        dateConstraint: minToday
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: zipCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: kecamatanName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: kelurahanName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: active
+        visible: true
+        type: string
+        default: ''
+    -
+        model: activeFrom
+        visible: true
+        type: string
+        default: ''
+    -
+        model: inactiveDate
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Postal Code'
+        name: zipCode
+        model: zipCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: District
+        name: kecamatanName
+        model: kecamatanName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Village
+        name: kelurahanName
+        model: kelurahanName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Active
+        name: active
+        model: active
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Active From'
+        name: activeFrom
+        model: activeFrom
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        model: inactiveDate
+        visible: true
+        type: dateview
+        default: ''

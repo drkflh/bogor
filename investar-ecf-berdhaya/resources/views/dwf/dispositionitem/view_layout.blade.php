@@ -1,0 +1,3 @@
+
+{!! $itemName ?? '' !!}
+{!! $description ?? '' !!}

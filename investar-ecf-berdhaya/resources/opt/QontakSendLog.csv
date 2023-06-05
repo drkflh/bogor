@@ -1,0 +1,34 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Qontak/SendLog_table_label,Qontak/SendLog_table_name,Qontak/SendLog_table_show,Qontak/SendLog_table_search,Qontak/SendLog_table_sort,Qontak/SendLog_table_datatype,Qontak/SendLog_form_label,Qontak/SendLog_form_name,Qontak/SendLog_form_create,Qontak/SendLog_form_edit,Qontak/SendLog_form_type,Qontak/SendLog_form_model,Qontak/SendLog_form_default,Qontak/SendLog_form_validator,Qontak/SendLog_form_param,Qontak/SendLog_form_attr,Qontak/SendLog_vue_model,Qontak/SendLog_vue_visible,Qontak/SendLog_vue_type,Qontak/SendLog_vue_default,Qontak/SendLog_view_label,Qontak/SendLog_view_name,Qontak/SendLog_view_visible,Qontak/SendLog_view_type,Qontak/SendLog_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+masterId,,,,,,,,,,,,Master ID,masterId,no,,,,Master ID,masterId,,,,masterId,,,,,masterId,,,,Master ID,masterId,,,masterId
+masterName,,,,,,,,,,,,Master Name,masterName,no,,,,Master Name,masterName,,,,masterName,,,,,masterName,,,,Master Name,masterName,,,masterName
+companyId,,,,,,,,,,,,Company ID,companyId,no,,,,Company ID,companyId,,,,companyId,,,,,companyId,,,,Company ID,companyId,,,companyId
+companyName,,,,,,,,,,,,Company Name,companyName,no,,,,Company Name,companyName,,,,companyName,,,,,companyName,,,,Company Name,companyName,,,companyName
+sbuId,,,,,,,,,,,,SBU ID,sbuId,no,,,,SBU ID,sbuId,,,,sbuId,,,,,sbuId,,,,SBU ID,sbuId,,,sbuId
+sbuName,,,,,,,,,,,,SBU Name,sbuName,no,,,,SBU Name,sbuName,,,,sbuName,,,,,sbuName,,,,SBU Name,sbuName,,,sbuName
+deptId,,,,,,,,,,,,Dept ID,deptId,no,,,,Dept ID,deptId,,,,deptId,,,,,deptId,,,,Dept ID,deptId,,,deptId
+deptName,,,,,,,,,,,,Dept Name,deptName,no,,,,Dept Name,deptName,,,,deptName,,,,,deptName,,,,Dept Name,deptName,,,deptName
+name,,,,,,,,,,,,Recipient,name,,,,,Recipient,name,,,,name,,,,,name,,,,Recipient,name,,,name
+organization_id,,,,,,,,,,,,Organization ID,organization_id,no,,,,Organization ID,organization_id,,,,organization_id,,,,,organization_id,,,,Organization ID,organization_id,,,organization_id
+channel_integration_id,,,,,,,,,,,,Channel ID,channel_integration_id,,,,,Channel ID,channel_integration_id,,,,channel_integration_id,,,,,channel_integration_id,,,,Channel ID,channel_integration_id,,,channel_integration_id
+contact_list_id,,,,,,,,,,,,Contact List ID,contact_list_id,no,,,,Contact List ID,contact_list_id,,,,contact_list_id,,,,,contact_list_id,,,,Contact List ID,contact_list_id,,,contact_list_id
+contact_id,,,,,,,,,,,,Contact ID,contact_id,,,,,Contact ID,contact_id,,,,contact_id,,,,,contact_id,,,,Contact ID,contact_id,,,contact_id
+target_channel,,,,,,,,,,,,Channel,target_channel,,,,,Channel,target_channel,,,,target_channel,,,,,target_channel,,,,Channel,target_channel,,,target_channel
+send_at,,,,,,,,,,,,Send At,send_at,,,,,Send At,send_at,,,,send_at,,,,,send_at,,,,Send At,send_at,,,send_at
+execute_status,,,,,,,,,,,,Execute Status,execute_status,,,,,Execute Status,execute_status,,,,execute_status,,,,,execute_status,,,,Execute Status,execute_status,,,execute_status
+execute_type,,,,,,,,,,,,Execute Type,execute_type,,,,,Execute Type,execute_type,,,,execute_type,,,,,execute_type,,,,Execute Type,execute_type,,,execute_type
+parameters,,,,,,,,,,,,Parameters,parameters,no,,,,Parameters,parameters,,,,parameters,,,,,parameters,,,,Parameters,parameters,,,parameters
+message_status_count,,,,,,,,,,,,Status Count,message_status_count,no,,,,Status Count,message_status_count,,,,message_status_count,,,,,message_status_count,,,,Status Count,message_status_count,,,message_status_count
+contact_extra,,,,,,,,,,,,Extra,contact_extra,,,,,Extra,contact_extra,,,,contact_extra,,,,,contact_extra,,,,Extra,contact_extra,,,contact_extra
+message_template,,,,,,,,,,,,Template,message_template,no,,,,Template,message_template,,,,message_template,,,,,message_template,,,,Template,message_template,,,message_template
+division_id,,,,,,,,,,,,Division ID,division_id,no,,,,Division ID,division_id,,,,division_id,,,,,division_id,,,,Division ID,division_id,,,division_id
+status,,,,,,,,,,,,Status,status,,,,,Status,status,,,,status,,,,,status,,,,Status,status,,,status

@@ -1,0 +1,547 @@
+-
+    name: _id
+    type: object
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ajax
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: handle
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: deleted
+    type: integer
+    default: 0
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: createdAt
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: updatedAt
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: updated_at
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: created_at
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ownerId
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ownerName
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: bookingId
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: idFasilitas
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: namaFasilitas
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: idProvider
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: namaProvider
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: nikLansia
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: namaLansia
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: idCaseManager
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: namaCaseManager
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: noAntrian
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: serviceDate
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: serviceTime
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: estdServiceTime
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: serviceTypes
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: progressStatus
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: needTransport
+    type: boolean
+    default: 'no'
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: transportProvider
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: transportType
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        
+- 
+    name: photo
+    type: imageArray
+    default: []
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: []
+        transform: false
+-
+    name: requestDate
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: alamatLansia
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: alamatLayanan
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: telponLansia
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: telponLayanan
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: requestByRole
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: requestByName
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: requestById
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: note
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: acceptedDate
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: acceptedBy
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: doneDate
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: doneBy
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false

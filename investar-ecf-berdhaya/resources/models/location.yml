@@ -1,0 +1,252 @@
+-
+    name: _id
+    type: object
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: createdAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: updatedAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: handle
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deleted
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: locationCode
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: locationName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: address
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: cityName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: provinceName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: district
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: zipCode
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: timezone
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: lattitude
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: longitude
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: active
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: activeFrom
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: inactiveDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string

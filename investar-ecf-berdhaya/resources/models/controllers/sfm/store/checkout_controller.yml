@@ -1,0 +1,883 @@
+table:
+    -
+        label: 
+        name: tableCart
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-center
+        column_classes: text-center text-large text-middle col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Shopping Cart'
+        name: shoppingcart
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+    -
+        label: 'User ID'
+        name: userId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Picture
+        name: picture
+        show: true
+        search: false
+        sort: false
+        datatype: imagearray
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'User Name'
+        name: userName
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'User Location'
+        name: userLocation
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Cart Session'
+        name: cartSession
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: 'text-center text-50'
+    -
+        label: 'Order Time'
+        name: orderTimestamp
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Vendor
+        name: vendorCode
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Picture
+        name: pictureObjects
+        show: false
+        search: false
+        sort: false
+        datatype: image
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Product Code'
+        name: productCode
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Product
+        name: productName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: 'text-center text-50'
+    -
+        label: Category
+        name: category
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: ''
+        name: currency
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: 'text-center text-50'
+    -
+        label: Price
+        name: price
+        show: true
+        search: false
+        sort: false
+        datatype: currency
+        column_classes: text-right text-100
+    -
+        label: Unit
+        name: unit
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Unit Count'
+        name: unitCount
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: 'text-center text-50'
+    -
+        label: Order Qty
+        name: orderQty
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Sub Total
+        name: orderSubTotal
+        show: true
+        search: false
+        sort: false
+        datatype: currency
+        row_text_alignment: text-center
+        column_classes: 'text-right text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Description
+        name: description
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Specification
+        name: specifications
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Status
+        name: orderStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Note
+        name: orderNote
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+
+
+form:
+    -
+        label: 
+        name: tableCart
+        create: true
+        edit: true
+        type: panels.nobleui.tablenestsimple
+        model: tableCart
+        delta: tableCartDelta
+        title_table: tableCart.titleTable
+        title_color: tableCart.titleColor
+        td_table: tableCart.tdTable
+        image: tableCart.image
+        infotype: danger
+        show_ribbon: false
+        row: 1
+        col: 2
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+                class: form-data
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'User ID'
+        name: userId
+        create: true
+        edit: true
+        type: text
+        model: userId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'User Name'
+        name: userName
+        create: true
+        edit: true
+        type: text
+        model: userName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'User Location'
+        name: userLocation
+        create: true
+        edit: true
+        type: text
+        model: userLocation
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Order Time'
+        name: orderTimestamp
+        create: true
+        edit: true
+        type: datepicker
+        model: orderTimestamp
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Vendor
+        name: vendorCode
+        create: true
+        edit: true
+        type: text
+        model: vendorCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Product Code'
+        name: productCode
+        create: true
+        edit: true
+        type: text
+        model: productCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Product
+        name: productName
+        create: true
+        edit: true
+        type: text
+        model: productName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Category
+        name: category
+        create: true
+        edit: true
+        type: simpleselect
+        model: category
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Currency
+        name: currency
+        create: true
+        edit: true
+        type: text
+        model: currency
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Price
+        name: price
+        create: true
+        edit: true
+        type: nominal
+        model: price
+        default: '0'
+        validator: required
+        prepend: select
+        select_model: currency
+        select_class: text-75
+        param: {}
+        attr: {}
+    -
+        label: Picture
+        name: picture
+        create: true
+        edit: true
+        type: attachmentupload
+        model: picture
+        default: ''
+        show_list: true
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Picture" }
+    -
+        label: Picture
+        name: pictureObjects
+        create: true
+        edit: true
+        type: text
+        model: pictureObjects
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Unit
+        name: unit
+        create: true
+        edit: true
+        type: simpleselect
+        model: unit
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Unit Count
+        name: unitCount
+        create: true
+        edit: true
+        type: number
+        model: unitCount
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: text
+        model: description
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Specification
+        name: specifications
+        create: true
+        edit: true
+        type: text
+        model: specifications
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Cart Session'
+        name: cartSession
+        create: true
+        edit: true
+        type: text
+        model: cartSession
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Qty
+        name: orderQty
+        create: true
+        edit: true
+        type: number
+        model: orderQty
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Status
+        name: orderStatus
+        create: true
+        edit: true
+        type: simpleselect
+        model: orderStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Note
+        name: orderNote
+        create: true
+        edit: true
+        type: text
+        model: orderNote
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: tableCart
+        visible: true
+        type: string
+        default: ''
+    -
+        model: weight
+        visible: true
+        type: number
+        default: 7
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: userId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: userName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: userLocation
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderTimestamp
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: vendorCode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productCode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: currency
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: price
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: picture
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: pictureObjects
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: unit
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: unitCount
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: specifications
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: cartSession
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderQty
+        visible: true
+        type: double
+        default: 1
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderPrice
+        visible: true
+        type: double
+        default: 0
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderSubTotal
+        visible: true
+        type: double
+        default: 0
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderStatus
+        visible: true
+        type: string
+        default: OPEN
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderNote
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label:  
+        name: tableCart
+        model: tableCart
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Master ID'
+        name: masterId
+        visible: true
+        type: text
+        model: masterId
+    -
+        label: 'Master Name'
+        name: masterName
+        visible: true
+        type: text
+        model: masterName
+    -
+        label: 'Company ID'
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: 'SBU ID'
+        name: sbuId
+        visible: true
+        type: text
+        model: sbuId
+    -
+        label: 'SBU Name'
+        name: sbuName
+        visible: true
+        type: text
+        model: sbuName
+    -
+        label: 'Dept ID'
+        name: deptId
+        visible: true
+        type: text
+        model: deptId
+    -
+        label: 'Dept Name'
+        name: deptName
+        visible: true
+        type: text
+        model: deptName
+    -
+        label: 'User ID'
+        name: userId
+        visible: true
+        type: text
+        model: userId
+    -
+        label: 'User Name'
+        name: userName
+        visible: true
+        type: text
+        model: userName
+    -
+        label: 'User Location'
+        name: userLocation
+        visible: true
+        type: text
+        model: userLocation
+    -
+        label: 'Order Time'
+        name: orderTimestamp
+        visible: true
+        type: text
+        model: orderTimestamp
+    -
+        label: Vendor
+        name: vendorCode
+        visible: true
+        type: text
+        model: vendorCode
+    -
+        label: 'Product Code'
+        name: productCode
+        visible: true
+        type: text
+        model: productCode
+    -
+        label: Product
+        name: productName
+        visible: true
+        type: text
+        model: productName
+    -
+        label: Category
+        name: category
+        visible: true
+        type: text
+        model: category
+    -
+        label: Currency
+        name: currency
+        visible: true
+        type: text
+        model: currency
+    -
+        label: Price
+        name: price
+        visible: true
+        type: text
+        model: price
+    -
+        label: Picture
+        name: picture
+        visible: true
+        type: text
+        model: picture
+    -
+        label: Picture
+        name: pictureObjects
+        visible: true
+        type: text
+        model: pictureObjects
+    -
+        label: Unit
+        name: unit
+        visible: true
+        type: text
+        model: unit
+    -
+        label: 'Unit Count'
+        name: unitCount
+        visible: true
+        type: text
+        model: unitCount
+    -
+        label: Description
+        name: description
+        visible: true
+        type: text
+        model: description
+    -
+        label: Specification
+        name: specifications
+        visible: true
+        type: text
+        model: specifications
+    -
+        label: 'Cart Session'
+        name: cartSession
+        visible: true
+        type: text
+        model: cartSession
+    -
+        label: Quantity
+        name: orderQty
+        visible: true
+        type: text
+        model: orderQty
+    -
+        label: Status
+        name: orderStatus
+        visible: true
+        type: text
+        model: orderStatus
+    -
+        label: Note
+        name: orderNote
+        visible: true
+        type: text
+        model: orderNote
+    -
+        label: Shopping Cart
+        name: shoppingcart
+        model: shoppingcart
+        visible: true
+        type: text
+        default: ''

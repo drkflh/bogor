@@ -1,0 +1,4 @@
+
+{!! $downloadUrl ?? '' !!}
+{!! $downloadDescription ?? '' !!}
+{!! $isActive ?? '' !!}

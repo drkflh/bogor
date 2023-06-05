@@ -1,0 +1,1156 @@
+- label: Action
+  name: _id
+  show: true
+  sort: false
+  uniqueId: true
+  row_text_alignment: text-left
+  column_classes: col_action
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: id
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Created
+  name: createdAt
+  show:  false
+  sort: true
+  row_text_alignment: text-left
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: createdAt
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: updatedAt
+  name: updatedAt
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: updatedAt
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ownerId
+  name: ownerId
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerId
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ownerName
+  name: ownerName
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerName
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: handle
+  name: handle
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: handle
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: deleted
+  name: deleted
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: deleted
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: ''
+  name: companyType
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: companyType
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Customer'
+  name: customerName
+  show: true
+  sort: true
+  row_text_alignment: text-center
+  column_classes: 'text-left text-250'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: customerName
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Customer Prefix'
+  name: customerPrefix
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left text-200'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: customerPrefix
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: customerCode
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left text-200'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: customerCode
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+    attr:
+      style: 'font-weight: bolder; font-size: 14px;'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Customer Sequence'
+  name: customerSeq
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: customerSeq
+    row: 1
+    col: 1
+    options: "{ width: 75 }"
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: ''
+  name: services
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: 'text-left text-300'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: services
+    row: 3
+    col: 2
+    ordered: false
+    show_table_header: true
+    modal_size: md
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: address
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left text-300'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: address
+    placeholder: 'Address 1'
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: address2
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left text-200'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: address2
+    placeholder: 'Address 2'
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: ' '
+  name: picContacts
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: 'text-left text-200'
+  datatype: array
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpletableinputmodaltemplate
+    model: picContacts
+    row: 3
+    col: 2
+    ordered: false
+    show_table_header: true
+    modal_size: md
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: array
+    default: []
+  view:
+    visible: true
+    label: Contact Person
+    type: arrayview
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: city
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: city
+    placeholder: 'City'
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: province
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: province
+    placeholder: 'Province'
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: postalCode
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  column_classes: text-100
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: postalCode
+    placeholder: 'Postal Code'
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: country
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: country
+    placeholder: 'Country'
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: offPhones
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  column_classes: text-100
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: offPhones
+    show_table_header: true
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: offFaxes
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  column_classes: text-100
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: offFaxes
+    show_table_header: true
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: offEmails
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  column_classes: text-left text-100
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: offEmails
+    show_table_header: true
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: website
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  column_classes: text-100
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: website
+    placeholder: 'Website'
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: ''
+  name: products
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: products
+    row: 3
+    col: 2
+    ordered: false
+    show_table_header: true
+    modal_size: md
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: ''
+  name: brands
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: brands
+    row: 3
+    col: 2
+    ordered: false
+    show_table_header: true
+    modal_size: md
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: customerClass
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left text-200'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: customerClass
+    row: 1
+    col: 1
+    options: []
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: customerTaxId
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: customerTaxId
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: pkpNo
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: pkpNo
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: companyProfileUrl
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: singleupload
+    model: companyProfileUrl
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+      buttonlabel: 'Company Profile'
+      filename: DocBaseName
+      dir: documents
+      useHandle: true
+      rawUpload: false
+      baseUrl: DocBase
+      docPath: DocPath
+      acceptedFiles: 'video/*,image/*,application/pdf'
+  vue:
+    visible: true
+    type: text
+  view:
+    label: 'Company Profile'
+    visible: true
+    type: doclink
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: mediaUrlCatalog
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: singleupload
+    model: mediaUrlCatalog
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+      buttonlabel: 'Catalog'
+      filename: DocBaseName
+      dir: documents
+      useHandle: true
+      rawUpload: false
+      baseUrl: DocBase
+      docPath: DocPath
+      acceptedFiles: 'video/*,image/*,application/pdf'
+  vue:
+    visible: true
+    type: text
+  view:
+    label: 'Catalog'
+    visible: true
+    type: doclink
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: taxIdNpwp
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: singleupload
+    model: taxIdNpwp
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+      buttonlabel: 'Tax ID (NPWP)'
+      filename: DocBaseName
+      dir: documents
+      useHandle: true
+      rawUpload: false
+      baseUrl: DocBase
+      docPath: DocPath
+      acceptedFiles: 'video/*,image/*,application/pdf'
+  vue:
+    visible: true
+    type: text
+  view:
+    label: 'Tax ID / NPWP'
+    visible: true
+    type: doclink
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Soft File'
+  name: urlDisplay
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: getDocUrl()
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Doc base'
+  name: DocBase
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: DocBase
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Doc Path'
+  name: DocPath
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: DocPath
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: ''
+  name: taxCollector
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-25'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleswitch
+    position: left
+    labels: '{checked: "On", unchecked: "Off"}'
+    model: taxCollector
+    validator: required
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: ""
+  name: filler
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: filler
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na

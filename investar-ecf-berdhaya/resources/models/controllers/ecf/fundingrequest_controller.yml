@@ -1,0 +1,1799 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Logo
+        name: logo
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Email
+        name: email
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Nama
+        name: name
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Posisi / Jabatan'
+        name: position
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nomor WA'
+        name: contactWA
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Merek Dagang'
+        name: bizTradeMark
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Alamat
+        name: bizAddress
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Jenis Badan Usaha'
+        name: bizType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Jenis ID Usaha'
+        name: bizIdType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Badan Usaha Terdaftar'
+        name: bizRegisteredName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Jenis Perusahaan'
+        name: bizCompanyType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Penanggung Jawab'
+        name: bizPicName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Email Penanggung Jawab'
+        name: bizPicEmail
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Jabatan Penanggung Jawab'
+        name: bizPicPosition
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Produk & Layanan'
+        name: productServices
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Jenis Pendanaan'
+        name: typeOfFunding
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Jumlah Pendanaan yang Diperlukan'
+        name: requestAmount
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Setuju S & K'
+        name: consentTnc
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Disahkan Oleh'
+        name: authorizedBy
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Disetujui Oleh'
+        name: approvedBy
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Pemohon
+        name: requestedBy
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master ID'
+        name: masterId
+        create: false
+        edit: false
+        type: text
+        model: masterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master Name'
+        name: masterName
+        create: false
+        edit: false
+        type: text
+        model: masterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company ID'
+        name: companyId
+        create: false
+        edit: false
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Name'
+        name: companyName
+        create: false
+        edit: false
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'SBU ID'
+        name: sbuId
+        create: false
+        edit: false
+        type: text
+        model: sbuId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'SBU Name'
+        name: sbuName
+        create: false
+        edit: false
+        type: text
+        model: sbuName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Dept ID'
+        name: deptId
+        create: false
+        edit: false
+        type: text
+        model: deptId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Dept Name'
+        name: deptName
+        create: false
+        edit: false
+        type: text
+        model: deptName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Logo
+        name: logo
+        create: true
+        edit: true
+        type: imagecardupload
+        model: logo
+        default: ''
+        validator: required
+        bucket: document
+        param:
+          url: api/v1/core/upload
+          paramName: file
+        attr:
+          class: form-data
+          buttonlabel: 'Upload ID Picture'
+    -
+        label: Email
+        name: email
+        create: true
+        edit: true
+        type: text
+        model: email
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Nama
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Posisi / Jabatan'
+        name: position
+        create: true
+        edit: true
+        type: text
+        model: position
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nomor WA'
+        name: contactWA
+        create: true
+        edit: true
+        type: text
+        model: contactWA
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kartu Identitas Pemilik'
+        name: ownerIdCard
+        create: true
+        edit: true
+        type: imagecardupload
+        model: ownerIdCard
+        default: ''
+        validator: required
+        bucket: document
+        param:
+          url: api/v1/core/upload
+          paramName: file
+        attr:
+          class: form-data
+          buttonlabel: 'Upload ID Picture'
+    -
+        label: 'Merek Dagang'
+        name: bizTradeMark
+        create: true
+        edit: true
+        type: text
+        model: bizTradeMark
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Alamat
+        name: bizAddress
+        create: true
+        edit: true
+        type: text
+        model: bizAddress
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Badan Usaha'
+        name: bizType
+        create: true
+        edit: true
+        type: text
+        model: bizType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis ID Usaha'
+        name: bizIdType
+        create: true
+        edit: true
+        type: text
+        model: bizIdType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Badan Usaha Terdaftar'
+        name: bizRegisteredName
+        create: true
+        edit: true
+        type: text
+        model: bizRegisteredName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Perusahaan'
+        name: bizCompanyType
+        create: true
+        edit: true
+        type: text
+        model: bizCompanyType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Penanggung Jawab'
+        name: bizPicName
+        create: true
+        edit: true
+        type: text
+        model: bizPicName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Email Penanggung Jawab'
+        name: bizPicEmail
+        create: true
+        edit: true
+        type: text
+        model: bizPicEmail
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jabatan Penanggung Jawab'
+        name: bizPicPosition
+        create: true
+        edit: true
+        type: text
+        model: bizPicPosition
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Pabrik / Tempat Produksi'
+        name: pabrik
+        create: true
+        edit: true
+        type: text
+        model: pabrik
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Outlet
+        name: outlet
+        create: true
+        edit: true
+        type: text
+        model: outlet
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Lampiran Dokumen'
+        name: lamDokumen
+        create: true
+        edit: true
+        type: attachmentupload
+        model: lamDokumen
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        direct_view_action: false
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: Legalitas
+        name: legality
+        create: true
+        edit: true
+        type: text
+        model: legality
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Akta Perusahaan'
+        name: attAktaPerusahaan
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attAktaPerusahaan
+        default: ''
+        validator: required
+        param:
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        direct_view_action: false
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: 'SKK Kemenkumham'
+        name: attSKKemenkumham
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attSKKemenkumham
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        direct_view_action: false
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: TDP
+        name: attTDP
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attTDP
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        direct_view_action: false
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: NPWP
+        name: attNPWP
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attNPWP
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        direct_view_action: false
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: 'No NPWP'
+        name: noNPWP
+        create: true
+        edit: true
+        type: text
+        model: noNPWP
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'SLIK OJK'
+        name: slikOJK
+        create: true
+        edit: true
+        type: text
+        model: slikOJK
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Produk & Layanan'
+        name: productServices
+        create: true
+        edit: true
+        type: text
+        model: productServices
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Berdiri Sejak'
+        name: establishedSinceYear
+        create: true
+        edit: true
+        type: text
+        model: establishedSinceYear
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Lama Berdiri'
+        name: establishedYear
+        create: true
+        edit: true
+        type: text
+        model: establishedYear
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Profile'
+        name: attCompanyProfile
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attCompanyProfile
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        direct_view_action: false
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: 'Jumlah Cabang'
+        name: noOfBranches
+        create: true
+        edit: true
+        type: text
+        model: noOfBranches
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Deskripsi Produk Layanan'
+        name: productServicesDescription
+        create: true
+        edit: true
+        type: text
+        model: productServicesDescription
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jalur Pemasaran'
+        name: marketingFunnels
+        create: true
+        edit: true
+        type: text
+        model: marketingFunnels
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Monthly Gross Revenue'
+        name: monthlyGrossRevenue
+        create: true
+        edit: true
+        type: text
+        model: monthlyGrossRevenue
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Monthly Nett Revenue'
+        name: monthlyNettRevenue
+        create: true
+        edit: true
+        type: text
+        model: monthlyNettRevenue
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Laporan Keuangan'
+        name: attFinancialReports
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attFinancialReports
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        direct_view_action: false
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: 'Business Plan 3 tahunan'
+        name: bizPlanTriennial
+        create: true
+        edit: true
+        type: text
+        model: bizPlanTriennial
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Business Plan'
+        name: attBizPlan
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attBizPlan
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        direct_view_action: false
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: 'Jumlah Pendanaan yang Diperlukan'
+        name: requiredFunding
+        create: true
+        edit: true
+        type: text
+        model: requiredFunding
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Pendanaan'
+        name: typeOfFunding
+        create: true
+        edit: true
+        type: text
+        model: typeOfFunding
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Referensi KOntrak'
+        name: contractReference
+        create: true
+        edit: true
+        type: text
+        model: contractReference
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Strategi COVID 19'
+        name: covidStrategy
+        create: true
+        edit: true
+        type: text
+        model: covidStrategy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Mengenal Investar dari '
+        name: getToKnowInvestar
+        create: true
+        edit: true
+        type: text
+        model: getToKnowInvestar
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jumlah Pendanaan yang Diperlukan'
+        name: requestAmount
+        create: true
+        edit: true
+        type: text
+        model: requestAmount
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Setuju S & K'
+        name: consentTnc
+        create: true
+        edit: true
+        type: text
+        model: consentTnc
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama yang Bertandatangan'
+        name: signatureName
+        create: true
+        edit: true
+        type: text
+        model: signatureName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: SIgnature
+        name: signatureUrl
+        create: true
+        edit: true
+        type: text
+        model: signatureUrl
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Signature Binary'
+        name: signatureBin
+        create: true
+        edit: true
+        type: text
+        model: signatureBin
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Disahkan Oleh'
+        name: authorizedBy
+        create: true
+        edit: true
+        type: text
+        model: authorizedBy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Disetujui Oleh'
+        name: approvedBy
+        create: true
+        edit: true
+        type: text
+        model: approvedBy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Pemohon
+        name: requestedBy
+        create: true
+        edit: true
+        type: text
+        model: requestedBy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: masterId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: masterName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sbuId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sbuName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deptId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deptName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: logo
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: email
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: position
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: contactWA
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerIdCard
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizTradeMark
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizAddress
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizIdType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizRegisteredName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizCompanyType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizPicName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizPicEmail
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizPicPosition
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: pabrik
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: outlet
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: lamDokumen
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: legality
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: attAktaPerusahaan
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: attSKKemenkumham
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: attTDP
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: attNPWP
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: noNPWP
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: slikOJK
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productServices
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: establishedSinceYear
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: establishedYear
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: attCompanyProfile
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: noOfBranches
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productServicesDescription
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: marketingFunnels
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: monthlyGrossRevenue
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: monthlyNettRevenue
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: attFinancialReports
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizPlanTriennial
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: attBizPlan
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: requiredFunding
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: typeOfFunding
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: contractReference
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: covidStrategy
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: getToKnowInvestar
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: requestAmount
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: consentTnc
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: signatureName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: signatureUrl
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: signatureBin
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: authorizedBy
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: approvedBy
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: requestedBy
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Master ID'
+        name: masterId
+        visible: true
+        type: text
+        model: masterId
+    -
+        label: 'Master Name'
+        name: masterName
+        visible: true
+        type: text
+        model: masterName
+    -
+        label: 'Company ID'
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: 'SBU ID'
+        name: sbuId
+        visible: true
+        type: text
+        model: sbuId
+    -
+        label: 'SBU Name'
+        name: sbuName
+        visible: true
+        type: text
+        model: sbuName
+    -
+        label: 'Dept ID'
+        name: deptId
+        visible: true
+        type: text
+        model: deptId
+    -
+        label: 'Dept Name'
+        name: deptName
+        visible: true
+        type: text
+        model: deptName
+    -
+        label: Logo
+        name: logo
+        visible: true
+        type: text
+        model: logo
+    -
+        label: Email
+        name: email
+        visible: true
+        type: text
+        model: email
+    -
+        label: Nama
+        name: name
+        visible: true
+        type: text
+        model: name
+    -
+        label: 'Posisi / Jabatan'
+        name: position
+        visible: true
+        type: text
+        model: position
+    -
+        label: 'Nomor WA'
+        name: contactWA
+        visible: true
+        type: text
+        model: contactWA
+    -
+        label: 'Kartu Identitas Pemilik'
+        name: ownerIdCard
+        visible: true
+        type: text
+        model: ownerIdCard
+    -
+        label: 'Merek Dagang'
+        name: bizTradeMark
+        visible: true
+        type: text
+        model: bizTradeMark
+    -
+        label: Alamat
+        name: bizAddress
+        visible: true
+        type: text
+        model: bizAddress
+    -
+        label: 'Jenis Badan Usaha'
+        name: bizType
+        visible: true
+        type: text
+        model: bizType
+    -
+        label: 'Jenis ID Usaha'
+        name: bizIdType
+        visible: true
+        type: text
+        model: bizIdType
+    -
+        label: 'Nama Badan Usaha Terdaftar'
+        name: bizRegisteredName
+        visible: true
+        type: text
+        model: bizRegisteredName
+    -
+        label: 'Jenis Perusahaan'
+        name: bizCompanyType
+        visible: true
+        type: text
+        model: bizCompanyType
+    -
+        label: 'Nama Penanggung Jawab'
+        name: bizPicName
+        visible: true
+        type: text
+        model: bizPicName
+    -
+        label: 'Email Penanggung Jawab'
+        name: bizPicEmail
+        visible: true
+        type: text
+        model: bizPicEmail
+    -
+        label: 'Jabatan Penanggung Jawab'
+        name: bizPicPosition
+        visible: true
+        type: text
+        model: bizPicPosition
+    -
+        label: Pabrik
+        name: pabrik
+        visible: true
+        type: text
+        model: pabrik
+    -
+        label: Outlet
+        name: outlet
+        visible: true
+        type: text
+        model: outlet
+    -
+        label: 'Lampiran Dokumen'
+        name: lamDokumen
+        visible: true
+        type: text
+        model: lamDokumen
+    -
+        label: Legalitas
+        name: legality
+        visible: true
+        type: text
+        model: legality
+    -
+        label: 'Akta Perusahaan'
+        name: attAktaPerusahaan
+        visible: true
+        type: text
+        model: attAktaPerusahaan
+    -
+        label: 'SK Kemenhumham'
+        name: attSKKemenkumham
+        visible: true
+        type: text
+        model: attSKKemenkumham
+    -
+        label: TDP
+        name: attTDP
+        visible: true
+        type: text
+        model: attTDP
+    -
+        label: NPWP
+        name: attNPWP
+        visible: true
+        type: text
+        model: attNPWP
+    -
+        label: 'No NPWP'
+        name: noNPWP
+        visible: true
+        type: text
+        model: noNPWP
+    -
+        label: 'SLIK OJK'
+        name: slikOJK
+        visible: true
+        type: text
+        model: slikOJK
+    -
+        label: 'Produk / Layanan'
+        name: productServices
+        visible: true
+        type: text
+        model: productServices
+    -
+        label: 'Berjalan Sejak'
+        name: establishedSinceYear
+        visible: true
+        type: text
+        model: establishedSinceYear
+    -
+        label: 'Tahun Pendirian'
+        name: establishedYear
+        visible: true
+        type: text
+        model: establishedYear
+    -
+        label: 'Company Profile'
+        name: attCompanyProfile
+        visible: true
+        type: text
+        model: attCompanyProfile
+    -
+        label: 'Jumlah Cabang'
+        name: noOfBranches
+        visible: true
+        type: text
+        model: noOfBranches
+    -
+        label: 'Deskripsi Produk / Layanan'
+        name: productServicesDescription
+        visible: true
+        type: text
+        model: productServicesDescription
+    -
+        label: 'Marketing Funnels'
+        name: marketingFunnels
+        visible: true
+        type: text
+        model: marketingFunnels
+    -
+        label: 'Monthly Gross Revenue'
+        name: monthlyGrossRevenue
+        visible: true
+        type: text
+        model: monthlyGrossRevenue
+    -
+        label: 'Monthly Nett Revenue'
+        name: monthlyNettRevenue
+        visible: true
+        type: text
+        model: monthlyNettRevenue
+    -
+        label: 'Laporan Keuangan'
+        name: attFinancialReports
+        visible: true
+        type: text
+        model: attFinancialReports
+    -
+        label: 'Business Plan 3 tahunan'
+        name: bizPlanTriennial
+        visible: true
+        type: text
+        model: bizPlanTriennial
+    -
+        label: 'Business Plan'
+        name: attBizPlan
+        visible: true
+        type: text
+        model: attBizPlan
+    -
+        label: 'Jumlah Pendanaan yang Diperlukan'
+        name: requiredFunding
+        visible: true
+        type: text
+        model: requiredFunding
+    -
+        label: 'Jenis Pendanaan'
+        name: typeOfFunding
+        visible: true
+        type: text
+        model: typeOfFunding
+    -
+        label: 'Referensi KOntrak'
+        name: contractReference
+        visible: true
+        type: text
+        model: contractReference
+    -
+        label: 'Strategi COVID 19'
+        name: covidStrategy
+        visible: true
+        type: text
+        model: covidStrategy
+    -
+        label: 'Mengenal Investar dari '
+        name: getToKnowInvestar
+        visible: true
+        type: text
+        model: getToKnowInvestar
+    -
+        label: 'Jumlah Pendanaan yang Diperlukan'
+        name: requestAmount
+        visible: true
+        type: text
+        model: requestAmount
+    -
+        label: 'Setuju S & K'
+        name: consentTnc
+        visible: true
+        type: text
+        model: consentTnc
+    -
+        label: 'Nama yang Bertandatangan'
+        name: signatureName
+        visible: true
+        type: text
+        model: signatureName
+    -
+        label: SIgnature
+        name: signatureUrl
+        visible: true
+        type: text
+        model: signatureUrl
+    -
+        label: 'Signature Binary'
+        name: signatureBin
+        visible: true
+        type: text
+        model: signatureBin
+    -
+        label: 'Disahkan Oleh'
+        name: authorizedBy
+        visible: true
+        type: text
+        model: authorizedBy
+    -
+        label: 'Disetujui Oleh'
+        name: approvedBy
+        visible: true
+        type: text
+        model: approvedBy
+    -
+        label: Pemohon
+        name: requestedBy
+        visible: true
+        type: text
+        model: requestedBy

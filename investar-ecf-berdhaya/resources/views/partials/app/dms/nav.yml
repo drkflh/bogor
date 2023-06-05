@@ -1,0 +1,52 @@
+- title: "DMS"
+  auth: "dms-menu"
+  icon: "<i class=\"las la-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Repository
+      auth: dms-repository
+      url: "dms/repository"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Dispatch
+      url: "dms/dispatch"
+      icon: "<i class=\"link-icon\"  data-feather=\"archive\"></i>"
+
+    - title: Disposal
+      url: "dms/disposal"
+      icon: "<i class=\"link-icon\"  data-feather=\"trash-2\"></i>"
+
+    - title: Borrow
+      url: "dms/borrow"
+      icon: "<i class=\"link-icon\"  data-feather=\"share\"></i>"
+
+    - title: "Scan In"
+      url: "dms/scanin"
+      icon: "<i class=\"las la-qrcode link-icon\" style=\"margin-right: -14px;\" ></i>"
+
+    - title: "DMS Options"
+      auth: dms-option-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+      children:
+        - title: "Call Code"
+          url: "dms/admin/callcode"
+          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+        - title: "Doc Class"
+          url: "dms/admin/docclass"
+          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+        - title: "Doc Function"
+          url: "dms/admin/docfunction"
+          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+        - title: "Company"
+          url: "dms/admin/coycode"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Disposal"
+          url: "dms/admin/disposal"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Doc Type"
+          url: "dms/admin/doctype"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Box"
+          url: "dms/admin/box"
+          icon: "<i class=\"link-icon\"  data-feather=\"package\"></i>"
+        - title: "Sequence"
+          url: "dms/admin/sequence"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"

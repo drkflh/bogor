@@ -1,0 +1,245 @@
+- title: "Main"
+  children:
+    - title: Dashboard
+      url: "fas/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Directory
+      icon: "<i class=\"link-icon\"  data-feather=\"book-open\" ></i>"
+      children:
+      - title: "Vendor"
+        url: "fas/directory/vendor-directory"
+      - title: "Customer"
+        url: "fas/directory/customer-directory"
+- title: "GLS: [GL System]"
+  icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+  children:
+  - title: "Journal Entry"
+    id: journalEntry
+    url: "fas/journal-entry"
+    icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+  - title: "GL Inquiries"
+    id: fasInquiries
+    url: "fas/inquiries"
+    icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+  - title: "GL Revaluation"
+    id: fasRevaluation
+    url: "fas/revaluation"
+    icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+  - title: "Budget"
+    id: budget
+    url: "fas/budget"
+    icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+  - title: "Closing"
+    id: closing
+    url: "fas/closing"
+    icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+  - title: "Standard Reports"
+    icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+    children:
+      - title: "Trial Balance"
+        id: trialBalance
+        url: "fas/standar-report/trial-balance"
+        icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+      - title: "Ledger"
+        id: ledger
+        url: "fas/standar-report/ledger"
+        icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+      - title: "Income Statement"
+        id: incomeStatement
+        url: "fas/standar-report/income-statement"
+        icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+      - title: "Balance Sheet"
+        id: balanceSheet
+        url: "fas/standar-report/balance-sheet"
+        icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+      - title: "Cost Center Report"
+        id: costCenterReport
+        url: "fas/standar-report/cost-center-report"
+        icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+      - title: "Project/Job Report"
+        id: projectJobReport
+        url: "fas/standar-report/project-job-report"
+        icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+      - title: "Chart of Account"
+        id: chartOfAccount
+        url: "fas/standar-report/chart-of-account"
+        icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+- title: "APS: [Acc. Payable System]"
+  icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+  children:
+    - title: "AP Entry"
+      id: apEntry
+      url: "ap/entry"
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+    - title: "AP Register"
+      id: apRegister
+      url: "ap/register"
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+    - title: "AP Aging Schedule"
+      id: apAgingSchedule
+      url: "ap/aging-schedule"
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+- title: "PMS: [Payment System]"
+  icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+  children:
+  - title: Payment Entry
+    icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    id: paymentEntry
+    children:
+      - title: "Cash & Bank"
+        url: "payment-entry/cash-bank"
+        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+      - title: "Petty Cash"
+        url: "payment-entry/petty-cash"
+        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+  - title: "Bank Reconsiliation"
+    id: bankReconsiliation
+    url: "pms/bank-reconsiliation"
+    icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+  - title: "Petty Cash Replenishment"
+    id: pettyCashReplenishment
+    url: "pms/petty-cash-replenishment"
+    icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+- title: "AMS: [Asset MGMT System]"
+  icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+  children:
+    - title: "Close Out Entry"
+      id: closeOutEntry
+      url: "ams/close-out-entry"
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+    - title: "Disposal"
+      id: disposal
+      url: "ams/disposal"
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+    - title: "Mutation"
+      id: mutation
+      url: "ams/mutation"
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+    - title: "Depreciation"
+      id: depreciation
+      url: "ams/depreciation"
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+    - title: "Asset Register"
+      id: assetRegister
+      url: "ams/asset-register"
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+    - title: "Reference Code"
+      id: referenceCode
+      icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+      children:
+        - title: "Asset Group"
+          url: "ams/asset-group"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Asset SubGroup"
+          url: "ams/asset-sub-group"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Asset Location"
+          url: "ams/asset-location"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Depreciation Rate"
+          url: "ams/depreciation-rate"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+- title: "Maintenance"
+  icon: "<i class=\"link-icon\"  data-feather=\"pie-chart\"></i>"
+  children:
+    - title: References
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+      id: references
+      children:
+        - title: "Account"
+          url: "fas/reference/account"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "AFE"
+          url: "fas/reference/afe"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Asset"
+          url: "fas/reference/asset"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Center"
+          url: "fas/reference/center"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Company"
+          url: "fas/reference/company"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        # - title: "Currency Code"
+        #   url: "fas/reference/currency-code"
+        #   icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Feat Type"
+          url: "fas/reference/feat-type"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Job ID"
+          url: "fas/reference/job-id"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Lender"
+          url: "fas/reference/lender"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Stock"
+          url: "fas/reference/stock"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Supplier"
+          url: "fas/reference/supplier"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Vendor"
+          url: "fas/reference/vendor"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Customer"
+          url: "fas/reference/customer"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Employee"
+          url: "fas/reference/employee"
+          icon: "<i class=\"las la-qrcode\" style=\"margin-right: -14px;\" ></i>"
+        - title: "Cost Center"
+          url: "fas/reference/costcenter"
+        - title: "Area"
+          url: "fas/reference/area"
+        - title: "Zipcode"
+          url: "fas/reference/zipcode"
+        - title: "Country"
+          url: "fas/reference/country"
+        - title: "Currency"
+          url: "fas/reference/currency"
+        - title: "Exchange Rate"
+          url: "fas/reference/exchange-rate"
+        - title: "UOM"
+          url: "fas/reference/uom"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Housekeeping
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+      id: housekeeping
+      children:
+        - title: "Data Backup"
+          url: "fas/data-backup"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Data Truncated"
+          url: "fas/data-truncated"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+- title: "Admin"
+  icon: "<i class=\"las la-alert\" style=\"color:red;\"></i>"
+  children:
+    # - title: Users
+    #   icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    #   id: userMenu
+    #   children:
+    #     - title: "All Users"
+    #       url: "user"
+    #       icon: "<i class=\"link-icon\"  class=\"las la-account-multiple\"></i>"
+    #     - title: Employees
+    #       url: "employee"
+    #       icon: "<i class=\"link-icon\"  class=\"las la-account\"></i>"
+    #     - title: Drivers
+    #       url: "trip/driver"
+    #       icon: "<i class=\"link-icon\"  class=\"las la-account\"></i>"
+    #     - title: Admins
+    #       url: "trip/admin"
+    #       icon: "<i class=\"link-icon\"  class=\"las la-account\"></i>"
+    #     - title: "Roles"
+    #       url: "role"
+    #       icon: "<i class=\"link-icon\"  data-feather=\"user-check\"></i>"
+    - title: "Push Messages"
+      icon: "<i class=\"link-icon\"  data-feather=\"message-square\"></i>"
+      id: pushMenu
+      children:
+        - title: "FCM Register"
+          url: "fcmregister"
+        - title: "Broadcast"
+          url: "broadcast"

@@ -1,0 +1,26 @@
+<table class="table">
+    <tr>
+        <td>
+            <label for="name">Name</label>
+            <input class="form-control" name="name" type="text" v-model="value.name" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="name">Age</label>
+            <input class="form-control" name="age" type="number" v-model="value.age" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="jenis">Jenis</label><br>
+            <b-form-select v-model="value.jenis" :options="params.jenis"></b-form-select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="keterangan">Address</label><br>
+            <textarea style="height: 80px;" class="form-control" v-model="value.address"></textarea>
+        </td>
+    </tr>
+</table>

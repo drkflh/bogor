@@ -1,0 +1,391 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Name
+        name: entity
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Requester Name'
+        name: requesterName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Requester Signature'
+        name: requesterSignature
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Requester Note'
+        name: requestNote
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Approvers
+        name: requestApprovers
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Signature
+        name: authorizationSign
+        show: true
+        search: false
+        sort: false
+        datatype: image
+    -
+        label: Decision
+        name: decision
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Timestamp
+        name: timestamp
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Name
+        name: entity
+        create: true
+        edit: true
+        type: text
+        model: entity
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Document
+        name: requestEntity
+        create: true
+        edit: true
+        type: text
+        model: requestEntity
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Entity URI'
+        name: requestEntityURI
+        create: true
+        edit: true
+        type: text
+        model: requestEntityURI
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Requester ID'
+        name: requesterId
+        create: true
+        edit: true
+        type: text
+        model: requesterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Requester Name'
+        name: requesterName
+        create: true
+        edit: true
+        type: text
+        model: requesterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Requester Signature'
+        name: requesterSignature
+        create: true
+        edit: true
+        type: text
+        model: requesterSignature
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Requester Note'
+        name: requestNote
+        create: true
+        edit: true
+        type: text
+        model: requestNote
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Approvers
+        name: requestApprovers
+        create: true
+        edit: true
+        type: text
+        model: requestApprovers
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Authorization
+        name: authorization
+        create: true
+        edit: true
+        type: text
+        model: authorization
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Signature
+        name: authorizationSign
+        create: true
+        edit: true
+        type: text
+        model: authorizationSign
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Decision
+        name: decision
+        create: true
+        edit: true
+        type: text
+        model: decision
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Timestamp
+        name: timestamp
+        create: true
+        edit: true
+        type: text
+        model: timestamp
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Approval Policy'
+        name: approvalPolicy
+        create: true
+        edit: true
+        type: text
+        model: approvalPolicy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Action URI'
+        name: actionURI
+        create: true
+        edit: true
+        type: text
+        model: actionURI
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Approval
+        name: approvalStatus
+        create: true
+        edit: true
+        type: text
+        model: approvalStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Note
+        name: approvalStatusNote
+        create: true
+        edit: true
+        type: text
+        model: approvalStatusNote
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: entity
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requestEntity
+        visible: true
+        type: object
+        default: {}
+    -
+        model: requestEntityURI
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requesterId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requesterName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requesterSignature
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requestNote
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requestApprovers
+        visible: true
+        type: array
+        default: []
+    -
+        model: authorization
+        visible: true
+        type: string
+        default: ''
+    -
+        model: authorizationSign
+        visible: true
+        type: string
+        default: ''
+    -
+        model: decision
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timestamp
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalPolicy
+        visible: true
+        type: object
+        default: {}
+    -
+        model: actionURI
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalStatusNote
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Requester Name'
+        name: requesterName
+        visible: true
+        type: text
+        model: requesterName
+    -
+        label: 'Requester Signature'
+        name: requesterSignature
+        visible: true
+        type: text
+        model: requesterSignature
+    -
+        label: 'Requester Note'
+        name: requestNote
+        visible: true
+        type: text
+        model: requestNote
+    -
+        label: Approvers
+        name: requestApprovers
+        visible: true
+        type: arrayview
+        model: requestApprovers
+    -
+        label: Signature
+        name: authorizationSign
+        visible: true
+        type: image
+        model: authorizationSign
+    -
+        label: Decision
+        name: decision
+        visible: true
+        type: text
+        model: decision
+    -
+        label: Timestamp
+        name: timestamp
+        visible: true
+        type: text
+        model: timestamp

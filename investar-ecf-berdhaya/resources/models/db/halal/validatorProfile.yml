@@ -1,0 +1,403 @@
+-
+    name: _id
+    type: object
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ajax
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: handle
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: deleted
+    type: integer
+    default: 0
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: createdAt
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: updatedAt
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: updated_at
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: created_at
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ownerId
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ownerName
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorExtId
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorName
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorEmail
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorPlaceOfBirth
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorDateOfBirth
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorCountryCode
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorMobile
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorGender
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorNik
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorAddress
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorProvince
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorCity
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorZip
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorPhoto
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorIdPhoto
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorIdType
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorPhone
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorKelurahan
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorBankName
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorAccountName
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: validatorAccountNumber
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false

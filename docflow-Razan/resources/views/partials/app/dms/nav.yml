@@ -1,0 +1,161 @@
+- title: ''
+  auth: dwf-dashboard
+  url: "dwf/dashboard"
+  icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+  children:
+    - title: Dashboard
+      auth: dwf-dashboard
+      url: "dwf/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+- title: "Naskah Kerja"
+  auth: "dwf-working-menu"
+  icon: "<i   data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Registrasi Naskah
+      auth: dwf-register-menu
+      url: "dwf/repository"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+      children:
+        - title: Surat Dinas
+          auth: dwf-surat-dinas
+          url: "dwf/document/list/surat-dinas"
+          icon: "<i class=\"link-icon\"  data-feather=\"edit-3\"></i>"
+        - title: Nota Dinas
+          auth: dwf-nota-dinas
+          url: "dwf/document/list/nota-dinas"
+          icon: "<i class=\"link-icon\"  data-feather=\"repeat\"></i>"
+        - title: Lembar Disposisi
+          auth: dwf-lembar-disposisi
+          url: "dwf/document/list/lembar-disposisi"
+          icon: "<i class=\"link-icon\"  data-feather=\"repeat\"></i>"
+        - title: Memo Internal
+          auth: dwf-memo-internal
+          url: "dwf/document/list/memo-internal"
+          icon: "<i class=\"link-icon\"  data-feather=\"repeat\"></i>"
+    - title: Naskah Masuk
+      auth: "dwf-incoming"
+      url: "dwf/document/list/status/incoming"
+      icon: "<i class=\"link-icon\"  data-feather=\"inbox\"></i>"
+      children:
+        - title: Inbox
+          auth: "dwf-inbox"
+          url: "dwf/document/list/status/inbox"
+          icon: "<i class=\"link-icon\"  data-feather=\"edit-3\"></i>"
+        - title: Draft Review
+          auth: "dwf-draft-review"
+          url: "dwf/document/list/status/draft-review"
+          icon: "<i class=\"link-icon\"  data-feather=\"edit-3\"></i>"
+        - title: Penandatanganan
+          auth: "dwf-signature"
+          url: "dwf/document/list/status/signature"
+          icon: "<i class=\"link-icon\"  data-feather=\"edit-3\"></i>"
+        - title: Riwayat
+          auth: "dwf-history"
+          url: "dwf/document/list/status/history"
+          icon: "<i class=\"link-icon\"  data-feather=\"edit-3\"></i>"
+    - title: Naskah Keluar
+      auth: "dwf-outgoing"
+      url: "dwf/document/list/status/outgoing"
+      icon: "<i class=\"link-icon\"  data-feather=\"arrow-up-circle\"></i>"
+      children:
+      - title: Terkirim
+        auth: "dwf-sent"
+        url: "dwf/document/list/status/sent"
+        icon: "<i class=\"link-icon\"  data-feather=\"send\"></i>"
+
+#      - title: Draft
+#        auth: "dwf-draft"
+#        url: "dwf/document/list/status/draft"
+#        icon: "<i class=\"link-icon\"  data-feather=\"edit-3\"></i>"
+
+      - title: Dalam Proses
+        auth: "dwf-in-process"
+        url: "dwf/document/list/status/in-process"
+        icon: "<i class=\"link-icon\"  data-feather=\"repeat\"></i>"
+
+      - title: Ditolak
+        auth: "dwf-rejected"
+        url: "dwf/document/list/status/rejected"
+        icon: "<i class=\"link-icon\"  data-feather=\"send\"></i>"
+
+    - title: "Data Referensi"
+      auth: dwf-option-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+      children:
+        - title: "Kode Klasifikasi"
+          auth: "dwf-doc-class"
+          url: "dwf/admin/docclass"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Kode Jabatan"
+          auth: "dwf-job-code"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+          url: "reference/job-title"
+        - title: "Group Alias"
+          auth: "dwf-job-group-alias"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+          url: "dwf/admin/group-alias"
+        - title: "Group Disposisi"
+          auth: "dwf-job-group"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+          url: "dwf/admin/job-group"
+        - title: "Item Disposisi"
+          auth: "dwf-dispo-item"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+          url: "dwf/admin/disposition-item"
+        - title: "Jenis Naskah"
+          auth: "dwf-doc-type"
+          url: "dwf/admin/doctype"
+          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+        - title: "Template Naskah"
+          auth: "dwf-doc-template"
+          url: "dwf/admin/print-template"
+          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#        - title: "Template Form Naskah"
+#          url: "dwf/admin/doc-template"
+#          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#    - title: "Referensi Perusahaan"
+#      icon: "<i data-feather=\"package\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#      children:
+#        - title: "Group Perusahaan"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/company"
+#        - title: "Unit Bisnis"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/biz-unit"
+#        - title: "Jenis Perusahaan"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/company-type"
+#        - title: "Jenis Unit Bisnis"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/biz-unit-type"
+
+#- title: "Arsip Naskah Dinas"
+#  auth: "dwf-archive-menu"
+#  icon: "<i   data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#  children:
+#    - title: "Data Referensi"
+#      auth: dwf-archive-option-menu
+#      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#      children:
+#        - title: "Jenis Arsip"
+#          auth: dwf-archive-type
+#          url: "dwf/admin/archive-type"
+#          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#        - title: "Fungsi"
+#          url: "dms/admin/docfunction"
+#          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#        - title: "Jenis Dokumen"
+#          url: "dms/admin/doctype"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Company"
+#          url: "dms/admin/coycode"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Disposal"
+#          url: "dms/admin/disposal"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Box"
+#          url: "dms/admin/box"
+#          icon: "<i class=\"link-icon\"  data-feather=\"package\"></i>"
+#        - title: "Sequence"
+#          url: "dms/admin/sequence"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"

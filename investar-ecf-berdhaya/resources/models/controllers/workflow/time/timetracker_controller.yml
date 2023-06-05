@@ -1,0 +1,954 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Time Zone'
+        name: tz
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-150
+    -
+        label: Active
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+        column_classes: text-center text-50
+    -
+        label: Event
+        name: event
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        column_classes: text-center text-125
+    -
+        label: Attendance
+        name: attStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-75
+    -
+        label: 'Session ID'
+        name: attendanceSession
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-150
+    -
+        label: 'Break Session'
+        name: breakSession
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Timer Session'
+        name: timetrackSession
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Start'
+        name: clockInTime
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-center text-150
+    -
+        label: 'End'
+        name: clockOutTime
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-center text-150
+    -
+        label: 'Duration'
+        name: clockSec
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-center text-150
+    -
+        label: Timer Start
+        name: timerStart
+        show: false
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-center text-150
+    -
+        label: Timer Stop
+        name: timerStop
+        show: false
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-center text-150
+    -
+        label: 'Timer Duration'
+        name: timerSec
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-150
+    -
+        label: Break Start
+        name: breakStart
+        show: false
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-center text-150
+    -
+        label: Break Stop
+        name: breakStop
+        show: false
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-center text-150
+    -
+        label: 'Break Duration'
+        name: breakSec
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-150
+    -
+        label: 'Timer Running'
+        name: timerRunning
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'User ID'
+        name: userId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'User Name'
+        name: userName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        column_classes: text-center text-200
+    -
+        label: Task
+        name: projectTask
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        column_classes: text-center
+    -
+        label: 'Project Name'
+        name: projectName
+        show: false
+        search: true
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Time Zone'
+        name: tz
+        create: true
+        edit: true
+        type: text
+        model: tz
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Event
+        name: event
+        create: true
+        edit: true
+        type: simpleselect
+        model: event
+        default: 'TIMER_ADJ'
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Attendance
+        name: attStatus
+        create: true
+        edit: true
+        type: text
+        model: attStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Clock In'
+        name: clockIn
+        create: true
+        edit: true
+        type: text
+        model: clockIn
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Clock Out'
+        name: clockOut
+        create: true
+        edit: true
+        type: text
+        model: clockOut
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Break
+        name: atBreak
+        create: true
+        edit: true
+        type: text
+        model: atBreak
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Clock In Time'
+        name: clockInTime
+        create: true
+        edit: true
+        type: text
+        model: clockInTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Clock Out Time'
+        name: clockOutTime
+        create: true
+        edit: true
+        type: text
+        model: clockOutTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Timer
+        name: timerVal
+        create: true
+        edit: true
+        type: text
+        model: timerVal
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Time Start
+        name: timerStart
+        create: true
+        edit: true
+        type: datetimepicker
+        model: timerStart
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Time Stop
+        name: timerStop
+        create: true
+        edit: true
+        type: datetimepicker
+        model: timerStop
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Timer Seconds'
+        name: timerSec
+        create: true
+        edit: true
+        type: number
+        model: timerSec
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Timer Running'
+        name: timerRunning
+        create: true
+        edit: true
+        type: text
+        model: timerRunning
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Description'
+        name: timeDescription
+        create: true
+        edit: true
+        type: text
+        model: timeDescription
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: User
+        name: user
+        create: true
+        edit: true
+        type: text
+        model: user
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'User ID'
+        name: userId
+        create: true
+        edit: true
+        type: text
+        model: userId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'User Name'
+        name: userName
+        create: true
+        edit: true
+        type: text
+        model: userName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Task
+        name: taskId
+        create: true
+        edit: true
+        type: text
+        model: taskId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Task
+        name: projectTask
+        create: true
+        edit: true
+        type: simpleselect
+        model: projectTask
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: taskDescription
+        create: true
+        edit: true
+        type: text
+        model: taskDescription
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Guide
+        name: taskGuide
+        create: true
+        edit: true
+        type: text
+        model: taskGuide
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Attachments
+        name: taskAttachments
+        create: true
+        edit: true
+        type: text
+        model: taskAttachments
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project ID'
+        name: projectId
+        create: true
+        edit: true
+        type: text
+        model: projectId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Name'
+        name: projectName
+        create: true
+        edit: true
+        type: text
+        model: projectName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Progress
+        name: progressStatus
+        create: true
+        edit: true
+        type: text
+        model: progressStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Assgned To'
+        name: assignedTo
+        create: true
+        edit: true
+        type: tagsinput
+        model: assignedTo
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Kanban
+        name: kanbanLane
+        create: true
+        edit: true
+        type: text
+        model: kanbanLane
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Start
+        name: startDateTime
+        create: true
+        edit: true
+        type: datepicker
+        model: startDateTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Until
+        name: endDateTime
+        create: true
+        edit: true
+        type: datepicker
+        model: endDateTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Duration
+        name: duration
+        create: true
+        edit: true
+        type: text
+        model: duration
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Active
+        name: isActive
+        create: true
+        edit: true
+        type: simpleswitch
+        model: isActive
+        default: false
+        validator: required
+        position: top
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: tz
+        visible: true
+        type: string
+        default: ''
+    -
+        model: event
+        visible: true
+        type: string
+        default: 'TIMER_ADJ'
+    -
+        model: isActive
+        visible: true
+        type: boolean
+        default: false
+    -
+        model: attStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clockIn
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clockOut
+        visible: true
+        type: string
+        default: ''
+    -
+        model: atBreak
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clockInTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clockOutTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clockSec
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: breakStart
+        visible: true
+        type: string
+        default: ''
+    -
+        model: breakStop
+        visible: true
+        type: string
+        default: ''
+    -
+        model: breakSec
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: timerStart
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timerStop
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timerVal
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timerSec
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timerRunning
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timeDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: attendanceSession
+        visible: true
+        type: string
+        default: ''
+    -
+        model: breakSession
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timetrackSession
+        visible: true
+        type: string
+        default: ''
+    -
+        model: user
+        visible: true
+        type: string
+        default: ''
+    -
+        model: userId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: userName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectTask
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskGuide
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskAttachments
+        visible: true
+        type: array
+        default: []
+    -
+        model: projectId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: progressStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: assignedTo
+        visible: true
+        type: array
+        default: []
+    -
+        model: kanbanLane
+        visible: true
+        type: string
+        default: ''
+    -
+        model: startDateTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: endDateTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: duration
+        visible: true
+        type: integer
+        default: 0
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Time Zone'
+        name: tz
+        visible: true
+        type: text
+        model: tz
+    -
+        label: Event
+        name: event
+        visible: true
+        type: text
+        model: event
+    -
+        label: Attendance
+        name: attStatus
+        visible: true
+        type: text
+        model: attStatus
+    -
+        label: 'Clock In'
+        name: clockIn
+        visible: true
+        type: text
+        model: clockIn
+    -
+        label: 'Clock Out'
+        name: clockOut
+        visible: true
+        type: text
+        model: clockOut
+    -
+        label: Break
+        name: atBreak
+        visible: true
+        type: text
+        model: atBreak
+    -
+        label: 'Clock In Time'
+        name: clockInTime
+        visible: true
+        type: text
+        model: clockInTime
+    -
+        label: 'Clock Out Time'
+        name: clockOutTime
+        visible: true
+        type: text
+        model: clockOutTime
+    -
+        label: 'Clock Sec'
+        name: clockSec
+        visible: true
+        type: text
+        model: clockSec
+    -
+        label: Break Start
+        name: breakStart
+        visible: true
+        type: text
+        model: breakStart
+    -
+        label: Break Stop
+        name: breakStop
+        visible: true
+        type: text
+        model: breakStop
+    -
+        label: Break
+        name: breakSec
+        visible: true
+        type: text
+        model: breakSec
+    -
+        label: Timer Start
+        name: timerStart
+        visible: true
+        type: text
+        model: timerStart
+    -
+        label: Timer Stop
+        name: timerStop
+        visible: true
+        type: text
+        model: timerStop
+    -
+        label: Timer
+        name: timerVal
+        visible: true
+        type: text
+        model: timerVal
+    -
+        label: 'Timer Seconds'
+        name: timerSec
+        visible: true
+        type: text
+        model: timerSec
+    -
+        label: 'Timer Running'
+        name: timerRunning
+        visible: true
+        type: text
+        model: timerRunning
+    -
+        label: 'Time Description'
+        name: timeDescription
+        visible: true
+        type: text
+        model: timeDescription
+    -
+        label: 'Att. Session'
+        name: attendanceSession
+        visible: true
+        type: text
+        model: timerRunning
+    -
+        label: 'Break Session'
+        name: breakSession
+        visible: true
+        type: text
+        model: timerRunning
+    -
+        label: 'Timer Session'
+        name: timetrackSession
+        visible: true
+        type: text
+        model: timerRunning
+    -
+        label: User
+        name: user
+        visible: true
+        type: text
+        model: user
+    -
+        label: 'User ID'
+        name: userId
+        visible: true
+        type: text
+        model: userId
+    -
+        label: 'User Name'
+        name: userName
+        visible: true
+        type: text
+        model: userName
+    -
+        label: ID
+        name: taskId
+        visible: true
+        type: text
+        model: taskId
+    -
+        label: Task
+        name: projectTask
+        visible: true
+        type: text
+        model: projectTask
+    -
+        label: Description
+        name: taskDescription
+        visible: true
+        type: text
+        model: taskDescription
+    -
+        label: Guide
+        name: taskGuide
+        visible: true
+        type: text
+        model: taskGuide
+    -
+        label: Attachments
+        name: taskAttachments
+        visible: true
+        type: arrayview
+        model: taskAttachments
+    -
+        label: 'Project ID'
+        name: projectId
+        visible: true
+        type: text
+        model: projectId
+    -
+        label: 'Project Name'
+        name: projectName
+        visible: true
+        type: text
+        model: projectName
+    -
+        label: Progress
+        name: progressStatus
+        visible: true
+        type: text
+        model: progressStatus
+    -
+        label: 'Assgned To'
+        name: assignedTo
+        visible: true
+        type: arrayview
+        model: assignedTo
+    -
+        label: Kanban
+        name: kanbanLane
+        visible: true
+        type: text
+        model: kanbanLane
+    -
+        label: Start
+        name: startDateTime
+        visible: true
+        type: datetime
+        model: startDateTime
+    -
+        label: Until
+        name: endDateTime
+        visible: true
+        type: datetime
+        model: endDateTime
+    -
+        label: Duration
+        name: duration
+        visible: true
+        type: text
+        model: duration

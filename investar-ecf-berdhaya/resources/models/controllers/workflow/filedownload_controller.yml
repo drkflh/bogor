@@ -1,0 +1,124 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: URL
+        name: downloadUrl
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Description
+        name: downloadDescription
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Active
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: URL
+        name: downloadUrl
+        create: true
+        edit: true
+        type: text
+        model: downloadUrl
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: downloadDescription
+        create: true
+        edit: true
+        type: text
+        model: downloadDescription
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Active
+        name: isActive
+        create: true
+        edit: true
+        type: text
+        model: isActive
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: downloadUrl
+        visible: true
+        type: string
+        default: ''
+    -
+        model: downloadDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: isActive
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: URL
+        name: downloadUrl
+        visible: true
+        type: text
+        model: downloadUrl
+    -
+        label: Description
+        name: downloadDescription
+        visible: true
+        type: text
+        model: downloadDescription
+    -
+        label: Active
+        name: isActive
+        visible: true
+        type: text
+        model: isActive

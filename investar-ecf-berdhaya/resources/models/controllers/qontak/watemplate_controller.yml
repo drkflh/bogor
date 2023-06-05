@@ -1,0 +1,555 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Name
+        name: name
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Template ID'
+        name: template_id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-200'
+        thClass: 'text-center text-50'
+    -
+        label: Language
+        name: language
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-75'
+        thClass: 'text-center text-50'
+    -
+        label: Header
+        name: header
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Body
+        name: body
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-200'
+        thClass: 'text-center text-50'
+    -
+        label: Footer
+        name: footer
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Buttons
+        name: buttons
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Status
+        name: status
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Category
+        name: category
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master ID'
+        name: masterId
+        create: true
+        edit: true
+        type: text
+        model: masterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master Name'
+        name: masterName
+        create: true
+        edit: true
+        type: text
+        model: masterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company ID'
+        name: companyId
+        create: true
+        edit: true
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Name'
+        name: companyName
+        create: true
+        edit: true
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'SBU ID'
+        name: sbuId
+        create: true
+        edit: true
+        type: text
+        model: sbuId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'SBU Name'
+        name: sbuName
+        create: true
+        edit: true
+        type: text
+        model: sbuName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Dept ID'
+        name: deptId
+        create: true
+        edit: true
+        type: text
+        model: deptId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Dept Name'
+        name: deptName
+        create: true
+        edit: true
+        type: text
+        model: deptName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Name
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Template ID'
+        name: template_id
+        create: true
+        edit: true
+        type: text
+        model: template_id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Language
+        name: language
+        create: true
+        edit: true
+        type: text
+        model: language
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Header
+        name: header
+        create: true
+        edit: true
+        type: text
+        model: header
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Body
+        name: body
+        create: true
+        edit: true
+        type: text
+        model: body
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Footer
+        name: footer
+        create: true
+        edit: true
+        type: text
+        model: footer
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Buttons
+        name: buttons
+        create: true
+        edit: true
+        type: text
+        model: buttons
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Status
+        name: status
+        create: true
+        edit: true
+        type: text
+        model: status
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Category
+        name: category
+        create: true
+        edit: true
+        type: text
+        model: category
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: masterId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: masterName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sbuId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sbuName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deptId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deptName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: template_id
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: language
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: header
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: body
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: footer
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: buttons
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: status
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Master ID'
+        name: masterId
+        visible: true
+        type: text
+        model: masterId
+    -
+        label: 'Master Name'
+        name: masterName
+        visible: true
+        type: text
+        model: masterName
+    -
+        label: 'Company ID'
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: 'SBU ID'
+        name: sbuId
+        visible: true
+        type: text
+        model: sbuId
+    -
+        label: 'SBU Name'
+        name: sbuName
+        visible: true
+        type: text
+        model: sbuName
+    -
+        label: 'Dept ID'
+        name: deptId
+        visible: true
+        type: text
+        model: deptId
+    -
+        label: 'Dept Name'
+        name: deptName
+        visible: true
+        type: text
+        model: deptName
+    -
+        label: Name
+        name: name
+        visible: true
+        type: text
+        model: name
+    -
+        label: 'Template ID'
+        name: template_id
+        visible: true
+        type: text
+        model: template_id
+    -
+        label: Language
+        name: language
+        visible: true
+        type: text
+        model: language
+    -
+        label: Header
+        name: header
+        visible: true
+        type: text
+        model: header
+    -
+        label: Body
+        name: body
+        visible: true
+        type: text
+        model: body
+    -
+        label: Footer
+        name: footer
+        visible: true
+        type: text
+        model: footer
+    -
+        label: Buttons
+        name: buttons
+        visible: true
+        type: text
+        model: buttons
+    -
+        label: Status
+        name: status
+        visible: true
+        type: text
+        model: status
+    -
+        label: Category
+        name: category
+        visible: true
+        type: text
+        model: category

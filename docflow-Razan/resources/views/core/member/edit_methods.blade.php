@@ -1,0 +1,3 @@
+refreshSignature(){
+    bus.$emit('resize');
+},

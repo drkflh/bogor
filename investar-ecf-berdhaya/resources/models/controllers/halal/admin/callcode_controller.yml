@@ -1,0 +1,675 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Topic
+        name: Topic
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: TopicDescr
+        name: TopicDescr
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-350'
+        thClass: ''
+    -
+        label: 'Function Desc.'
+        name: FunctionDescr
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-300'
+        thClass: ''
+    -
+        label: Function
+        name: Function
+        show: false
+        search: true
+        sort: false
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: Class
+        name: DocClass
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-100 text-center'
+        thClass: ''
+    -
+        label: Group
+        name: Group
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-50 text-center'
+        thClass: ''
+    -
+        label: 'Active Years'
+        name: ActiveYrs
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-50 text-center'
+        thClass: ''
+    -
+        label: 'Disposal Period'
+        name: DispPer
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-50 text-center'
+        thClass: ''
+    -
+        label: 'Department Code'
+        name: Department
+        show: true
+        search: true
+        sort: false
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-50 text-center'
+        thClass: ''
+    -
+        label: 'Department Name'
+        name: DepartmentDescr
+        show: true
+        search: true
+        sort: false
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-150 text-left'
+        thClass: ''
+    -
+        label: ''
+        name: printLabel
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Print Label'
+        name: previewLabel
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Topic
+        name: Topic
+        create: true
+        edit: true
+        type: text
+        model: Topic
+        default: ''
+        validator: required
+        param:
+            -
+                value: '01'
+                text: 'Paramanusa Utama'
+            -
+                value: '02'
+                text: 'Cipta Guna'
+            -
+                value: '03'
+                text: 'Sembada Perdana Insan'
+            -
+                value: '04'
+                text: 'Paramanusa Balikpapan'
+        attr: {}
+    -
+        label: TopicDescr
+        name: TopicDescr
+        create: true
+        edit: true
+        type: text
+        model: TopicDescr
+        default: ''
+        validator: required
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Function Desc.'
+        name: FunctionDescr
+        create: true
+        edit: true
+        type: text
+        model: FunctionDescr
+        default: ''
+        validator: required
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Function
+        name: Function
+        create: true
+        edit: true
+        type: text
+        model: Function
+        default: Incoming
+        validator: ''
+        param:
+            -
+                text: Incoming
+                value: Incoming
+            -
+                text: Outgoing
+                value: Outgoing
+        attr: {}
+    -
+        label: Class
+        name: DocClass
+        create: true
+        edit: true
+        type: text
+        model: DocClass
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Group
+        name: Group
+        create: true
+        edit: true
+        type: text
+        model: Group
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Active Years'
+        name: ActiveYrs
+        create: true
+        edit: true
+        type: number
+        model: ActiveYrs
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Disposal Period'
+        name: DispPer
+        create: true
+        edit: true
+        type: number
+        model: DispPer
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Department Code'
+        name: Department
+        create: true
+        edit: true
+        type: text
+        model: Department
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Department Name'
+        name: DepartmentDescr
+        create: true
+        edit: true
+        type: text
+        model: DepartmentDescr
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: printLabel
+        create: true
+        edit: true
+        type: printelement
+        model: FCallCode
+        default: ''
+        validator: ''
+        template: printTemplate
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr: {}
+    -
+        label: 'Print Label'
+        name: previewLabel
+        create: true
+        edit: true
+        type: activeviewplain
+        model: FCallCode
+        default: ''
+        validator: ''
+        template: printTemplate
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr: {}
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: Topic
+        visible: true
+        type: string
+        default: ''
+    -
+        model: TopicDescr
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FunctionDescr
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Function
+        visible: true
+        type: string
+        default: Incoming
+    -
+        model: DocClass
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Group
+        visible: true
+        type: string
+        default: ''
+    -
+        model: ActiveYrs
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DispPer
+        visible: true
+        type: number
+        default: 5
+    -
+        model: Department
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DepartmentDescr
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FCallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FCallCode
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Topic
+        name: Topic
+        model: Topic
+        visible: true
+        type: text
+        default: ''
+    -
+        label: TopicDescr
+        name: TopicDescr
+        model: TopicDescr
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Function Desc.'
+        name: FunctionDescr
+        model: FunctionDescr
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Function
+        name: Function
+        model: Function
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Class
+        name: DocClass
+        model: DocClass
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Group
+        name: Group
+        model: Group
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Active Years'
+        name: ActiveYrs
+        model: ActiveYrs
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Disposal Period'
+        name: DispPer
+        model: DispPer
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Department Code'
+        name: Department
+        model: Department
+        visible: true
+        type: qr
+        default: ''
+    -
+        label: 'Department Name'
+        name: DepartmentDescr
+        model: DepartmentDescr
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: printLabel
+        model: FCallCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Print Label'
+        name: previewLabel
+        model: FCallCode
+        visible: true
+        type: text
+        default: ''

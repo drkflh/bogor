@@ -1,0 +1,13 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Dwf/Admin/ArchiveLocation_table_label,Dwf/Admin/ArchiveLocation_table_name,Dwf/Admin/ArchiveLocation_table_show,Dwf/Admin/ArchiveLocation_table_search,Dwf/Admin/ArchiveLocation_table_sort,Dwf/Admin/ArchiveLocation_table_datatype,Dwf/Admin/ArchiveLocation_form_label,Dwf/Admin/ArchiveLocation_form_name,Dwf/Admin/ArchiveLocation_form_create,Dwf/Admin/ArchiveLocation_form_edit,Dwf/Admin/ArchiveLocation_form_type,Dwf/Admin/ArchiveLocation_form_model,Dwf/Admin/ArchiveLocation_form_default,Dwf/Admin/ArchiveLocation_form_validator,Dwf/Admin/ArchiveLocation_form_param,Dwf/Admin/ArchiveLocation_form_attr,Dwf/Admin/ArchiveLocation_vue_model,Dwf/Admin/ArchiveLocation_vue_visible,Dwf/Admin/ArchiveLocation_vue_type,Dwf/Admin/ArchiveLocation_vue_default,Dwf/Admin/ArchiveLocation_view_label,Dwf/Admin/ArchiveLocation_view_name,Dwf/Admin/ArchiveLocation_view_visible,Dwf/Admin/ArchiveLocation_view_type,Dwf/Admin/ArchiveLocation_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+location,,,,,,,,,,,,Location,location,,,,,Location,location,,,,location,,,,,location,,,,Location,location,,,location
+locationCode,,,,,,,,,,,,Location Code,locationCode,,,,,Location Code,locationCode,,,,locationCode,,,,,locationCode,,,,Location Code,locationCode,,,locationCode

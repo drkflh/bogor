@@ -1,0 +1,775 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator _Id'
+        name: validatorExtId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Nama'
+        name: validatorName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Email'
+        name: validatorEmail
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Place Of Birth'
+        name: validatorPlaceOfBirth
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Date Of Birth'
+        name: validatorDateOfBirth
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Country Code'
+        name: validatorCountryCode
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Mobile'
+        name: validatorMobile
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Gender'
+        name: validatorGender
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator NIK'
+        name: validatorNik
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Address'
+        name: validatorAddress
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Province'
+        name: validatorProvince
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator City'
+        name: validatorCity
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator ZIP'
+        name: validatorZip
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Photo'
+        name: validatorPhoto
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator ID Photo'
+        name: validatorIdPhoto
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Id Type'
+        name: validatorIdType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Phone'
+        name: validatorPhone
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Kelurahan'
+        name: validatorKelurahan
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Bank Name'
+        name: validatorBankName
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Account Name'
+        name: validatorAccountName
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Validator Account Number'
+        name: validatorAccountNumber
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator _Id'
+        name: validatorExtId
+        create: true
+        edit: true
+        type: text
+        model: validatorExtId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Nama'
+        name: validatorName
+        create: true
+        edit: true
+        type: text
+        model: validatorName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Email'
+        name: validatorEmail
+        create: true
+        edit: true
+        type: text
+        model: validatorEmail
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Place Of Birth'
+        name: validatorPlaceOfBirth
+        create: true
+        edit: true
+        type: text
+        model: validatorPlaceOfBirth
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Date Of Birth'
+        name: validatorDateOfBirth
+        create: true
+        edit: true
+        type: text
+        model: validatorDateOfBirth
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Country Code'
+        name: validatorCountryCode
+        create: true
+        edit: true
+        type: text
+        model: validatorCountryCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Mobile'
+        name: validatorMobile
+        create: true
+        edit: true
+        type: text
+        model: validatorMobile
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Gender'
+        name: validatorGender
+        create: true
+        edit: true
+        type: text
+        model: validatorGender
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator NIK'
+        name: validatorNik
+        create: true
+        edit: true
+        type: text
+        model: validatorNik
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Address'
+        name: validatorAddress
+        create: true
+        edit: true
+        type: text
+        model: validatorAddress
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Province'
+        name: validatorProvince
+        create: true
+        edit: true
+        type: text
+        model: validatorProvince
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator City'
+        name: validatorCity
+        create: true
+        edit: true
+        type: text
+        model: validatorCity
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator ZIP'
+        name: validatorZip
+        create: true
+        edit: true
+        type: text
+        model: validatorZip
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Photo'
+        name: validatorPhoto
+        create: true
+        edit: true
+        type: text
+        model: validatorPhoto
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator ID Photo'
+        name: validatorIdPhoto
+        create: true
+        edit: true
+        type: text
+        model: validatorIdPhoto
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Id Type'
+        name: validatorIdType
+        create: true
+        edit: true
+        type: text
+        model: validatorIdType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Phone'
+        name: validatorPhone
+        create: true
+        edit: true
+        type: text
+        model: validatorPhone
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Kelurahan'
+        name: validatorKelurahan
+        create: true
+        edit: true
+        type: text
+        model: validatorKelurahan
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Bank Name'
+        name: validatorBankName
+        create: true
+        edit: true
+        type: text
+        model: validatorBankName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Account Name'
+        name: validatorAccountName
+        create: true
+        edit: true
+        type: text
+        model: validatorAccountName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Validator Account Number'
+        name: validatorAccountNumber
+        create: true
+        edit: true
+        type: text
+        model: validatorAccountNumber
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorExtId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorEmail
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorPlaceOfBirth
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorDateOfBirth
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorCountryCode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorMobile
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorGender
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorNik
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorAddress
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorProvince
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorCity
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorZip
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorPhoto
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorIdPhoto
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorIdType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorPhone
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorKelurahan
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorBankName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorAccountName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorAccountNumber
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Validator _Id'
+        name: validatorExtId
+        visible: true
+        type: text
+        model: validatorExtId
+    -
+        label: 'Validator Nama'
+        name: validatorName
+        visible: true
+        type: text
+        model: validatorName
+    -
+        label: 'Validator Email'
+        name: validatorEmail
+        visible: true
+        type: text
+        model: validatorEmail
+    -
+        label: 'Validator Place Of Birth'
+        name: validatorPlaceOfBirth
+        visible: true
+        type: text
+        model: validatorPlaceOfBirth
+    -
+        label: 'Validator Date Of Birth'
+        name: validatorDateOfBirth
+        visible: true
+        type: text
+        model: validatorDateOfBirth
+    -
+        label: 'Validator Country Code'
+        name: validatorCountryCode
+        visible: true
+        type: text
+        model: validatorCountryCode
+    -
+        label: 'Validator Mobile'
+        name: validatorMobile
+        visible: true
+        type: text
+        model: validatorMobile
+    -
+        label: 'Validator Gender'
+        name: validatorGender
+        visible: true
+        type: text
+        model: validatorGender
+    -
+        label: 'Validator NIK'
+        name: validatorNik
+        visible: true
+        type: text
+        model: validatorNik
+    -
+        label: 'Validator Address'
+        name: validatorAddress
+        visible: true
+        type: text
+        model: validatorAddress
+    -
+        label: 'Validator Province'
+        name: validatorProvince
+        visible: true
+        type: text
+        model: validatorProvince
+    -
+        label: 'Validator City'
+        name: validatorCity
+        visible: true
+        type: text
+        model: validatorCity
+    -
+        label: 'Validator ZIP'
+        name: validatorZip
+        visible: true
+        type: text
+        model: validatorZip
+    -
+        label: 'Validator Photo'
+        name: validatorPhoto
+        visible: true
+        type: text
+        model: validatorPhoto
+    -
+        label: 'Validator ID Photo'
+        name: validatorIdPhoto
+        visible: true
+        type: text
+        model: validatorIdPhoto
+    -
+        label: 'Validator Id Type'
+        name: validatorIdType
+        visible: true
+        type: text
+        model: validatorIdType
+    -
+        label: 'Validator Phone'
+        name: validatorPhone
+        visible: true
+        type: text
+        model: validatorPhone
+    -
+        label: 'Validator Kelurahan'
+        name: validatorKelurahan
+        visible: true
+        type: text
+        model: validatorKelurahan
+    -
+        label: 'Validator Bank Name'
+        name: validatorBankName
+        visible: true
+        type: text
+        model: validatorBankName
+    -
+        label: 'Validator Account Name'
+        name: validatorAccountName
+        visible: true
+        type: text
+        model: validatorAccountName
+    -
+        label: 'Validator Account Number'
+        name: validatorAccountNumber
+        visible: true
+        type: text
+        model: validatorAccountNumber

@@ -1,0 +1,377 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Picture
+        name: picture
+        show: true
+        search: false
+        sort: false
+        datatype: imagearray
+        column_classes: text-center text-75
+    -
+        label: Picture
+        name: pictureObjects
+        show: false
+        search: false
+        sort: false
+        datatype: image
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Name
+        name: name
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-150'
+    -
+        label: Slug
+        name: slug
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-150'
+    -
+        label: Link
+        name: link
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Period
+        name: period
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: From
+        name: periodStart
+        show: true
+        search: false
+        sort: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-left text-125'
+        thClass: 'text-center text-50'
+    -
+        label: Until
+        name: periodEnd
+        show: true
+        search: false
+        sort: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-left text-125'
+        thClass: 'text-center text-50'
+    -
+        label: Code
+        name: promoCode
+        show: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Description
+        name: description
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-150'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Picture
+        name: picture
+        create: true
+        edit: true
+        type: attachmentupload
+        model: picture
+        default: ''
+        show_list: true
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Picture" }
+    -
+        label: Picture
+        name: pictureObjects
+        create: true
+        edit: true
+        type: text
+        model: pictureObjects
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Name
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Slug
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Link
+        name: link
+        create: true
+        edit: true
+        type: text
+        model: link
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Period
+        name: period
+        create: true
+        edit: true
+        type: daterangepicker
+        model: period
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: From
+        name: periodStart
+        create: true
+        edit: true
+        type: datepicker
+        model: periodStart
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: To
+        name: periodEnd
+        create: true
+        edit: true
+        type: datepicker
+        model: periodEnd
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Code
+        name: promoCode
+        create: true
+        edit: true
+        type: text
+        model: promoCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: text
+        model: description
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: picture
+        visible: true
+        type: array
+        default: []
+        search: true
+        im: true
+        ex: true
+    -
+        model: pictureObjects
+        visible: true
+        type: array
+        default: []
+        search: true
+        im: true
+        ex: true
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: link
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: period
+        visible: true
+        type: string
+        default: ''
+    -
+        model: periodStart
+        visible: true
+        type: string
+        default: ''
+    -
+        model: periodEnd
+        visible: true
+        type: string
+        default: ''
+    -
+        model: promoCode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Picture
+        name: picture
+        visible: true
+        type: squaresingleimage
+        model: picture
+    -
+        label: Name
+        name: name
+        visible: true
+        type: text
+        model: name
+    -
+        label: Slug
+        name: slug
+        visible: true
+        type: text
+        model: slug
+    -
+        label: Link
+        name: link
+        visible: true
+        type: text
+        model: link
+    -
+        label: Period
+        name: period
+        visible: true
+        type: text
+        model: period
+    -
+        label: 'From'
+        name: periodStart
+        model: periodStart
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: 'Until'
+        name: periodEnd
+        model: periodEnd
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: Code
+        name: promoCode
+        visible: true
+        type: text
+        model: promoCode
+    -
+        label: Description
+        name: description
+        visible: true
+        type: text
+        model: description

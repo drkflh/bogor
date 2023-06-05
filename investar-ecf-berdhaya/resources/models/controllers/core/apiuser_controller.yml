@@ -1,0 +1,737 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Photo
+        name: avatar
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: image
+        row_text_alignment: text-left
+        column_classes: 'text-100 text-center'
+        thClass: ''
+    -
+        label: Name
+        name: name
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: Email
+        name: email
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-250
+        thClass: ''
+    -
+        label: Mobile
+        name: mobile
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: Description
+        name: description
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Username
+        name: username
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: Password
+        name: password
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Confirm Password'
+        name: confirm_password
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Token
+        name: token
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Location
+        name: locationCoord
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Created
+        name: created_at
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: Updated
+        name: updated_at
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: ''
+        name: filler
+        show: true
+        sort: false
+        row_text_alignment: text-center
+        column_classes: text-left
+        datatype: text
+        search: true
+        filter: false
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Photo
+        name: avatar
+        create: true
+        edit: true
+        type: avatarupload
+        model: avatar
+        default: ''
+        validator: ''
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload Avatar'
+    -
+        label: Name
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Email
+        name: email
+        create: true
+        edit: true
+        type: text
+        model: email
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Mobile
+        name: mobile
+        create: true
+        edit: true
+        type: text
+        model: mobile
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: textarea
+        model: description
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Username
+        name: username
+        create: true
+        edit: false
+        type: text
+        model: username
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Password
+        name: password
+        create: true
+        edit: false
+        type: password
+        model: password
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Confirm Password'
+        name: confirm_password
+        create: true
+        edit: false
+        type: password
+        model: confirm_password
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Token
+        name: token
+        create: RO
+        edit: RO
+        type: textarea
+        model: token
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Location
+        name: locationCoord
+        create: false
+        edit: false
+        type: text
+        model: locationCoord
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: created_at
+        create: false
+        edit: false
+        type: text
+        model: created_at
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Updated
+        name: updated_at
+        create: false
+        edit: false
+        type: text
+        model: updated_at
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: avatar
+        visible: true
+        type: string
+        default: ''
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+    -
+        model: email
+        visible: true
+        type: string
+        default: ''
+    -
+        model: mobile
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: username
+        visible: true
+        type: string
+        default: ''
+    -
+        model: password
+        visible: true
+        type: string
+        default: ''
+    -
+        model: confirm_password
+        visible: true
+        type: string
+        default: ''
+    -
+        model: token
+        visible: true
+        type: string
+        default: ''
+    -
+        model: locationCoord
+        visible: true
+        type: string
+        default: ''
+    -
+        model: created_at
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updated_at
+        visible: false
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: false
+        name: avatar
+        model: avatar
+        visible: true
+        type: squaresingleimage
+        default: ''
+    -
+        label: Name
+        name: name
+        model: name
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Email
+        name: email
+        model: email
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Mobile
+        name: mobile
+        model: mobile
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Description
+        name: description
+        model: description
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Username
+        name: username
+        model: username
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Password
+        name: password
+        model: password
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Confirm Password'
+        name: confirm_password
+        model: confirm_password
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Token
+        name: token
+        model: token
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Location
+        name: locationCoord
+        model: locationCoord
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Created
+        name: created_at
+        model: created_at
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Updated
+        name: updated_at
+        model: updated_at
+        visible: false
+        type: text
+        default: ''

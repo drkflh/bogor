@@ -1,0 +1,340 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Invoice Code'
+        name: invoiceCode
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Delivery Method'
+        name: deliveryMethod
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Total Weight'
+        name: totalWeight
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: 'text-center text-50'
+    -
+        label: 'Unit Weight'
+        name: unitWeight
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Qty
+        name: qty
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-75'
+        thClass: 'text-center text-50'
+    -
+        label: 'Delivery Method'
+        name: deliveryMethod
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-75'
+        thClass: 'text-center text-50'
+    -
+        label: 'Unit Cost'
+        name: unitCost
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-right
+        column_classes: 'text-right text-75'
+        thClass: 'text-center text-50'
+    -
+        label: 'Total Cost'
+        name: totalCost
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-right
+        column_classes: 'text-right text-75'
+        thClass: 'text-center text-50'
+    -
+        label: Status
+        name: status
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Sign
+        name: approvalAction
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Invoice Code'
+        name: invoiceCode
+        create: true
+        edit: true
+        type: text
+        model: invoiceCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Delivery Method'
+        name: deliveryMethod
+        create: true
+        edit: true
+        type: text
+        model: deliveryMethod
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Total Weight'
+        name: totalWeight
+        create: true
+        edit: true
+        type: text
+        model: totalWeight
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Unit Weight'
+        name: unitWeight
+        create: true
+        edit: true
+        type: text
+        model: unitWeight
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Qty
+        name: qty
+        create: true
+        edit: true
+        type: text
+        model: qty
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Unit Cost'
+        name: unitCost
+        create: true
+        edit: true
+        type: text
+        model: unitCost
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Total Cost'
+        name: totalCost
+        create: true
+        edit: true
+        type: text
+        model: totalCost
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Status
+        name: status
+        create: true
+        edit: true
+        type: simpleselect
+        model: status
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: invoiceCode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deliveryMethod
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: totalWeight
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: unitWeight
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: qty
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: unitCost
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: totalCost
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: status
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Invoice Code'
+        name: invoiceCode
+        visible: true
+        type: text
+        model: invoiceCode
+    -
+        label: 'Delivery Method'
+        name: deliveryMethod
+        visible: true
+        type: text
+        model: deliveryMethod
+    -
+        label: 'Total Weight'
+        name: totalWeight
+        visible: true
+        type: text
+        model: totalWeight
+    -
+        label: 'Unit Weight'
+        name: unitWeight
+        visible: true
+        type: text
+        model: unitWeight
+    -
+        label: Qty
+        name: qty
+        visible: true
+        type: text
+        model: qty
+    -
+        label: 'Unit Cost'
+        name: unitCost
+        visible: true
+        type: text
+        model: unitCost
+    -
+        label: 'Total Cost'
+        name: totalCost
+        visible: true
+        type: text
+        model: totalCost
+    -
+        label: Status
+        name: status
+        visible: true
+        type: text
+        model: status

@@ -1,0 +1,563 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Title
+        name: title
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Handle
+        name: slug
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Message Body'
+        name: body
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Parameters
+        name: paramList
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: URL
+        name: url
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Attachment
+        name: attachment
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Sound
+        name: sound
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Message Type'
+        name: messageType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Active'
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+        row_text_alignment: text-left
+        column_classes: 'text-center text-75'
+        thClass: 'text-center text-50'
+    -
+        label: 'Qontak ID'
+        name: qontakTplId
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        row_text_alignment: text-left
+        column_classes: 'text-left text-200'
+        thClass: 'text-center text-50'
+    -
+        label: 'Qt Handle'
+        name: qontakTplName
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Qt Status'
+        name: qontakTplStatus
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        row_text_alignment: text-left
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Qt Action'
+        name: qontakAction
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        row_text_alignment: text-left
+        column_classes: 'text-center text-125'
+        thClass: 'text-center text-50'
+    -
+        label: 'Qt Last'
+        name: qontakTplLast
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+        thClass: 'text-center text-50'
+    -
+        label: 'Desc'
+        name: description
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-200'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master ID'
+        name: masterId
+        create: true
+        edit: true
+        type: text
+        model: masterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master Name'
+        name: masterName
+        create: true
+        edit: true
+        type: text
+        model: masterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company ID'
+        name: companyId
+        create: true
+        edit: true
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Name'
+        name: companyName
+        create: true
+        edit: true
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Farm ID'
+        name: farmId
+        create: true
+        edit: true
+        type: text
+        model: farmId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Farm Name'
+        name: farmName
+        create: true
+        edit: true
+        type: text
+        model: farmName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Title
+        name: title
+        create: true
+        edit: true
+        type: text
+        model: title
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Handle
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Message Body'
+        name: body
+        create: true
+        edit: true
+        type: textarea
+        model: body
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Body Parameters
+        name: paramList
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: paramList
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        show_panel: true
+        on_item_change: detailCalc
+        hide_util_button: true
+        use_dms: false
+        entity_name_key: ProductID
+        modal_entity: 'Body Param'
+        param: {}
+        attr: {}
+    -
+        label: URL
+        name: url
+        create: true
+        edit: true
+        type: text
+        model: url
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Priority
+        name: attachment
+        create: true
+        edit: true
+        type: text
+        model: attachment
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Sound
+        name: sound
+        create: true
+        edit: true
+        type: text
+        model: sound
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Message Type'
+        name: messageType
+        create: true
+        edit: true
+        type: text
+        model: messageType
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Active'
+        name: isActive
+        create: true
+        edit: true
+        type: simpleswitch
+        model: isActive
+        default: ''
+        validator: required
+        position: top
+        param: {}
+        attr: {}
+    -
+        label: 'Description'
+        name: description
+        create: true
+        edit: true
+        type: textarea
+        model: description
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: false
+    -
+        model: masterId
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: masterName
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: companyId
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: farmId
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: farmName
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: title
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: body
+        visible: true
+        type: string
+        default: ''
+    -
+        model: paramList
+        visible: true
+        type: array
+        default: []
+    -
+        model: url
+        visible: true
+        type: string
+        default: ''
+    -
+        model: attachment
+        visible: true
+        type: string
+        default: ''
+    -
+        model: sound
+        visible: true
+        type: string
+        default: ''
+    -
+        model: messageType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: isActive
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: qontakTplId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: qontakTplName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: qontakTplStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: qontakTplLast
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Master ID'
+        name: masterId
+        visible: true
+        type: text
+        model: masterId
+    -
+        label: 'Master Name'
+        name: masterName
+        visible: true
+        type: text
+        model: masterName
+    -
+        label: 'Company ID'
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: 'Farm ID'
+        name: farmId
+        visible: true
+        type: text
+        model: farmId
+    -
+        label: 'Farm Name'
+        name: farmName
+        visible: true
+        type: text
+        model: farmName
+    -
+        label: Title
+        name: title
+        visible: true
+        type: text
+        model: title
+    -
+        label: Handle
+        name: slug
+        visible: true
+        type: text
+        model: slug
+    -
+        label: 'Message Body'
+        name: body
+        visible: true
+        type: text
+        model: body
+    -
+        label: Parameters
+        name: paramList
+        visible: true
+        type: text
+        model: paramList
+    -
+        label: URL
+        name: url
+        visible: true
+        type: text
+        model: url
+    -
+        label: Priority
+        name: attachment
+        visible: true
+        type: integer
+        model: attachment
+    -
+        label: Sound
+        name: sound
+        visible: true
+        type: integer
+        model: sound
+    -
+        label: 'Message Type'
+        name: messageType
+        visible: true
+        type: text
+        model: messageType

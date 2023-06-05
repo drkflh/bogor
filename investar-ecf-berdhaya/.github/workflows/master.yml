@@ -1,0 +1,274 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Deploy to Amazon ECS
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  AWS_REGION: ap-southeast-1
+  ECR_REPOSITORY: production-api-fe-sapimoo
+  ECS_SERVICE: production-api-fe-sapimoo
+  ECS_CLUSTER: production-api-fe-sapimoo
+  ECS_TASK_DEFINITION: task-definition.json
+  CONTAINER_NAME: production-api-fe-sapimoo
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@13d241b293754004c80624b5567555c4a39ffbe3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1.3
+        with:
+          envkey_APP_NAME : '"Farm Management System"'
+          envkey_APP_ENV : production
+          envkey_APP_KEY : base64:JpEbpUs6QE616vCtCCHyNtPIFjysuuS7bYg7i8pP30c=
+          envkey_APP_DEBUG : false
+          envkey_APP_AJAX_DEBUG : false
+          envkey_APP_URL : https://sapimoo.io
+          envkey_DEFAULT_LANG : id
+          envkey_LOG_CHANNEL : stack
+          envkey_TLS_PATH : ${{ secrets.TLS_PATH }}
+
+          envkey_MODB_CONNECTION : mongodb
+          envkey_MODB_DSN : ${{ secrets.MODB_DSN }}
+          envkey_MODB_HOST : ${{ secrets.MODB_HOST }}
+          envkey_MODB_DATABASE : ${{ secrets.MODB_DATABASE }}
+          envkey_MODB_PORT : ${{ secrets.MODB_PORT }}
+          envkey_MODB_USERNAME : ${{ secrets.MODB_USERNAME }}
+          envkey_MODB_PASSWORD : ${{ secrets.MODB_PASSWORD }}
+
+          envkey_BROADCAST_DRIVER : log
+          envkey_CACHE_DRIVER : redis
+          envkey_QUEUE_CONNECTION : database
+          envkey_SESSION_DRIVER : redis
+          envkey_SESSION_LIFETIME : 120
+
+          envkey_REDIS_HOST : 172.31.0.30
+          envkey_REDIS_PASSWORD : ""
+          envkey_REDIS_PORT : 6379
+
+          envkey_MAIL_MAILER : smtp
+          envkey_MAIL_HOST : ""
+          envkey_MAIL_PORT : 587
+          envkey_MAIL_USERNAME : ""
+          envkey_MAIL_PASSWORD : ""
+          envkey_MAIL_ENCRYPTION : tls
+          envkey_MAIL_TEST_RECIPIENT : ""
+          envkey_MAIL_TEST_RECIPIENT_NAME : '"Test Receiver"'
+          envkey_MAIL_TEST_CC : ""
+          envkey_MAIL_TEST_CC_NAME : '"Test CC"'
+          envkey_MAIL_DEBUG : true
+
+          envkey_MAILGUN_DOMAIN : ""
+          envkey_MAILGUN_SECRET : ""
+
+          envkey_CONSOLE_USER_NAME : root
+          envkey_CONSOLE_USER_PASSWORD : root
+
+          envkey_AWS_ACCESS_KEY_ID : ${{ secrets.APP_AWS_ACCESS_KEY_ID }}
+          envkey_AWS_SECRET_ACCESS_KEY : ${{ secrets.APP_AWS_SECRET_ACCESS_KEY }}
+          envkey_AWS_DEFAULT_REGION : ap-southeast-1
+          envkey_AWS_BUCKET : sapimoo
+
+          envkey_PUSHER_APP_ID : ""
+          envkey_PUSHER_APP_KEY : ""
+          envkey_PUSHER_APP_SECRET : ""
+          envkey_PUSHER_APP_CLUSTER : mt1
+
+          envkey_MINIO_KEY : ${{ secrets.APP_AWS_ACCESS_KEY_ID }}
+          envkey_MINIO_SECRET : ${{ secrets.APP_AWS_SECRET_ACCESS_KEY }}
+          envkey_MINIO_BUCKET : "sapimoo"
+          envkey_MINIO_REGION : "ap-southeast-1"
+          envkey_MINIO_ENDPOINT : "s3.amazonaws.com"
+
+          envkey_STORAGE_DRIVER : "s3"
+
+          envkey_FILESYSTEM_DRIVER : s3
+          envkey_FILESYSTEM_CLOUD : s3
+
+          envkey_ORIGIN_LAT : -6.175374199999999
+          envkey_ORIGIN_LON : 106.82578719999992
+          envkey_DEFAULT_MAP_ZOOM : 11
+
+          envkey_MARKER_IMAGE : "images/marker-icon-2x.png"
+          envkey_MARKER_IMAGE_RETINA : "images/marker-icon-2x.png"
+
+          envkey_GOOGLE_MAPS_API_KEY : ""
+          envkey_GOOGLE_MAP_KEY : ""
+
+          envkey_USER_API_MODEL : MONGO
+
+          envkey_QONTAK_AUTH_URL : ${{ secrets.QONTAK_AUTH_URL }}
+          envkey_QONTAK_USER : ${{ secrets.QONTAK_USER }}
+          envkey_QONTAK_PASS : ${{ secrets.QONTAK_PASS }}
+          envkey_QONTAK_GRANT_TYPE : ${{ secrets.QONTAK_GRANT_TYPE }}
+          envkey_QONTAK_CLIENT_ID : ${{ secrets.QONTAK_CLIENT_ID }}
+          envkey_QONTAK_CLIENT_SECRET : ${{ secrets.QONTAK_CLIENT_SECRET }}
+
+          envkey_SITE_TITLE : "SapiMoo"
+          envkey_SITE_NAME : "FMS"
+          envkey_SITE_DESCRIPTION : '"SapiMoo Farm Management System"'
+          envkey_SITE_CREATOR : "AA"
+          envkey_SITE_COPYRIGHT : "AA"
+          envkey_SITE_GREETING : '"Selamat datang di SapiMoo"'
+
+          envkey_APP_NAMESPACE : "Fms"
+          envkey_APP_ROUTE_FILE : "routes/app/fms.php"
+          envkey_APP_API_ROUTE_FILE : "routes/api/fms.php"
+
+          envkey_AUTH_REDIRECT_TO : "fms/dashboard"
+          envkey_ADMIN_TABLE_VIEW : "table.tablev2"
+          envkey_ADMIN_TABLE_COMPONENT : "vue-good-table"
+          envkey_ADMIN_DASHBOARD_VIEW : "fms.admin.dashboard"
+          envkey_OPEN_REDIRECT_TO : "login"
+
+          envkey_NOBLE_OPT_THEME : light
+          envkey_NOBLE_OPT_COLOR : "#1C2F55"
+
+          envkey_DEFAULT_LAYOUT : "layouts.nobleui"
+          envkey_DEFAULT_OPEN_LAYOUT : "layouts.nobleui_h"
+
+          envkey_LOGIN_LAYOUT : "layouts.nobleui_login"
+          envkey_REGISTER_LAYOUT : "layouts.nobleui_register"
+
+          envkey_DEFAULT_THUMBNAIL : "images/default_256.jpg"
+          envkey_DEFAULT_DRAW_IMAGE : "images/default_1024.jpg"
+          envkey_DEFAULT_AVATAR : "images/default_256.jpg"
+          envkey_DEFAULT_CARD_IMAGE : "images/default_256.jpg"
+
+          envkey_DEFAULT_TIME_ZONE : "Asia/Jakarta"
+
+          envkey_DATE_FORMAT : '"DD MMM YYYY"'
+          envkey_DATE_PICKER_FORMAT : "DD/MM/YYYY"
+
+          envkey_DATE_API_FORMAT : "d-m-Y"
+          envkey_DATETIME_API_FORMAT : '"d-m-Y H:i"'
+          envkey_TIME_API_FORMAT : "H:i"
+
+          envkey_APP_LOGO : "images/app/farm/logo_sapimoo.png"
+          envkey_APP_LOGO_SMALL : "images/app/farm/logo_sapimoo.png"
+          envkey_APP_LOGO_SMALL_ALT : "images/app/farm/logo_sapimoo.png"
+          envkey_APP_LOGO_LIGHT : "images/app/farm/logo_sapimoo.png"
+          envkey_APP_FAVICON : "images/app/farm/favsapimoo.png"
+
+          envkey_APP_NAV_PATH : "views/partials/app/fms"
+          envkey_APP_NAV_FILE : "nav"
+          envkey_APP_OPEN_NAV_FILE : "open"
+
+          envkey_ICON_PDF : "images/types/pdf.png"
+          envkey_ICON_IMAGE : "images/types/image.png"
+          envkey_ICON_AUDIO : "images/types/audio.png"
+          envkey_ICON_VIDEO : "images/types/video.png"
+          envkey_ICON_CODE : "images/types/code.png"
+          envkey_ICON_DOCUMENT : "images/types/document.png"
+
+          envkey_LOGIN_FG : "images/app/farm/leon-ephraim-AxoNnnH1Y98-unsplash.jpg"
+          envkey_LOGIN_BG : "images/app/farm/leon-ephraim-AxoNnnH1Y98-unsplash.jpg"
+
+          envkey_LOGO_TEXT : false
+          envkey_SIDEBAR_DEFAULT_OPEN : false
+          envkey_DIALOG_SIZE : xl
+
+          envkey_TABLE_PER_PAGE : 100
+
+          envkey_NUM_PAD : 2
+
+          envkey_SKIP_API_AUTH : false
+          envkey_SKIP_API_VALIDATION : false
+          envkey_SKIP_VALIDATION : false
+          envkey_SKIP_ROLE : false
+          envkey_ENABLE_REGISTRATION : true
+          envkey_DEFAULT_ROLE_NAME : 'User'
+          envkey_ALLOW_MULTIPLE_AUTH : true
+          envkey_USE_PIN : false
+
+          envkey_DEFAULT_LNG : 106.82718498459532
+          envkey_DEFAULT_LAT : -6.175168397297347
+          envkey_DEFAULT_SEARCH_RADIUS : 50
+          envkey_RADIUS_MULTIPLIER : 100
+
+          envkey_SEARCH_TRIGGER : blur
+          envkey_ACTION_IN_TABLE : false
+          envkey_ADVANCED_UPLOAD : false
+
+          envkey_WITH_APP_SUITE : false
+          envkey_WITH_TIMETRACKING : false
+          envkey_WITH_ATTENDANCE : false
+          envkey_WITH_WORKFLOW : false
+          envkey_WITH_REVISION : false
+          envkey_WITH_DEVTOOL : true
+          envkey_WITH_BIZ_ADMIN : false
+          envkey_WITH_MEMBERSHIP : false
+          envkey_WITH_SYSTEM_TOOL : true
+          envkey_WITH_ISSUE_TRACKING : false
+          envkey_WITH_TIMEZONE : false
+          envkey_WITH_MULTI_LANG : true
+          envkey_WITH_EXPORT_QUEUE : false
+          envkey_WITH_WEBSOCKET : false
+          envkey_WITH_MASTER_REF : true
+          envkey_WITH_ADMIN_ACTION : false
+          envkey_WITH_NOTIFICATION : true
+          envkey_WITH_CMS : false
+          envkey_WITH_DMS : false
+          envkey_WITH_DCS : false
+          envkey_WITH_MMS : true
+          envkey_JWT_ISS : sapimoo.io
+          envkey_JWT_TOKEN_AGE : 620000
+          envkey_PRINT_AS_PDF : false
+          envkey_APP_CSS : 'css/parama.css'
+
+          directory: .
+          file_name: .env
+          fail_on_empty: false
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@aaf69d68aa3fb14c1d5a6be9ac61fe15b48453a2
+
+      - name: Build, tag, and push image to Amazon ECR
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          IMAGE_TAG: latest
+        run: |
+          # Build a docker container and
+          # push it to ECR so that it can
+          # be deployed to ECS.
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+
+      - name: Fill in the new image ID in the Amazon ECS task definition
+        id: task-def
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: ${{ env.ECS_TASK_DEFINITION }}
+          container-name: ${{ env.CONTAINER_NAME }}
+          image: ${{ steps.build-image.outputs.image }}
+
+      - name: Deploy Amazon ECS task definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@de0132cf8cdedb79975c6d42b77eb7ea193cf28e
+        with:
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          service: ${{ env.ECS_SERVICE }}
+          cluster: ${{ env.ECS_CLUSTER }}
+          wait-for-service-stability: true

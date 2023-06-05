@@ -1,0 +1,109 @@
+- title: ''
+  auth: ecf-dashboard
+  url: "ecf/dashboard"
+  icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+  children:
+    - title: Dashboard
+      auth: ecf-dashboard
+      url: "ecf/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Profil Penerbit
+      auth: ecf-owner-profile
+      url: "profile"
+      icon: "<i class=\"las la-user-circle link-icon\"></i>"
+    - title: Profil Usaha
+      url: "ecf/bizprofile"
+      auth: ecf-bizprofile
+      icon: "<i class=\"las la-building link-icon\"></i>"
+    - title: "Campaign"
+      auth: campaign
+      icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+      children:
+        - title: All Campaign
+          url: "ecf/campaign"
+          auth: campaign
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: Planned
+          url: "ecf/campaign/list/planned"
+          auth: campaign-planned
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: In Progress
+          url: "ecf/campaign/list/in-progress"
+          auth: campaign-progress
+          icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+        - title: Past Campaign
+          url: "ecf/campaign/list/history"
+          auth: campaign-past
+          icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+    - title: "Verifikasi User"
+      auth: user-verif
+      icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+      children:
+        - title: Pemodal
+          url: "ecf/pemodal/verif"
+          auth: pemodal-verif
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: Penerbit
+          url: "ecf/penerbit/verif"
+          auth: penerbit-verif
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+    - title: "Verifikasi Campaign"
+      auth: 'campaign-verif'
+      url: "ecf/campaign/verif"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    - title: "Etalase"
+      auth: 'etalase'
+      url: "ecf/etalase"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    - title: "Inventory"
+      auth: 'ecf-pemodalinventory'
+      url: "ecf/inventorypemodal"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    - title: "Shopping Carts"
+      auth: 'shopping-cart'
+      url: "ecf/shoppingcart"
+      icon: "<i class=\"las la-cart-arrow-down link-icon\"  data-feather=\"shopping-cart\"></i>"
+    - title: "Transaction"
+      auth: 'ecf-transactionhistory'
+      url: "ecf/transactionhistory"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    - title: "Buyer"
+      auth: 'ecf-buyer'
+      url: "ecf/buyer"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    - title: "Sales Order"
+      auth: 'sales-order'
+      url: "ecf/salesorder"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    - title: "Invoice"
+      auth: 'invoice'
+      url: "ecf/invoice"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+    - title: "Payment"
+      auth: 'payment'
+      url: "ecf/payment"
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+- title: "Operational"
+  auth: ecf-operational-menu
+  icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+  children:
+    - title: Performance
+      auth: "ecf-farm-admin"
+      url: "user/list/farm-admin"
+      icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+- title: "Financial"
+  icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+  auth: ecf-financial-menu
+  children:
+    - title: Financial
+      url: "user/list/farm-admin"
+      auth: "ecf-farm-admin"
+      icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+    - title: Financial Reports
+      auth: "ecf-field-officer"
+      url: "user/list/field-officer"
+      icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+    - title: Transactions
+      auth: "ecf-field-officer"
+      url: "user/list/field-officer"
+      icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"

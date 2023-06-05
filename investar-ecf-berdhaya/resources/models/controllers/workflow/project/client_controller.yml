@@ -1,0 +1,204 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Client Id'
+        name: clientId
+        show: true
+        sort: false
+        datatype: text
+    -
+        label: 'Client Name'
+        name: clientName
+        show: true
+        sort: false
+        datatype: text
+    -
+        label: slug
+        name: slug
+        show: true
+        sort: false
+        datatype: text
+    -
+        label: 'Company Name'
+        name: companyName
+        show: true
+        sort: false
+        datatype: text
+    -
+        label: ContactPerson
+        name: contactPerson
+        show: true
+        sort: false
+        datatype: text
+    -
+        label: isActive
+        name: isActive
+        show: true
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Client Id'
+        name: clientId
+        create: true
+        edit: true
+        type: text
+        model: clientId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Client Name'
+        name: clientName
+        create: true
+        edit: true
+        type: text
+        model: clientName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: slug
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Name'
+        name: companyName
+        create: true
+        edit: true
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: ContactPerson
+        name: contactPerson
+        create: true
+        edit: true
+        type: text
+        model: contactPerson
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: isActive
+        name: isActive
+        create: true
+        edit: true
+        type: text
+        model: isActive
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: clientId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clientName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: contactPerson
+        visible: true
+        type: string
+        default: ''
+    -
+        model: isActive
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Client Id'
+        name: clientId
+        visible: true
+        type: text
+        model: clientId
+    -
+        label: 'Client Name'
+        name: clientName
+        visible: true
+        type: text
+        model: clientName
+    -
+        label: slug
+        name: slug
+        visible: true
+        type: text
+        model: slug
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: ContactPerson
+        name: contactPerson
+        visible: true
+        type: text
+        model: contactPerson
+    -
+        label: isActive
+        name: isActive
+        visible: true
+        type: text
+        model: isActive

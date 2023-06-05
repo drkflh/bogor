@@ -1,0 +1,388 @@
+-
+    label: Action
+    name: _id
+    show: true
+    sort: false
+    uniqueId: true
+    row_text_alignment: text-left
+    column_classes: 'text-left text-25'
+    datatype: text
+    search:
+        visible: false
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: id
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+    label: Created
+    name: createdAt
+    show: false
+    sort: true
+    row_text_alignment: text-left
+    row_classes: date
+    datatype: true
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+    label: updatedAt
+    name: updatedAt
+    show: false
+    sort: false
+    row_text_alignment: text-left
+    row_classes: date
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-
+    label: handle
+    name: handle
+    show: false
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: handle
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+    label: deleted
+    name: deleted
+    show: false
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-
+    label: 'Religion Code'
+    name: religionCode
+    show: true
+    sort: false
+    row_text_alignment: text-center
+    row_classes: text-200
+    column_classes: 'text-left text-100'
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: text
+        model: religionCode
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+    label: Religion Name
+    name: religionName
+    show: true
+    sort: false
+    row_text_alignment: text-center
+    row_classes: text-200
+    column_classes: 'text-left text-100'
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: text
+        model: religionName
+        validator: 'required'
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+  label: Active From
+  name: activeFrom
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: activeFrom
+    validator: 'required'
+    dateConstraint: minToday
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: email
+  view:
+    visible: true
+    type: email
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: Inactive Date
+  name: inactiveDate
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: inactiveDate
+    validator: 'required'
+    dateConstraint: 'notBeforeStart'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: email
+  view:
+    visible: true
+    type: email
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: 'Active'
+  name: active
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleswitch
+    model: active
+    position: left
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: ''
+  name: printLabel
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+      visible: true
+  filter:
+      visible: false
+  form:
+      create: true
+      edit: true
+      type: printelement
+      model: FCallCode
+      template: printTemplate
+      row: 1
+      col: 1
+      options:
+          url: "api/v1/core/upload"
+          paramName: "file"
+  vue:
+      visible: true
+      type: text
+  view:
+      visible: true
+      type: text
+  api:
+      visible: true
+      type: text
+      default: na
+
+- label: 'Print Label'
+  name: previewLabel
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+      visible: true
+  filter:
+      visible: false
+  form:
+      create: true
+      edit: true
+      type: activeviewplain
+      model: FCallCode
+      template: labelTemplate
+      row: 1
+      col: 1
+      options:
+          url: "api/v1/core/upload"
+          paramName: "file"
+  vue:
+      visible: true
+      type: text
+  view:
+      visible: true
+      type: text
+  api:
+      visible: true
+      type: text
+      default: na

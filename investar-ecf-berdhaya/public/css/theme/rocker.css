@@ -1,0 +1,28 @@
+.btn {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.15rem !important;
+    padding-left: 0.35rem !important;
+    padding-right: 0.35rem !important;
+    font-size: 11pt !important;
+    line-height: 16pt;
+    align-content: center;
+    justify-content: center;
+}
+.btn i.las, .btn i.lar, .dropdown-item i.las, .dropdown-item i.lar {
+    font-size: 13pt !important;
+}
+.img-thumbnail {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    object-fit: cover;
+    border: none;
+    border-radius: 15% !important;
+    box-shadow: none !important;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+.menu-section{
+    font-weight: 500;
+}

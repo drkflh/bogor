@@ -1,0 +1,1274 @@
+-
+    name: _id
+    type: object
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: createdAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: updatedAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: ownerId
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: ownerName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: handle
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deleted
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: Urut
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: jobNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: bidOpeningDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: participatingCompany
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: area
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: setArea
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: rfqReference
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: inquiryDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: dated
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: inquiryDateYY
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: jobNoPrefix
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: project
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: scope
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: company
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: projectOwner
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: alternativeQuotation
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: partialQuote
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: specificPrequalification
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: aml
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyCategory
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: invitationToBid
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: invitationToBidDetail
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: showPost
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: instructionToBid
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: dataSheet
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: bidSubmission
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: itbIkppValidity
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: validityThru
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: itbIkppValidity
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: bidDeliveryTime
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: bidDeliveryPeriod
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: bidWarrantyPeriod
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: bidWarrantyTime
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: principalDeliveryTime
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: principalDeliveryPeriod
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: principalWarrantyPeriod
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: principalWarrantyTime
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: bidDeliveryPoint
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: bidRemarks
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: principalDeliveryPoint
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: shipmentBy
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: quotationNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: commercialDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: quotationCurrency
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: quotationAmount
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: awardPoNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: awardPoNoDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: awardPoAmount
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: awardPoCurrency
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: quotationAmount
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: proposal
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: sourceStatus
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: brand
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: sourcingCompany
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: pricipalInco
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: localContent
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: ownerEstimate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: prebidMeetingDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: currency
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: ownerEstimateCurrency
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: masterList
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: custIncoterms
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: xrate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: idrEquiv
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: pocontract
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: poAmount
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: requestDelivery
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: actualDelivery
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: jobStatus
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: salesPerson
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: tenderDesc
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: preBidMeeting1
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: technicalClarification
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: commercialClarification
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: BidNegotiation
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: awardNotification
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: momKickOff
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: changeDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: string
+-
+    name: changeBy
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: string
+-
+    name: reasonChange
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: string
+-
+    name: status
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: setStatus
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: revenueValue
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: precentageValue
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string

@@ -1,0 +1,24 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Qontak/Channel_table_label,Qontak/Channel_table_name,Qontak/Channel_table_show,Qontak/Channel_table_search,Qontak/Channel_table_sort,Qontak/Channel_table_datatype,Qontak/Channel_form_label,Qontak/Channel_form_name,Qontak/Channel_form_create,Qontak/Channel_form_edit,Qontak/Channel_form_type,Qontak/Channel_form_model,Qontak/Channel_form_default,Qontak/Channel_form_validator,Qontak/Channel_form_param,Qontak/Channel_form_attr,Qontak/Channel_vue_model,Qontak/Channel_vue_visible,Qontak/Channel_vue_type,Qontak/Channel_vue_default,Qontak/Channel_view_label,Qontak/Channel_view_name,Qontak/Channel_view_visible,Qontak/Channel_view_type,Qontak/Channel_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+masterId,,,,,,,,,,,,Master ID,masterId,no,,,,Master ID,masterId,,,,masterId,,,,,masterId,,,,Master ID,masterId,,,masterId
+masterName,,,,,,,,,,,,Master Name,masterName,no,,,,Master Name,masterName,,,,masterName,,,,,masterName,,,,Master Name,masterName,,,masterName
+companyId,,,,,,,,,,,,Company ID,companyId,no,,,,Company ID,companyId,,,,companyId,,,,,companyId,,,,Company ID,companyId,,,companyId
+companyName,,,,,,,,,,,,Company Name,companyName,no,,,,Company Name,companyName,,,,companyName,,,,,companyName,,,,Company Name,companyName,,,companyName
+sbuId,,,,,,,,,,,,SBU ID,sbuId,no,,,,SBU ID,sbuId,,,,sbuId,,,,,sbuId,,,,SBU ID,sbuId,,,sbuId
+sbuName,,,,,,,,,,,,SBU Name,sbuName,no,,,,SBU Name,sbuName,,,,sbuName,,,,,sbuName,,,,SBU Name,sbuName,,,sbuName
+deptId,,,,,,,,,,,,Dept ID,deptId,no,,,,Dept ID,deptId,,,,deptId,,,,,deptId,,,,Dept ID,deptId,,,deptId
+deptName,,,,,,,,,,,,Dept Name,deptName,no,,,,Dept Name,deptName,,,,deptName,,,,,deptName,,,,Dept Name,deptName,,,deptName
+channel_id,,,,,,,,,,,,Channel ID,channel_id,,,,,Channel ID,channel_id,,,,channel_id,,,,,channel_id,,,,Channel ID,channel_id,,,channel_id
+target_channel,,,,,,,,,,,,Target Channel,target_channel,,,,,Target Channel,target_channel,,,,target_channel,,,,,target_channel,,,,Target Channel,target_channel,,,target_channel
+webhook,,,,,,,,,,,,Webhook,webhook,,,,,Webhook,webhook,,,,webhook,,,,,webhook,,,,Webhook,webhook,,,webhook
+organization_id,,,,,,,,,,,,Organization ID,organization_id,,,,,Organization ID,organization_id,,,,organization_id,,,,,organization_id,,,,Organization ID,organization_id,,,organization_id
+settings,object,,,,,,,,,,,Settings,settings,no,,,,Settings,settings,,,,settings,,,,,settings,,,,Settings,settings,,,settings

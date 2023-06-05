@@ -1,0 +1,845 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Produk'
+        name: productName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-100'
+    -
+        label: 'Kode Sponsor'
+        name: sponsorId
+        show: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Sponsor'
+        name: sponsorName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-200'
+        thClass: 'text-center text-100'
+    -
+        label: 'Kode Program'
+        name: programId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Program'
+        name: programName
+        show: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-200'
+        thClass: 'text-center text-100'
+    -
+        label: Kode Produk
+        name: productId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Kode Voucher'
+        name: voucherCode
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-50'
+    -
+        label: 'Mata Uang'
+        name: voucherCurrency
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-100'
+    -
+        label: 'Nilai Voucher'
+        name: voucherValue
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Trx Status'
+        name: trxStatus
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-50'
+    -
+        label: Active
+        name: isActive
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Terpakai'
+        name: usedAt
+        show: false
+        search: true
+        sort: false
+        datatype: datetime
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-50'
+    -
+        label: 'Kode Pemakai'
+        name: usedById
+        show: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'User Object'
+        name: usedByObject
+        show: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-50'
+    -
+        label: 'Status Transaksi'
+        name: trxStatus
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-150'
+    -
+        label: Lng
+        name: lng
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Lat
+        name: lat
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Coord
+        name: lngLat
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Master'
+        name: masterId
+        create: false
+        edit: false
+        type: text
+        model: masterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Master'
+        name: masterName
+        create: false
+        edit: false
+        type: text
+        model: masterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Perusahaan'
+        name: companyId
+        create: false
+        edit: false
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Perusahaan'
+        name: companyName
+        create: false
+        edit: false
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode SBU'
+        name: sbuId
+        create: false
+        edit: false
+        type: text
+        model: sbuId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama SBU'
+        name: sbuName
+        create: false
+        edit: false
+        type: text
+        model: sbuName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Departemen'
+        name: deptId
+        create: false
+        edit: false
+        type: text
+        model: deptId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Departemen'
+        name: deptName
+        create: false
+        edit: false
+        type: text
+        model: deptName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Sponsor'
+        name: sponsorId
+        create: false
+        edit: false
+        type: text
+        model: sponsorId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Sponsor'
+        name: sponsorName
+        create: true
+        edit: true
+        type: text
+        model: sponsorName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Program'
+        name: programId
+        create: false
+        edit: false
+        type: text
+        model: programId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Program'
+        name: programName
+        create: true
+        edit: true
+        type: text
+        model: programName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Kode Produk
+        name: productId
+        create: false
+        edit: false
+        type: text
+        model: productId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Produk'
+        name: productName
+        create: true
+        edit: true
+        type: text
+        model: productName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Voucher'
+        name: voucherCode
+        create: true
+        edit: true
+        type: text
+        model: voucherCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Mata Uang'
+        name: voucherCurrency
+        create: true
+        edit: true
+        type: text
+        model: voucherCurrency
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nilai Voucher'
+        name: voucherValue
+        create: true
+        edit: true
+        type: text
+        model: voucherValue
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Status Transaksi'
+        name: trxStatus
+        create: true
+        edit: true
+        type: text
+        model: trxStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Address
+        name: isActive
+        create: false
+        edit: false
+        type: text
+        model: isActive
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Used At'
+        name: usedAt
+        create: VO
+        edit: VO
+        type: datepicker
+        model: usedAt
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Pemakai'
+        name: usedById
+        create: false
+        edit: false
+        type: text
+        model: usedById
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Pakai'
+        name: usedByObject
+        create: true
+        edit: true
+        type: text
+        model: usedByObject
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Lng
+        name: lng
+        create: false
+        edit: false
+        type: text
+        model: lng
+        default: '0'
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Lat
+        name: lat
+        create: false
+        edit: false
+        type: text
+        model: lat
+        default: '0'
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Coord
+        name: lngLat
+        create: false
+        edit: false
+        type: text
+        model: lngLat
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: masterId
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: masterName
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyId
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyName
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sbuId
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sbuName
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deptId
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deptName
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sponsorId
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sponsorName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: programId
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: programName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productId
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: voucherCode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: voucherCurrency
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: voucherValue
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: trxStatus
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: isActive
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: usedAt
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: usedById
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: usedByObject
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: lng
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: lat
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: lngLat
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Kode Master'
+        name: masterId
+        visible: false
+        type: text
+        model: masterId
+    -
+        label: 'Nama Master'
+        name: masterName
+        visible: false
+        type: text
+        model: masterName
+    -
+        label: 'Kode Perusahaan'
+        name: companyId
+        visible: false
+        type: text
+        model: companyId
+    -
+        label: 'Nama Perusahaan'
+        name: companyName
+        visible: false
+        type: text
+        model: companyName
+    -
+        label: 'Kode SBU'
+        name: sbuId
+        visible: false
+        type: text
+        model: sbuId
+    -
+        label: 'Nama SBU'
+        name: sbuName
+        visible: false
+        type: text
+        model: sbuName
+    -
+        label: 'Kode Departemen'
+        name: deptId
+        visible: false
+        type: text
+        model: deptId
+    -
+        label: 'Nama Departemen'
+        name: deptName
+        visible: false
+        type: text
+        model: deptName
+    -
+        label: 'Kode Sponsor'
+        name: sponsorId
+        visible: false
+        type: text
+        model: sponsorId
+    -
+        label: 'Nama Sponsor'
+        name: sponsorName
+        visible: true
+        type: text
+        model: sponsorName
+    -
+        label: Kode Program'
+        name: programId
+        visible: false
+        type: text
+        model: programId
+    -
+        label: 'Nama Program'
+        name: programName
+        visible: true
+        type: text
+        model: programName
+    -
+        label: Kode Produk
+        name: productId
+        visible: false
+        type: text
+        model: productId
+    -
+        label: 'Nama Produk'
+        name: productName
+        visible: true
+        type: text
+        model: productName
+    -
+        label: 'Kode Voucher'
+        name: voucherCode
+        visible: true
+        type: text
+        model: voucherCode
+    -
+        label: 'Mata Uang'
+        name: voucherCurrency
+        visible: true
+        type: text
+        model: voucherCurrency
+    -
+        label: 'Nilai Voucher'
+        name: voucherValue
+        visible: true
+        type: text
+        model: voucherValue
+    -
+        label: 'Status Transaksi'
+        name: trxStatus
+        visible: true
+        type: text
+        model: trxStatus
+    -
+        label: Address
+        name: isActive
+        visible: false
+        type: text
+        model: isActive
+    -
+        label: 'Nama Pemakai'
+        name: usedAt
+        visible: true
+        type: text
+        model: usedAt
+    -
+        label: 'Kode Pemakai'
+        name: usedById
+        visible: false
+        type: text
+        model: usedById
+    -
+        label: 'Jenis Pakai'
+        name: usedByObject
+        visible: true
+        type: text
+        model: usedByObject
+    -
+        label: Lng
+        name: lng
+        visible: false
+        type: text
+        model: lng
+    -
+        label: Lat
+        name: lat
+        visible: false
+        type: text
+        model: lat
+    -
+        label: Coord
+        name: lngLat
+        visible: false
+        type: text
+        model: lngLat

@@ -1,0 +1,501 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Project Id'
+        name: projectId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Project Name'
+        name: projectName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Slug
+        name: slug
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Project Description'
+        name: projectDescription
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Client Id'
+        name: clientId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Client Name'
+        name: clientName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Start Date'
+        name: startDate
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+    -
+        label: 'End Date'
+        name: endDate
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+    -
+        label: 'Progress Status'
+        name: progressStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: isActive
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Project Personnel'
+        name: projectPersonnel
+        show: true
+        search: false
+        sort: false
+        datatype: pre
+    -
+        label: 'Project PIC'
+        name: projectPIC
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Client PIC'
+        name: clientPIC
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Client PIC Mobile'
+        name: clientPICMobile
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Client PIC Email'
+        name: clientPICEmail
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Project Code'
+        name: projectCode
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Id'
+        name: projectId
+        create: true
+        edit: true
+        type: text
+        model: projectId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Name'
+        name: projectName
+        create: true
+        edit: true
+        type: text
+        model: projectName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Slug
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Description'
+        name: projectDescription
+        create: true
+        edit: true
+        type: text
+        model: projectDescription
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Client Id'
+        name: clientId
+        create: true
+        edit: true
+        type: text
+        model: clientId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Client Name'
+        name: clientName
+        create: true
+        edit: true
+        type: text
+        model: clientName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Start Date'
+        name: startDate
+        create: true
+        edit: true
+        type: datepicker
+        model: startDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'End Date'
+        name: endDate
+        create: true
+        edit: true
+        type: datepicker
+        model: endDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Progress Status'
+        name: progressStatus
+        create: true
+        edit: true
+        type: text
+        model: progressStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: isActive
+        name: isActive
+        create: true
+        edit: true
+        type: text
+        model: isActive
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Personnel'
+        name: projectPersonnel
+        create: true
+        edit: true
+        type: multiselect
+        model: projectPersonnel
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project PIC'
+        name: projectPIC
+        create: true
+        edit: true
+        type: text
+        model: projectPIC
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Client PIC'
+        name: clientPIC
+        create: true
+        edit: true
+        type: text
+        model: clientPIC
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Client PIC Mobile'
+        name: clientPICMobile
+        create: true
+        edit: true
+        type: text
+        model: clientPICMobile
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Client PIC Email'
+        name: clientPICEmail
+        create: true
+        edit: true
+        type: text
+        model: clientPICEmail
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Code'
+        name: projectCode
+        create: true
+        edit: true
+        type: text
+        model: projectCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: projectId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clientId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clientName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: startDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: endDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: progressStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: isActive
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectPersonnel
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectPIC
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clientPIC
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clientPICMobile
+        visible: true
+        type: string
+        default: ''
+    -
+        model: clientPICEmail
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectCode
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Project Id'
+        name: projectId
+        visible: true
+        type: text
+        model: projectId
+    -
+        label: 'Project Name'
+        name: projectName
+        visible: true
+        type: text
+        model: projectName
+    -
+        label: Slug
+        name: slug
+        visible: true
+        type: text
+        model: slug
+    -
+        label: 'Project Description'
+        name: projectDescription
+        visible: true
+        type: text
+        model: projectDescription
+    -
+        label: 'Client Id'
+        name: clientId
+        visible: true
+        type: text
+        model: clientId
+    -
+        label: 'Client Name'
+        name: clientName
+        visible: true
+        type: text
+        model: clientName
+    -
+        label: 'Start Date'
+        name: startDate
+        visible: true
+        type: datetime
+        model: startDate
+    -
+        label: 'End Date'
+        name: endDate
+        visible: true
+        type: datetime
+        model: endDate
+    -
+        label: 'Progress Status'
+        name: progressStatus
+        visible: true
+        type: text
+        model: progressStatus
+    -
+        label: isActive
+        name: isActive
+        visible: true
+        type: text
+        model: isActive
+    -
+        label: 'Project Personnel'
+        name: projectPersonnel
+        visible: true
+        type: text
+        model: projectPersonnel
+    -
+        label: 'Project PIC'
+        name: projectPIC
+        visible: true
+        type: text
+        model: projectPIC
+    -
+        label: 'Client PIC'
+        name: clientPIC
+        visible: true
+        type: text
+        model: clientPIC
+    -
+        label: 'Client PIC Mobile'
+        name: clientPICMobile
+        visible: true
+        type: text
+        model: clientPICMobile
+    -
+        label: 'Client PIC Email'
+        name: clientPICEmail
+        visible: true
+        type: text
+        model: clientPICEmail
+    -
+        label: 'Project Code'
+        name: projectCode
+        visible: true
+        type: text
+        model: projectCode

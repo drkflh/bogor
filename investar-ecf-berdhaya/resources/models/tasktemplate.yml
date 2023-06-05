@@ -1,0 +1,247 @@
+-
+    name: _id
+    type: object
+    default: ''
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ajax
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: handle
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: deleted
+    type: integer
+    default: 0
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: createdAt
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: updatedAt
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: updated_at
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: created_at
+    type: datetime
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ownerId
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: ownerName
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: taskId
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: taskName
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: taskDescription
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: taskGuide
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: taskAttachments
+    type: array
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: kanbanLane
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: duration
+    type: double
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: projectType
+    type: string
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+-
+    name: sequence
+    type: integer
+    default: ''
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false

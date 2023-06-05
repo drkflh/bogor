@@ -1,0 +1,800 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-100'
+    -
+        label: 'No. Registrasi'
+        name: registrationNo
+        show: true
+        search: true
+        sort: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-150'
+    -
+        label: 'Nama Produk'
+        name: productName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-100'
+    -
+        label: 'Tgl. Registrasi'
+        name: registrationDate
+        show: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-150'
+    -
+        label: 'Area Pemasaran'
+        name: marketArea
+        show: false
+        search: false
+        sort: false
+        datatype: arrayview
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-125'
+    # -
+    #     label: 'Reg No'
+    #     name: registrationDate
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-100'
+    #     thClass: 'text-center text-50'
+    # -
+    #     label: Klasifikasi
+    #     name: productClassification
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-100'
+    #     thClass: 'text-center text-50'
+    # -
+    #     label: 'Rincian Produk'
+    #     name: productDetail
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-100'
+    #     thClass: 'text-center text-50'
+    -
+        label: 'Merk Dagang'
+        name: tradeMark
+        show: false
+        search: false
+        sort: false
+        datatype: arrayview
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-100'
+    -
+        label: Bahan
+        name: bom
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-100'
+    -
+        label: 'Penyelia Halal'
+        name: supervisorRefObject
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-100'
+    -
+        label: 'Lembaga Pendamping'
+        name: validatorInstitution
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-150'
+    -
+        label: Status
+        name: certificationStatus
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-100'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master ID'
+        name: masterId
+        create: false
+        edit: false
+        type: text
+        model: masterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master Name'
+        name: masterName
+        create: false
+        edit: false
+        type: text
+        model: masterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company ID'
+        name: companyId
+        create: false
+        edit: false
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Name'
+        name: companyName
+        create: false
+        edit: false
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'SBU ID'
+        name: sbuId
+        create: false
+        edit: false
+        type: text
+        model: sbuId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'SBU Name'
+        name: sbuName
+        create: false
+        edit: false
+        type: text
+        model: sbuName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Dept ID'
+        name: deptId
+        create: false
+        edit: false
+        type: text
+        model: deptId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Dept Name'
+        name: deptName
+        create: false
+        edit: false
+        type: text
+        model: deptName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nomor Registrasi'
+        name: registrationNo
+        create: true
+        edit: true
+        type: text
+        model: registrationNo
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Produk'
+        name: productName
+        create: true
+        edit: true
+        type: text
+        model: productName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+
+    -
+        label: 'Tanggal Registrasi'
+        name: registrationDate
+        create: true
+        edit: true
+        type: datepicker
+        model: registrationDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Klasifikasi'
+        name: productClassification
+        create: true
+        edit: true
+        type: text
+        model: productClassification
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+    #     label: 'Jenis Layanan'
+    #     name: serviceType
+    #     create: true
+    #     edit: true
+    #     type: text
+    #     model: serviceType
+    #     default: ''
+    #     validator: required
+    #     param: {}
+    #     attr: {}
+    # -
+        label: 'Area Pemasaran'
+        name: marketArea
+        create: VO
+        edit: VO
+        type: arrayview
+        model: marketArea
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Merk Dagang'
+        name: tradeMark
+        create: VO
+        edit: VO
+        type: arrayview
+        model: tradeMark
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Bahan
+        name: bom
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: bom
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Badan Usaha'
+        name: businessRef
+        create: true
+        edit: true
+        type: simpleselect
+        model: businessRef
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Halal'
+        name: supervisorRefObject
+        create: true
+        edit: true
+        type: text
+        model: supervisorRefObject
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Lembaga Pendamping'
+        name: validatorInstitution
+        create: true
+        edit: true
+        type: text
+        model: validatorInstitution
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Nama Pendamping
+        name: validatorName
+        create: true
+        edit: true
+        type: text
+        model: validatorName
+        default: '0'
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Status
+        name: certificationStatus
+        create: true
+        edit: true
+        type: simpleselect
+        model: certificationStatus
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Draft
+                value: Draft
+            -
+                text: Dalam Proses
+                value: Dalam Proses
+            -
+                text: Final
+                value: Final
+        attr:
+            class: form-data
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: masterName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sbuId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: sbuName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deptId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: deptName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: registrationNo
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: registrationDate
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: serviceType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: marketArea
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: registrationDate
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productClassification
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productDetail
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: tradeMark
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bom
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: pictures
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: picturesObjects
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: productionProcess
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessRefObject
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessRef
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: supervisorRefObject
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: supervisorId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorInstitution
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: validatorName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: certificationStatus
+        visible: true
+        type: string
+        default: Draft
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Master ID'
+        name: masterId
+        visible: true
+        type: text
+        model: masterId
+    -
+        label: 'Master Name'
+        name: masterName
+        visible: true
+        type: text
+        model: masterName
+    -
+        label: 'Company ID'
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: 'SBU ID'
+        name: sbuId
+        visible: true
+        type: text
+        model: sbuId
+    -
+        label: 'SBU Name'
+        name: sbuName
+        visible: true
+        type: text
+        model: sbuName
+    -
+        label: 'Dept ID'
+        name: deptId
+        visible: true
+        type: text
+        model: deptId
+    -
+        label: 'Dept Name'
+        name: deptName
+        visible: true
+        type: text
+        model: deptName
+    -
+        label: 'Nama Produk'
+        name: productName
+        visible: true
+        type: text
+        model: productName
+    -
+        label: 'No. Registrasi'
+        name: registrationNo
+        visible: true
+        type: text
+        model: registrationNo
+    -
+        label: 'Tgl. Registrasi'
+        name: registrationDate
+        visible: true
+        type: text
+        model: registrationDate
+    -
+        label: 'Jenis Layanan'
+        name: serviceType
+        visible: true
+        type: text
+        model: serviceType
+    -
+        label: 'Area Pemasaran'
+        name: marketArea
+        visible: true
+        type: arrayview
+        model: marketArea
+    -
+        label: 'Tgl. Registrasi'
+        name: registrationDate
+        visible: true
+        type: text
+        model: registrationDate
+    -
+        label: Klasifikasi
+        name: productClassification
+        visible: true
+        type: text
+        model: productClassification
+    -
+        label: 'Rincian Produk'
+        name: productDetail
+        visible: true
+        type: text
+        model: productDetail
+    -
+        label: 'Merk Dagang'
+        name: tradeMark
+        visible: true
+        type: arrayview
+        model: tradeMark
+    -
+        label: Bahan
+        name: bom
+        visible: true
+        type: arrayview
+        model: bom
+    -
+        label: Photo
+        name: pictures
+        visible: true
+        type: text
+        model: pictures
+    -
+        label: Photo
+        name: picturesObjects
+        visible: true
+        type: text
+        model: picturesObjects
+    -
+        label: 'Proses Produksi'
+        name: productionProcess
+        visible: true
+        type: text
+        model: productionProcess
+    -
+        label: 'Badan Usaha'
+        name: businessRefObject
+        visible: true
+        type: text
+        model: businessRefObject
+    -
+        label: 'Badan Usaha'
+        name: businessRef
+        visible: true
+        type: text
+        model: businessRef
+    -
+        label: 'Penyelia Halal'
+        name: supervisorRefObject
+        visible: true
+        type: text
+        model: supervisorRefObject
+    -
+        label: 'Penyelia Halal'
+        name: supervisorId
+        visible: true
+        type: text
+        model: supervisorId
+    -
+        label: 'Lembaga Pendamping'
+        name: validatorInstitution
+        visible: true
+        type: text
+        model: validatorInstitution
+    -
+        label: Pendamping
+        name: validatorId
+        visible: true
+        type: text
+        model: validatorId
+    -
+        label: Nama Pendamping
+        name: validatorName
+        visible: true
+        type: text
+        model: validatorName
+    -
+        label: Status
+        name: certificationStatus
+        visible: true
+        type: text
+        model: certificationStatus

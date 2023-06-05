@@ -1,0 +1,200 @@
+label {
+    color: black;
+}
+
+.card-block {
+    min-width: 300px;
+}
+
+.card-dash {
+    /*min-width: 275px;*/
+    min-height: 211px;
+}
+
+.table-dash {
+    min-width: 1008px;
+    height: auto;
+}
+
+.text-25 {
+    max-width: 25px;
+    min-width: 25px;
+    width: 25px !important;
+}
+
+.text-50 {
+    max-width: 50px;
+    min-width: 50px;
+    width: 50px;
+}
+
+.text-75 {
+    width: 75px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-100 {
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-125 {
+    width: 125px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-150 {
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-175 {
+    width: 175px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ellipsis {
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*.text-150:hover,*/
+/*.text-75:hover, .text-100:hover,*/
+/*.text-125:hover, .text-175:hover, */
+.ellipsis:hover {
+    width: auto;
+    cursor: pointer;
+    text-overflow: unset;
+}
+
+.text-red {
+    color: #882132 !important;
+    font-size: 13px;
+    font-weight: bolder;
+    /*font-family: Calibri, 'Noto Sans', "Open Sans" ,"Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
+    text-transform: uppercase;
+}
+
+.text-green {
+    color: #057a18 !important;
+    font-size: 13px;
+    font-weight: bolder;
+    /*font-family: Calibri, 'Noto Sans', "Open Sans" ,"Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
+    text-transform: uppercase;
+}
+
+.text-blue {
+    color: #2D3083 !important;
+    font-size: 13px;
+    font-weight: bolder;
+    /*font-family: Calibri, 'Noto Sans', "Open Sans" ,"Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
+    text-transform: uppercase;
+}
+
+body,
+td,
+th,
+label,
+input,
+button,
+select,
+optgroup,
+textarea,
+.line-numbers,
+select.custom-select {
+    font-family: "Overpass", "Nunito Sans", "Merriweather Sans", Muli, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+
+    font-size: 10pt;
+    color: black !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+th,
+{
+    font-family: "Overpass", "Nunito Sans", "Merriweather Sans", Muli, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-weight: 300;
+    color: black !important;
+}
+
+.sidebar .sidebar-body .nav .nav-item .nav-link .link-title {
+    font-size: 10pt !important;
+}
+
+th {
+    font-weight: 400;
+    font-size: 10pt;
+    color: black !important;
+}
+
+.btn-primary, .btn-warning, .btn-danger {
+    font-family: Overpass, Raleway, "Merriweather Sans", Muli, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-weight: 400;
+    color: whitesmoke !important;
+}
+
+select.custom-select {
+    border: none;
+    border-bottom: 1px solid #080000 !important;
+    border-radius: 0px;
+    margin-top: 8px; /* material design style */
+}
+
+.link-icon {
+    color: orangered !important;
+}
+
+.active .link-icon {
+    color: blueviolet !important;
+}
+
+.green-tab-header {
+    background-color: #BFEEB7FF;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    position: relative;
+    line-height: 26px;
+    color: #6c757d;
+    font-size: 16px;
+    display: inline-block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: transparent !important;
+    padding: 6px 0;
+    margin: 0 20px;
+    font-weight: 500;
+    font-family: "Overpass", "Nunito Sans", "Merriweather Sans", Muli, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}

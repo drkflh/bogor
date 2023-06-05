@@ -1,0 +1,34 @@
+- label: 'Card Hiring'
+  name: cardHiring
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "dw.nobleui.central.cardhiring"
+    model: cardHiring
+    pill_color: cardHiring.pillColor
+    icon_card: cardHiring.iconCard
+    title: cardHiring.title
+    total: cardHiring.total
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data"  }
+  vue:
+    visible: true
+    type: text
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na

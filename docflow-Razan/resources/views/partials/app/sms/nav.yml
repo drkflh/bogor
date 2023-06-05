@@ -1,0 +1,117 @@
+- title: "Main"
+  children:
+    - title: Dashboard
+      url: "sms/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Knowledge
+      icon: "<i class=\"link-icon\"  data-feather=\"help-circle\"></i>"
+      children:
+      - title: Glossary
+        url: "sms/knowledge/glossary"
+        auth: glossary
+      - title: Video Library
+        url: "sms/knowledge/video-library"
+      - title: Product Catalogue
+        url: "sms/knowledge/product-catalogue"
+      - title: AML
+        url: "sms/knowledge/aml"
+      - title: GA.Drawing
+        url: "sms/knowledge/ga-drawing"
+        auth: ga-drawing
+    - title: Directory
+      icon: "<i class=\"link-icon\"  data-feather=\"book-open\" ></i>"
+      children:
+      - title: "Vendor"
+        url: "sms/directory/vendor-directory"
+      - title: "Customer"
+        url: "sms/directory/customer-directory"
+
+    - title: "Sales Operation"
+      icon: "<i data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+      children:
+      - title: Job Register
+        url: "sms/sales-operation/job-register"
+        auth: job-register
+      - title: "Sales Order"
+        url: "sms/sales-operation/sales-order"
+      - title: "Sales Highlight"
+        url: "sms/sales-operation/sales-highlight"
+      - title: "Request For Quotation"
+        url: "sms/sales-operation/request-for-quotation"
+      - title: "Request For Information"
+        url: "sms/sales-operation/request-for-information"
+      - title: "Material Take Off"
+        url: "sms/sales-operation/material-take-off"
+      - title: "Logistic & Clearance Calc"
+        url: "sms/sales-operation/logistic-clearance-calc"
+      - title: "Cost Structure"
+        url: "sms/sales-operation/cost-structure"
+      - title: "Outgoing Quotation"
+        url: "sms/sales-operation/outgoing-quotation"
+      - title: "Budgetary Proposal"
+        url: "sms/sales-operation/budgetary-proposal"
+      # - title: "On Going Quotation"
+      #   url: "sms/sales-operation/on-going-quotation"
+    - title: "QC & Documentation"
+      icon: "<i class=\"link-icon\"  data-feather=\"check-circle\" ></i>"
+      children:
+        - title: "Quality Control"
+          url: "sms/qc-documentation/quality-control"
+        - title: "Document Control"
+          url: "sms/qc-documentation/document-control"
+
+    - title: Procurement & Logistic
+      icon: "<i class=\"link-icon\"  data-feather=\"truck\" ></i>"
+      children:
+        - title: "Purchase Requisition"
+          url: "sms/procurement-logistics/purchase-requisition"
+        - title: "Purchase Order"
+          url: "sms/procurement-logistics/purchase-order"
+        - title: "Material Receiving Report"
+          url: "sms/procurement-logistics/material-receiving"
+        - title: "Non Conforming Report"
+          url: "sms/procurement-logistics/non-conforming"
+        - title: "Service Requisition"
+          url: "sms/procurement-logistics/service-requisition"
+        - title: "Work Order"
+          url: "sms/procurement-logistics/work-order"
+        - title: "Work Acceptance Notes"
+          url: "sms/procurement-logistics/work-accept-notes"
+        - title: "Warehouse Issue Ticket"
+          url: "sms/procurement-logistics/warehouse-issue"
+        - title: "Warehouse Return Ticket"
+          url: "sms/procurement-logistics/warehouse-return"
+        - title: "Delivery Request"
+          url: "sms/procurement-logistics/delivery-request"
+        - title: "Delivery Order"
+          url: "sms/procurement-logistics/delivery-order"
+        - title: "Packing List"
+          url: "sms/procurement-logistics/packing-list"
+        # - title: "Stock Issue"
+        #   url: "sms/procurement-logistics/stock-issue"
+#    - title: "Reference"
+#      icon: "<i   data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#      children:
+#        - title: "Group Company"
+#          url: "sms/reference/company"
+#        - title: "Company Type"
+#          url: "sms/reference/company-type"
+#        - title: "Cost Center"
+#          url: "sms/reference/costcenter"
+#        - title: "Area"
+#          url: "sms/reference/area"
+#        - title: "Zipcode"
+#          url: "sms/reference/zipcode"
+#        - title: "Country"
+#          url: "sms/reference/country"
+#        - title: "Currency"
+#          url: "sms/reference/currency"
+#        - title: "Exchange Rate"
+#          url: "sms/reference/exchange-rate"
+#        - title: "UOM"
+#          url: "reference/uom"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Job Status"
+#          url: "sms/reference/jobstatus"
+#        - title: "Incoterm"
+#          url: "reference/incoterm"

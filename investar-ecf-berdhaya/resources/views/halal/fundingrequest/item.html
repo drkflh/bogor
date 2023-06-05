@@ -1,0 +1,65 @@
+<div id="item">
+
+    <div class="row">
+        <div class="col-4">
+            <label for="itemName">Item Name</label>
+            <input class="form-control mb-3" name="itemName" type="text" v-model="value.itemName" />
+            <label for="Document">Document</label><br>
+
+            <!-- <doc-upload
+                  v-model="value.document"
+                  handle="handle"
+                  ns="document"
+                  :uploadurl="params.uploadUrl"
+                  :defaulturl="params.baseUrl"
+                  mode="single"
+                  filename="file"
+                  accepted-files="application/pdf"
+                  dir="documents"
+                  buttonlabel="upload file"
+
+              >
+
+            </doc-upload> -->
+                <doc-upload
+                        v-model="value.document"
+                        :handle=true
+                        ns="value.job_register"
+                        uploadurl="api/v1/core/upload"
+                        defaulturl="params.baseUrl"
+                        mode="single"
+                        :filename="file"
+                        accepted-files="application/pdf"
+                        dir="invitatitonToBid"
+                        buttonlabel="upload"
+                        :base-url.sync="DocBase"
+                        :doc-path.sync="DocPath"
+                    >
+
+                </doc-upload>
+
+        </div>
+        <div class="col-8">
+            <!-- <pdf-view
+                    :doc-url="value.document"
+                    :base-url="params.baseUrl"
+                >
+
+            </pdf-view> -->
+            <pdf-view
+                    :doc-url="value.document"
+                    :handle=true
+                    ns="job_register"
+                    base-url="params.baseUrl"
+                    :defaulturl="defaultImageDraw"
+                    mode="single"
+                >
+
+            </pdf-view>
+
+        </div>
+    </div>
+
+
+</div>
+

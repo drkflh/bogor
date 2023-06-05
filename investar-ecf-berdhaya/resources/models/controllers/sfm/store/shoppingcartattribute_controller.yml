@@ -1,0 +1,362 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Cart Session'
+        name: cartSession
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Shipping Method'
+        name: shippingMethod
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Total Weight'
+        name: totalWeight
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Unit Shipping Cost'
+        name: unitShippingCost
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Total Shippinng Cost'
+        name: totalShippingCost
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Payment Method'
+        name: paymentMethod
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Delivery Method'
+        name: deliveryMethod
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Name Address'
+        name: nameAdress
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Shipping Address'
+        name: shippingAddress
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Mobile Address'
+        name: mobileAddress
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Delivery Note'
+        name: deliveryNote
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Status
+        name: status
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Cart Session'
+        name: cartSession
+        create: true
+        edit: true
+        type: text
+        model: cartSession
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Shipping Method'
+        name: shippingMethod
+        create: true
+        edit: true
+        type: text
+        model: shippingMethod
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Total Weight'
+        name: totalWeight
+        create: true
+        edit: true
+        type: text
+        model: totalWeight
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Unit Shipping Cost'
+        name: unitShippingCost
+        create: true
+        edit: true
+        type: text
+        model: unitShippingCost
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Total Shippinng Cost'
+        name: totalShippingCost
+        create: true
+        edit: true
+        type: text
+        model: totalShippingCost
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Payment Method'
+        name: paymentMethod
+        create: true
+        edit: true
+        type: text
+        model: paymentMethod
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Delivery Method'
+        name: deliveryMethod
+        create: true
+        edit: true
+        type: text
+        model: deliveryMethod
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Name Address'
+        name: nameAdress
+        create: true
+        edit: true
+        type: text
+        model: nameAdress
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Shipping Address'
+        name: shippingAddress
+        create: true
+        edit: true
+        type: text
+        model: shippingAddress
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Mobile Address'
+        name: mobileAddress
+        create: true
+        edit: true
+        type: text
+        model: mobileAddress
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Delivery Note'
+        name: deliveryNote
+        create: true
+        edit: true
+        type: text
+        model: deliveryNote
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Status
+        name: status
+        create: true
+        edit: true
+        type: text
+        model: status
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: unit
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: cost
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: moq
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Name
+        name: name
+        visible: true
+        type: text
+        model: name
+    -
+        label: Description
+        name: description
+        visible: true
+        type: text
+        model: description
+    -
+        label: Unit
+        name: unit
+        visible: true
+        type: text
+        model: unit
+    -
+        label: Cost
+        name: cost
+        visible: true
+        type: text
+        model: cost
+    -
+        label: MOQ
+        name: moq
+        visible: true
+        type: text
+        model: moq

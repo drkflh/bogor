@@ -1,0 +1,269 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-50
+        thClass: ''
+        uniqueId: true
+    -
+        label: Actor
+        name: actorName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: Method
+        name: method
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-125'
+        thClass: ''
+    -
+        label: Timestamp
+        name: createdAt
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: datetime
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: Item Type
+        name: authItem
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: Item Id
+        name: item
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: Endpoint
+        name: url
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left'
+        thClass: ''
+    -
+        label: Request
+        name: request_data
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: pre
+        row_text_alignment: text-left
+        column_classes: 'text-center text-500 h-300'
+        thClass: ''
+    -
+        label: Response
+        name: response_data
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: pre
+        row_text_alignment: text-left
+        column_classes: 'text-center text-500 h-300 text-top'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Endpoint
+        name: url
+        create: false
+        edit: true
+        type: text
+        model: url
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Method
+        name: method
+        create: false
+        edit: true
+        type: text
+        model: method
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Timestamp
+        name: created_at
+        create: false
+        edit: true
+        type: text
+        model: created_at
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Request
+        name: request_data
+        create: false
+        edit: true
+        type: pre
+        model: prettyReq
+        default: ''
+        validator: ''
+        lang: json
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Response
+        name: response_data
+        create: false
+        edit: true
+        type: pre
+        model: prettyResp
+        default: ''
+        validator: ''
+        lang: json
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+            rows: 25
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: url
+        visible: true
+        type: string
+        default: ''
+    -
+        model: method
+        visible: true
+        type: string
+        default: ''
+    -
+        model: created_at
+        visible: true
+        type: string
+        default: ''
+    -
+        model: prettyReq()
+        visible: true
+        type: function
+        default: ''
+    -
+        model: prettyResp()
+        visible: true
+        type: function
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Endpoint
+        name: url
+        model: url
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Method
+        name: method
+        model: method
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Timestamp
+        name: created_at
+        model: created_at
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Request
+        name: request_data
+        model: prettyReq()
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Response
+        name: response_data
+        model: prettyResp()
+        visible: true
+        type: pre
+        default: ''

@@ -1,0 +1,245 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Company ID
+        name: companyId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+    -
+        label: Nama Perusahaan
+        name: companyName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+    -
+        label: Nama Produk
+        name: productName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+    -
+        label: Harga 
+        name: price
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+    -
+        label: Jenis Produk 
+        name: typeproduct
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+    -
+        label: Deskripsi 
+        name: description
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company ID'
+        name: companyId
+        create: true
+        edit: true
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Nama Perusahaan
+        name: companyName
+        create: true
+        edit: true
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Nama Produk
+        name: productName
+        create: true
+        edit: true
+        type: text
+        model: productName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Harga
+        name: price
+        create: true
+        edit: true
+        type: number
+        model: price
+        default: ''
+        validator: required
+        append: Rupiah
+        param: {}
+        attr: {}
+    -
+        label: Jenis Produk
+        name: typeproduct
+        create: true
+        edit: true
+        type: simpleselect
+        model: typeproduct
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Deskripsi
+        name: description
+        create: true
+        edit: true
+        type: textarea
+        model: description
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: price
+        visible: true
+        type: integer
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: typeproduct
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Company ID
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: Nama Perusahaan
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: Nama Produk
+        name: productName
+        visible: true
+        type: text
+        model: productName
+    -
+        label: Harga
+        name: price
+        visible: true
+        type: integer
+        model: price
+    -
+        label: Jenis Produk
+        name: typeproduct
+        visible: true
+        type: text
+        model: typeproduct
+    -
+        label: Deskripsi
+        name: description
+        visible: true
+        type: text
+        model: description

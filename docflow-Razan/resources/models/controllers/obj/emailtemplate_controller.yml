@@ -1,0 +1,854 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Title
+        name: title
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Slug
+        name: slug
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Description
+        name: description
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        placeholder: Action
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr:
+            -
+                class: form-data
+    -
+        label: 'Valid From'
+        name: validFrom
+        create: true
+        edit: true
+        type: datepicker
+        model: validFrom
+        placeholder: 'Valid From'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Valid Until'
+        name: validUntil
+        create: true
+        edit: true
+        type: datepicker
+        model: validUntil
+        placeholder: 'Valid Until'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Status
+        name: status
+        create: true
+        edit: true
+        type: simpleselect
+        model: status
+        placeholder: Status
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param: '[ { text: "Draft", value: "Draft" }, { text: "Published", value: "Published" }, { text: "Unpublished", value: "Unpublished" }]'
+        attr: {}
+    -
+        label: Tags
+        name: tags
+        create: true
+        edit: true
+        type: tagsinput
+        model: tags
+        placeholder: Tags
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Sections
+        name: section
+        create: true
+        edit: true
+        type: simpleselect
+        model: section
+        placeholder: Sections
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param: ''
+        attr: {}
+    -
+        label: Title
+        name: title
+        create: true
+        edit: true
+        type: text
+        model: title
+        placeholder: Title
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Slug
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        placeholder: Slug
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Category
+        name: category
+        create: true
+        edit: true
+        type: simpleselect
+        model: category
+        placeholder: Category
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param: ''
+        attr: {}
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: textarea
+        model: description
+        placeholder: Description
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Body
+        name: body
+        create: true
+        edit: true
+        type: codeeditor
+        model: body
+        placeholder: Body
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Head Left'
+        name: headLeft
+        create: true
+        edit: true
+        type: codeeditor
+        model: headLeft
+        placeholder: 'Head Left'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Head First Page'
+        name: headFirst
+        create: true
+        edit: true
+        type: codeeditor
+        model: headFirst
+        placeholder: 'Head Left'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Head Right'
+        name: headRight
+        create: true
+        edit: true
+        type: codeeditor
+        model: headRight
+        placeholder: 'Head Right'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Footer Left'
+        name: footerLeft
+        create: true
+        edit: true
+        type: codeeditor
+        model: footerLeft
+        placeholder: 'Footer Left'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Footer Center'
+        name: footerCenter
+        create: true
+        edit: true
+        type: codeeditor
+        model: footerCenter
+        placeholder: 'Footer Center'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Footer Full'
+        name: footerFull
+        create: true
+        edit: true
+        type: codeeditor
+        model: footerFull
+        placeholder: 'Footer Full'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Page Size'
+        name: pageSize
+        create: true
+        edit: true
+        type: text
+        model: pageSize
+        placeholder: 'Page Size'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Upload Files'
+        name: docUpload
+        create: true
+        edit: true
+        type: multiuploadpad
+        model: docUpload
+        placeholder: 'Upload Files'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/upload
+            paramName: file
+            buttonlabel: 'Upload picture'
+            useHandle: true
+            acceptedFiles: 'image/*'
+        attr: {}
+    -
+        label: Attachments
+        name: attachments
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attachments
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: true
+        caption_required: true
+        caption_label: Deskripsi Lampiran
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload File" }
+
+    -
+        label: Pictures
+        name: docList
+        create: true
+        edit: RO
+        type: sortablelist
+        model: docList
+        placeholder: Pictures
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        selected: docViewer
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Picture
+        name: picture
+        create: true
+        edit: true
+        type: imagegridupload
+        model: picture
+        placeholder: Picture
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        selected: docViewer
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr: {}
+    -
+        label: ''
+        name: docViewer
+        create: RO
+        edit: RO
+        type: text
+        model: docViewer
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        selected: docViewer
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr: {}
+    -
+        label: 'Header / Footer Option'
+        name: headerFooterSetting
+        create: true
+        edit: true
+        type: checkboxselect
+        model: headerFooterSetting
+        placeholder: ''
+        default: ''
+        validator: ''
+        value_object: false
+        param: {}
+        attr: {}
+    -
+        label: 'Pagination Option'
+        name: numberSetting
+        create: true
+        edit: true
+        type: checkboxselect
+        model: numberSetting
+        placeholder: ''
+        default: ''
+        validator: ''
+        value_object: false
+        label_class: col-12
+        param: {}
+        attr: {}
+    -
+        label: 'Pagination Position'
+        name: numberPosition
+        create: true
+        edit: true
+        type: radioselect
+        model: numberPosition
+        placeholder: ''
+        default: ''
+        validator: ''
+        value_object: false
+        label_class: col-12
+        param: {}
+        attr: {}
+    -
+        label: 'First Pagination Position'
+        name: firstNumberPosition
+        create: true
+        edit: true
+        type: radioselect
+        model: firstNumberPosition
+        placeholder: ''
+        default: ''
+        validator: ''
+        value_object: false
+        label_class: col-12
+        param: {}
+        attr: {}
+    -
+        label: 'Pagination Format'
+        name: numberFormat
+        create: true
+        edit: true
+        type: text
+        model: numberFormat
+        placeholder: ''
+        default: ''
+        validator: ''
+        value_object: false
+        label_class: col-12
+        param: {}
+        attr: {}
+    -
+        label: 'Header Option'
+        name: headerSetting
+        create: true
+        edit: true
+        type: checkboxselect
+        model: headerSetting
+        placeholder: ''
+        default: ''
+        validator: ''
+        value_object: false
+        label_class: col-12
+        param: {}
+        attr: {}
+    -
+        label: 'Footer Option'
+        name: footerSetting
+        create: true
+        edit: true
+        type: checkboxselect
+        model: footerSetting
+        placeholder: ''
+        default: ''
+        validator: ''
+        value_object: false
+        label_class: col-12
+        param: {}
+        attr: {}
+    -
+        label: 'Top'
+        name: marginTop
+        create: true
+        edit: true
+        type: text
+        model: marginTop
+        placeholder: ''
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Bottom'
+        name: marginBottom
+        create: true
+        edit: true
+        type: text
+        model: marginBottom
+        placeholder: ''
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Left'
+        name: marginLeft
+        create: true
+        edit: true
+        type: text
+        model: marginLeft
+        placeholder: ''
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Right'
+        name: marginRight
+        create: true
+        edit: true
+        type: text
+        model: marginRight
+        placeholder: ''
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: validFrom
+        visible: true
+        type: string
+        default: na
+    -
+        model: validUntil
+        visible: true
+        type: string
+        default: na
+    -
+        model: status
+        visible: true
+        type: string
+        default: ''
+    -
+        model: tags
+        visible: true
+        type: string
+        default: ''
+    -
+        model: section
+        visible: true
+        type: string
+        default: ''
+    -
+        model: title
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: body
+        visible: true
+        type: string
+        default: ''
+    -
+        model: headFirst
+        visible: true
+        type: string
+        default: ''
+    -
+        model: headLeft
+        visible: true
+        type: string
+        default: ''
+    -
+        model: headRight
+        visible: true
+        type: string
+        default: ''
+    -
+        model: footerLeft
+        visible: true
+        type: string
+        default: ''
+    -
+        model: footerCenter
+        visible: true
+        type: string
+        default: ''
+    -
+        model: footerFull
+        visible: true
+        type: string
+        default: ''
+    -
+        model: headerFooterSetting
+        visible: true
+        type: array
+        default: ['Full Footer','No First Page Header']
+    -
+        model: headerSetting
+        visible: true
+        type: array
+        default: ['First Page Header','No Header']
+    -
+        model: footerSetting
+        visible: true
+        type: array
+        default: ['First Page Footer','Full Footer']
+    -
+        model: numberSetting
+        visible: true
+        type: array
+        default: ['First Page Number']
+    -
+        model: numberFormat
+        visible: true
+        type: string
+        default: ''
+    -
+        model: numberPosition
+        visible: true
+        type: string
+        default: 'Right'
+    -
+        model: firstNumberPosition
+        visible: true
+        type: string
+        default: 'Right'
+    -
+        model: pageSize
+        visible: true
+        type: string
+        default: ''
+    -
+        model: marginTop
+        visible: true
+        type: string
+        default: '45mm'
+    -
+        model: marginLeft
+        visible: true
+        type: string
+        default: '10mm'
+    -
+        model: marginRight
+        visible: true
+        type: string
+        default: '10mm'
+    -
+        model: marginBottom
+        visible: true
+        type: string
+        default: '20mm'
+    -
+        model: attachments
+        visible: true
+        type: array
+        default: []
+    -
+        model: attachmentsObjects
+        visible: true
+        type: array
+        default: []
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Valid From'
+        name: validFrom
+        model: validFrom
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Valid Until'
+        name: validUntil
+        model: validUntil
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Status
+        name: status
+        model: status
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Tags
+        name: tags
+        model: tags
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Sections
+        name: section
+        model: section
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Title
+        name: title
+        model: title
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Slug
+        name: slug
+        model: slug
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Category
+        name: category
+        model: category
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Description
+        name: description
+        model: description
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Body
+        name: body
+        model: body
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Head First
+        name: headLeft
+        model: headLeft
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Head Left
+        name: headLeft
+        model: headLeft
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Head Right
+        name: headRight
+        model: headRight
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Footer Left
+        name: footerLeft
+        model: footerLeft
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: 'Footer Center'
+        name: footerCenter
+        model: footerCenter
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: 'Footer Full'
+        name: footerFull
+        model: footerFull
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: 'Page Size'
+        name: pageSize
+        model: pageSize
+        visible: true
+        type: pre
+        default: ''
+

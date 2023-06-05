@@ -1,0 +1,2673 @@
+table:
+  - label: Action
+    name: _id
+    show: true
+    search: false
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: col_action
+    thClass: ''
+    uniqueId: true
+  - label: Created
+    name: createdAt
+    show: false
+    search: false
+    sort: true
+    filter: false
+    datatype: true
+    row_text_alignment: text-left
+    column_classes: text-150
+    thClass: ''
+  - label: 'Registrasi User Sihalal'
+    name: sihalal_register
+    show: true
+    search: false
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: 'text-100 text-center'
+    thClass: ''
+  - label: ''
+    name: avatar
+    show: true
+    search: false
+    sort: false
+    filter: false
+    datatype: image
+    row_text_alignment: text-left
+    column_classes: 'text-100 text-center'
+    thClass: ''
+  - label: 'Role Name'
+    name: roleName
+    show: false
+    search: false
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: Role
+    name: roleId
+    show: false
+    search: false
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: Name
+    name: name
+    show: true
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  # -
+  #     label: Initial
+  #     name: initial
+  #     show: false
+  #     search: true
+  #     sort: false
+  #     filter: false
+  #     datatype: text
+  #     row_text_alignment: text-left
+  #     column_classes: text-center text-50
+  #     thClass: ''
+  - label: Email
+    name: email
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-250
+    thClass: ''
+  - label: Phone
+    name: phone
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  - label: 'Place Of Birth'
+    name: placeOfBirth
+    show: false
+    search: false
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  - label: 'Date of Birth'
+    name: dateOfBirth
+    show: false
+    search: false
+    sort: false
+    filter: false
+    datatype: date
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  - label: Mobile
+    name: mobile
+    show: true
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  - label: Alamat
+    name: address
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: Kelurahan
+    name: kelurahan
+    show: false
+    search: false
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: Province
+    name: province
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-center
+    column_classes: 'text-left text-100'
+    thClass: ''
+  - label: Kota
+    name: city
+    show: false
+    search: false
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-center
+    column_classes: 'text-left text-100'
+    thClass: ''
+  - label: ZIP
+    name: ZIP
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: 'ID Number'
+    name: idNumber
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: 'text-center text-200'
+    thClass: ''
+  - label: 'ID Type'
+    name: idType
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: 'Foto Kartu Identitas'
+    name: idPic
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: image
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: 'Signature Specimen'
+    name: signatureSpecimen
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: image
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: PIN
+    name: pin
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: 'Confirm PIN'
+    name: confirm_pin
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: 'Signature Pad'
+    name: signatureInput
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: Username
+    name: username
+    show: true
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: 'text-left text-200'
+    thClass: ''
+  - label: Password
+    name: password
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: 'Confirm Password'
+    name: confirm_password
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: Location
+    name: locationCoord
+    show: false
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: ''
+    thClass: ''
+  - label: Account Name
+    name: accountName
+    show: true
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  - label: Account Number
+    name: accountNumber
+    show: true
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  - label: 'Employment Status'
+    name: statusEmployee
+    show: true
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  - label: Company
+    name: companyName
+    show: true
+    search: true
+    sort: false
+    filter: false
+    datatype: text
+    row_text_alignment: text-left
+    column_classes: text-200
+    thClass: ''
+  - label: Created
+    name: created_at
+    show: true
+    search: true
+    sort: true
+    filter: false
+    datatype: date
+    row_text_alignment: text-center
+    column_classes: 'text-center text-150'
+    thClass: ''
+  - label: Updated
+    name: updated_at
+    show: true
+    search: false
+    sort: true
+    filter: false
+    datatype: date
+    row_text_alignment: text-center
+    column_classes: 'text-center text-150'
+    thClass: ''
+  - label: ''
+    name: sihalal_member
+    show: true
+    search: false
+    sort: true
+    filter: false
+    datatype: boolean
+    row_text_alignment: text-center
+    column_classes: 'text-center text-150'
+    thClass: ''
+  - label: ''
+    name: status_sihalal_pu
+    show: false
+    search: false
+    sort: true
+    filter: false
+    datatype: boolean
+    row_text_alignment: text-center
+    column_classes: 'text-center text-150'
+    thClass: ''
+  - label: ''
+    name: status_sihalal_confirm
+    show: false
+    search: false
+    sort: true
+    filter: false
+    datatype: boolean
+    row_text_alignment: text-center
+    column_classes: 'text-center text-150'
+    thClass: ''
+form:
+  - label: Action
+    name: _id
+    create: false
+    edit: false
+    type: text
+    model: id
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Created
+    name: createdAt
+    create: false
+    edit: false
+    type: text
+    model: createdAt
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: updatedAt
+    name: updatedAt
+    create: false
+    edit: false
+    type: text
+    model: updatedAt
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: ownerId
+    name: ownerId
+    create: false
+    edit: false
+    type: text
+    model: ownerId
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: ownerName
+    name: ownerName
+    create: false
+    edit: false
+    type: text
+    model: ownerName
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: handle
+    name: handle
+    create: false
+    edit: false
+    type: text
+    model: handle
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: deleted
+    name: deleted
+    create: false
+    edit: false
+    type: text
+    model: deleted
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Photo
+    name: avatar
+    create: true
+    edit: true
+    type: avatarupload
+    model: avatar
+    default: ''
+    validator: 'required'
+    bucket: avatar
+    param:
+      url: api/v1/core/upload
+      paramName: file
+    attr:
+      class: form-data
+      buttonlabel: 'Upload Avatar'
+  - label: 'Role Name'
+    name: roleName
+    create: VO
+    edit: VO
+    type: text
+    model: roleName
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Role
+    name: roleId
+    create: true
+    edit: true
+    type: simpleselect
+    model: roleId
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Name
+    name: name
+    create: true
+    edit: true
+    type: text
+    model: name
+    default: ''
+    validator: 'required'
+    param: { }
+    attr:
+      class: form-data
+  - label: Email
+    name: email
+    create: true
+    edit: true
+    type: text
+    model: email
+    default: ''
+    validator: 'required|email'
+    param: { }
+    attr:
+      class: form-data
+  - label: Name
+    name: relativeName
+    create: true
+    edit: true
+    type: text
+    model: relativeName
+    default: ''
+    validator: 'required'
+    param: { }
+    attr:
+      class: form-data
+  - label: Email
+    name: relativeEmail
+    create: true
+    edit: true
+    type: text
+    model: relativeEmail
+    default: ''
+    validator: 'required|email'
+    param: { }
+    attr:
+      class: form-data
+  - label: Phone
+    name: phone
+    create: true
+    edit: true
+    type: mobileinput
+    model: phone
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Gender
+    name: gender
+    create: true
+    edit: true
+    type: radioselect
+    model: gender
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Place Of Birth'
+    name: placeOfBirth
+    create: true
+    edit: true
+    type: text
+    model: placeOfBirth
+    default: ''
+    validator: 'required'
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Date of Birth'
+    name: dateOfBirth
+    create: true
+    edit: true
+    type: datepicker
+    model: dateOfBirth
+    default: ''
+    validator: ''
+    date_constraint: maxDob
+    param: { }
+    attr:
+      class: form-data
+  - label: Mobile
+    name: mobile
+    create: true
+    edit: true
+    type: mobileinput
+    model: mobile
+    default: ''
+    validator: 'required|numeric'
+    param: { }
+    attr:
+      class: form-data
+  - label: Mobile
+    name: relativeMobile
+    create: true
+    edit: true
+    type: mobileinput
+    model: relativeMobile
+    default: ''
+    validator: 'required|numeric'
+    param: { }
+    attr:
+      class: form-data
+  - label: Alamat
+    name: relativeAddress
+    create: true
+    edit: true
+    type: textarea
+    model: relativeAddress
+    default: ''
+    validator: required
+    param: { }
+    attr:
+      class: form-data
+  - label: Alamat
+    name: address
+    create: true
+    edit: true
+    type: textarea
+    model: address
+    default: ''
+    validator: 'required'
+    param: { }
+    attr:
+      class: form-data
+  - label: Kelurahan
+    name: kelurahan
+    create: true
+    edit: true
+    type: text
+    model: kelurahan
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Province
+    name: province
+    create: true
+    edit: true
+    type: text
+    model: province
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Kabupaten / Kota'
+    name: kabupaten
+    create: true
+    edit: true
+    type: simpleselect2
+    model: kabupaten
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: Province
+    name: relativeProvince
+    create: true
+    edit: true
+    type: text
+    model: relativeProvince
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Kabupaten / Kota'
+    name: relativeKabupaten
+    create: true
+    edit: true
+    type: simpleselect2
+    model: relativeKabupaten
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: City
+    name: city
+    create: true
+    edit: true
+    type: text
+    model: city
+    default: ''
+    validator: ''
+    selector: city
+    ref: city
+    param: { }
+    attr:
+      class: form-data
+  - label: ZIP
+    name: ZIP
+    create: true
+    edit: true
+    type: text
+    model: ZIP
+    default: ''
+    validator: 'required|numeric|min:5|max:5'
+    param: { }
+    attr:
+      class: form-data
+  - label: ZIP
+    name: relativeZIP
+    create: true
+    edit: true
+    type: text
+    model: relativeZIP
+    default: ''
+    validator: 'numeric|min:5|max:5'
+    param: { }
+    attr:
+      class: form-data
+  - label: 'ID Number'
+    name: idNumber
+    create: true
+    edit: true
+    type: text
+    model: idNumber
+    default: ''
+    validator: 'required'
+    param: { }
+    attr:
+      class: form-data
+  - label: ' '
+    name: idValidation
+    create: VO
+    edit: VO
+    type: text
+    model: idValidation
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Jenis ID'
+    name: idType
+    create: true
+    edit: true
+    type: simpleselect
+    model: idType
+    default: ''
+    validator: required
+    selector: city
+    ref: city
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Foto Kartu Identitas'
+    name: idPic
+    create: true
+    edit: true
+    type: imagecardupload
+    model: idPic
+    default: ''
+    validator: 'required'
+    bucket: document
+    param:
+      url: api/v1/core/upload
+      paramName: file
+    attr:
+      class: form-data
+      buttonlabel: 'Upload ID Picture'
+  - label: 'NIK'
+    name: relativeIdNumber
+    create: true
+    edit: true
+    type: text
+    model: relativeIdNumber
+    default: ''
+    validator: 'numeric|min:16|max:16'
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Jenis ID'
+    name: relativeIdType
+    create: RO
+    edit: RO
+    type: simpleselect
+    model: relativeIdType
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Foto Kartu Identitas'
+    name: relativeIdPic
+    create: true
+    edit: true
+    type: imagecardupload
+    model: relativeIdPic
+    default: ''
+    validator: 'required'
+    bucket: document
+    param:
+      url: api/v1/core/upload
+      paramName: file
+    attr:
+      class: form-data
+      buttonlabel: 'Upload ID Picture'
+  - label: 'Signature Specimen'
+    name: signatureSpecimen
+    create: true
+    edit: true
+    type: imagecardupload
+    model: signatureSpecimen
+    default: ''
+    validator: ''
+    ns: signature
+    selector: signatureSpecimen
+    ref: signatureSpecimen
+    hide_upload_button: true
+    bucket: signature
+    param:
+      url: api/v1/core/upload
+      paramName: file
+    attr:
+      class: form-data
+      buttonlabel: 'Upload ID Picture'
+  - label: 'Initial Specimen'
+    name: initialSpecimen
+    create: true
+    edit: true
+    type: imagecardupload
+    model: initialSpecimen
+    default: ''
+    validator: ''
+    ns: signature
+    selector: initialSpecimen
+    ref: initialSpecimen
+    hide_upload_button: true
+    bucket: signature
+    param:
+      url: api/v1/core/upload
+      paramName: file
+    attr:
+      class: form-data
+      buttonlabel: 'Upload ID Picture'
+  - label: PIN
+    name: pin
+    create: true
+    edit: false
+    type: pin
+    model: pin
+    default: ''
+    validator: 'required'
+    selector: city
+    ref: city
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Confirm PIN'
+    name: confirm_pin
+    create: true
+    edit: false
+    type: pin
+    model: confirm_pin
+    default: ''
+    validator: 'required|confirmed:pin'
+    selector: city
+    ref: city
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Signature Pad'
+    name: signatureInput
+    create: true
+    edit: true
+    type: signpad
+    model: signatureSpecimen
+    ns: signature
+    default: ''
+    validator: ''
+    selector: city
+    ref: city
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    width: '100%'
+    height: 200px
+    bucket: signature
+    param:
+      url: api/v1/core/form-upload
+      paramName: file
+    attr:
+      class: form-data
+  - label: 'Initial Pad'
+    name: initialInput
+    create: true
+    edit: true
+    type: signpad
+    model: initialSpecimen
+    ns: initial
+    default: ''
+    validator: ''
+    selector: city
+    ref: city
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    width: '100%'
+    height: 200px
+    bucket: signature
+    param:
+      url: api/v1/core/form-upload
+      paramName: file
+    attr:
+      class: form-data
+  - label: Username
+    name: username
+    create: true
+    edit: RO
+    type: RO
+    model: username
+    default: ''
+    validator: ''
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Password
+    name: password
+    create: true
+    edit: false
+    type: password
+    model: password
+    default: ''
+    validator: 'required|min:8'
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Confirm Password'
+    name: confirm_password
+    create: true
+    edit: false
+    type: password
+    model: confirm_password
+    default: ''
+    validator: 'required|confirmed:password'
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Location
+    name: locationCoord
+    create: false
+    edit: false
+    type: text
+    model: locationCoord
+    default: ''
+    validator: ''
+    num_inputs: 6
+    input_type: password
+    separator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Employment Status'
+    name: statusEmployee
+    create: true
+    edit: true
+    type: simpleselect
+    model: statusEmployee
+    default: ''
+    validator: 'required'
+    param: { }
+    attr: { }
+  - label: 'Employee ID'
+    name: employeeId
+    create: true
+    edit: true
+    type: text
+    model: employeeId
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Date Hired'
+    name: employeeDateHired
+    create: true
+    edit: true
+    type: datepicker
+    model: employeeDateHired
+    default: ''
+    validator: ''
+    date_constraint: maxToday
+    param: { }
+    attr: { }
+  - label: 'Company'
+    name: companyName
+    create: true
+    edit: true
+    type: simpleselect
+    model: companyName
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Farm'
+    name: bizUnit
+    create: true
+    edit: true
+    type: simpleselect
+    model: bizUnit
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Use Time Tracker'
+    name: useTimeTracker
+    create: true
+    edit: true
+    type: simpleswitch
+    model: useTimeTracker
+    position: right
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Factory'
+    name: pabrik
+    create: true
+    edit: true
+    type: simpletableinputtemplate
+    model: pabrik
+    placeholder: ''
+    default: ''
+    validator: ''
+    column_classes: 'text-left text-100'
+    ordered: true
+    show_table_header: true
+    show_panel: false
+    use_dms: false
+    entity_name_key: ''
+    modal_entity: 'Factory'
+    param: '[ { text: "Select", value: "Select" } ]'
+    attr: { }
+  - label: 'Outlet'
+    name: outlet
+    create: true
+    edit: true
+    type: simpletableinputtemplate
+    model: outlet
+    placeholder: ''
+    default: ''
+    validator: ''
+    column_classes: 'text-left text-100'
+    ordered: true
+    show_table_header: true
+    show_panel: false
+    use_dms: false
+    entity_name_key: ''
+    modal_entity: 'Outlet'
+    param: '[ { text: "Select", value: "Select" } ]'
+    attr: { }
+  - label: 'Aspek Legal'
+    name: pu_aspek_legal
+    create: true
+    edit: true
+    type: simpletableinputtemplate
+    model: pu_aspek_legal
+    placeholder: ''
+    default: ''
+    validator: ''
+    column_classes: 'text-left text-100'
+    ordered: true
+    show_table_header: true
+    show_panel: false
+    use_dms: false
+    entity_name_key: ''
+    modal_entity: 'Aspek Legal'
+    param: '[ { text: "Select", value: "Select" } ]'
+    attr: { }
+  - label: 'Penyelia Halal'
+    name: penyelia
+    create: true
+    edit: true
+    type: simpletableinputtemplate
+    model: penyelia
+    placeholder: ''
+    default: ''
+    validator: ''
+    column_classes: 'text-left text-100'
+    ordered: true
+    show_table_header: true
+    show_panel: false
+    use_dms: false
+    entity_name_key: ''
+    modal_entity: 'Penyelia Halal'
+    param: '[ { text: "Select", value: "Select" } ]'
+    attr: { }
+  - label: 'Use Attendance'
+    name: useAttendance
+    create: true
+    edit: true
+    type: simpleswitch
+    model: useAttendance
+    position: right
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: Bank Name
+    name: bankName
+    create: true
+    edit: true
+    type: text
+    model: bankName
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Account Name
+    name: accountName
+    create: true
+    edit: true
+    type: text
+    model: accountName
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Account Number
+    name: accountNumber
+    create: true
+    edit: true
+    type: text
+    model: accountNumber
+    default: ''
+    validator: 'numeric'
+    param: { }
+    attr:
+      class: form-data
+  - label: Cost Center
+    name: costCenter
+    create: true
+    edit: true
+    type: text
+    model: costCenter
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Alloc. Center
+    name: allocationCenter
+    create: true
+    edit: true
+    type: text
+    model: allocationCenter
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: 'Lampiran Dokumen Usaha '
+    name: lamDokumen
+    create: true
+    edit: true
+    type: attachmentupload
+    model: lamDokumen
+    default: ''
+    validator: ''
+    mode: multi
+    show_list: true
+    use_caption: true
+    caption_required: true
+    caption_label: Deskripsi Lampiran
+    bucket: document
+    acceptedFiles: "application/pdf, image/, video/,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    param:
+      url: "api/v1/core/upload"
+      paramName: "file"
+  - label: Medical Approver
+    name: medicalApprover
+    create: true
+    edit: true
+    type: text
+    model: medicalApprover
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Leave Approver
+    name: leaveApprover
+    create: true
+    edit: true
+    type: text
+    model: leaveApprover
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Expense Approver
+    name: expenseApprover
+    create: true
+    edit: true
+    type: text
+    model: expenseApprover
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Carry Over
+    name: leaveCarryOver
+    create: true
+    edit: true
+    type: text
+    model: leaveCarryOver
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Advance Leave
+    name: leaveAdvance
+    create: true
+    edit: true
+    type: text
+    model: leaveAdvance
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Leave Already Taken
+    name: leaveAlreadyTaken
+    create: true
+    edit: true
+    type: text
+    model: leaveAlreadyTaken
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Leave Entitlement
+    name: leaveEntitlement
+    create: true
+    edit: true
+    type: text
+    model: leaveEntitlement
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Other Entitlement
+    name: leaveOtherEntitlement
+    create: true
+    edit: true
+    type: text
+    model: leaveOtherEntitlement
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Job Group
+    name: jobGroup
+    create: RO
+    edit: RO
+    type: text
+    model: jobGroup
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Job Group Seq
+    name: jobGroupSeq
+    create: RO
+    edit: RO
+    type: text
+    model: jobGroupSeq
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Job Title
+    name: jobTitle
+    create: true
+    edit: true
+    type: text
+    model: jobTitle
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Job Title Seq
+    name: jobTitleSeq
+    create: true
+    edit: true
+    type: text
+    model: jobTitleSeq
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Job Code
+    name: jobObject
+    create: true
+    edit: true
+    type: simpleselect
+    model: jobObject
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Department
+    name: department
+    create: true
+    edit: true
+    type: text
+    model: department
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Leave Period
+    name: leavePeriod
+    create: true
+    edit: true
+    type: daterangepicker
+    model: leavePeriod
+    default: ''
+    validator: ''
+    param: { }
+    attr:
+      class: form-data
+  - label: Send Notification
+    name: notificationSubs
+    create: true
+    edit: true
+    type: checkboxselect
+    model: notificationSubs
+    default: ''
+    validator: ''
+    item_class: 'col-12'
+    param: { }
+    attr:
+      class: form-data
+
+  - label: 'Facebook'
+    name: bizFacebook
+    create: true
+    edit: true
+    type: text
+    model: bizFacebook
+    default: ''
+    prepend: '<i class="lab la-facebook"></i>'
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Instagram'
+    name: bizInstagram
+    create: true
+    edit: true
+    type: text
+    model: bizInstagram
+    default: ''
+    prepend: '<i class="lab la-instagram"></i>'
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'No WhatsApp '
+    name: contactWA
+    create: true
+    edit: true
+    type: text
+    model: contactWA
+    placeholder: 'No aktif yang dapat dihubungi'
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Twitter'
+    name: bizTwitter
+    create: true
+    edit: true
+    type: text
+    model: bizTwitter
+    default: ''
+    prepend: '<i class="lab la-twitter"></i>'
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Merek Bisnis '
+    name: bizTradeMark
+    create: true
+    edit: true
+    type: text
+    model: bizTradeMark
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Alamat Domisili Usaha '
+    name: bizAddress
+    create: true
+    edit: true
+    type: text
+    model: bizAddress
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Jenis Usaha '
+    name: bizType
+    create: true
+    edit: true
+    type: simpleselect2
+    model: bizType
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Nomor'
+    name: bizIdNumber
+    create: true
+    edit: true
+    type: text
+    model: bizIdNumber
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Jenis Nomor'
+    name: bizIdType
+    create: true
+    edit: true
+    type: radioselect
+    model: bizIdType
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Nama Badan Usaha sesuai Akta Perusahaan'
+    name: bizRegisteredName
+    create: true
+    edit: true
+    type: text
+    model: bizRegisteredName
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Bentuk Badan Usaha '
+    name: bizCompanyType
+    create: true
+    edit: true
+    type: simpleselect2
+    model: bizCompanyType
+    default: 'Personal'
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Email '
+    name: bizPicEmail
+    create: true
+    edit: true
+    type: text
+    model: bizPicEmail
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Nama Lengkap '
+    name: bizPicName
+    create: true
+    edit: true
+    type: text
+    model: bizPicName
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: 'Posisi di perusahaan '
+    name: bizPicPosition
+    create: true
+    edit: true
+    type: text
+    model: bizPicPosition
+    default: ''
+    validator: required
+    param: { }
+    attr: { }
+  - label: ''
+    name: userid
+    create: true
+    edit: true
+    type: text
+    model: userid
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: ''
+    name: nib
+    create: true
+    edit: true
+    type: text
+    model: nib
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: ''
+    name: nik
+    create: true
+    edit: true
+    type: text
+    model: nik
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: ''
+    name: nama_pj
+    create: true
+    edit: true
+    type: text
+    model: nama_pj
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: ''
+    name: no_kontak_pj
+    create: true
+    edit: true
+    type: text
+    model: no_kontak_pj
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: ''
+    name: email_pj
+    create: true
+    edit: true
+    type: text
+    model: email_pj
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: ''
+    name: nama_pu
+    create: true
+    edit: true
+    type: text
+    model: nama_pu
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: ''
+    name: alamat_pu
+    create: true
+    edit: true
+    type: text
+    model: alamat_pu
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Kota'
+    name: kota_pu
+    create: true
+    edit: true
+    type: text
+    model: kota_pu
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Provinsi'
+    name: prov_pu
+    create: true
+    edit: true
+    type: text
+    model: prov_pu
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Kode Pos'
+    name: kode_pos_pu
+    create: true
+    edit: true
+    type: text
+    model: kode_pos_pu
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Kontak'
+    name: no_telp_pu
+    create: true
+    edit: true
+    type: text
+    model: no_telp_pu
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Jenis Usaha'
+    name: jenis_usaha
+    create: true
+    edit: true
+    type: text
+    model: jenis_usaha
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Skala Usaha'
+    name: skala_usaha
+    create: true
+    edit: true
+    type: text
+    model: skala_usaha
+    default: ''
+    validator: 'max:4'
+    param: { }
+    attr: { }
+  - label: 'Id Provinsi'
+    name: id_prov
+    create: true
+    edit: true
+    type: text
+    model: id_prov
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Email'
+    name: email_perusahaan
+    create: true
+    edit: true
+    type: text
+    model: email_perusahaan
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Modal Dasar'
+    name: modal_dasar
+    create: true
+    edit: true
+    type: text
+    model: modal_dasar
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'Member'
+    name: sihalal_member
+    create: true
+    edit: true
+    type: simpleswitch
+    model: sihalal_member
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'ID PU'
+    name: status_sihalal_pu
+    create: false
+    edit: false
+    type: simpleswitch
+    model: status_sihalal_pu
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'ID PU'
+    name: status_sihalal_confirm
+    create: false
+    edit: false
+    type: simpleswitch
+    model: status_sihalal_confirm
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+  - label: 'user type'
+    name: type_of_user
+    create: false
+    edit: false
+    type: text
+    model: type_of_user
+    default: ''
+    validator: ''
+    param: { }
+    attr: { }
+vue:
+  - model: roleName
+    visible: true
+    type: string
+    default: ''
+  - model: access
+    visible: true
+    type: string
+    default: ''
+  - model: name
+    visible: true
+    type: string
+    default: ''
+  - model: email
+    visible: true
+    type: string
+    default: ''
+  - model: phone
+    visible: true
+    type: string
+    default: ''
+  - model: gender
+    visible: true
+    type: string
+    default: ''
+  - model: placeOfBirth
+    visible: true
+    type: string
+    default: ''
+  - model: dateOfBirth
+    visible: true
+    type: string
+    default: ''
+  - model: mobileString
+    visible: true
+    type: string
+    default: ''
+  - model: mobileCountry
+    visible: true
+    type: string
+    default: '+62'
+  - model: mobile
+    visible: true
+    type: string
+    default: ''
+  - model: address
+    visible: true
+    type: string
+    default: ''
+  - model: kelurahan
+    visible: true
+    type: string
+    default: ''
+  - model: province
+    visible: true
+    type: string
+    default: ''
+  - model: kabupatenObject
+    visible: true
+    type: string
+    default: ''
+  - model: kabupaten
+    visible: true
+    type: string
+    default: ''
+  - model: provinceCode
+    visible: true
+    type: string
+    default: ''
+  - model: kabupatenCode
+    visible: true
+    type: string
+    default: ''
+  - model: city
+    visible: true
+    type: string
+    default: ''
+  - model: ZIP
+    visible: true
+    type: string
+    default: ''
+  - model: idNumber
+    visible: true
+    type: string
+    default: ''
+  - model: idValidation
+    visible: true
+    type: string
+    default: ''
+  - model: idType
+    visible: true
+    type: string
+    default: KTP
+  - model: idPic
+    visible: true
+    type: string
+    default: ''
+  - model: relativeName
+    visible: true
+    type: string
+    default: ''
+  - model: relativeEmail
+    visible: true
+    type: string
+    default: ''
+  - model: relativeMobile
+    visible: true
+    type: string
+    default: ''
+  - model: relativeIdType
+    visible: true
+    type: string
+    default: 'KTP'
+  - model: relativeIdNumber
+    visible: true
+    type: string
+    default: ''
+  - model: relativeIdPic
+    visible: true
+    type: string
+    default: ''
+  - model: relativeAddress
+    visible: true
+    type: string
+    default: ''
+  - model: relativeKabupaten
+    visible: true
+    type: string
+    default: ''
+  - model: relativeProvince
+    visible: true
+    type: string
+    default: ''
+  - model: relativeKabupatenCode
+    visible: true
+    type: string
+    default: ''
+  - model: relativeProvinceCode
+    visible: true
+    type: string
+    default: ''
+  - model: relativeKabupatenObject
+    visible: true
+    type: string
+    default: ''
+  - model: relativeProvinceObject
+    visible: true
+    type: string
+    default: ''
+  - model: relativeZIP
+    visible: true
+    type: string
+    default: ''
+  - model: relativeMobileString
+    visible: true
+    type: string
+    default: ''
+  - model: relativeMobileCountry
+    visible: true
+    type: string
+    default: ''
+  - model: signatureSpecimen
+    visible: true
+    type: string
+    default: ''
+  - model: initialSpecimen
+    visible: true
+    type: string
+    default: ''
+  - model: pin
+    visible: true
+    type: string
+    default: ''
+  - model: confirm_pin
+    visible: true
+    type: string
+    default: ''
+  - model: username
+    visible: true
+    type: string
+    default: ''
+  - model: password
+    visible: false
+    type: string
+    default: ''
+  - model: confirm_password
+    visible: true
+    type: string
+    default: ''
+  - model: locationCoord
+    visible: true
+    type: string
+    default: ''
+  - model: created_at
+    visible: false
+    type: string
+    default: ''
+  - model: updated_at
+    visible: false
+    type: string
+    default: ''
+  - model: statusEmployee
+    visible: true
+    type: string
+    default: ''
+  - model: employeeId
+    visible: true
+    type: string
+    default: ''
+  - model: employeeDateHired
+    visible: true
+    type: string
+    default: ''
+  - model: companyName
+    visible: true
+    type: string
+    default: ''
+  - model: useTimeTracker
+    visible: true
+    type: string
+    default: ''
+  - model: useAttendance
+    visible: true
+    type: boolean
+    default: true
+  - model: bankName
+    visible: true
+    type: string
+    default: ''
+  - model: accountName
+    visible: true
+    type: string
+    default: ''
+  - model: accountNumber
+    visible: true
+    type: string
+    default: ''
+  - model: companyName
+    visible: true
+    type: string
+    default: ''
+  - model: companyCode
+    visible: true
+    type: string
+    default: ''
+  - model: jobObject
+    visible: true
+    type: object
+    default: '{}'
+  - model: jobTitle
+    visible: true
+    type: string
+    default: ''
+  - model: jobTitleCode
+    visible: true
+    type: string
+    default: ''
+  - model: jobTitleSeq
+    visible: true
+    type: string
+    default: ''
+  - model: jobGroup
+    visible: true
+    type: string
+    default: ''
+  - model: jobGroupSeq
+    visible: true
+    type: string
+    default: ''
+  - model: department
+    visible: true
+    type: string
+    default: ''
+  - model: bizUnit
+    visible: true
+    type: object
+    default: '{}'
+  - model: bizUnitId
+    visible: true
+    type: string
+    default: ''
+  - model: bizUnitName
+    visible: true
+    type: string
+    default: ''
+  - model: costCenter
+    visible: true
+    type: string
+    default: ''
+  - model: avatar
+    visible: true
+    type: string
+    default: ''
+  - model: contactWA
+    visible: true
+    type: string
+    default: ''
+  - model: allocationCenter
+    visible: true
+    type: string
+    default: ''
+  - model: medicalApprover
+    visible: true
+    type: string
+    default: ''
+  - model: leaveApprover
+    visible: true
+    type: string
+    default: ''
+  - model: expenseApprover
+    visible: true
+    type: string
+    default: ''
+  - model: leaveCarryOver
+    visible: true
+    type: string
+    default: ''
+  - model: leaveAdvance
+    visible: true
+    type: string
+    default: ''
+  - model: leaveEntitlement
+    visible: true
+    type: string
+    default: ''
+  - model: leaveOtherEntitlement
+    visible: true
+    type: string
+    default: ''
+  - model: leaveAlreadyTaken
+    visible: true
+    type: string
+    default: ''
+  - model: leavePeriod
+    visible: true
+    type: string
+    default: ''
+  - model: handle
+    visible: false
+    type: string
+    default: ''
+  - model: notificationSubs
+    visible: false
+    type: array
+    default: [ ]
+
+  - model: bizDefaultId
+    visible: false
+    type: string
+    default: ''
+  - model: bizTradeMark
+    visible: false
+    type: string
+    default: ''
+  - model: bizCompanyType
+    visible: false
+    type: string
+    default: 'Personal'
+  - model: bizRegisteredName
+    visible: false
+    type: string
+    default: ''
+  - model: bizIdType
+    visible: false
+    type: string
+    default: ''
+  - model: bizIdNumber
+    visible: false
+    type: string
+    default: ''
+  - model: bizAddress
+    visible: false
+    type: string
+    default: ''
+  - model: bizType
+    visible: false
+    type: string
+    default: ''
+  - model: bizPicEmail
+    visible: false
+    type: string
+    default: ''
+  - model: bizPicName
+    visible: false
+    type: string
+    default: ''
+  - model: bizPicPosition
+    visible: false
+    type: string
+    default: ''
+  - model: bizInstagram
+    visible: false
+    type: string
+    default: ''
+  - model: pabrik
+    visible: true
+    type: array
+    default: { }
+  - model: penyelia
+    visible: true
+    type: array
+    default: { }
+  - model: outlet
+    visible: true
+    type: array
+    default: { }
+  - model: pu_aspek_legal
+    visible: true
+    type: array
+    default: { }
+  - model: bizFacebook
+    visible: false
+    type: string
+    default: ''
+  - model: bizTwitter
+    visible: false
+    type: string
+    default: ''
+  - model: lamDokumen
+    visible: true
+    type: array
+    default: [ ]
+  - model: lamDokumenObjects
+    visible: true
+    type: array
+    default: [ ]
+  - model: userid
+    visible: true
+    type: string
+    default: ''
+  - model: nib
+    visible: true
+    type: string
+    default: ''
+  - model: nik
+    visible: true
+    type: string
+    default: ''
+  - model: nama_pj
+    visible: true
+    type: string
+    default: ''
+  - model: no_kontak_pj
+    visible: true
+    type: string
+    default: ''
+  - model: email_pj
+    visible: true
+    type: string
+    default: ''
+  - model: nama_pu
+    visible: true
+    type: string
+    default: ''
+  - model: alamat_pu
+    visible: true
+    type: string
+    default: ''
+  - model: kota_pu
+    visible: true
+    type: string
+    default: ''
+  - model: prov_pu
+    visible: true
+    type: string
+    default: ''
+  - model: kode_pos_pu
+    visible: true
+    type: string
+    default: ''
+  - model: no_telp_pu
+    visible: true
+    type: string
+    default: ''
+  - model: jenis_usaha
+    visible: true
+    type: string
+    default: ''
+  - model: skala_usaha
+    visible: true
+    type: string
+    default: ''
+  - model: id_prov
+    visible: true
+    type: string
+    default: ''
+  - model: email_perusahaan
+    visible: true
+    type: string
+    default: ''
+  - model: modal_dasar
+    visible: true
+    type: string
+    default: ''
+  - model: sihalal_member
+    visible: true
+    type: boolean
+    default: ''
+  - model: status_sihalal_pu
+    visible: true
+    type: boolean
+    default: ''
+  - model: status_sihalal_confirm
+    visible: true
+    type: boolean
+    default: ''
+  - model: type_of_user
+    visible: true
+    type: string
+    default: ''
+view:
+  - label: Action
+    name: _id
+    model: id
+    visible: false
+    type: text
+    default: ''
+  - label: Created
+    name: createdAt
+    model: createdAt
+    visible: false
+    type: text
+    default: ''
+  - label: updatedAt
+    name: updatedAt
+    model: updatedAt
+    visible: false
+    type: text
+    default: ''
+  - label: ownerId
+    name: ownerId
+    model: ownerId
+    visible: false
+    type: text
+    default: ''
+  - label: ownerName
+    name: ownerName
+    model: ownerName
+    visible: false
+    type: text
+    default: ''
+  - label: handle
+    name: handle
+    model: handle
+    visible: false
+    type: text
+    default: ''
+  - label: deleted
+    name: deleted
+    model: deleted
+    visible: false
+    type: text
+    default: ''
+  - label: false
+    name: avatar
+    model: avatar
+    visible: true
+    type: squaresingleimage
+    default: ''
+  - label: 'Role Name'
+    name: roleName
+    model: roleName
+    visible: true
+    type: text
+    default: ''
+  - label: Role
+    name: roleId
+    model: roleId
+    visible: true
+    type: text
+    default: ''
+  - label: Name
+    name: name
+    model: name
+    visible: true
+    type: text
+    default: ''
+  - label: Email
+    name: email
+    model: email
+    visible: true
+    type: text
+    default: ''
+  - label: Phone
+    name: phone
+    model: phone
+    visible: true
+    type: text
+    default: ''
+  - label: 'Place Of Birth'
+    name: placeOfBirth
+    model: placeOfBirth
+    visible: true
+    type: text
+    default: ''
+  - label: 'Date of Birth'
+    name: dateOfBirth
+    model: dateOfBirth
+    visible: true
+    type: dateview
+    default: ''
+  - label: Mobile
+    name: mobile
+    model: mobile
+    visible: true
+    type: text
+    default: ''
+  - label: Alamat
+    name: address
+    model: address
+    visible: true
+    type: text
+    default: ''
+  - label: Kelurahan
+    name: kelurahan
+    model: kelurahan
+    visible: true
+    type: text
+    default: ''
+  - label: Province
+    name: province
+    model: province
+    visible: true
+    type: text
+    default: ''
+  - label: Kabupaten
+    name: kabupaten
+    model: kabupaten
+    visible: true
+    type: text
+    default: ''
+  - label: Kota
+    name: city
+    model: city
+    visible: true
+    type: text
+    default: ''
+  - label: ZIP
+    name: ZIP
+    model: ZIP
+    visible: true
+    type: text
+    default: ''
+  - label: 'ID Number'
+    name: idNumber
+    model: idNumber
+    visible: true
+    type: text
+    default: ''
+  - label: 'ID Type'
+    name: idType
+    model: idType
+    visible: true
+    type: text
+    default: ''
+  - label: false
+    name: idPic
+    model: idPic
+    visible: true
+    type: imagecardview
+    default: ''
+  - label: 'NIK'
+    name: relativeIdNumber
+    model: relativeIdNumber
+    visible: true
+    type: text
+    default: ''
+  - label: 'ID Type'
+    name: relativeIdType
+    model: relativeIdType
+    visible: true
+    type: text
+    default: ''
+  - label: false
+    name: relativeIdPic
+    model: relativeIdPic
+    visible: true
+    type: imagecardview
+    default: ''
+  - label: false
+    name: signatureSpecimen
+    model: signatureSpecimen
+    visible: true
+    type: imagecardview
+    default: ''
+  - label: false
+    name: initialSpecimen
+    model: initialSpecimen
+    visible: true
+    type: imagecardview
+    default: ''
+  - label: PIN
+    name: pin
+    model: pin
+    visible: true
+    type: text
+    default: ''
+  - label: 'Confirm PIN'
+    name: confirm_pin
+    model: confirm_pin
+    visible: true
+    type: text
+    default: ''
+  - label: 'Signature Pad'
+    name: signatureInput
+    model: signatureSpecimen
+    visible: false
+    type: text
+    default: ''
+  - label: Username
+    name: username
+    model: username
+    visible: true
+    type: text
+    default: ''
+  - label: Password
+    name: password
+    model: password
+    visible: true
+    type: text
+    default: ''
+  - label: 'Confirm Password'
+    name: confirm_password
+    model: confirm_password
+    visible: true
+    type: text
+    default: ''
+  - label: Location
+    name: locationCoord
+    model: locationCoord
+    visible: true
+    type: text
+    default: ''
+  - label: 'Employee ID / NIK'
+    name: employeeId
+    visible: true
+    type: text
+    model: employeeId
+  - label: 'Employee Status'
+    name: statusEmployee
+    visible: true
+    type: text
+    model: statusEmployee
+  - label: Created
+    name: created_at
+    model: created_at
+    visible: false
+    type: dateview
+    default: ''
+  - label: Updated
+    name: updated_at
+    model: updated_at
+    visible: false
+    type: dateview
+    default: ''
+  - label: 'Date Hired'
+    name: employeeDateHired
+    visible: true
+    type: datetime
+    model: employeeDateHired
+  - label: Company
+    name: companyName
+    visible: true
+    type: text
+    model: companyName
+  - label: 'Use Time Tracker'
+    name: useTimeTracker
+    visible: false
+    type: simpleswitch
+    model: useTimeTracker
+  - label: 'Use Attendance'
+    name: useAttendance
+    visible: false
+    type: simpleswitch
+    model: useAttendance
+  - label: Bank Name
+    name: bankName
+    model: bankName
+    visible: true
+    type: text
+    default: ''
+  - label: Account Name
+    name: accountName
+    model: accountName
+    visible: true
+    type: text
+    default: ''
+  - label: Cost Center
+    name: costCenter
+    model: costCenter
+    visible: true
+    type: text
+    default: ''
+  - label: Alloc. Center
+    name: allocationCenter
+    model: allocationCenter
+    visible: true
+    type: text
+    default: ''
+  - label: Medical Approver
+    name: medicalApprover
+    model: medicalApprover
+    visible: true
+    type: text
+    default: ''
+  - label: Leave Approver
+    name: leaveApprover
+    model: leaveApprover
+    visible: true
+    type: text
+    default: ''
+  - label: Expense Approver
+    name: expenseApprover
+    model: expenseApprover
+    visible: true
+    type: text
+    default: ''
+  - label: Carry Over
+    name: leaveCarryOver
+    model: leaveCarryOver
+    visible: true
+    type: text
+    default: ''
+  - label: Advance Leave
+    name: leaveAdvance
+    model: leaveAdvance
+    visible: true
+    type: text
+    default: ''
+  - label: Leave Already Taken
+    name: leaveAlreadyTaken
+    model: leaveAlreadyTaken
+    visible: true
+    type: text
+    default: ''
+  - label: Leave Entitlement
+    name: leaveEntitlement
+    model: leaveEntitlement
+    visible: true
+    type: text
+    default: ''
+  - label: Other Entitlement
+    name: leaveOtherEntitlement
+    model: leaveOtherEntitlement
+    visible: true
+    type: text
+    default: ''
+  - label: Job Title
+    name: jobTitle
+    model: jobTitle
+    visible: true
+    type: text
+    default: ''
+  - label: Job Code
+    name: jobTitleCode
+    model: jobTitleCode
+    visible: true
+    type: text
+    default: ''
+  - label: Department
+    name: department
+    model: department
+    visible: true
+    type: text
+    default: ''
+  - label: Leave period
+    name: leavePeriod
+    model: leavePeriod
+    visible: true
+    type: text
+    default: ''
+  - label: ''
+    name: userid
+    visible: true
+    type: text
+    model: userid
+  - label: ''
+    name: nib
+    visible: true
+    type: text
+    model: nib
+  - label: ''
+    name: nik
+    visible: true
+    type: text
+    model: nik
+  - label: ''
+    name: nama_pj
+    visible: true
+    type: text
+    model: nama_pj
+  - label: ''
+    name: nama_pu
+    visible: true
+    type: text
+    model: nama_pu
+  - label: ''
+    name: alamat_pu
+    visible: true
+    type: text
+    model: alamat_pu
+  - label: ''
+    name: kota_pu
+    visible: true
+    type: text
+    model: kota_pu
+  - label: ''
+    name: prov_pu
+    visible: true
+    type: text
+    model: prov_pu
+  - label: ''
+    name: kode_pos_pu
+    visible: true
+    type: text
+    model: kode_pos_pu
+  - label: ''
+    name: no_telp_pu
+    visible: true
+    type: text
+    model: no_telp_pu
+  - label: ''
+    name: jenis_usaha
+    visible: true
+    type: text
+    model: jenis_usaha
+  - label: ''
+    name: skala_usaha
+    visible: true
+    type: text
+    model: skala_usaha
+  - label: ''
+    name: id_prov
+    visible: true
+    type: text
+    model: id_prov
+  - label: ''
+    name: email_perusahaan
+    visible: true
+    type: text
+    model: email_perusahaan
+  - label: ''
+    name: modal_dasar
+    visible: true
+    type: text
+    model: modal_dasar
+

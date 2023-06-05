@@ -1,0 +1,25 @@
+{
+    "Version": "2021-05-23",
+    "Id": "http referer policy for cloudkilat lopis",
+    "Statement": [
+        {
+            "Sid": "Allow get requests originating from cedar.id.",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::dms/*",
+            "Condition": {
+                "StringLike": {
+                    "aws:Referer": [
+                        "http://*.mejik.web.id/*",
+                        "http://*.cedar.id/*",
+                        "http://*.sarosa.id/*",
+                        "http://*.topang.id/*",
+                        "http://*.temanqu.id/*",
+                        "http://localhost/*"
+                    ]
+                }
+            }
+        }
+    ]
+}

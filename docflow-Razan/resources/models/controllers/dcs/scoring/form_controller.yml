@@ -1,0 +1,979 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Status
+        name: isActive
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: boolean
+        row_text_alignment: text-left
+        column_classes: text-center text-50
+        thClass: ''
+    -
+        label: Code
+        name: formCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-center text-150
+        thClass: ''
+    -
+        label: Sections
+        name: section
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-left text-150
+        thClass: ''
+    -
+        label: Category
+        name: category
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Title
+        name: title
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-left text-200
+        thClass: ''
+    -
+        label: Slug
+        name: slug
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-left text-200
+        thClass: ''
+    -
+        label: Description
+        name: description
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Access
+        name: access
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-center text-50
+        thClass: ''
+    -
+        label: Link
+        name: accessUrl
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Valid From'
+        name: validFrom
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: text-center text-150
+        thClass: ''
+    -
+        label: 'Valid Until'
+        name: validUntil
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: text-center text-150
+        thClass: ''
+    -
+        label: Tags
+        name: tags
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Body
+        name: body
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Head Left'
+        name: headLeft
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Head Right'
+        name: headRight
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Footer Left'
+        name: footerLeft
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Footer Center'
+        name: footerCenter
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Page Size'
+        name: pageSize
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Upload Files'
+        name: docUpload
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: Pictures
+        name: picture
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: Picture
+        name: picture
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: imagearray
+        row_text_alignment: text-center
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: docViewer
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: imagearray
+        row_text_alignment: text-center
+        column_classes: ''
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        placeholder: Action
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr:
+            -
+                class: form-data
+    -
+        label: 'Valid From'
+        name: validFrom
+        create: true
+        edit: true
+        type: datepicker
+        model: validFrom
+        placeholder: 'Valid From'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Valid Until'
+        name: validUntil
+        create: true
+        edit: true
+        type: datepicker
+        model: validUntil
+        placeholder: 'Valid Until'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Active
+        name: isActive
+        create: true
+        edit: true
+        type: simpleswitch
+        model: isActive
+        position: right
+        placeholder: Status
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param: '[ { text: "Draft", value: "Draft" }, { text: "Published", value: "Published" }, { text: "Unpublished", value: "Unpublished" }]'
+        attr: {}
+    -
+        label: Tags
+        name: tags
+        create: true
+        edit: true
+        type: tagsinput
+        model: tags
+        placeholder: Tags
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Sections
+        name: section
+        create: true
+        edit: true
+        type: simpleselect
+        model: section
+        placeholder: Sections
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param: ''
+        attr: {}
+    -
+        label: Layout
+        name: layout
+        create: true
+        edit: true
+        type: simpleselect
+        model: layout
+        placeholder: Layout
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param: ''
+        attr: {}
+    -
+        label: Form Code
+        name: formCode
+        create: true
+        edit: true
+        type: text
+        model: formCode
+        placeholder: Form Code
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Form Section
+        name: formSection
+        create: true
+        edit: true
+        type: text
+        model: formSection
+        placeholder: Form Section
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Form Category
+        name: formCategory
+        create: true
+        edit: true
+        type: text
+        model: formCategory
+        placeholder: Form Category
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Form Questions
+        name: formQuestions
+        create: true
+        edit: true
+        type: formquestiondialog
+        model: formQuestions
+        placeholder: Form Questions
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 600px
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        on_item_change: detailCalc
+        entity_name_key: ProductID
+        modal_entity: 'PR Item'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Title
+        name: title
+        create: true
+        edit: true
+        type: text
+        model: title
+        placeholder: Title
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Slug
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        placeholder: Slug
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Access
+        name: access
+        create: true
+        edit: true
+        type: radioselect
+        model: access
+        placeholder: Access
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: URL
+        name: accessUrl
+        create: true
+        edit: true
+        type: text
+        model: accessUrl
+        placeholder: URL
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Category
+        name: category
+        create: true
+        edit: true
+        type: simpleselect
+        model: category
+        placeholder: Category
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param: ''
+        attr: {}
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: textarea
+        model: description
+        placeholder: Description
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Body
+        name: body
+        create: true
+        edit: true
+        type: codeeditor
+        model: body
+        placeholder: Body
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Head Left'
+        name: headLeft
+        create: true
+        edit: true
+        type: codeeditor
+        model: headLeft
+        placeholder: 'Head Left'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Full Head'
+        name: headFull
+        create: true
+        edit: true
+        type: codeeditor
+        model: headFull
+        placeholder: 'Head Full'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Head Right'
+        name: headRight
+        create: true
+        edit: true
+        type: codeeditor
+        model: headRight
+        placeholder: 'Head Right'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Footer Left'
+        name: footerLeft
+        create: true
+        edit: true
+        type: codeeditor
+        model: footerLeft
+        placeholder: 'Footer Left'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Footer Center'
+        name: footerCenter
+        create: true
+        edit: true
+        type: codeeditor
+        model: footerCenter
+        placeholder: 'Footer Center'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        height: 150px
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Page Size'
+        name: pageSize
+        create: true
+        edit: true
+        type: text
+        model: pageSize
+        placeholder: 'Page Size'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Upload Files'
+        name: docUpload
+        create: true
+        edit: true
+        type: multiuploadpad
+        model: docUpload
+        placeholder: 'Upload Files'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields: null
+        lang: '{name: "javascript", json: true}'
+        param:
+            url: api/v1/core/upload
+            paramName: file
+            buttonlabel: 'Upload picture'
+            useHandle: true
+            acceptedFiles: 'image/*'
+        attr: {}
+    -
+        label: Picture
+        name: picture
+        create: true
+        edit: true
+        type: attachmentupload
+        model: picture
+        default: ''
+        param:
+          url: "api/v1/core/upload"
+          paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Picture" }
+
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: validFrom
+        visible: true
+        type: string
+        default: na
+    -
+        model: validUntil
+        visible: true
+        type: string
+        default: na
+    -
+        model: isActive
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: formCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: formSection
+        visible: true
+        type: string
+        default: ''
+    -
+        model: formCategory
+        visible: true
+        type: string
+        default: ''
+    -
+        model: formQuestions
+        visible: true
+        type: array
+        default: []
+    -
+        model: layout
+        visible: true
+        type: string
+        default: ''
+    -
+        model: tags
+        visible: true
+        type: string
+        default: ''
+    -
+        model: section
+        visible: true
+        type: string
+        default: ''
+    -
+        model: title
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: access
+        visible: true
+        type: string
+        default: private
+    -
+        model: accessUrl
+        visible: true
+        type: string
+        default: ''
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: body
+        visible: true
+        type: string
+        default: ''
+    -
+        model: formHeader
+        visible: true
+        type: string
+        default: 'noHeader'
+    -
+        model: headLeft
+        visible: true
+        type: string
+        default: ''
+    -
+        model: headFull
+        visible: true
+        type: string
+        default: ''
+    -
+        model: headRight
+        visible: true
+        type: string
+        default: ''
+    -
+        model: formFooter
+        visible: true
+        type: string
+        default: 'noFooter'
+    -
+        model: footerLeft
+        visible: true
+        type: string
+        default: ''
+    -
+        model: footerCenter
+        visible: true
+        type: string
+        default: ''
+    -
+        model: pageSize
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docUpload
+        visible: true
+        type: string
+        default: ''
+    -
+        model: picture
+        visible: true
+        type: array
+        default: []
+    -
+        model: pictureObjects
+        visible: true
+        type: array
+        default: []
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Valid From'
+        name: validFrom
+        model: validFrom
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Valid Until'
+        name: validUntil
+        model: validUntil
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Status
+        name: isActive
+        model: isActive
+        visible: true
+        type: boolean
+        default: ''
+    -
+        label: Tags
+        name: tags
+        model: tags
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Sections
+        name: section
+        model: section
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Title
+        name: title
+        model: title
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Slug
+        name: slug
+        model: slug
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Access
+        name: access
+        model: access
+        visible: true
+        type: text
+        default: ''
+    -
+        label: URL
+        name: accessUrl
+        model: accessUrl
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Category
+        name: category
+        model: category
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Description
+        name: description
+        model: description
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Body
+        name: body
+        model: body
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Head Left
+        name: headLeft
+        model: headLeft
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Head Right
+        name: headRight
+        model: headRight
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Head Full
+        name: headFull
+        model: headFull
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: Footer Left
+        name: footerLeft
+        model: footerLeft
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: 'Footer Center'
+        name: footerCenter
+        model: footerCenter
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: 'Page Size'
+        name: pageSize
+        model: pageSize
+        visible: true
+        type: pre
+        default: ''
+    -
+        label: 'Upload Files'
+        name: docUpload
+        model: docUpload
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Layout
+        name: layout
+        model: layout
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Picture
+        name: picture
+        model: picture
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Form Code'
+        name: formCode
+        model: formCode
+        visible: true
+        type: text
+        default: ''

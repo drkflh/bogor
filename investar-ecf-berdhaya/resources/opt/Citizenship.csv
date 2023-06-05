@@ -1,0 +1,13 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Ecf/Citizenship_table_label,Ecf/Citizenship_table_name,Ecf/Citizenship_table_show,Ecf/Citizenship_table_search,Ecf/Citizenship_table_sort,Ecf/Citizenship_table_datatype,Ecf/Citizenship_form_label,Ecf/Citizenship_form_name,Ecf/Citizenship_form_create,Ecf/Citizenship_form_edit,Ecf/Citizenship_form_type,Ecf/Citizenship_form_model,Ecf/Citizenship_form_default,Ecf/Citizenship_form_validator,Ecf/Citizenship_form_param,Ecf/Citizenship_form_attr,Ecf/Citizenship_vue_model,Ecf/Citizenship_vue_visible,Ecf/Citizenship_vue_type,Ecf/Citizenship_vue_default,Ecf/Citizenship_view_label,Ecf/Citizenship_view_name,Ecf/Citizenship_view_visible,Ecf/Citizenship_view_type,Ecf/Citizenship_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+name,,,,,,,,,,,,Kewarganegaraan,name,no,no,no,string,Kewarganegaraan,name,no,yes,,name,,,,,name,no,,,Kewarganegaraan,name,,,name
+seq,,,,,,,,,,,,Seq,seq,no,no,no,integer,Seq,seq,no,yes,,seq,,,,,seq,no,,,Seq,seq,,,seq

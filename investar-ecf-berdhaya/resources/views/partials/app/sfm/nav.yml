@@ -1,0 +1,213 @@
+- title: "SFM - Store Management"
+  auth: 'sfm-main-menu'
+  icon: "<i data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Dashboard
+      auth: 'sfm-dashboard'
+      url: "sfm/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Transactions
+      auth: 'sfm-transaction-menu'
+      url: "sfm/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+      children:
+      - title: "Transaction Summary"
+        icon: '<i class="las la-cart link-icon"></i>'
+        auth: 'sfm-transaction-transaction-summary'
+        url: "sfm/transaction-summary"
+      - title: "Shopping Cart"
+        icon: '<i class="las la-cart link-icon"></i>'
+        auth: 'sfm-transaction-shopping-cart'
+        url: "sfm/shopping-cart"
+      - title: "Shopping Cost"
+        icon: '<i class="las la-cart link-icon"></i>'
+        auth: 'sfm-transaction-shopping-cost'
+        url: "sfm/shopping-cost"
+      - title: "Sales Orders"
+        icon: '<i class="link-icon" data-feather="folder"></i>'
+        auth: 'sfm-transaction-sales-order'
+        url: "sfm/sales-order"
+      - title: "Invoices"
+        icon: '<i class="link-icon" data-feather="folder"></i>'
+        auth: 'sfm-transaction-invoice'
+        url: "sfm/invoice"
+      - title: "Payment"
+        icon: '<i class="link-icon" data-feather="folder"></i>'
+        auth: 'sfm-transaction-payment'
+        url: "sfm/payment"
+      - title: "Purchases"
+        icon: '<i data-feather="server" class="fa fa-comment-dots uil-comment-alt-exclamation  link-icon"></i>'
+        auth: 'sfm-transaction-purchase'
+        url: "sfm/purchase"
+      - title: "Expenses"
+        auth: 'sfm-transaction-expense'
+        icon: '<i data-feather="server" class="fa fa-comment-dots uil-comment-alt-exclamation  link-icon"></i>'
+        url: "sfm/expense"
+    - title: "Products"
+      auth: 'sfm-product-menu'
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: "Product Summary"
+          auth: 'sfm-product-product-summary'
+          url: "sfm/store/product-summary"
+        - title: "Product Catalog"
+          auth: 'sfm-product-product-item'
+          url: "sfm/product/product-list"
+        - title: "Product Category"
+          auth: 'sfm-product-product-category'
+          url: "sfm/product/product-category"
+        - title: "Bill of Material"
+          auth: 'sfm-product-bill-of-material'
+          url: "sfm/product/bill-of-material"
+        - title: "COGS"
+          auth: 'sfm-product-cogs'
+          url: "sfm/product/cogs"
+        - title: "Promo"
+          auth: 'sfm-product-promo'
+          url: "sfm/product/promo"
+    - title: "Inventory"
+      auth: 'sfm-inventory-menu'
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: "Inventory Dashboard"
+          auth: 'sfm-inventory-inventory-dashboard'
+          url: "inventory/dashboard"
+        - title: "Stock Control"
+          auth: 'sfm-inventory-stock-control'
+          url: "inventory/stock-control"
+        - title: "Inventory Item"
+          auth: 'sfm-inventory-inventory-item'
+          url: "inventory/inventory-item"
+        - title: "Inventory Category"
+          auth: 'sfm-inventory-inventory-category'
+          url: "inventory/inventory-category"
+    - title: "Delivery"
+      auth: 'sfm-delivery-menu'
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: "Delivery Order"
+          auth: 'delivery-order'
+          url: "sfm/delivery/delivery-order"
+    - title: "Directory"
+      auth: 'sfm-directory-menu'
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: "Customer"
+          auth: 'sfm-directory-customer-directory'
+          url: "sfm/directory/customer-directory"
+        - title: "Vendor"
+          auth: 'sfm-directory-vendor-directory'
+          url: "sfm/directory/vendor-directory"
+        - title: "Vendor Product Catalog"
+          auth: 'sfm-directory-vendor-product-catalog'
+          url: "sfm/directory/vendor-product-list"
+    - title: "Reports"
+      auth: 'sfm-reports-menu'
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+      - title: "Sales Report"
+        auth: 'sfm-reports-sales-report'
+        url: "sfm/reports/sales-report"
+      - title: "Inventory Report"
+        auth: 'sfm-reports-inventory-report'
+        url: "sfm/reports/inventory-report"
+      - title: "Purchase Report"
+        auth: 'sfm-reports-purchase-report'
+        url: "sfm/reports/purchase-report"
+    - title: "Reference"
+      auth: 'sfm-reference-menu'
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+      - title: "Outlets"
+        auth: 'sfm-reference-outlets'
+        url: "sfm/reference/outlets"
+      - title: "Channels"
+        auth: 'sfm-reference-channels'
+        url: "sfm/reference/channels"
+      - title: "Level"
+        auth: 'sfm-reference-levels'
+        url: "sfm/reference/levels"
+      - title: "Templates"
+        auth: 'sfm-reference-templates'
+        url: "sfm/reference/templates"
+#- title: "DMS"
+#  auth: "dms-menu"
+#  icon: "<i   data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#  children:
+#    - title: Repository
+#      auth: dms-repository
+#      url: "dms/repository"
+#      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#    - title: "DMS Options"
+#      auth: dms-option-menu
+#      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#      children:
+#        - title: "Call Code"
+#          url: "dms/admin/callcode"
+#          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#        - title: "Doc Class"
+#          url: "dms/admin/docclass"
+#          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#        - title: "Doc Function"
+#          url: "dms/admin/docfunction"
+#          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#        - title: "Company"
+#          url: "dms/admin/coycode"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Disposal"
+#          url: "dms/admin/disposal"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Doc Type"
+#          url: "dms/admin/doctype"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Box"
+#          url: "dms/admin/box"
+#          icon: "<i class=\"link-icon\"  data-feather=\"package\"></i>"
+#        - title: "Sequence"
+#          url: "dms/admin/sequence"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#- title: "Master Reference"
+#  auth: "master-refrence-menu"
+#  icon: "<i data-feather=\"package\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#  children:
+#  - title: "General"
+#    icon: "<i data-feather=\"package\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#    children:
+#      - title: "UOM"
+#        url: "reference/uom"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#      - title: "Area"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/area"
+#      - title: "Zipcode"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/zipcode"
+#      - title: "Country"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/country"
+#  - title: "Financial"
+#    icon: "<i data-feather=\"package\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#    children:
+#      - title: "Currency"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/currency"
+#      - title: "Exchange Rate"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/exchange-rate"
+#  - title: "Company"
+#    icon: "<i data-feather=\"package\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#    children:
+#      - title: "Group Company"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/company"
+#      - title: "Company Type"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/company-type"
+#      - title: "Job Status"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/jobstatus"
+#      - title: "Incoterm"
+#        icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        url: "reference/incoterm"
+#    - title: "Cost Center"
+#      url: "reference/costcenter"

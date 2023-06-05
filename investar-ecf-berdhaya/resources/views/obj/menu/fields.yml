@@ -1,0 +1,107 @@
+- label: "Action"
+  name: "_id"
+  sort: false
+  show: true
+  uniqueId: true
+- label: "Field 1"
+  name: "dbField1"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "simple"
+    placeholder: "Enter Field 1"
+  form:
+    type: text
+    default: ""
+    model: dbField1
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+      class: "form-control col-4"
+  api:
+    type: text
+  vue:
+    type: text
+    default: ""
+- label: "Field 2"
+  name: "dbField2"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "select"
+    mode: single
+    placeholder: "Select Field 1"
+    closeDropdownOnSelection: true
+    options:
+    - name: "Option 1"
+      value: "Option1"
+    - name: "Option 2"
+      value: "Option2"
+    init:
+      value: "Option2"
+  form:
+    type: simpleselect
+    default: null
+    model: dbField2
+    options:
+    - text: "Option 1"
+      value: "Option1"
+    - text: "Option 2"
+      value: "Option2"
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+      class: "form-control col-lg-6 col-sm-12"
+  view:
+    type: text
+    show: true
+  api:
+    type: text
+    default: ""
+  vue:
+    type: text
+    default: "Option1"
+- label: "Field 3"
+  name: "dbField3"
+  sort: true
+  show: true
+  row_text_alignment: "text-left"
+  filter:
+    type: "select"
+    mode: multi
+    placeholder: "Select Field 3"
+    closeDropdownOnSelection: true
+    options:
+    - name: "Option 1"
+      value: "Option1"
+    - name: "Option 2"
+      value: "Option2"
+    init:
+      value: "Option2"
+  form:
+    type: simpleselect
+    default: null
+    model: dbField2
+    options:
+    - text: "Option 1"
+      value: "Option1"
+    - text: "Option 2"
+      value: "Option2"
+    row: 1
+    col: 1
+    attr:
+      autocomplete: "off"
+      class: "form-control col-lg-6 col-sm-12"
+  view:
+    type: text
+    show: true
+  api:
+    type: text
+    default: ""
+  vue:
+    type: text
+    default: "Option1"

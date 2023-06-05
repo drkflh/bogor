@@ -1,0 +1,17 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Ecf/Product_table_label,Ecf/Product_table_name,Ecf/Product_table_show,Ecf/Product_table_search,Ecf/Product_table_sort,Ecf/Product_table_datatype,Ecf/Product_form_label,Ecf/Product_form_name,Ecf/Product_form_create,Ecf/Product_form_edit,Ecf/Product_form_type,Ecf/Product_form_model,Ecf/Product_form_default,Ecf/Product_form_validator,Ecf/Product_form_param,Ecf/Product_form_attr,Ecf/Product_vue_model,Ecf/Product_vue_visible,Ecf/Product_vue_type,Ecf/Product_vue_default,Ecf/Product_view_label,Ecf/Product_view_name,Ecf/Product_view_visible,Ecf/Product_view_type,Ecf/Product_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+companyId,,,,,,,,,,,,Company ID,companyId,no,,,,Company ID,companyId,,,,companyId,,,,,companyId,,,,Company ID,companyId,,,companyId
+companyName,,,,,,,,,,,,Nama Perusahaan,companyName,no,,,,Nama Perusahaan,companyName,,,,companyName,,,,,companyName,,,,Nama Perusahaan,companyName,,,companyName
+productName,,,,,,,,,,,,Nama Produk,productName,,,,,Nama Produk,productName,,,,productName,,,,,productName,,,,Nama Produk,productName,,,productName
+price,number,,,,,,,,,,,Harga,price,,,,,Harga,price,,,,price,,,,,price,,,,Harga,price,,,price
+typeproduct,,,,,,,,,,,,Jenis Produk,typeproduct,,,,,Jenis Produk,typeproduct,,,,typeproduct,,,,,typeproduct,,,,Jenis Produk,typeproduct,,,typeproduct
+description,,,,,,,,,,,,Deskripsi,description,,,,,Deskripsi,description,,,,description,,,,,description,,,,Deskripsi,description,,,description

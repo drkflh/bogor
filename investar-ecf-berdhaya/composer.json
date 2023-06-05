@@ -1,0 +1,112 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3",
+        "alkhachatryan/laravel-web-console": "^3.3",
+        "baopham/dynamodb": "^6.1",
+        "barryvdh/laravel-dompdf": "^0.9.0",
+        "barryvdh/laravel-snappy": "^0.4.8",
+        "beyondcode/laravel-websockets": "^1.12",
+        "brick/phonenumber": "^0.4.0",
+        "chillerlan/php-qrcode": "^4.3",
+        "codedge/laravel-fpdf": "^1.8",
+        "coraxster/flysystem-aws-s3-v3-minio": "^1.0",
+        "doge-dev/laravel-mongo-queue": "dev-master",
+        "fideloper/proxy": "^4.0",
+        "firebase/php-jwt": "^5.2",
+        "flynsarmy/db-blade-compiler": "^5.5",
+        "geocoder-php/locationiq-provider": "^1.0",
+        "geocoder-php/openrouteservice-provider": "^1.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.7",
+        "jenssegers/mongodb": "^3.8",
+        "koolreport/blade": "^1.0",
+        "koolreport/bootstrap4": "^1.5",
+        "koolreport/export": "*",
+        "koolreport/instant": "^3.7",
+        "koolreport/laravel": "^2.0",
+        "koolreport/mongodb": "^1.2",
+        "kwn/number-to-words": "^1.12",
+        "laravel/framework": "^8.0",
+        "laravel/tinker": "^2.0",
+        "laravie/serialize-queries": "^1.0",
+        "league/geotools": "@stable",
+        "league/glide-laravel": "^1.0",
+        "maatwebsite/excel": "^3.1",
+        "mews/purifier": "^3.3",
+        "milon/barcode": "^8.0",
+        "mjaschen/phpgeo": "^4.0",
+        "nexmo/laravel": "^3.0",
+        "php-mqtt/laravel-client": "^1.0",
+        "phpoffice/phpword": "^0.18.2",
+        "pusher/pusher-php-server": "~3.0",
+        "renatomarinho/laravel-page-speed": "^2.0",
+        "rockett/weasyprint": "^4.0",
+        "sbourdette/laravel-mongo-queue-monitor": "^1.1",
+        "setasign/fpdf": "^1.8",
+        "setasign/fpdi": "^2.3",
+        "simplesoftwareio/simple-qrcode": "~4",
+        "spatie/laravel-fractal": "^5.8",
+        "spatie/simple-excel": "^1.13",
+        "symfony/expression-language": "^5.4",
+        "symfony/yaml": "^5.0",
+        "toin0u/geocoder-laravel": "^4.2",
+        "twilio/sdk": "^6.42"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
+        "facade/ignition": "^2.3.6",
+        "fzaninotto/faker": "^1.4",
+        "knuckleswtf/scribe": "^2.5",
+        "laravel/ui": "^3.0",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.0",
+        "recca0120/terminal": "^1.10"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "files": ["app/Helpers/CustomFunctions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "repositories": [
+        {"type":"composer","url":"https://repo.koolreport.com"}
+    ]
+}

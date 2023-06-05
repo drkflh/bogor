@@ -1,0 +1,93 @@
+- title: "Workflow"
+  icon: "<i  data-feather=\"edit\" class=\"mdi mdi-alert link-icon\" style=\"color:red;\"></i>"
+  id: workflowMenu
+  children:
+    - title: Approval
+      icon: "<i  data-feather=\"grid\"  class=\"mdi mdi-account-multiple  link-icon\"></i>"
+      id: approvalMenu
+      children:
+        - title: "Approval Request"
+          url: "workflow/approval-request"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Approval Log"
+          url: "workflow/approval-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Approvers"
+          url: "workflow/approver"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Default Approvers"
+          url: "workflow/default-approver"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+    - title: Organization
+      icon: "<i  data-feather=\"grid\"  class=\"mdi mdi-account-multiple  link-icon\"></i>"
+      id: organizationMenu
+      children:
+        - title: "Organization Charts"
+          url: "workflow/org-chart"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+
+- title: "System"
+  icon: "<i class=\"mdi mdi-alert\" style=\"color:red;\"></i>"
+  children:
+    - title: Users
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+      id: userMenu
+      children:
+        - title: "Dashboard Users"
+          url: "user"
+          icon: "<i class=\"link-icon\"  class=\"fa fa-account-multiple\"></i>"
+        - title: "Members"
+          url: "member"
+          icon: "<i class=\"link-icon\"  class=\"fa fa-account-multiple\"></i>"
+        - title: "API Users"
+          url: "api-user"
+          icon: "<i class=\"link-icon\"  class=\"fa fa-account-multiple\"></i>"
+        - title: "Roles"
+          url: "role"
+          icon: "<i class=\"link-icon\"  data-feather=\"user-check\"></i>"
+    - title: "Messaging"
+      icon: "<i class=\"link-icon\"  data-feather=\"message-square\"></i>"
+      id: messagingMenu
+      children:
+        - title: "Message Queue"
+          url: "mms/message-queue"
+        - title: "Message Log"
+          url: "mms/message-log"
+        - title: "Message Gateway"
+          url: "mms/message-gateway"
+        - title: "FCM Register"
+          url: "fcm-register"
+    - title: Logs
+      icon: "<i data-feather=\"database\" class=\"mdi mdi-account-multiple link-icon\"></i>"
+      id: logsMenu
+      children:
+        - title: "API Log"
+          url: "apilog"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Git Log"
+          url: "obj/git-log"
+          target: blank
+          icon: "<i class=\"mdi mdi-file\"></i>"
+
+
+- title: "Development Tool"
+  icon: "<i  data-feather=\"edit\" class=\"mdi mdi-alert link-icon\" style=\"color:red;\"></i>"
+  id: authoringMenu
+  children:
+  - title: Templates
+    icon: "<i  data-feather=\"code\" class=\"mdi mdi-account-multiple  link-icon\"></i>"
+    id: templatesMenu
+    children:
+    - title: "Email"
+      url: "obj/email-template"
+      icon: "<i class=\"mdi mdi-file\"></i>"
+    - title: "Print"
+      url: "obj/print-template"
+      icon: "<i class=\"mdi mdi-file\"></i>"
+  - title: Objects
+    icon: "<i  data-feather=\"hexagon\" class=\"mdi mdi-account-multiple  link-icon\"></i>"
+    id: objectsMenu
+    children:
+    - title: "ACL Entity"
+      url: "obj/acl-object"
+      icon: "<i class=\"mdi mdi-account\"></i>"

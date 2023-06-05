@@ -1,0 +1,561 @@
+- label: Action
+  name: _id
+  show: true
+  sort: false
+  uniqueId: true
+  row_text_alignment: text-left
+  column_classes: col_action
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: id
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Created
+  name: createdAt
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  row_classes: date
+  datatype: true
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: createdAt
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: updatedAt
+  name: updatedAt
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  row_classes: date
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: updatedAt
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: handle
+  name: handle
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: handle
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: deleted
+  name: deleted
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: deleted
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Company Code'
+  name: companyCode
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: companyCode
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'NO. NPWP'
+  name: noNpwp
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-200'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: noNpwp
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Company Name'
+  name: companyName
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-200'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: companyName
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Company Phone'
+  name: companyPhone
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left'
+  datatype: number
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: number
+    model: companyPhone
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: number
+  view:
+    visible: true
+    type: number
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Company Phone2'
+  name: companyPhone2
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: number
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: number
+    model: companyPhone2
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: number
+  view:
+    visible: true
+    type: number
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Company Fax'
+  name: companyFax
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-150'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: companyFax
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'NIB'
+  name: nib
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: nib
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'API'
+  name: api
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: api
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Address'
+  name: companyAddress
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-200'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: textarea
+    model: companyAddress
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Address 2'
+  name: companyAddress1
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: textarea
+    model: companyAddress1
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Address 3'
+  name: companyAddress2
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: textarea
+    model: companyAddress2
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Company Logo'
+  name: companyLogo
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left text-150'
+  datatype: image
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: imagecardupload
+    model: companyLogo
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+    attr: { class: "form-data", buttonlabel: "Upload Company Picture" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: singleimage
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Email'
+  name: companyEmail
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  row_classes: text-200
+  column_classes: 'text-left'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: companyEmail
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na

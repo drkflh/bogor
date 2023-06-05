@@ -1,0 +1,204 @@
+- title: ''
+  auth: fms-dashboard
+  url: "fms/dashboard"
+  icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+  children:
+    - title: Dashboard
+      auth: fms-dashboard
+      url: "fms/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+- title: Administration
+  auth: fms-administration-menu
+  url: "fms/document/list/status/incoming"
+  icon: "<i class=\"link-icon\"  data-feather=\"inbox\"></i>"
+  children:
+    - title: Farm Owner
+      auth: fms-owner-profile
+      url: "profile"
+      icon: "<i class=\"las la-user-circle link-icon\"></i>"
+    - title: Farms
+      auth: fms-farm-register
+      url: "fms/farm-register"
+      icon: "<i class=\"las la-tractor link-icon\"></i>"
+    - title: "Personnel"
+      auth: fms-personnel-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+      children:
+        - title: Farm Administrator
+          auth: "fms-farm-admin"
+          url: "user/list/farm-admin"
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: Field Officer
+          auth: "fms-field-officer"
+          url: "user/list/field-officer"
+          icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+
+#- title: "Farm Management"
+#  auth: "fms-farm-management"
+#  icon: "<i   data-feather=\"message-square\" class=\"las la-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#  children:
+#    - title: Environment
+#      auth: "fms-environment"
+#      url: "fms/environment"
+#      icon: "<i class=\"las la-cloud-sun-rain link-icon\"></i>"
+#    - title: Milk Production
+#      auth: "fms-dairy-production"
+#      url: "fms/dairy-production"
+#      icon: "<i class=\"las la-wine-bottle link-icon\"></i>"
+#    - title: Food Supply
+#      auth: "fms-food-supply"
+#      url: "fms/food-supply"
+#      icon: "<i class=\"las la-leaf link-icon\"></i>"
+
+- title: "Cattle Management"
+  auth: "fms-cattle-management"
+  url: "fms/cattle-profile/list/cow"
+  icon: "<i   data-feather=\"message-square\" class=\"las la-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Cattle
+      auth: fms-cattle-management
+      url: "fms/cattle-profile"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#    - title: Weight Log
+#      auth: fms-weight-log
+#      url: "fms/weight-log"
+#      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+
+- title: Monitoring
+  url: "fms/document/list/status/incoming"
+  icon: "<i class=\"link-icon\"  data-feather=\"inbox\"></i>"
+  children:
+    - title: Birahi Check
+      auth: "fms-fresh-check"
+      url: "fms/estrus-check"
+      icon: "<i class=\"las la-eye link-icon\"></i>"
+    - title: Fresh Check
+      auth: "fms-fresh-check"
+      url: "fms/fresh-check"
+      icon: "<i class=\"las la-eye link-icon\"></i>"
+    - title: Insemination
+      auth: "fms-insemination"
+      url: "fms/insemination"
+      icon: "<i class=\"las la-dna link-icon\"></i>"
+    - title: USG Check
+      auth: "fms-pregnant-check"
+      url: "fms/usg-check"
+      icon: "<i class=\"las la-seedling link-icon\"></i>"
+    - title: Pregnant Check
+      auth: "fms-pregnant-check"
+      url: "fms/pregnant-check"
+      icon: "<i class=\"las la-seedling link-icon\"></i>"
+    - title: Reproduction
+      auth: "fms-reproduction"
+      url: "fms/reproduction"
+      icon: "<i class=\"las la-vial link-icon\"></i>"
+#    - title: Vaccination
+#      auth: "fms-vaccination"
+#      url: "fms/vaccination"
+#      icon: "<i class=\"las la-syringe link-icon\"></i>"
+#    - title: Medical Treatment
+#      auth: "fms-medical-treatment"
+#      url: "fms/medical-treatment"
+#      icon: "<i class=\"las la-heartbeat link-icon\"></i>"
+- title: REFERENCES
+  auth: fms-reference-menu
+  url: "fms/document/list/status/incoming"
+  icon: "<i class=\"link-icon\"  data-feather=\"inbox\"></i>"
+  children:
+    - title: IB Officer
+      auth: "fms-ib-officer"
+      url: "user/list/ib-officer"
+      icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+    - title: Semen Inventory
+      auth: "fms-semen-inventory"
+      url: "fms/semen-inventory"
+      icon: "<i class=\"las la-vials link-icon\"></i>"
+#    - title: "Insemination Center"
+#      auth: "fms-insemination-center"
+#      url: "fms/vendor/list/insemination-center"
+#      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+
+#    - title: "Inventory"
+#      auth: fms-inventory-menu
+#      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#      children:
+#        - title: "Stock Control"
+#          auth: "fms-stock-control"
+#          url: "inventory/stock-control"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Inventory Item"
+#          auth: "fms-inventory-category"
+#          url: "inventory/inventory-item"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Inventory Category"
+#          auth: "fms-inventory-category"
+#          url: "inventory/inventory-category"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#    - title: "Reference Data"
+#      auth: fms-option-menu
+#      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#      children:
+#        - title: "Kode Jabatan"
+#          auth: "fms-job-code"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/job-title"
+#        - title: "Group Alias"
+#          auth: "fms-job-group-alias"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "fms/admin/group-alias"
+#        - title: "Group Disposisi"
+#          auth: "fms-job-group"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "fms/admin/job-group"
+#        - title: "Item Disposisi"
+#          auth: "fms-dispo-item"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "fms/admin/disposition-item"
+#        - title: "Jenis Naskah"
+#          auth: "fms-doc-type"
+#          url: "fms/admin/doctype"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Template Naskah"
+#          auth: "fms-doc-template"
+#          url: "fms/admin/print-template"
+#          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#        - title: "Template Form Naskah"
+#          url: "fms/admin/doc-template"
+#          icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#    - title: "Referensi Perusahaan"
+#      icon: "<i data-feather=\"package\" class=\"las la-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#      children:
+#        - title: "Group Perusahaan"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/company"
+#        - title: "Unit Bisnis"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/biz-unit"
+#        - title: "Jenis Perusahaan"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/company-type"
+#        - title: "Jenis Unit Bisnis"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#          url: "reference/biz-unit-type"
+- title: NOTIFICATION
+  auth: mms-notification-menu
+  url: "fms/document/list/status/incoming"
+  icon: "<i class=\"link-icon\"  data-feather=\"inbox\"></i>"
+  children:
+    - title: "Notifications"
+      auth: mms-notification
+      icon: "<i class=\"las la-sms link-icon\" ></i>"
+      url: "mms/notification"
+    - title: "Notification Template"
+      auth: mms-notification-template
+      icon: "<i class=\"las la-rss link-icon\" ></i>"
+      url: "mms/notification-template"
+    - title: "Notification Sub"
+      auth: mms-notification-sub
+      icon: "<i class=\"las la-rss link-icon\" ></i>"
+      url: "mms/notification-sub"
+#    - title: "Notification Channel"
+#      auth: mms-notification-channel
+#      icon: "<i class=\"las la-rss-square link-icon\"></i>"
+#      url: "mms/notification-channel"
+

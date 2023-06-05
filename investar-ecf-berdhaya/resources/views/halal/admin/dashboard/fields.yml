@@ -1,0 +1,144 @@
+- label: 'Status Produk'
+  name: cardStatusPopulasi
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.fms.circularbarcard"
+    model: cardStatusPopulasi.series
+    title: cardStatusPopulasi.title
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    url: "fms/dashboard/status-populasi"
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+    chart_options: cardStatusPopulasiOptions
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Status Proses'
+  name: cardStatusReproduksi
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.fms.circularbarcard"
+    model: cardStatusReproduksi.series
+    title: cardStatusReproduksi.title
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    url: "fms/dashboard/status-populasi"
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+    chart_options: cardStatusReproduksiOptions
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Dalam Proses'
+  name: cardTableLactation
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.table"
+    model: cardTableLactation
+    title: cardTableLactation.title
+    data: cardTableLactation.data
+    header: cardTableLactation.header
+    footer: cardTableLactation.footer
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Card Age'
+  name: cardAge
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.silani.graphcardage"
+    model: cardAge
+    title: cardAge.title
+    lansiaUsiaCount: cardAge.lansiaUsiaCount
+    test: cardAge.test
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    url: "silani/dashboard/age"
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na

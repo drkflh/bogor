@@ -1,0 +1,145 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Kode Kecamatan'
+        name: kodeKecamatan
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: 'text-center text-200'
+    -
+        label: 'Kode Kabupaten'
+        name: kodeKabupaten
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: 'text-center text-200'
+    -
+        label: 'Nama Kecamatan'
+        name: namaKecamatan
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: 'text-center text-200'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Kecamatan'
+        name: kodeKecamatan
+        create: true
+        edit: true
+        type: text
+        model: kodeKecamatan
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Kabupaten'
+        name: kodeKabupaten
+        create: true
+        edit: true
+        type: text
+        model: kodeKabupaten
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Kecamatan'
+        name: namaKecamatan
+        create: true
+        edit: true
+        type: text
+        model: namaKecamatan
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: kodeKecamatan
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: kodeKabupaten
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: namaKecamatan
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Kode Kecamatan'
+        name: kodeKecamatan
+        visible: true
+        type: text
+        model: kodeKecamatan
+    -
+        label: 'Kode Kabupaten'
+        name: kodeKabupaten
+        visible: true
+        type: text
+        model: kodeKabupaten
+    -
+        label: 'Nama Kecamatan'
+        name: namaKecamatan
+        visible: true
+        type: text
+        model: namaKecamatan

@@ -1,0 +1,153 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Group
+        name: groupName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Jabatan
+        name: groupMember
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Kode Jabatan'
+        name: jobTitleCode
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Urutan'
+        name: seq
+        show: true
+        search: true
+        sort: true
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Group
+        name: groupName
+        create: true
+        edit: true
+        type: text
+        model: groupName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Jabatan
+        name: groupMember
+        create: true
+        edit: true
+        type: text
+        model: groupMember
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Jabatan'
+        name: jobTitleCode
+        create: true
+        edit: true
+        type: text
+        model: jobTitleCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Urutan'
+        name: seq
+        create: true
+        edit: true
+        type: text
+        model: seq
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: groupName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: groupMember
+        visible: true
+        type: string
+        default: ''
+    -
+        model: jobTitleCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: seq
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Group
+        name: groupName
+        visible: true
+        type: text
+        model: groupName
+    -
+        label: Jabatan
+        name: groupMember
+        visible: true
+        type: text
+        model: groupMember
+    -
+        label: 'Kode Jabatan'
+        name: jobTitleCode
+        visible: true
+        type: text
+        model: jobTitleCode
+    -
+        label: 'Urutan'
+        name: seq
+        visible: true
+        type: text
+        model: seq

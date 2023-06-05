@@ -1,0 +1,22 @@
+- title: "Development Tool"
+  icon: "<i  data-feather=\"edit\" class=\"mdi mdi-alert link-icon\" style=\"color:red;\"></i>"
+  auth: devtool-menu
+  id: authoringMenu
+  children:
+    - title: "ACL Entity"
+      icon: "<i  data-feather=\"hexagon\" class=\"mdi mdi-account-multiple  link-icon\" style=\"color: #EC6839;\"></i>"
+      url: "obj/acl-object"
+      auth: acl-object
+    - title: Templates
+      icon: "<i  data-feather=\"code\" class=\"mdi mdi-account-multiple  link-icon\" style=\"color: #EC6839;\"></i>"
+      auth: template-menu
+      id: templatesMenu
+      children:
+      - title: "Email"
+        url: "obj/email-template"
+        auth: email-template
+        icon: "<i class=\"mdi mdi-file\"></i>"
+#      - title: "Print"
+#        url: "obj/print-template"
+#        auth: print-template
+#        icon: "<i class=\"mdi mdi-file\"></i>"

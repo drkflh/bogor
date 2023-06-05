@@ -1,0 +1,531 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: 'Tanggal'
+        name: createdAt
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-center text-top text-100'
+        thClass: ''
+    -
+        label: 'Category'
+        name: category
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: 'Group'
+        name: group
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-150'
+        thClass: ''
+    -
+        label: 'Category'
+        name: category
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-150'
+        thClass: ''
+    -
+        label: 'No Arsip'
+        name: FCallCode
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-175'
+        thClass: ''
+    -
+        label: 'Doc. No / Title'
+        name: DocRef
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top'
+        thClass: ''
+    -
+        label: Subject
+        name: Subject
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-350'
+        thClass: ''
+    -
+        label: 'Dibuat'
+        name: Creator
+        show: show
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left text-top
+        column_classes: 'text-left text-top text-100'
+        thClass: ''
+    -
+        label: 'Pengirim'
+        name: Sender
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left text-top
+        column_classes: 'text-left text-top text-100'
+        thClass: ''
+    -
+        label: 'Penerima'
+        name: Recipient
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left text-top
+        column_classes: 'text-left text-top text-100'
+        thClass: ''
+    -
+        label: 'Date Issued'
+        name: DocDate
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+
+    -
+        label: 'Call Code'
+        name: FCallCode
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-200'
+        thClass: ''
+    -
+        label: 'Upload Files'
+        name: FileUrl
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left text-top
+        column_classes: text-100
+        thClass: ''
+form:
+    -
+        label: 'Group'
+        name: group
+        create: RO
+        edit: RO
+        type: text
+        model: group
+        placeholder: Group
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-200'
+        param: []
+        attr: {}
+    -
+        label: 'Category'
+        name: category
+        create: RO
+        edit: RO
+        type: text
+        model: category
+        placeholder: Group
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: []
+        attr: {}
+    -
+        label: 'Doc Group'
+        name: docGroup
+        create: true
+        edit: true
+        type: simpleselect
+        model: docGroup
+        placeholder: Group
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-200'
+        param: []
+        attr: {}
+    -
+        label: 'Doc. No'
+        name: DocRef
+        create: true
+        edit: true
+        type: text
+        model: DocRef
+        placeholder: 'Doc. No'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Subject
+        name: Subject
+        create: true
+        edit: true
+        type: text
+        model: Subject
+        placeholder: Subject
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Date Issued'
+        name: DocDate
+        create: true
+        edit: true
+        type: datepicker
+        model: DocDate
+        placeholder: 'Date Issued'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Doc View'
+        name: docViewer
+        create: true
+        edit: true
+        type: pdfviewer
+        model: FileUrl
+        placeholder: 'Media View'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: {}
+        attr: {}
+    -
+        label: ''
+        name: FileUrl
+        create: true
+        edit: true
+        type: attachmentupload
+        model: FileUrl
+        placeholder: 'Upload Files'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        mode: single
+        bucket: archive
+        acceptedFiles: 'application/pdf'
+        return_array: 'false'
+        param:
+            url: api/v1/core/upload
+            paramName: file
+            buttonlabel: 'Upload Doc'
+            filename: DocBaseName
+            dir: documents
+            useHandle: true
+            rawUpload: false
+            baseUrl: DocBase
+            docPath: DocPath
+        attr:
+          - buttonlabel: 'Upload Doc'
+    -
+        label: 'Rev. No'
+        name: RevNo
+        create: true
+        edit: true
+        type: number
+        model: RevNo
+        placeholder: RevNo
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Call Code
+        name: FCallCode
+        create: false
+        edit: RO
+        type: text
+        model: FCallCode
+        placeholder: Call Code
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        selected: docViewer
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+vue:
+    -
+        model: section
+        visible: true
+        type: string
+        default: ''
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+    -
+        model: categoryObject
+        visible: true
+        type: object
+        default: ''
+    -
+        model: docGroup
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DocRef
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Subject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DocDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FileUrl
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FileUrlObjects
+        visible: true
+        type: array
+        default: []
+    -
+        model: RevNo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FCallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: group
+        visible: true
+        type: string
+        default: ''
+    -
+        model: groupCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: subGroup
+        visible: true
+        type: string
+        default: ''
+    -
+        model: subGroupCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docTypeCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: location
+        visible: true
+        type: string
+        default: ''
+    -
+        model: locationCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: callCode
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Section
+        name: section
+        model: section
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Category
+        name: category
+        model: category
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Doc Group
+        name: docGroup
+        model: docGroup
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Doc. No'
+        name: DocRef
+        model: DocRef
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Subject
+        name: Subject
+        model: Subject
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Date Issued'
+        name: DocDate
+        model: DocDate
+        visible: true
+        type: text
+        default: ''
+    -
+        label: false
+        name: docViewer
+        model: FileUrl
+        visible: true
+        type: pdfviewer
+        default: ''
+    -
+        label: 'Rev. No'
+        name: RevNo
+        model: RevNo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Call Code'
+        name: FCallCode
+        model: FCallCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Group'
+        name: group
+        model: group
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Category'
+        name: docType
+        model: docType
+        visible: true
+        type: text
+        default: ''

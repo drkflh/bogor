@@ -1,0 +1,1106 @@
+-
+    name: _id
+    type: object
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: createdAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: updatedAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: ownerId
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: ownerName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: handle
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deleted
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: serviceRequestNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: approvalStatus
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: serviceRequestNoPrefix
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: woNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: serviceRequestDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyFax
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyPhone
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyPhone2
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyCode
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: jobNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorCode
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: typeOfService
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorObject
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyObject
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: ServiceReqPrefix
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: requestDateYYMM
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: serviceSequence
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorAddress
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorAddress2
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorCity
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorProvince
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorCountry
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorPostal
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorPic
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorPhone
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vendorEmail
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: referenceNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: referenceDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: job
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: costCenter
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: requestBy
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: authorizedBy
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: auditedBy
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: recomendedBy
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: financeAuthorization
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: shippingInstansi
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: shippingAddress
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: shippingAddress2
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: contactEmail
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: shippingPostalCode
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: shippingProvince
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: shippingCountry
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: shippingCity
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: contactPerson
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: contactNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: workPerformed
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: duration
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: workLocation
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companySupervisor
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deliveryPeriodOptions
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: completionDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deliveryDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: currency
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: details
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: addDocument
+    type: array
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: {  }
+        transform: false
+        type: array
+-
+    name: termOfPayment
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: shippingInst
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: invoiceTax
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: communication
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: rev
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: IDR
+        transform: false
+        type: string
+-
+    name: discountPercentage
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: discountSwitch
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: discountLumpSum
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: discountLumpSumSwitch
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: vat
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: total
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: grandTotal
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: totalVat
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: totalDisc
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: xrate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string

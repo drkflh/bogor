@@ -1,0 +1,13 @@
+- title: "SFM"
+  icon: "<i data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Home
+      url: "sfm/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: "Products"
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: "All Products"
+          url: "sfm/product/product-list"
+        - title: "By Category"
+          url: "sfm/product/product-category"

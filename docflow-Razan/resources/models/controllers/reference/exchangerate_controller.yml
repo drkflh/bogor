@@ -1,0 +1,326 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Currency
+        name: currencyCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'IDR Value'
+        name: idrValue
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: number
+        row_text_alignment: text-center
+        column_classes: 'text-left text-250'
+        thClass: ''
+    -
+        label: 'Rate Date'
+        name: rateDate
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-300'
+        thClass: ''
+    -
+        label: ''
+        name: filler
+        show: false
+        sort: false
+        row_text_alignment: text-center
+        column_classes: text-left
+        datatype: text
+        search: true
+        filter: false
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Currency
+        name: currencyCode
+        create: true
+        edit: RO
+        type: simpleselect
+        model: currencyCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: IDR
+                value: IDR
+            -
+                text: USD
+                value: USD
+            -
+                text: EUR
+                value: EUR
+        attr:
+            class: form-data
+    -
+        label: 'IDR Value'
+        name: idrValue
+        create: true
+        edit: true
+        type: currency
+        model: idrValue
+        default: ''
+        validator: 'required || number'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Rate Date'
+        name: rateDate
+        create: true
+        edit: true
+        type: datepicker
+        model: rateDate
+        default: ''
+        validator: ''
+        position: left
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: currencyCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: idrValue
+        visible: true
+        type: string
+        default: ''
+    -
+        model: rateDate
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Currency
+        name: currencyCode
+        model: currencyCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'IDR Value'
+        name: idrValue
+        model: idrValue
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Rate Date'
+        name: rateDate
+        model: rateDate
+        visible: true
+        type: text
+        default: ''

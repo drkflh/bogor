@@ -1,0 +1,878 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: 'Logo'
+        name: companyLogo
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: image
+        row_text_alignment: text-center
+        column_classes: 'text-left text-150'
+        thClass: ''
+    -
+        label: 'SBU Code'
+        name: bizUnitCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'SBU Name'
+        name: bizUnitName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'SBU Type'
+        name: bizUnitType
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-250'
+        thClass: ''
+    -
+        label: 'Company Code'
+        name: companyCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'NO. NPWP'
+        name: noNpwp
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'Company Name'
+        name: companyName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'Phone'
+        name: companyPhone
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: number
+        row_text_alignment: text-center
+        column_classes: text-left
+        thClass: ''
+    -
+        label: 'Phone 2'
+        name: companyPhone2
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: number
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Fax'
+        name: companyFax
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-150'
+        thClass: ''
+    -
+        label: NIB
+        name: nib
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: API
+        name: api
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: Address
+        name: companyAddress
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'Address 2'
+        name: companyAddress1
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Address 3'
+        name: companyAddress2
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: Email
+        name: companyEmail
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: text-left
+        thClass: ''
+    -
+        label: Web
+        name: companyWeb
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: text-left
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'SBU Code'
+        name: bizUnitCode
+        create: true
+        edit: true
+        type: text
+        model: bizUnitCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'SBU Name'
+        name: bizUnitName
+        create: true
+        edit: true
+        type: text
+        model: bizUnitName
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'SBU Type'
+        name: bizUnitType
+        create: true
+        edit: true
+        type: text
+        model: bizUnitType
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Company Code'
+        name: companyCode
+        create: true
+        edit: true
+        type: text
+        model: companyCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Company Name'
+        name: companyName
+        create: true
+        edit: true
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'NO. NPWP'
+        name: noNpwp
+        create: true
+        edit: true
+        type: text
+        model: noNpwp
+        default: ''
+        validator: required
+        param:
+            -
+              text: Select
+              value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Phone'
+        name: companyPhone
+        create: true
+        edit: true
+        type: number
+        model: companyPhone
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Ext'
+        name: companyPhoneExt
+        create: true
+        edit: true
+        type: number
+        model: companyPhoneExt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Phone 2'
+        name: companyPhone2
+        create: true
+        edit: true
+        type: number
+        model: companyPhone2
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Ext'
+        name: companyPhoneExt2
+        create: true
+        edit: true
+        type: number
+        model: companyPhoneExt2
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Fax'
+        name: companyFax
+        create: true
+        edit: true
+        type: text
+        model: companyFax
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Ext'
+        name: companyFaxExt
+        create: true
+        edit: true
+        type: text
+        model: companyFaxExt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: NIB
+        name: nib
+        create: true
+        edit: true
+        type: text
+        model: nib
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: API
+        name: api
+        create: true
+        edit: true
+        type: text
+        model: api
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Address
+        name: companyAddress
+        create: true
+        edit: true
+        type: textarea
+        model: companyAddress
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Address 2'
+        name: companyAddress1
+        create: true
+        edit: true
+        type: textarea
+        model: companyAddress1
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Address 3'
+        name: companyAddress2
+        create: true
+        edit: true
+        type: textarea
+        model: companyAddress2
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Logo'
+        name: companyLogo
+        create: true
+        edit: true
+        type: imagecardupload
+        model: companyLogo
+        default: ''
+        validator: ''
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload Company Picture'
+    -
+        label: Email
+        name: companyEmail
+        create: true
+        edit: true
+        type: text
+        model: companyEmail
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Web
+        name: companyWeb
+        create: true
+        edit: true
+        type: text
+        model: companyWeb
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: bizUnitCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: bizUnitName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: bizUnitType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: noNpwp
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyPhone
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyPhone2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyFax
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyPhoneExt
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyPhoneExt2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyFaxExt
+        visible: true
+        type: string
+        default: ''
+    -
+        model: nib
+        visible: true
+        type: string
+        default: ''
+    -
+        model: api
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyAddress
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyAddress1
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyAddress2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyLogo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyEmail
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyWeb
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'SBU Code'
+        name: bizUnitCode
+        model: bizUnitCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'SBU Name'
+        name: bizUnitName
+        model: bizUnitName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'SBU Type'
+        name: bizUnitType
+        model: bizUnitType
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Company Code'
+        name: companyCode
+        model: companyCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Company Name'
+        name: companyName
+        model: companyName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'NO. NPWP'
+        name: noNpwp
+        model: noNpwp
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Phone'
+        name: companyPhone
+        model: companyPhone
+        visible: true
+        type: number
+        default: ''
+    -
+        label: 'Phone 2'
+        name: companyPhone2
+        model: companyPhone2
+        visible: true
+        type: number
+        default: ''
+    -
+        label: 'Fax'
+        name: companyFax
+        model: companyFax
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Ext'
+        name: companyPhoneExt
+        model: companyPhoneExt
+        visible: true
+        type: number
+        default: ''
+    -
+        label: 'Ext'
+        name: companyPhoneExt2
+        model: companyPhoneExt2
+        visible: true
+        type: number
+        default: ''
+    -
+        label: 'Ext'
+        name: companyFax
+        model: companyFax
+        visible: true
+        type: text
+        default: ''
+    -
+        label: NIB
+        name: nib
+        model: nib
+        visible: true
+        type: text
+        default: ''
+    -
+        label: API
+        name: api
+        model: api
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Address
+        name: companyAddress
+        model: companyAddress
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Address 2'
+        name: companyAddress1
+        model: companyAddress1
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Address 3'
+        name: companyAddress2
+        model: companyAddress2
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Company Logo'
+        name: companyLogo
+        model: companyLogo
+        visible: true
+        type: singleimage
+        default: ''
+    -
+        label: Email
+        name: companyEmail
+        model: companyEmail
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Web
+        name: companyWeb
+        model: companyWeb
+        visible: true
+        type: text
+        default: ''

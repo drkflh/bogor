@@ -1,0 +1,283 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+    -
+        label: 'Timestamp'
+        name: created_at
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: 'text-top text-center text-150'
+    -
+        label: 'Read at'
+        name: read_at
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: 'text-top text-center text-150'
+    -
+        label: Notif Type
+        name: type
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-top text-left text-100'
+    -
+        label: 'Entity'
+        name: notifiable_id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-top text-left text-200'
+    -
+        label: Entity Type
+        name: notifiable_type
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-top text-center text-200'
+    -
+        label: 'Data'
+        name: data
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-top text-left'
+
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master ID'
+        name: masterId
+        create: true
+        edit: true
+        type: text
+        model: masterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master Name'
+        name: masterName
+        create: true
+        edit: true
+        type: text
+        model: masterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company ID'
+        name: companyId
+        create: true
+        edit: true
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Name'
+        name: companyName
+        create: true
+        edit: true
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Farm ID'
+        name: farmId
+        create: true
+        edit: true
+        type: text
+        model: farmId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Farm Name'
+        name: farmName
+        create: true
+        edit: true
+        type: text
+        model: farmName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Cattle ID'
+        name: cattleId
+        create: true
+        edit: true
+        type: text
+        model: cattleId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Officer
+        name: officerId
+        create: true
+        edit: true
+        type: text
+        model: officerId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Recipient
+        name: recipient
+        create: true
+        edit: true
+        type: text
+        model: recipient
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Message
+        name: message
+        create: true
+        edit: true
+        type: text
+        model: message
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: URL
+        name: url
+        create: true
+        edit: true
+        type: text
+        model: url
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Priority
+        name: priority
+        create: true
+        edit: true
+        type: text
+        model: priority
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Message Type'
+        name: type
+        create: true
+        edit: true
+        type: text
+        model: messageType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: data
+        visible: true
+        type: object
+        default: '{}'
+    -
+        model: recipient
+        visible: true
+        type: string
+        default: ''
+    -
+        model: notifiable_id
+        visible: true
+        type: string
+        default: ''
+    -
+        model: notifiable_type
+        visible: true
+        type: string
+        default: ''
+    -
+        model: type
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: 'Notification ID'
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Data'
+        name: data
+        visible: true
+        type: keyvalueview
+        model: data
+    -
+        label: 'Read At'
+        name: read_at
+        visible: true
+        type: text
+        model: read_at
+    -
+        label: 'Entity ID'
+        name: notifiable_id
+        visible: true
+        type: text
+        model: notifiable_id
+    -
+        label: 'Entity Type'
+        name: notifiable_type
+        visible: true
+        type: text
+        model: notifiable_type
+    -
+        label: 'Notification Type'
+        name: type
+        visible: true
+        type: text
+        model: type

@@ -1,0 +1,114 @@
+- title: ''
+  auth: ecf-dashboard
+  url: "ecf/dashboard"
+  icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+  children:
+    - title: Dashboard
+      auth: ecf-dashboard
+      url: "ecf/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Owner's Profile
+      auth: ecf-owner-profile
+      url: "profile"
+      icon: "<i class=\"las la-user-circle link-icon\"></i>"
+    - title: Business
+      auth: ecf-farm-register
+      url: "ecf/farm-register"
+      icon: "<i class=\"las la-building link-icon\"></i>"
+    - title: "Campaign"
+      auth: ecf-personnel-menu
+      icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+      children:
+        - title: All Campaign
+          auth: "ecf-farm-admin"
+          url: "user/list/farm-admin"
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: Planned
+          auth: "ecf-farm-admin"
+          url: "user/list/farm-admin"
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: In Progress
+          auth: "ecf-field-officer"
+          url: "user/list/field-officer"
+          icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+        - title: Past Campaign
+          auth: "ecf-field-officer"
+          url: "user/list/field-officer"
+          icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+- title: "Operational"
+  auth: ecf-personnel-menu
+  icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+  children:
+    - title: "Operational"
+      auth: ecf-personnel-menu
+      icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+      children:
+      - title: Performance
+        auth: "ecf-farm-admin"
+        url: "user/list/farm-admin"
+        icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+- title: "Financial"
+  auth: ecf-personnel-menu
+  icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+  children:
+    - title: "Financial"
+      auth: ecf-personnel-menu
+      icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+      children:
+      - title: Financial
+        auth: "ecf-farm-admin"
+        url: "user/list/farm-admin"
+        icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+      - title: Financial Reports
+        auth: "ecf-field-officer"
+        url: "user/list/field-officer"
+        icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+      - title: Transactions
+        auth: "ecf-field-officer"
+        url: "user/list/field-officer"
+        icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+
+- title: REFERENCES
+  auth: ecf-reference-menu
+  url: "ecf/document/list/status/incoming"
+  icon: "<i class=\"link-icon\"  data-feather=\"inbox\"></i>"
+  children:
+    - title: "References"
+      auth: ecf-personnel-menu
+      icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+      children:
+      - title: Validator
+        auth: "ecf-ib-officer"
+        url: "user/list/ib-officer"
+        icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+      - title: Persyaratan
+        auth: "ecf-semen-inventory"
+        url: "ecf/semen-inventory"
+        icon: "<i class=\"las la-vials link-icon\"></i>"
+
+- title: NOTIFICATION
+  auth: mms-notification-menu
+  url: "ecf/document/list/status/incoming"
+  icon: "<i class=\"link-icon\"  data-feather=\"inbox\"></i>"
+  children:
+    - title: "Notification"
+      auth: ecf-personnel-menu
+      icon: "<i class=\"las la-rocket link-icon\"  data-feather=\"users\"></i>"
+      children:
+      - title: "Notifications"
+        auth: mms-notification
+        icon: "<i class=\"las la-sms link-icon\" ></i>"
+        url: "mms/notification"
+      - title: "Notification Template"
+        auth: mms-notification-template
+        icon: "<i class=\"las la-rss link-icon\" ></i>"
+        url: "mms/notification-template"
+      - title: "Notification Sub"
+        auth: mms-notification-sub
+        icon: "<i class=\"las la-rss link-icon\" ></i>"
+        url: "mms/notification-sub"
+  #    - title: "Notification Channel"
+  #      auth: mms-notification-channel
+  #      icon: "<i class=\"las la-rss-square link-icon\"></i>"
+  #      url: "mms/notification-channel"
+

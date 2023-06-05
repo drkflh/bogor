@@ -1,0 +1,153 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: id
+        name: id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: name
+        name: name
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: description
+        name: description
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: slug
+        name: slug
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: id
+        name: id
+        create: true
+        edit: true
+        type: text
+        model: id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: name
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: description
+        name: description
+        create: true
+        edit: true
+        type: text
+        model: description
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: slug
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: id
+        visible: true
+        type: string
+        default: ''
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: id
+        name: id
+        visible: true
+        type: text
+        model: id
+    -
+        label: name
+        name: name
+        visible: true
+        type: text
+        model: name
+    -
+        label: description
+        name: description
+        visible: true
+        type: text
+        model: description
+    -
+        label: slug
+        name: slug
+        visible: true
+        type: text
+        model: slug

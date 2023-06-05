@@ -1,0 +1,406 @@
+-
+    name: _id
+    type: object
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: createdAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: updatedAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: ownerId
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: ownerName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: handle
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deleted
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: Urut
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: RFQNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: jobNo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: RfqFor
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: inquiryDate
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: inquiryDateYY
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: tenderMethod
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: projectName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: projectOwner
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: projectExecution
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: projectLocation
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: scopeOfSupply
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: projectExecution
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: projectStatus
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: incoterm
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: requestValidity
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deliveryPeriodOptions
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: requestSubmission
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deliveryPoint
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: modaShipment
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: mto
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: aml
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: true
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string

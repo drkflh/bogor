@@ -1,0 +1,409 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Gateway Type'
+        name: gatewayType
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Gateway Slug'
+        name: gatewaySlug
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Broadcast ID'
+        name: broadcastId
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Message ID'
+        name: msgId
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: From
+        name: from
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: To
+        name: to
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: CC
+        name: cc
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: BCC
+        name: bcc
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Subject
+        name: subject
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Body
+        name: body
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Attachments
+        name: attachments
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Status
+        name: status
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Last Action'
+        name: lastAction
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Last Action Time'
+        name: lastActionTs
+        show: false
+        search: true
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Gateway Type'
+        name: gatewayType
+        create: true
+        edit: true
+        type: text
+        model: gatewayType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Gateway Slug'
+        name: gatewaySlug
+        create: true
+        edit: true
+        type: text
+        model: gatewaySlug
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: From
+        name: from
+        create: true
+        edit: true
+        type: text
+        model: from
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: To
+        name: to
+        create: true
+        edit: true
+        type: text
+        model: to
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: CC
+        name: cc
+        create: true
+        edit: true
+        type: text
+        model: cc
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: BCC
+        name: bcc
+        create: true
+        edit: true
+        type: text
+        model: bcc
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Subject
+        name: subject
+        create: true
+        edit: true
+        type: text
+        model: subject
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Body
+        name: body
+        create: true
+        edit: true
+        type: text
+        model: body
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Attachments
+        name: attachments
+        create: true
+        edit: true
+        type: text
+        model: attachments
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Status
+        name: status
+        create: true
+        edit: true
+        type: text
+        model: status
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Last Action'
+        name: lastAction
+        create: true
+        edit: true
+        type: text
+        model: lastAction
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Last Action Time'
+        name: lastActionTs
+        create: true
+        edit: true
+        type: text
+        model: lastActionTs
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: gatewayType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: gatewaySlug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: msgId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: broadcastId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: from
+        visible: true
+        type: string
+        default: ''
+    -
+        model: to
+        visible: true
+        type: object
+        default: {}
+    -
+        model: cc
+        visible: true
+        type: string
+        default: ''
+    -
+        model: bcc
+        visible: true
+        type: object
+        default: {}
+    -
+        model: subject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: body
+        visible: true
+        type: string
+        default: ''
+    -
+        model: attachments
+        visible: true
+        type: string
+        default: ''
+    -
+        model: status
+        visible: true
+        type: string
+        default: ''
+    -
+        model: lastAction
+        visible: true
+        type: string
+        default: ''
+    -
+        model: lastActionTs
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Gateway Type'
+        name: gatewayType
+        visible: true
+        type: text
+        model: gatewayType
+    -
+        label: 'Gateway Slug'
+        name: gatewaySlug
+        visible: true
+        type: text
+        model: gatewaySlug
+    -
+        label: From
+        name: from
+        visible: true
+        type: text
+        model: from
+    -
+        label: To
+        name: to
+        visible: true
+        type: text
+        model: to
+    -
+        label: CC
+        name: cc
+        visible: true
+        type: text
+        model: cc
+    -
+        label: BCC
+        name: bcc
+        visible: true
+        type: text
+        model: bcc
+    -
+        label: Subject
+        name: subject
+        visible: true
+        type: text
+        model: subject
+    -
+        label: Body
+        name: body
+        visible: true
+        type: text
+        model: body
+    -
+        label: Attachments
+        name: attachments
+        visible: true
+        type: text
+        model: attachments
+    -
+        label: Status
+        name: status
+        visible: true
+        type: text
+        model: status
+    -
+        label: 'Last Action'
+        name: lastAction
+        visible: true
+        type: text
+        model: lastAction
+    -
+        label: 'Last Action Time'
+        name: lastActionTs
+        visible: true
+        type: text
+        model: lastActionTs

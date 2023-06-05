@@ -1,0 +1,462 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Event
+        name: event
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Timer Val'
+        name: timerVal
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-200
+    -
+        label: 'Start Time'
+        name: startTime
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-200
+    -
+        label: 'Timer Sec'
+        name: timerSec
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: userId
+        name: userId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'User Name'
+        name: userName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Project Task'
+        name: projectTask
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'End Time'
+        name: endTime
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Duration
+        name: duration
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Adjustment Note'
+        name: adjustmentNote
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-300 text-top text-center
+    -
+        label: 'Adjustment Attachment'
+        name: adjustmentAttachment
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Adjusted By'
+        name: adjustedBy
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Approval Status'
+        name: approvalStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-200 text-top text-center
+    -
+        label: 'Approval By'
+        name: approvalBy
+        show: false
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Event
+        name: event
+        create: true
+        edit: true
+        type: text
+        model: event
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Timer Val'
+        name: timerVal
+        create: true
+        edit: true
+        type: text
+        model: timerVal
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Timer Sec'
+        name: timerSec
+        create: true
+        edit: true
+        type: text
+        model: timerSec
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: userId
+        name: userId
+        create: true
+        edit: true
+        type: text
+        model: userId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'User Name'
+        name: userName
+        create: true
+        edit: true
+        type: simpleselect
+        model: userName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Task'
+        name: projectTask
+        create: true
+        edit: true
+        type: simpleselect
+        model: projectTask
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Start Time'
+        name: startTime
+        create: true
+        edit: true
+        type: datepicker
+        value_format: 'YYYY-MM-DD HH:mm:ss'
+        show_time: "{ format: 'HH:mm' }"
+        model: startTime
+        dateConstraint: minToday
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'End Time'
+        name: endTime
+        create: true
+        edit: true
+        type: datepicker
+        value_format: 'YYYY-MM-DD HH:mm:ss'
+        show_time: "{ format: 'HH:mm' }"
+        model: endTime
+        dateConstraint: 'notBeforeStart'
+        default: ''
+        validator:
+        param: {}
+        attr: {}
+    -
+        label: Duration
+        name: duration
+        create: true
+        edit: true
+        type: timepicker
+        model: duration
+        default: ''
+        validator:
+        param: {}
+        attr: {}
+    -
+        label: 'Adjustment Note'
+        name: adjustmentNote
+        create: true
+        edit: true
+        type: textarea
+        model: adjustmentNote
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Adjustment Attachment'
+        name: adjustmentAttachment
+        create: true
+        edit: true
+        type: attachmentupload
+        model: adjustmentAttachment
+        default: ''
+        validator: required
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+            buttonlabel: 'Upload'
+            filename: FCallCode
+            dir: documents
+            useHandle: true
+            baseUrl: DocBase
+            docPath: DocPath
+            acceptedFiles: 'application/pdf, image/*'
+        attr: {}
+    -
+        label: 'Adjusted By'
+        name: adjustedBy
+        create: true
+        edit: true
+        type: simpleselect
+        model: adjustedBy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Approval Status'
+        name: approvalStatus
+        create: true
+        edit: true
+        type: text
+        model: approvalStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Approval By'
+        name: approvalBy
+        create: true
+        edit: true
+        type: text
+        model: approvalBy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: event
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timerVal
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timerSec
+        visible: true
+        type: string
+        default: ''
+    -
+        model: userId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: userName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectTask
+        visible: true
+        type: string
+        default: 'General'
+    -
+        model: startTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: endTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: duration
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: adjustmentNote
+        visible: true
+        type: string
+        default: ''
+    -
+        model: adjustmentAttachment
+        visible: true
+        type: string
+        default: ''
+    -
+        model: adjustedBy
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalBy
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Event
+        name: event
+        visible: true
+        type: text
+        model: event
+    -
+        label: 'Timer Val'
+        name: timerVal
+        visible: true
+        type: text
+        model: timerVal
+    -
+        label: 'Timer Sec'
+        name: timerSec
+        visible: true
+        type: text
+        model: timerSec
+    -
+        label: userId
+        name: userId
+        visible: true
+        type: text
+        model: userId
+    -
+        label: 'User Name'
+        name: userName
+        visible: true
+        type: text
+        model: userName
+    -
+        label: 'Project Task'
+        name: projectTask
+        visible: true
+        type: text
+        model: projectTask
+    -
+        label: 'Start Time'
+        name: startTime
+        visible: true
+        type: datetime
+        model: startTime
+    -
+        label: 'End Time'
+        name: endTime
+        visible: true
+        type: datetime
+        model: endTime
+    -
+        label: Duration
+        name: duration
+        visible: true
+        type: text
+        model: duration
+    -
+        label: 'Adjustment Note'
+        name: adjustmentNote
+        visible: true
+        type: text
+        model: adjustmentNote
+    -
+        label: 'Adjustment Attachment'
+        name: adjustmentAttachment
+        visible: true
+        type: text
+        model: adjustmentAttachment
+    -
+        label: 'Adjusted By'
+        name: adjustedBy
+        visible: true
+        type: text
+        model: adjustedBy
+    -
+        label: 'Approval Status'
+        name: approvalStatus
+        visible: true
+        type: text
+        model: approvalStatus
+    -
+        label: 'Approval By'
+        name: approvalBy
+        visible: true
+        type: text
+        model: approvalBy

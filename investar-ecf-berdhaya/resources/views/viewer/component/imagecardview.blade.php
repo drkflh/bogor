@@ -1,0 +1,6 @@
+<label for="{{ $form['model'] }}" style="font-size: 9pt;font-weight: bold;" >{{ __($label) }}</label>
+<div style="display: block;">
+    <img  :src="{{ $form['model'] }}" @click="showLightBox( '{{ trim($form['model']) }}')"
+          onerror="this.onerror=null;this.src='{{ url( env('DEFAULT_AVATAR', 'images/blank.png' ) ) }}';"
+          style="height:190px;width: auto; object-fit: cover; border-radius: 16px; cursor:pointer;" ><br>
+</div>

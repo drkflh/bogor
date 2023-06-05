@@ -1,0 +1,385 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Clock In'
+        name: inDateTime
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+    -
+        label: 'Clock Out'
+        name: outDateTime
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+    -
+        label: Duration
+        name: duration
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Work From'
+        name: workFrom
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Activity
+        name: activityType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Description
+        name: activityDescription
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Attachments
+        name: taskAttachments
+        show: true
+        search: false
+        sort: false
+        datatype: image
+    -
+        label: 'Project ID'
+        name: projectId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Project Name'
+        name: projectName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Approval
+        name: approvalStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Approver
+        name: approver
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Note
+        name: approvalNote
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Clock In'
+        name: inDateTime
+        create: true
+        edit: true
+        type: datepicker
+        model: inDateTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Clock Out'
+        name: outDateTime
+        create: true
+        edit: true
+        type: datepicker
+        model: outDateTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Duration
+        name: duration
+        create: true
+        edit: true
+        type: text
+        model: duration
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Work From'
+        name: workFrom
+        create: true
+        edit: true
+        type: text
+        model: workFrom
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Activity
+        name: activityType
+        create: true
+        edit: true
+        type: text
+        model: activityType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: activityDescription
+        create: true
+        edit: true
+        type: text
+        model: activityDescription
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Attachments
+        name: taskAttachments
+        create: true
+        edit: true
+        type: text
+        model: taskAttachments
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project ID'
+        name: projectId
+        create: true
+        edit: true
+        type: text
+        model: projectId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Name'
+        name: projectName
+        create: true
+        edit: true
+        type: text
+        model: projectName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Approval
+        name: approvalStatus
+        create: true
+        edit: true
+        type: text
+        model: approvalStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Approver
+        name: approver
+        create: true
+        edit: true
+        type: text
+        model: approver
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Note
+        name: approvalNote
+        create: true
+        edit: true
+        type: text
+        model: approvalNote
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: inDateTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: outDateTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: duration
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: workFrom
+        visible: true
+        type: string
+        default: ''
+    -
+        model: activityType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: activityDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskAttachments
+        visible: true
+        type: array
+        default: []
+    -
+        model: projectId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approver
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalNote
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Clock In'
+        name: inDateTime
+        visible: true
+        type: datetime
+        model: inDateTime
+    -
+        label: 'Clock Out'
+        name: outDateTime
+        visible: true
+        type: datetime
+        model: outDateTime
+    -
+        label: Duration
+        name: duration
+        visible: true
+        type: text
+        model: duration
+    -
+        label: 'Work From'
+        name: workFrom
+        visible: true
+        type: text
+        model: workFrom
+    -
+        label: Activity
+        name: activityType
+        visible: true
+        type: text
+        model: activityType
+    -
+        label: Description
+        name: activityDescription
+        visible: true
+        type: text
+        model: activityDescription
+    -
+        label: Attachments
+        name: taskAttachments
+        visible: true
+        type: arrayview
+        model: taskAttachments
+    -
+        label: 'Project ID'
+        name: projectId
+        visible: true
+        type: text
+        model: projectId
+    -
+        label: 'Project Name'
+        name: projectName
+        visible: true
+        type: text
+        model: projectName
+    -
+        label: Approval
+        name: approvalStatus
+        visible: true
+        type: text
+        model: approvalStatus
+    -
+        label: Approver
+        name: approver
+        visible: true
+        type: text
+        model: approver
+    -
+        label: Note
+        name: approvalNote
+        visible: true
+        type: text
+        model: approvalNote

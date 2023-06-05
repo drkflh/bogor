@@ -1,0 +1,584 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action text-top
+        thClass: 'text-center text-50'
+    -
+        label: 'Project ID'
+        name: projectId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Project Name'
+        name: projectName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        column_classes: text-125 text-top
+    -
+        label: ID
+        name: taskId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-100
+    -
+        label: Task
+        name: taskName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        column_classes: text-400 text-top
+    -
+        label: From - Until
+        name: startDateTime
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-left text-200 text-top
+    -
+        label: Estd. Duration
+        name: duration
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-100 text-top
+    -
+        label: Description
+        name: taskDescription
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Task Type'
+        name: taskType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-200 text-center text-top
+    -
+        label: 'Assigned To'
+        name: assignedTo
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-200 text-top
+    -
+        label: Progress
+        name: progressStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-100 text-top
+    -
+        label: Guidance
+        name: taskGuide
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-250 text-top
+    -
+        label: Approval
+        name: approvalStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-200 text-center text-top
+    -
+        label: Attachments
+        name: taskAttachments
+        show: false
+        search: false
+        sort: false
+        datatype: image
+    -
+        label: Kanban
+        name: kanbanLane
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Until
+        name: endDateTime
+        show: false
+        search: false
+        sort: false
+        datatype: datetime
+    -
+        label: 'Task Code'
+        name: taskCode
+        show: false
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: ID
+        name: taskId
+        create: true
+        edit: true
+        type: text
+        model: taskId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Task
+        name: taskName
+        create: true
+        edit: true
+        type: text
+        model: taskName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Task Description
+        name: taskDescription
+        create: true
+        edit: true
+        type: markdown
+        model: taskDescription
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Guidance
+        name: taskGuide
+        create: true
+        edit: true
+        type: markdown
+        model: taskGuide
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Attachments
+        name: taskAttachments
+        create: true
+        edit: true
+        type: docupload
+        model: taskAttachments
+        default: ''
+        validator:
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+            buttonlabel: 'Upload'
+            filename: FCallCode
+            dir: documents
+            useHandle: true
+            baseUrl: DocBase
+            docPath: DocPath
+            acceptedFiles: 'application/pdf, image/*'
+        attr: {}
+    -
+        label: 'Project ID'
+        name: projectId
+        create: true
+        edit: true
+        type: text
+        model: projectId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Project Name'
+        name: projectName
+        create: true
+        edit: true
+        type: localsearchselect
+        model: projectName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Task Type'
+        name: taskType
+        create: true
+        edit: true
+        type: simpleselect
+        model: taskType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Progress
+        name: progressStatus
+        create: true
+        edit: true
+        type: simpleselect
+        model: progressStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Assigned To'
+        name: assignedTo
+        create: true
+        edit: true
+        type: multiselect
+        model: assignedTo
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Kanban
+        name: kanbanLane
+        create: true
+        edit: true
+        type: text
+        model: kanbanLane
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Start
+        name: startDateTime
+        create: true
+        edit: true
+        type: datepicker
+        model: startDateTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Until
+        name: endDateTime
+        create: true
+        edit: true
+        type: datepicker
+        model: endDateTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Estd. Duration
+        name: duration
+        create: true
+        edit: true
+        type: timepicker
+        model: duration
+        default: ''
+        validator: required
+        minuteStep: 15
+        param: {}
+        attr: {}
+    -
+        label: Approval Status
+        name: approvalStatus
+        create: RO
+        edit: true
+        type: simpleselect
+        model: approvalStatus
+        default: 'PENDING'
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Approval By
+        name: approvalBy
+        create: true
+        edit: true
+        type: simpleselect
+        model: approvalBy
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Approval At
+        name: approvalAt
+        create: false
+        edit: false
+        type: datepicker
+        model: approvalAt
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Task Code'
+        name: taskCode
+        create: true
+        edit: true
+        type: text
+        model: taskCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Seq'
+        name: seq
+        create: true
+        edit: false
+        type: sequence
+        model: seq
+        default: 0
+        validator: ''
+        param: {}
+        attr: {}
+
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: taskId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskGuide
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskAttachments
+        visible: true
+        type: array
+        default: []
+    -
+        model: projectId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: projectName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taskType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: progressStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: assignedTo
+        visible: true
+        type: array
+        default: []
+    -
+        model: kanbanLane
+        visible: true
+        type: string
+        default: ''
+    -
+        model: startDateTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: endDateTime
+        visible: true
+        type: string
+        default: ''
+    -
+        model: duration
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: approvalStatus
+        visible: true
+        type: string
+        default: 'PENDING'
+    -
+        model: approvalBy
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalAt
+        visible: true
+        type: string
+        default: 0
+    -
+        model: taskCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: seq
+        visible: true
+        type: integer
+        default: 0
+
+
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: ID
+        name: taskId
+        visible: true
+        type: text
+        model: taskId
+    -
+        label: Task
+        name: taskName
+        visible: true
+        type: text
+        model: taskName
+    -
+        label: Description
+        name: taskDescription
+        visible: true
+        type: markdown
+        model: taskDescription
+    -
+        label: Guidance
+        name: taskGuide
+        visible: true
+        type: markdown
+        model: taskGuide
+    -
+        label: Attachments
+        name: taskAttachments
+        visible: true
+        type: text #arrayview
+        model: taskAttachments
+    -
+        label: 'Project ID'
+        name: projectId
+        visible: true
+        type: text
+        model: projectId
+    -
+        label: 'Project Name'
+        name: projectName
+        visible: true
+        type: text
+        model: projectName
+    -
+        label: 'Task Type'
+        name: taskType
+        visible: true
+        type: text
+        model: taskType
+    -
+        label: Progress
+        name: progressStatus
+        visible: true
+        type: text
+        model: progressStatus
+    -
+        label: 'Assigned To'
+        name: assignedTo
+        visible: true
+        type: tagview
+        model: assignedTo
+    -
+        label: Kanban
+        name: kanbanLane
+        visible: true
+        type: text
+        model: kanbanLane
+    -
+        label: Start
+        name: startDateTime
+        visible: true
+        type: datetime
+        model: startDateTime
+    -
+        label: Until
+        name: endDateTime
+        visible: true
+        type: datetime
+        model: endDateTime
+    -
+        label: Duration
+        name: duration
+        visible: true
+        type: text
+        model: duration
+    -
+        label: Approval Status
+        name: approvalStatus
+        visible: true
+        type: text
+        model: approvalStatus
+    -
+        label: Approval By
+        name: approvalBy
+        visible: true
+        type: text
+        model: approvalBy
+    -
+        label: Approval Date
+        name: approvalAt
+        visible: true
+        type: datetime
+        model: approvalAt
+    -
+        label: 'Task Code'
+        name: taskCode
+        visible: true
+        type: text
+        model: taskCode

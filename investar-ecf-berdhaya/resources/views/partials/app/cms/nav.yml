@@ -1,0 +1,16 @@
+- title: "CMS :: Content Management"
+  auth: cms-menu
+  icon: "<i class=\"las la-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Section
+      url: "cms/section"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Category
+      url: "cms/category"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Group
+      url: "cms/group"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Article
+      url: "cms/article"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"

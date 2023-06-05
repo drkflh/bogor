@@ -1,0 +1,424 @@
+-   label: "cardCoy1"
+    name: cardCoy1
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.carddash
+        model: cardCoy1
+        company_name: cardCoy1.companyName
+        company_type: cardCoy1.companyType
+        firm_buying: cardCoy1.firmBuying
+        budgetary: cardCoy1.budgetary
+        new_order: cardCoy1.newOrder
+        title_color: cardCoy1.titleColor
+        image: cardCoy1.image
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "cardCoy2"
+    name: cardCoy2
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.carddash
+        model: cardCoy2
+        company_name: cardCoy2.companyName
+        company_type: cardCoy2.companyType
+        firm_buying: cardCoy2.firmBuying
+        budgetary: cardCoy2.budgetary
+        new_order: cardCoy2.newOrder
+        title_color: cardCoy2.titleColor
+        image: cardCoy2.image
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "cardCoy3"
+    name: cardCoy3
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.carddash
+        model: cardCoy3
+        company_name: cardCoy3.companyName
+        company_type: cardCoy3.companyType
+        firm_buying: cardCoy3.firmBuying
+        budgetary: cardCoy3.budgetary
+        new_order: cardCoy3.newOrder
+        title_color: cardCoy3.titleColor
+        image: cardCoy3.image
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "cardCoy4"
+    name: cardCoy4
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.carddash
+        model: cardCoy4
+        company_name: cardCoy4.companyName
+        firm_buying: cardCoy4.firmBuying
+        budgetary: cardCoy4.budgetary
+        new_order: cardCoy4.newOrder
+        title_color: cardCoy4.titleColor
+        image: cardCoy4.image
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "cardGoodwin"
+    name: cardGoodwin
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.carddash
+        model: cardGoodwin
+        company_name: cardGoodwin.companyName
+        firm_buying: cardGoodwin.firmBuying
+        budgetary: cardGoodwin.budgetary
+        new_order: cardGoodwin.newOrder
+        title_color: cardGoodwin.titleColor
+        image: cardGoodwin.image
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "cardSri"
+    name: cardSri
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.carddash
+        model: cardSri
+        company_name: cardSri.companyName
+        firm_buying: cardSri.firmBuying
+        budgetary: cardSri.budgetary
+        new_order: cardSri.newOrder
+        title_color: cardSri.titleColor
+        image: cardSri.image
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "cardBurraco"
+    name: cardBurraco
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.carddash
+        model: cardBurraco
+        company_name: cardBurraco.companyName
+        firm_buying: cardBurraco.firmBuying
+        budgetary: cardBurraco.budgetary
+        new_order: cardBurraco.newOrder
+        title_color: cardBurraco.titleColor
+        image: cardBurraco.image
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "cardOther"
+    name: cardOther
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.carddash
+        model: cardOther
+        company_name: cardOther.companyName
+        firm_buying: cardOther.firmBuying
+        budgetary: cardOther.budgetary
+        new_order: cardOther.newOrder
+        title_color: cardOther.titleColor
+        image: cardOther.image
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "tableLead"
+    name: tableLead
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.tabledash
+        model: tableLead
+        title_table: tableLead.titleTable
+        title_color: tableLead.titleColor
+        th_table: tableLead.thTable
+        th_class: tableLead.thClass
+        td_table: tableLead.tdTable
+        image: tableLead.image
+        style_image: tableLead.styleImage
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "tableHighlight"
+    name: tableHighlight
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.tabledash
+        model: tableHighlight
+        title_table: tableHighlight.titleTable
+        title_color: tableHighlight.titleColor
+        th_table: tableHighlight.thTable
+        th_class: tableHighlight.thClass
+        td_table: tableHighlight.tdTable
+        image: tableHighlight.image
+        style_image: tableHighlight.styleImage
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-   label: "tableProspect"
+    name: tableProspect
+    show: true
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: dw.nobleui.sms.tabledash
+        model: tableProspect
+        title_table: tableProspect.titleTable
+        title_color: tableProspect.titleColor
+        th_table: tableProspect.thTable
+        th_class: tableProspect.thClass
+        td_table: tableProspect.tdTable
+        image: tableProspect.image
+        style_image: tableProspect.styleImage
+        row: 1
+        col: 6
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data"  }
+        infotype: danger
+        show_ribbon: false
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+

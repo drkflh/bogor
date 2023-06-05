@@ -1,0 +1,252 @@
+-
+    name: _id
+    type: object
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: createdAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: updatedAt
+    type: datetime
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: handle
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: deleted
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyCode
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: noNpwp
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyName
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyPhone
+    type: number
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: number
+-
+    name: companyPhone2
+    type: number
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: number
+-
+    name: companyFax
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: nib
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: api
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyAddress
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyAddress1
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyAddress2
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyLogo
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string
+-
+    name: companyEmail
+    type: string
+    default: null
+    nullable: true
+    api:
+        show: false
+        create: true
+        edit: true
+        view: true
+        validator: ''
+        default: ''
+        transform: false
+        type: string

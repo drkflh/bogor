@@ -1,0 +1,635 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Application Date'
+        name: applicationDate
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Application No'
+        name: applicationNo
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Req Company ID'
+        name: requestingCompanyId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Employee No'
+        name: employeeNo
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Employee Name'
+        name: employeeName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Employee Position'
+        name: employeePosition
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Company Name'
+        name: companyName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Company ID'
+        name: companyId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Request Type'
+        name: requestType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Empl. Date Hired'
+        name: employeeDateHired
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Empl. Dept'
+        name: employeeDept
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Cost Center'
+        name: costCenter
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Advance Date '
+        name: advanceDate
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Advance Req No'
+        name: advanceReqNo
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Advance Currency'
+        name: advanceCurrency
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Advance Exch Rate'
+        name: advanceExchRate
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Advance Amount'
+        name: advanceAmount
+        show: true
+        search: false
+        sort: false
+        datatype: array
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Application Date'
+        name: applicationDate
+        create: true
+        edit: true
+        type: text
+        model: applicationDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Application No'
+        name: applicationNo
+        create: true
+        edit: true
+        type: text
+        model: applicationNo
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Req Company ID'
+        name: requestingCompanyId
+        create: true
+        edit: true
+        type: text
+        model: requestingCompanyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Employee No'
+        name: employeeNo
+        create: true
+        edit: true
+        type: text
+        model: employeeNo
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Employee Name'
+        name: employeeName
+        create: true
+        edit: true
+        type: text
+        model: employeeName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Employee Position'
+        name: employeePosition
+        create: true
+        edit: true
+        type: text
+        model: employeePosition
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Name'
+        name: companyName
+        create: true
+        edit: true
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company ID'
+        name: companyId
+        create: true
+        edit: true
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Request Type'
+        name: requestType
+        create: true
+        edit: true
+        type: text
+        model: requestType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Empl. Date Hired'
+        name: employeeDateHired
+        create: true
+        edit: true
+        type: text
+        model: employeeDateHired
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Empl. Dept'
+        name: employeeDept
+        create: true
+        edit: true
+        type: text
+        model: employeeDept
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Cost Center'
+        name: costCenter
+        create: true
+        edit: true
+        type: text
+        model: costCenter
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Advance Date '
+        name: advanceDate
+        create: true
+        edit: true
+        type: text
+        model: advanceDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Advance Req No'
+        name: advanceReqNo
+        create: true
+        edit: true
+        type: text
+        model: advanceReqNo
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Advance Currency'
+        name: advanceCurrency
+        create: true
+        edit: true
+        type: text
+        model: advanceCurrency
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Advance Exch Rate'
+        name: advanceExchRate
+        create: true
+        edit: true
+        type: text
+        model: advanceExchRate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Advance Amount'
+        name: advanceAmount
+        create: true
+        edit: true
+        type: text
+        model: advanceAmount
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: applicationDate
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: applicationNo
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: requestingCompanyId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: employeeNo
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: employeeName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: employeePosition
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: companyId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: requestType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: employeeDateHired
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: employeeDept
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: costCenter
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: advanceDate
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: advanceReqNo
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: advanceCurrency
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: advanceExchRate
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: advanceAmount
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Application Date'
+        name: applicationDate
+        visible: true
+        type: text
+        model: applicationDate
+    -
+        label: 'Application No'
+        name: applicationNo
+        visible: true
+        type: text
+        model: applicationNo
+    -
+        label: 'Req Company ID'
+        name: requestingCompanyId
+        visible: true
+        type: text
+        model: requestingCompanyId
+    -
+        label: 'Employee No'
+        name: employeeNo
+        visible: true
+        type: text
+        model: employeeNo
+    -
+        label: 'Employee Name'
+        name: employeeName
+        visible: true
+        type: text
+        model: employeeName
+    -
+        label: 'Employee Position'
+        name: employeePosition
+        visible: true
+        type: text
+        model: employeePosition
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: 'Company ID'
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: 'Request Type'
+        name: requestType
+        visible: true
+        type: text
+        model: requestType
+    -
+        label: 'Empl. Date Hired'
+        name: employeeDateHired
+        visible: true
+        type: text
+        model: employeeDateHired
+    -
+        label: 'Empl. Dept'
+        name: employeeDept
+        visible: true
+        type: text
+        model: employeeDept
+    -
+        label: 'Cost Center'
+        name: costCenter
+        visible: true
+        type: text
+        model: costCenter
+    -
+        label: 'Advance Date '
+        name: advanceDate
+        visible: true
+        type: text
+        model: advanceDate
+    -
+        label: 'Advance Req No'
+        name: advanceReqNo
+        visible: true
+        type: text
+        model: advanceReqNo
+    -
+        label: 'Advance Currency'
+        name: advanceCurrency
+        visible: true
+        type: text
+        model: advanceCurrency
+    -
+        label: 'Advance Exch Rate'
+        name: advanceExchRate
+        visible: true
+        type: text
+        model: advanceExchRate
+    -
+        label: 'Advance Amount'
+        name: advanceAmount
+        visible: true
+        type: text
+        model: advanceAmount

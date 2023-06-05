@@ -1,0 +1,115 @@
+- title: "System"
+  auth: system-menu
+  icon: "<i class=\"mdi mdi-alert\" style=\"color:red;\"></i>"
+  children:
+    - title: User Management
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+      auth: user-menu
+      id: userMenu
+      children:
+        - title: "Users"
+          auth: all-users
+          url: "user"
+          icon: "<i class=\"link-icon\"  class=\"fa fa-account-multiple\"></i>"
+#        - title: "Members"
+#          auth: member-list
+#          url: "member"
+#          icon: "<i class=\"link-icon\"  class=\"fa fa-account-multiple\"></i>"
+#        - title: "API Users"
+#          auth: api-users
+#          url: "api-user"
+#          icon: "<i class=\"link-icon\"  class=\"fa fa-account-multiple\"></i>"
+        - title: "Roles"
+          auth: roles
+          url: "role"
+          icon: "<i class=\"link-icon\"  data-feather=\"user-check\"></i>"
+#    - title: Reference
+#      icon: "<i class=\"link-icon\"  data-feather=\"sliders\"></i>"
+#      auth: reference-sys-menu
+#      children:
+#        - title: "Group Company"
+#          auth: company
+#          url: "reference/company"
+#        - title: "Company Type"
+#          auth: company-type
+#          url: "reference/company-type"
+#    - title: Assets
+#      auth: system-assets-menu
+#      icon: "<i class=\"link-icon\"  data-feather=\"server\"></i>"
+#      id: sysAssetMenu
+#      children:
+#        - title: "Digital Assets"
+#          auth: digital-assets
+#          url: "assets/digital-asset"
+#          icon: "<i class=\"link-icon\"  class=\"fa fa-account-multiple\"></i>"
+    - title: "Messaging"
+      auth: messaging-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"message-square\"></i>"
+      id: messagingMenu
+      children:
+#        - title: "Message Queue"
+#          auth: messaging-queue
+#          url: "mms/message-queue"
+        - title: "Message Log"
+          auth: messaging-log
+          url: "mms/message-log"
+#        - title: "Message Gateway"
+#          auth: messaging-gateway
+#          url: "mms/message-gateway"
+    - title: "Notification"
+      auth: messaging-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"message-square\"></i>"
+      id: notificationMenu
+      children:
+        - title: "Notifications"
+          auth: messaging-queue
+          url: "mms/notification"
+        - title: "Notification Sub"
+          auth: messaging-log
+          url: "mms/notification-sub"
+        - title: "Notification Channel"
+          auth: messaging-gateway
+          url: "mms/notification-channel"
+#        - title: "FCM Register"
+#          auth: messaging-fcm
+#          url: "mms/fcm-register"
+    - title: "Logs & Monitors"
+      auth: logs-menu
+      icon: "<i data-feather=\"database\" class=\"mdi mdi-account-multiple link-icon\"></i>"
+      id: logsMenu
+      children:
+#        - title: "API Log"
+#          auth: api-log
+#          url: "api-log"
+#          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Action Log"
+          auth: action-log
+          url: "action-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Approval Log"
+          auth: approval-log
+          url: "approval-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Message Log"
+          auth: message-log
+          url: "mms/message-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+#        - title: "Change Status Log"
+#          auth: change-status-log
+#          url: "change-status-log"
+#          icon: "<i class=\"mdi mdi-file\"></i>"
+#        - title: "Git Log"
+#          auth: git-log
+#          url: "obj/git-log"
+#          target: blank
+#          icon: "<i class=\"mdi mdi-file\"></i>"
+#    - title: Documentation
+#      icon: "<i  data-feather=\"hexagon\" class=\"mdi mdi-account-multiple  link-icon\"></i>"
+#      auth: docs-menu
+#      id: docsMenu
+#      children:
+#        - title: "API Doc"
+#          url: "api-docs"
+#          auth: api-docs
+#          badge: false
+#          icon: "<i class=\"mdi mdi-account-multiple\"></i>"

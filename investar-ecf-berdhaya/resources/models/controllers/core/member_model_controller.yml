@@ -1,0 +1,1411 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Photo
+        name: avatar
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: image
+        row_text_alignment: text-left
+        column_classes: 'text-100 text-center'
+        thClass: ''
+    -
+        label: 'Role Name'
+        name: roleName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Role
+        name: roleId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Name
+        name: name
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: Email
+        name: email
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-250
+        thClass: ''
+    -
+        label: Phone
+        name: phone
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: 'Place Of Birth'
+        name: placeOfBirth
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: 'Date of Birth'
+        name: dateOfBirth
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: Mobile
+        name: mobile
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-200
+        thClass: ''
+    -
+        label: Alamat
+        name: address
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Kelurahan
+        name: kelurahan
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Province
+        name: province
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: Kota
+        name: city
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: ZIP
+        name: ZIP
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'ID Number'
+        name: idNumber
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: 'ID Type'
+        name: idType
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'ID Pic'
+        name: idPic
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: image
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Signature Specimen'
+        name: signatureSpecimen
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: image
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: PIN
+        name: pin
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Confirm PIN'
+        name: confirm_pin
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Signature Pad'
+        name: signatureInput
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Username
+        name: username
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: Password
+        name: password
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Confirm Password'
+        name: confirm_password
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Location
+        name: locationCoord
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Created
+        name: created_at
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: Updated
+        name: updated_at
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-center text-150'
+        thClass: ''
+
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Photo
+        name: avatar
+        create: true
+        edit: true
+        type: avatarupload
+        model: avatar
+        default: ''
+        validator: ''
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload Avatar'
+    -
+        label: 'Role Name'
+        name: roleName
+        create: RO
+        edit: RO
+        type: text
+        model: roleName
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Role
+        name: roleId
+        create: RO
+        edit: RO
+        type: text
+        model: roleId
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Name
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Email
+        name: email
+        create: true
+        edit: true
+        type: text
+        model: email
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Phone
+        name: phone
+        create: true
+        edit: true
+        type: text
+        model: phone
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Place Of Birth'
+        name: placeOfBirth
+        create: true
+        edit: true
+        type: text
+        model: placeOfBirth
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Date of Birth'
+        name: dateOfBirth
+        create: true
+        edit: true
+        type: datepicker
+        model: dateOfBirth
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Mobile
+        name: mobile
+        create: true
+        edit: true
+        type: text
+        model: mobile
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Alamat
+        name: address
+        create: true
+        edit: true
+        type: textarea
+        model: address
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Kelurahan
+        name: kelurahan
+        create: true
+        edit: true
+        type: text
+        model: kelurahan
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Province
+        name: province
+        create: true
+        edit: true
+        type: simpleselect
+        model: province
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Kota
+        name: city
+        create: true
+        edit: true
+        type: simpleselect
+        model: city
+        default: ''
+        validator: required
+        selector: city
+        ref: city
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ZIP
+        name: ZIP
+        create: true
+        edit: true
+        type: text
+        model: ZIP
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'ID Number'
+        name: idNumber
+        create: true
+        edit: true
+        type: text
+        model: idNumber
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'ID Type'
+        name: idType
+        create: true
+        edit: true
+        type: simpleselect
+        model: idType
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        param:
+            -
+                text: KTP
+                value: KTP
+            -
+                text: SIM
+                value: SIM
+            -
+                text: KITAS
+                value: KITAS
+            -
+                text: PASSPORT
+                value: PASSPORT
+        attr:
+            class: form-data
+    -
+        label: 'ID Pic'
+        name: idPic
+        create: true
+        edit: true
+        type: imagecardupload
+        model: idPic
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload ID Picture'
+    -
+        label: 'Signature Specimen'
+        name: signatureSpecimen
+        create: true
+        edit: true
+        type: imagecardupload
+        model: signatureSpecimen
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload ID Picture'
+    -
+        label: PIN
+        name: pin
+        create: true
+        edit: true
+        type: pin
+        model: pin
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Confirm PIN'
+        name: confirm_pin
+        create: true
+        edit: true
+        type: pin
+        model: confirm_pin
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Signature Pad'
+        name: signatureInput
+        create: true
+        edit: true
+        type: signpad
+        model: signatureSpecimen
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            url: api/v1/core/form-upload
+            paramName: file
+        attr:
+            class: form-data
+    -
+        label: Username
+        name: username
+        create: true
+        edit: false
+        type: text
+        model: username
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Password
+        name: password
+        create: true
+        edit: false
+        type: password
+        model: password
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Confirm Password'
+        name: confirm_password
+        create: true
+        edit: false
+        type: password
+        model: confirm_password
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Location
+        name: locationCoord
+        create: false
+        edit: false
+        type: text
+        model: locationCoord
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: created_at
+        create: false
+        edit: false
+        type: text
+        model: created_at
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Updated
+        name: updated_at
+        create: false
+        edit: false
+        type: text
+        model: updated_at
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Active'
+        name: isActive
+        create: true
+        edit: true
+        type: simpleswitch
+        model: isActive
+        default: true
+        validator: ''
+        separator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Registration Status'
+        name: regStatus
+        create: true
+        edit: true
+        type: text
+        model: regStatus
+        default: ''
+        validator: ''
+        separator: ''
+        param: {}
+        attr: {}
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: avatar
+        visible: true
+        type: string
+        default: ''
+    -
+        model: roleName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: roleId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+    -
+        model: email
+        visible: true
+        type: string
+        default: ''
+    -
+        model: phone
+        visible: true
+        type: string
+        default: ''
+    -
+        model: placeOfBirth
+        visible: true
+        type: string
+        default: ''
+    -
+        model: dateOfBirth
+        visible: true
+        type: string
+        default: ''
+    -
+        model: mobile
+        visible: true
+        type: string
+        default: ''
+    -
+        model: address
+        visible: true
+        type: string
+        default: ''
+    -
+        model: kelurahan
+        visible: true
+        type: string
+        default: ''
+    -
+        model: province
+        visible: true
+        type: string
+        default: ''
+    -
+        model: city
+        visible: true
+        type: string
+        default: ''
+    -
+        model: ZIP
+        visible: true
+        type: string
+        default: ''
+    -
+        model: idNumber
+        visible: true
+        type: string
+        default: ''
+    -
+        model: idType
+        visible: true
+        type: string
+        default: KTP
+    -
+        model: idPic
+        visible: true
+        type: string
+        default: ''
+    -
+        model: signatureSpecimen
+        visible: true
+        type: string
+        default: ''
+    -
+        model: pin
+        visible: true
+        type: string
+        default: ''
+    -
+        model: confirm_pin
+        visible: true
+        type: string
+        default: ''
+    -
+        model: signatureSpecimen
+        visible: true
+        type: string
+        default: ''
+    -
+        model: username
+        visible: true
+        type: string
+        default: ''
+    -
+        model: password
+        visible: true
+        type: string
+        default: ''
+    -
+        model: confirm_password
+        visible: true
+        type: string
+        default: ''
+    -
+        model: locationCoord
+        visible: true
+        type: string
+        default: ''
+    -
+        model: created_at
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updated_at
+        visible: false
+        type: string
+        default: ''
+    -
+        model: isActive
+        visible: true
+        type: string
+        default: ''
+    -
+        model: regStatus
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: false
+        name: avatar
+        model: avatar
+        visible: true
+        type: squaresingleimage
+        default: ''
+    -
+        label: 'Role Name'
+        name: roleName
+        model: roleName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Role
+        name: roleId
+        model: roleId
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Name
+        name: name
+        model: name
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Email
+        name: email
+        model: email
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Phone
+        name: phone
+        model: phone
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Place Of Birth'
+        name: placeOfBirth
+        model: placeOfBirth
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Date of Birth'
+        name: dateOfBirth
+        model: dateOfBirth
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Mobile
+        name: mobile
+        model: mobile
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Alamat
+        name: address
+        model: address
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Kelurahan
+        name: kelurahan
+        model: kelurahan
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Province
+        name: province
+        model: province
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Kota
+        name: city
+        model: city
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ZIP
+        name: ZIP
+        model: ZIP
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'ID Number'
+        name: idNumber
+        model: idNumber
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'ID Type'
+        name: idType
+        model: idType
+        visible: true
+        type: text
+        default: ''
+    -
+        label: false
+        name: idPic
+        model: idPic
+        visible: true
+        type: singleimage
+        default: ''
+    -
+        label: false
+        name: signatureSpecimen
+        model: signatureSpecimen
+        visible: true
+        type: singleimage
+        default: ''
+    -
+        label: PIN
+        name: pin
+        model: pin
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Confirm PIN'
+        name: confirm_pin
+        model: confirm_pin
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Signature Pad'
+        name: signatureInput
+        model: signatureSpecimen
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Username
+        name: username
+        model: username
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Password
+        name: password
+        model: password
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Confirm Password'
+        name: confirm_password
+        model: confirm_password
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Location
+        name: locationCoord
+        model: locationCoord
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Created
+        name: created_at
+        model: created_at
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Updated
+        name: updated_at
+        model: updated_at
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Active'
+        name: isActive
+        model: isActive
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Registration Status'
+        name: regStatus
+        model: regStatus
+        visible: true
+        type: text
+        default: ''

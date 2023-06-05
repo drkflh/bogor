@@ -1,0 +1,1746 @@
+- label: Action
+  name: _id
+  show: true
+  sort: false
+  uniqueId: true
+  row_text_alignment: text-left
+  column_classes: "col-action"
+  thClass: 'text-center text-50'
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: id
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Created
+  name: createdAt
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: createdAt
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: updatedAt
+  name: updatedAt
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: updatedAt
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ownerId
+  name: ownerId
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerId
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ownerName
+  name: ownerName
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerName
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: handle
+  name: handle
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: handle
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: deleted
+  name: deleted
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: deleted
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Company
+  name: Coy
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  filterOptions:
+    enabled: false
+    placeholder: All
+    filterDropdownItems: [{ value: '01', text: 'Paramanusa Utama' },{ value: '02', text: 'Cipta Guna' },{ value: '03', text: 'Sembada Perdana Insan' }, { value: '04', text: 'Paramanusa Balikpapan' }]
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: Coy
+    validator: 'required'
+    row: 1
+    col: 1
+    options: [{ value: '01', text: 'Paramanusa Utama' },{ value: '02', text: 'Cipta Guna' },{ value: '03', text: 'Sembada Perdana Insan' }, { value: '04', text: 'Paramanusa Balikpapan' }]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Company
+  name: CoyCode
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  filterOptions:
+    enabled: false
+    placeholder: All
+    filterDropdownItems: [{ value: '01', text: 'Paramanusa Utama' },{ value: '02', text: 'Cipta Guna' },{ value: '03', text: 'Sembada Perdana Insan' }, { value: '04', text: 'Paramanusa Balikpapan' }]
+
+  form:
+    create: RO
+    edit: RO
+    type: simpleselect
+    model: Coy
+    row: 1
+    col: 1
+    options: [{ value: '01', text: 'Paramanusa Utama' },{ value: '02', text: 'Cipta Guna' },{ value: '03', text: 'Sembada Perdana Insan' }, { value: '04', text: 'Paramanusa Balikpapan' }]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+
+- label: Function
+  name: Function
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: RO
+    type: text
+    model: Function
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Function
+  name: FunctionDesc
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: FunctionDesc
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: IO
+  name: IO
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: "text-50"
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: select
+    mode: single
+    options:
+    - name: Incoming
+      value: Incoming
+    - name: Outgoing
+      value: Outgoing
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: IO
+    row: 1
+    col: 1
+    default: Incoming
+    options: [{ text: "Incoming", value: "Incoming" },{ text: "Outgoing", value: "Outgoing" }]
+  vue:
+    visible: true
+    type: text
+    default: Incoming
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Input Date'
+  name: IODate
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  datatype: date
+  column_classes: 'text-150 text-center'
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: IODate
+    date_constraint: maxTodayNotBefore
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Feature
+  name: Feature
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Feature
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Doc Date'
+  name: DocDate
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: date
+  column_classes: text-100
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: DocDate
+    date_constraint: maxToday
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: FullCallCode
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-250
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: true
+    edit: true
+    type: qr
+    model: FCallCode
+    row: 1
+    col: 1
+    options: "{ width: 75 }"
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: qr
+  api:
+    visible: true
+    type: text
+    default: na
+- label: Subject
+  name: Subject
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+
+  filterOptions:
+    enabled: false
+
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Subject
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Type
+  name: Tipe
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: Tipe
+    row: 1
+    col: 1
+    options: [ { text: "Letter", value: "Letter" },{ text: "Fax", value: "Fax" } ,{ text: "Report", value: "Report" } ,{ text: "E-mail", value: "E-mail" } ]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Doc Ref'
+  name: DocRef
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: DocRef
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Scope
+  name: Scope
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Scope
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Topic
+  name: TopicObject
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: false
+    type: topicselector
+    model: TopicObject
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+    topicText: Topic
+    topicDescr: TopicDescr
+    topicFeature: Feature
+    topicFunction: Function
+    topicActiveYrs: RetPer
+    topicDispPer: DispPer
+    topicDocClass: Class
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Topic
+  name: Topic
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: Topic
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+    topicDescr: TopicDescr
+    topicFeature: Feature
+    topicText: Topic
+    topicFunction: Function
+    topicActiveYrs: RetPer
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Topic Descr.'
+  name: TopicDescr
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: TopicDescr
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Feature
+  name: Feature
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: RO
+    type: text
+    model: Feature
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: MMYY
+  name: MMYY
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: MMYY
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: Sequence
+  name: Urut
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: integer
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: Urut
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: '# of Page'
+  name: NoPage
+  show: false
+  sort: true
+  row_text_alignment: text-center
+  row_classes: "text-100"
+  column_classes: "text-50 text-center"
+  datatype: integer
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: number
+    model: NoPage
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: '# of Sheets'
+  name: NoSheet
+  show: true
+  sort: true
+  row_classes: "text-100 text-center"
+  row_text_alignment: text-center
+  column_classes: "text-125 text-center"
+  thClass: text-center
+  datatype: integer
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: number
+    model: NoSheet
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Call Code'
+  name: CallCode
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: CallCode
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: ''
+  name: FCallCode
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: section
+    model: FCallCode
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ''
+  name: QRCallCode
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: qr
+    model: FCallCode
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Sender
+  name: Sender
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Sender
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: Recipient
+  name: Recipient
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Recipient
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: Action
+  name: Action
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Action
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: Class
+  name: Class
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Class
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Copy To'
+  name: Copy
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Copy
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: Location
+  name: Location
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: 'text-center text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Location
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Store'
+  name: Store
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: 'text-center text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Store
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Status'
+  name: Status
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: 'text-center text-100'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: Status
+    row: 1
+    col: 1
+    options: [ { text: "Active", value: "Active" }, { text: "Passive", value: "Passive" }, { text: "Disposed", value: "Disposed" } ]
+  vue:
+    visible: false
+    type: text
+    default: Active
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Keyword
+  name: Keyword
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: Keyword
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+
+- label: 'Expired Date'
+  name: ExpDate
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: integer
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: ExpDate
+    row: 1
+    col: 1
+    options: [ { text: "2", value: 2 },{ text: "5", value: 5 },{ text: "10", value: 10 } ]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Notify To'
+  name: NotifyTo
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: NotifyTo
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+
+- label: 'Active Years'
+  name: RetPer
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: integer
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: true
+    type: text
+    model: RetPer
+    row: 1
+    col: 1
+    options: [ { text: "1", value: 1 },{ text: "2", value: 2 },{ text: "5", value: 5 },{ text: "10", value: 10 } ]
+  vue:
+    visible: true
+    type: integer
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Retain Until'
+  name: RetDate
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: 'text-125 text-center'
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: RetDate
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Disposal Period'
+  name: DispPer
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: integer
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: simpleselect
+    model: DispPer
+    row: 1
+    col: 1
+    options: [ { text: "2", value: 2 },{ text: "5", value: 5 },{ text: "10", value: 10 } ]
+  vue:
+    visible: true
+    type: integer
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Disposal Date'
+  name: DispDate
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: 'text-125 text-center'
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: DispDate
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: Dispatch
+  name: Dispatch
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: Dispatch
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Boxing
+  name: Boxing
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: Boxing
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: 'Box ID'
+  name: BoxId
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: BoxId
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'End Disposal'
+  name: EndDisp
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: EndDisp
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'File Status'
+  name: Filestat
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: Filestat
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Link
+  name: Linked
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: Linked
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Soft File'
+  name: urlDisplay
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: FileUrl
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+
+- label: 'Upload File'
+  name: FileUrl
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: docupload
+    model: FileUrl
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+      buttonlabel: 'Upload PDF'
+      filename: FCallCode
+      dir: documents
+      useHandle: false
+      baseUrl: DocBase
+      docPath: DocPath
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Doc base'
+  name: DocBase
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: DocBase
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Doc Path'
+  name: DocPath
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: DocPath
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+
+
+- label: ''
+  name: printLabel
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: printelement
+    model: FCallCode
+    template: printTemplate
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: 'Print Label'
+  name: previewLabel
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: activeviewplain
+    model: FCallCode
+    template: labelTemplate
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na

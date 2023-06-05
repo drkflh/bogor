@@ -1,0 +1,5 @@
+<div>
+
+{!! $location ?? '' !!}
+{!! $locationCode ?? '' !!}
+</div>

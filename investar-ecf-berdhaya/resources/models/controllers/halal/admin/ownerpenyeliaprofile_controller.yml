@@ -1,0 +1,1300 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner _Id'
+        name: profileExtId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Nama'
+        name: ownerProfileName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Email'
+        name: ownerProfileEmail
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Place Of Birth'
+        name: ownerProfilePlaceOfBirth
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Date Of Birth'
+        name: ownerProfileDateOfBirth
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Mobile'
+        name: ownerProfileMobile
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Gender'
+        name: ownerProfileGender
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner NIK'
+        name: ownerProfileNik
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Address'
+        name: ownerProfileAddress
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Province'
+        name: ownerProfileProvince
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner City'
+        name: ownerProfileCity
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner ZIP'
+        name: ownerProfileZip
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Photo'
+        name: ownerProfilePhoto
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner ID Photo'
+        name: ownerProfileIdPhoto
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Id Type'
+        name: ownerProfileIdType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Phone'
+        name: ownerProfilePhone
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Owner Kelurahan'
+        name: ownerProfileKelurahan
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia _Id'
+        name: penyeliaExtId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Nama'
+        name: penyeliaName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Email'
+        name: penyeliaEmail
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Place Of Birth'
+        name: penyeliaPlaceOfBirth
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Date Of Birth'
+        name: penyeliaDateOfBirth
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Mobile'
+        name: penyeliaMobile
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Gender'
+        name: penyeliaGender
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia NIK'
+        name: penyeliaNik
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Address'
+        name: penyeliaAddress
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Province'
+        name: penyeliaProvince
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia City'
+        name: penyeliaCity
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia ZIP'
+        name: penyeliaZip
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Photo'
+        name: penyeliaPhoto
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia ID Photo'
+        name: penyeliaIdPhoto
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Id Type'
+        name: penyeliaIdType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Phone'
+        name: penyeliaPhone
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penyelia Kelurahan'
+        name: penyeliaKelurahan
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    # -
+    #     label: Pabrik
+    #     name: bizFactories
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-100'
+    #     thClass: 'text-center text-50'
+    # -
+    #     label: Outlet
+    #     name: bizOutlets
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-100'
+    #     thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner _Id'
+        name: profileExtId
+        create: true
+        edit: true
+        type: text
+        model: profileExtId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Nama'
+        name: ownerProfileName
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Email'
+        name: ownerProfileEmail
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileEmail
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Place Of Birth'
+        name: ownerProfilePlaceOfBirth
+        create: true
+        edit: true
+        type: text
+        model: ownerProfilePlaceOfBirth
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Date Of Birth'
+        name: ownerProfileDateOfBirth
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileDateOfBirth
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Mobile'
+        name: ownerProfileMobile
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileMobile
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Gender'
+        name: ownerProfileGender
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileGender
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner NIK'
+        name: ownerProfileNik
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileNik
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Address'
+        name: ownerProfileAddress
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileAddress
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Province'
+        name: ownerProfileProvince
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileProvince
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner City'
+        name: ownerProfileCity
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileCity
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner ZIP'
+        name: ownerProfileZip
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileZip
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Photo'
+        name: ownerProfilePhoto
+        create: true
+        edit: true
+        type: text
+        model: ownerProfilePhoto
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner ID Photo'
+        name: ownerProfileIdPhoto
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileIdPhoto
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Id Type'
+        name: ownerProfileIdType
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileIdType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Phone'
+        name: ownerProfilePhone
+        create: true
+        edit: true
+        type: text
+        model: ownerProfilePhone
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Owner Kelurahan'
+        name: ownerProfileKelurahan
+        create: true
+        edit: true
+        type: text
+        model: ownerProfileKelurahan
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia _Id'
+        name: penyeliaExtId
+        create: true
+        edit: true
+        type: text
+        model: penyeliaExtId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Nama'
+        name: penyeliaName
+        create: true
+        edit: true
+        type: text
+        model: penyeliaName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Email'
+        name: penyeliaEmail
+        create: true
+        edit: true
+        type: text
+        model: penyeliaEmail
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Place Of Birth'
+        name: penyeliaPlaceOfBirth
+        create: true
+        edit: true
+        type: text
+        model: penyeliaPlaceOfBirth
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Date Of Birth'
+        name: penyeliaDateOfBirth
+        create: true
+        edit: true
+        type: text
+        model: penyeliaDateOfBirth
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Mobile'
+        name: penyeliaMobile
+        create: true
+        edit: true
+        type: text
+        model: penyeliaMobile
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Gender'
+        name: penyeliaGender
+        create: true
+        edit: true
+        type: text
+        model: penyeliaGender
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia NIK'
+        name: penyeliaNik
+        create: true
+        edit: true
+        type: text
+        model: penyeliaNik
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Address'
+        name: penyeliaAddress
+        create: true
+        edit: true
+        type: text
+        model: penyeliaAddress
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Province'
+        name: penyeliaProvince
+        create: true
+        edit: true
+        type: text
+        model: penyeliaProvince
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia City'
+        name: penyeliaCity
+        create: true
+        edit: true
+        type: text
+        model: penyeliaCity
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia ZIP'
+        name: penyeliaZip
+        create: true
+        edit: true
+        type: text
+        model: penyeliaZip
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Photo'
+        name: penyeliaPhoto
+        create: true
+        edit: true
+        type: text
+        model: penyeliaPhoto
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia ID Photo'
+        name: penyeliaIdPhoto
+        create: true
+        edit: true
+        type: text
+        model: penyeliaIdPhoto
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Id Type'
+        name: penyeliaIdType
+        create: true
+        edit: true
+        type: text
+        model: penyeliaIdType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Phone'
+        name: penyeliaPhone
+        create: true
+        edit: true
+        type: text
+        model: penyeliaPhone
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Penyelia Kelurahan'
+        name: penyeliaKelurahan
+        create: true
+        edit: true
+        type: text
+        model: penyeliaKelurahan
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    # -
+    #     label: Pabrik
+    #     name: bizFactories
+    #     create: true
+    #     edit: true
+    #     type: text
+    #     model: bizFactories
+    #     default: ''
+    #     validator: required
+    #     param: {}
+    #     attr: {}
+    # -
+    #     label: Outlet
+    #     name: bizOutlets
+    #     create: true
+    #     edit: true
+    #     type: text
+    #     model: bizOutlets
+    #     default: ''
+    #     validator: required
+    #     param: {}
+    #     attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: profileExtId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileEmail
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfilePlaceOfBirth
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileDateOfBirth
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileMobile
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileGender
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileNik
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileAddress
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileProvince
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileCity
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileZip
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfilePhoto
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileIdPhoto
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileIdType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfilePhone
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ownerProfileKelurahan
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaExtId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaEmail
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaPlaceOfBirth
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaDateOfBirth
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaMobile
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaGender
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaNik
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaAddress
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaProvince
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaCity
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaZip
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaPhoto
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaIdPhoto
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaIdType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaPhone
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: penyeliaKelurahan
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    # -
+    #     model: bizFactories
+    #     visible: true
+    #     type: string
+    #     default: ''
+    #     im: true
+    #     ex: true
+    #     search: true
+    # -
+    #     model: bizOutlets
+    #     visible: true
+    #     type: string
+    #     default: ''
+    #     im: true
+    #     ex: true
+    #     search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Owner _Id'
+        name: profileExtId
+        visible: true
+        type: text
+        model: profileExtId
+    -
+        label: 'Owner Nama'
+        name: ownerProfileName
+        visible: true
+        type: text
+        model: ownerProfileName
+    -
+        label: 'Owner Email'
+        name: ownerProfileEmail
+        visible: true
+        type: text
+        model: ownerProfileEmail
+    -
+        label: 'Owner Place Of Birth'
+        name: ownerProfilePlaceOfBirth
+        visible: true
+        type: text
+        model: ownerProfilePlaceOfBirth
+    -
+        label: 'Owner Date Of Birth'
+        name: ownerProfileDateOfBirth
+        visible: true
+        type: text
+        model: ownerProfileDateOfBirth
+    -
+        label: 'Owner Mobile'
+        name: ownerProfileMobile
+        visible: true
+        type: text
+        model: ownerProfileMobile
+    -
+        label: 'Owner Gender'
+        name: ownerProfileGender
+        visible: true
+        type: text
+        model: ownerProfileGender
+    -
+        label: 'Owner NIK'
+        name: ownerProfileNik
+        visible: true
+        type: text
+        model: ownerProfileNik
+    -
+        label: 'Owner Address'
+        name: ownerProfileAddress
+        visible: true
+        type: text
+        model: ownerProfileAddress
+    -
+        label: 'Owner Province'
+        name: ownerProfileProvince
+        visible: true
+        type: text
+        model: ownerProfileProvince
+    -
+        label: 'Owner City'
+        name: ownerProfileCity
+        visible: true
+        type: text
+        model: ownerProfileCity
+    -
+        label: 'Owner ZIP'
+        name: ownerProfileZip
+        visible: true
+        type: text
+        model: ownerProfileZip
+    -
+        label: 'Owner Photo'
+        name: ownerProfilePhoto
+        visible: true
+        type: text
+        model: ownerProfilePhoto
+    -
+        label: 'Owner ID Photo'
+        name: ownerProfileIdPhoto
+        visible: true
+        type: text
+        model: ownerProfileIdPhoto
+    -
+        label: 'Owner Id Type'
+        name: ownerProfileIdType
+        visible: true
+        type: text
+        model: ownerProfileIdType
+    -
+        label: 'Owner Phone'
+        name: ownerProfilePhone
+        visible: true
+        type: text
+        model: ownerProfilePhone
+    -
+        label: 'Owner Kelurahan'
+        name: ownerProfileKelurahan
+        visible: true
+        type: text
+        model: ownerProfileKelurahan
+    -
+        label: 'Penyelia _Id'
+        name: penyeliaExtId
+        visible: true
+        type: text
+        model: penyeliaExtId
+    -
+        label: 'Penyelia Nama'
+        name: penyeliaName
+        visible: true
+        type: text
+        model: penyeliaName
+    -
+        label: 'Penyelia Email'
+        name: penyeliaEmail
+        visible: true
+        type: text
+        model: penyeliaEmail
+    -
+        label: 'Penyelia Place Of Birth'
+        name: penyeliaPlaceOfBirth
+        visible: true
+        type: text
+        model: penyeliaPlaceOfBirth
+    -
+        label: 'Penyelia Date Of Birth'
+        name: penyeliaDateOfBirth
+        visible: true
+        type: text
+        model: penyeliaDateOfBirth
+    -
+        label: 'Penyelia Mobile'
+        name: penyeliaMobile
+        visible: true
+        type: text
+        model: penyeliaMobile
+    -
+        label: 'Penyelia Gender'
+        name: penyeliaGender
+        visible: true
+        type: text
+        model: penyeliaGender
+    -
+        label: 'Penyelia NIK'
+        name: penyeliaNik
+        visible: true
+        type: text
+        model: penyeliaNik
+    -
+        label: 'Penyelia Address'
+        name: penyeliaAddress
+        visible: true
+        type: text
+        model: penyeliaAddress
+    -
+        label: 'Penyelia Province'
+        name: penyeliaProvince
+        visible: true
+        type: text
+        model: penyeliaProvince
+    -
+        label: 'Penyelia City'
+        name: penyeliaCity
+        visible: true
+        type: text
+        model: penyeliaCity
+    -
+        label: 'Penyelia ZIP'
+        name: penyeliaZip
+        visible: true
+        type: text
+        model: penyeliaZip
+    -
+        label: 'Penyelia Photo'
+        name: penyeliaPhoto
+        visible: true
+        type: text
+        model: penyeliaPhoto
+    -
+        label: 'Penyelia ID Photo'
+        name: penyeliaIdPhoto
+        visible: true
+        type: text
+        model: penyeliaIdPhoto
+    -
+        label: 'Penyelia Id Type'
+        name: penyeliaIdType
+        visible: true
+        type: text
+        model: penyeliaIdType
+    -
+        label: 'Penyelia Phone'
+        name: penyeliaPhone
+        visible: true
+        type: text
+        model: penyeliaPhone
+    -
+        label: 'Penyelia Kelurahan'
+        name: penyeliaKelurahan
+        visible: true
+        type: text
+        model: penyeliaKelurahan
+    # -
+    #     label: Pabrik
+    #     name: bizFactories
+    #     visible: true
+    #     type: text
+    #     model: bizFactories
+    # -
+    #     label: Outlet
+    #     name: bizOutlets
+    #     visible: true
+    #     type: text
+    #     model: bizOutlets

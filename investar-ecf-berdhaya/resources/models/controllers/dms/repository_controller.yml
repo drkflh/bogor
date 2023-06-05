@@ -1,0 +1,2068 @@
+table:
+    -
+        label: ''
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Coy
+        name: Coy
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: Company
+        name: CoyCode
+        show: false
+        search: false
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: Func.
+        name: Function
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: Function
+        name: FunctionDesc
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: IO
+        name: IO
+        show: false
+        search: false
+        sort: false
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-50
+        thClass: ''
+    -
+        label: 'Input Date'
+        name: IODate
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-150 text-center'
+        thClass: ''
+    -
+        label: Feature
+        name: Feature
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: 'Doc Date'
+        name: DocDate
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: ''
+        name: FullCallCode
+        show: false
+        search: true
+        sort: false
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-250
+        thClass: ''
+    -
+        label: Subject
+        name: Subject
+        show: true
+        search: true
+        sort: false
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Type
+        name: Tipe
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Doc Ref'
+        name: DocRef
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Scope
+        name: Scope
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Topic
+        name: TopicObject
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Topic
+        name: Topic
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Topic Descr.'
+        name: TopicDescr
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Feature
+        name: Feature
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: MMYY
+        name: MMYY
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Sequence
+        name: Urut
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: integer
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: '# of Page'
+        name: NoPage
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: integer
+        row_text_alignment: text-center
+        column_classes: 'text-50 text-center'
+        thClass: ''
+    -
+        label: '# of Sheets'
+        name: NoSheet
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: integer
+        row_text_alignment: text-center
+        column_classes: 'text-125 text-center'
+        thClass: text-center
+    -
+        label: 'Call Code'
+        name: CallCode
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: FCallCode
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: QRCallCode
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Sender
+        name: Sender
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Recipient
+        name: Recipient
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Action
+        name: Action
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Class
+        name: Class
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Copy To'
+        name: Copy
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Location
+        name: Location
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: Store
+        name: Store
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: Status
+        name: Status
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: Keyword
+        name: Keyword
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Expired Date'
+        name: ExpDate
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: integer
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Notify To'
+        name: NotifyTo
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Active Years'
+        name: RetPer
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: integer
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Retain Until'
+        name: RetDate
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-125 text-center'
+        thClass: ''
+    -
+        label: 'Disposal Period'
+        name: DispPer
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: integer
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Disposal Date'
+        name: DispDate
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-125 text-center'
+        thClass: ''
+    -
+        label: Dispatch
+        name: Dispatch
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Boxing
+        name: Boxing
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Box ID'
+        name: BoxId
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'End Disposal'
+        name: EndDisp
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'File Status'
+        name: Filestat
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Link
+        name: Linked
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Soft File'
+        name: urlDisplay
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Upload File'
+        name: FileUrl
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Doc base'
+        name: DocBase
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Doc Path'
+        name: DocPath
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: ''
+        name: printLabel
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Print Label'
+        name: previewLabel
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Coy
+        name: Coy
+        create: true
+        edit: true
+        type: simpleselect
+        model: Coy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Company
+        name: CoyCode
+        create: RO
+        edit: RO
+        type: simpleselect
+        model: Coy
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Func.
+        name: Function
+        create: true
+        edit: RO
+        type: text
+        model: Function
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Function
+        name: FunctionDesc
+        create: RO
+        edit: RO
+        type: text
+        model: FunctionDesc
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: IO
+        name: IO
+        create: true
+        edit: true
+        type: simpleselect
+        model: IO
+        default: Incoming
+        validator: ''
+        param:
+            -
+                text: Incoming
+                value: Incoming
+            -
+                text: Outgoing
+                value: Outgoing
+        attr: {}
+    -
+        label: 'Input Date'
+        name: IODate
+        create: true
+        edit: true
+        type: datepicker
+        model: IODate
+        default: ''
+        validator: ''
+        date_constraint: maxToday
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Feature
+        name: Feature
+        create: true
+        edit: true
+        type: text
+        model: Feature
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Doc Date'
+        name: DocDate
+        create: true
+        edit: true
+        type: datepicker
+        model: DocDate
+        default: ''
+        validator: ''
+        date_constraint: betweenDocDateNow
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: FullCallCode
+        create: true
+        edit: true
+        type: qr
+        model: FCallCode
+        default: ''
+        validator: 'required'
+        param: '{ width: 75 }'
+        attr: {}
+    -
+        label: Subject
+        name: Subject
+        create: true
+        edit: true
+        type: text
+        model: Subject
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Type
+        name: Tipe
+        create: true
+        edit: true
+        type: simpleselect
+        model: Tipe
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Letter
+                value: Letter
+            -
+                text: Fax
+                value: Fax
+            -
+                text: Report
+                value: Report
+            -
+                text: E-mail
+                value: E-mail
+        attr: {}
+    -
+        label: 'Doc Ref'
+        name: DocRef
+        create: true
+        edit: true
+        type: text
+        model: DocRef
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Scope
+        name: Scope
+        create: true
+        edit: true
+        type: text
+        model: Scope
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Topic
+        name: TopicObject
+        create: true
+        edit: false
+        type: simpleselect
+        model: TopicObject
+        default: ''
+        validator: ''
+        topicText: Topic
+        topicDescr: TopicDescr
+        topicFeature: Feature
+        topicFunction: Function
+        topicActiveYrs: RetPer
+        topicDispPer: DispPer
+        topicDocClass: Class
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Topic
+        name: Topic
+        create: RO
+        edit: RO
+        type: text
+        model: Topic
+        default: ''
+        validator: ''
+        topicText: Topic
+        topicDescr: TopicDescr
+        topicFeature: Feature
+        topicFunction: Function
+        topicActiveYrs: RetPer
+        topicDispPer: DispPer
+        topicDocClass: Class
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Topic Descr.'
+        name: TopicDescr
+        create: RO
+        edit: RO
+        type: text
+        model: TopicDescr
+        default: ''
+        validator: ''
+        topicText: Topic
+        topicDescr: TopicDescr
+        topicFeature: Feature
+        topicFunction: Function
+        topicActiveYrs: RetPer
+        topicDispPer: DispPer
+        topicDocClass: Class
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Feature
+        name: Feature
+        create: true
+        edit: RO
+        type: text
+        model: Feature
+        default: ''
+        validator: 'required|length:8'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: MMYY
+        name: MMYY
+        create: RO
+        edit: RO
+        type: text
+        model: MMYY
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Sequence
+        name: Urut
+        create: RO
+        edit: RO
+        type: text
+        model: Urut
+        default: ''
+        validator: ''
+        append: '<button class="btn btn-icon" @click="getDocSequence()"><i class="las la-plus-square"></i></button>'
+        class: text-50
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { readonly: 'readonly', disabled: 'disabled' }
+    -
+        label: '# of Page'
+        name: NoPage
+        create: true
+        edit: true
+        type: number
+        model: NoPage
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: '# of Sheets'
+        name: NoSheet
+        create: true
+        edit: true
+        type: number
+        model: NoSheet
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Call Code'
+        name: CallCode
+        create: true
+        edit: true
+        type: text
+        model: CallCode
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: FCallCode
+        create: true
+        edit: true
+        type: section
+        model: FCallCode
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: QRCallCode
+        create: true
+        edit: true
+        type: qr
+        model: FCallCode
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Sender
+        name: Sender
+        create: true
+        edit: true
+        type: text
+        model: Sender
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Recipient
+        name: Recipient
+        create: true
+        edit: true
+        type: text
+        model: Recipient
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Action
+        name: Action
+        create: true
+        edit: true
+        type: text
+        model: Action
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Class
+        name: Class
+        create: RO
+        edit: RO
+        type: text
+        model: Class
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Copy To'
+        name: Copy
+        create: true
+        edit: true
+        type: text
+        model: Copy
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Location
+        name: Location
+        create: true
+        edit: true
+        type: text
+        model: Location
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Store
+        name: Store
+        create: true
+        edit: true
+        type: text
+        model: Store
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Status
+        name: Status
+        create: true
+        edit: true
+        type: simpleselect
+        model: Status
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Active
+                value: Active
+            -
+                text: Passive
+                value: Passive
+            -
+                text: Disposed
+                value: Disposed
+        attr: {}
+    -
+        label: OriginFormat
+        name: OriginFormat
+        create: true
+        edit: true
+        type: simpleselect
+        model: OriginFormat
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Paper
+                value: Paper
+            -
+                text: Digital
+                value: Digital
+        attr: {}
+    -
+        label: Keyword
+        name: Keyword
+        create: true
+        edit: true
+        type: tagsinput
+        model: Keyword
+        default: ''
+        validator: ''
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: 'Expired Date'
+        name: ExpDate
+        create: true
+        edit: true
+        type: datepicker
+        model: ExpDate
+        default: ''
+        validator: ''
+        param:
+            -
+                text: '2'
+                value: 2
+            -
+                text: '5'
+                value: 5
+            -
+                text: '10'
+                value: 10
+        attr: {}
+    -
+        label: 'Notify To'
+        name: NotifyTo
+        create: true
+        edit: true
+        type: tagsinput
+        model: NotifyTo
+        default: ''
+        validator: ''
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: ''
+        name: RetPer
+        create: RO
+        edit: true
+        type: text
+        model: RetPer
+        default: ''
+        validator: ''
+        param:
+            -
+                text: '1'
+                value: 1
+            -
+                text: '2'
+                value: 2
+            -
+                text: '5'
+                value: 5
+            -
+                text: '10'
+                value: 10
+        attr: {}
+    -
+        label: ''
+        name: RetDate
+        create: true
+        edit: true
+        type: datepicker
+        model: RetDate
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: DispPer
+        create: RO
+        edit: RO
+        type: simpleselect
+        model: DispPer
+        default: ''
+        validator: ''
+        param:
+            -
+                text: '2'
+                value: 2
+            -
+                text: '5'
+                value: 5
+            -
+                text: '10'
+                value: 10
+        attr: {}
+    -
+        label: ''
+        name: DispDate
+        create: true
+        edit: true
+        type: datepicker
+        model: DispDate
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Dispatch
+        name: Dispatch
+        create: false
+        edit: false
+        type: text
+        model: Dispatch
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Boxing
+        name: Boxing
+        create: false
+        edit: false
+        type: text
+        model: Boxing
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Box ID'
+        name: BoxId
+        create: true
+        edit: true
+        type: text
+        model: BoxId
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'End Disposal'
+        name: EndDisp
+        create: false
+        edit: false
+        type: text
+        model: EndDisp
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'File Status'
+        name: Filestat
+        create: false
+        edit: false
+        type: text
+        model: Filestat
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Link
+        name: Linked
+        create: true
+        edit: true
+        type: text
+        model: Linked
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Soft File'
+        name: urlDisplay
+        create: RO
+        edit: RO
+        type: text
+        model: FileUrl
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Upload File'
+        name: FileUrl
+        create: true
+        edit: true
+        type: docupload
+        model: FileUrl
+        default: ''
+        validator: ''
+        qr: true
+        bucket: docs
+        file_object: FileObject
+        param:
+            url: api/v1/core/upload
+            paramName: file
+            buttonlabel: 'Upload PDF'
+            filename: FCallCode
+            dir: documents
+            noHandle: true
+            rawUpload: false
+            baseUrl: DocBase
+            docPath: DocPath
+            bucket: docs
+            acceptedFiles: application/pdf
+        attr: {}
+    -
+        label: 'Doc base'
+        name: DocBase
+        create: RO
+        edit: RO
+        type: text
+        model: DocBase
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Doc Path'
+        name: DocPath
+        create: RO
+        edit: RO
+        type: text
+        model: DocPath
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: printLabel
+        create: true
+        edit: true
+        type: printelement
+        model: FCallCode
+        default: ''
+        validator: ''
+        template: printTemplate
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr: {}
+    -
+        label: 'Print Label'
+        name: previewLabel
+        create: true
+        edit: true
+        type: activeviewplain
+        model: FCallCode
+        default: ''
+        validator: ''
+        template: printTemplate
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr: {}
+    -
+        label: 'Doc View'
+        name: docViewer
+        create: true
+        edit: true
+        type: pdfviewer
+        model: "docViewUrl"
+        placeholder: 'Document View'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: {}
+        attr: {}
+
+vue:
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: Coy
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Coy
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Function
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FunctionDesc
+        visible: true
+        type: string
+        default: ''
+    -
+        model: IO
+        visible: true
+        type: string
+        default: Incoming
+    -
+        model: IODate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Feature
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DocDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DocStatus
+        visible: true
+        type: string
+        default: 'Active'
+    -
+        model: OriginFormat
+        visible: true
+        type: string
+        default: 'Paper'
+    -
+        model: FCallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Subject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Tipe
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DocRef
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Scope
+        visible: true
+        type: string
+        default: ''
+    -
+        model: TopicObject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Topic
+        visible: true
+        type: string
+        default: ''
+    -
+        model: TopicDescr
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Feature
+        visible: true
+        type: string
+        default: ''
+    -
+        model: MMYY
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Urut
+        visible: true
+        type: string
+        default: ''
+    -
+        model: NoPage
+        visible: true
+        type: string
+        default: ''
+    -
+        model: NoSheet
+        visible: true
+        type: string
+        default: ''
+    -
+        model: CallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FCallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FCallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Sender
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Recipient
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Action
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Class
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Copy
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Location
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Store
+        visible: false
+        type: string
+        default: ''
+    -
+        model: Status
+        visible: false
+        type: string
+        default: Active
+    -
+        model: Keyword
+        visible: true
+        type: string
+        default: ''
+    -
+        model: ExpDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: NotifyTo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: RetPer
+        visible: true
+        type: integer
+        default: ''
+    -
+        model: RetDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DispPer
+        visible: true
+        type: integer
+        default: 10
+    -
+        model: DispDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: Dispatch
+        visible: false
+        type: string
+        default: ''
+    -
+        model: Boxing
+        visible: false
+        type: string
+        default: ''
+    -
+        model: BoxId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: EndDisp
+        visible: false
+        type: string
+        default: ''
+    -
+        model: Filestat
+        visible: false
+        type: string
+        default: ''
+    -
+        model: Linked
+        visible: true
+        type: string
+        default: ''
+    -
+        model: getDocUrl()
+        visible: true
+        type: function
+        default: ''
+    -
+        model: FileUrl
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FileObject
+        visible: true
+        type: object
+        default: '{}'
+    -
+        model: DocBase
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DocPath
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FCallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: FCallCode
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Coy
+        name: Coy
+        model: Coy
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Company
+        name: CoyCode
+        model: Coy
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Func.
+        name: Function
+        model: Function
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Function
+        name: FunctionDesc
+        model: FunctionDesc
+        visible: true
+        type: text
+        default: ''
+    -
+        label: IO
+        name: IO
+        model: IO
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Input Date'
+        name: IODate
+        model: IODate
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Feature
+        name: Feature
+        model: Feature
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Doc Date'
+        name: DocDate
+        model: DocDate
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: FullCallCode
+        model: FCallCode
+        visible: true
+        type: qr
+        default: ''
+    -
+        label: Subject
+        name: Subject
+        model: Subject
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Type
+        name: Tipe
+        model: Tipe
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Doc Ref'
+        name: DocRef
+        model: DocRef
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Scope
+        name: Scope
+        model: Scope
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Topic
+        name: TopicObject
+        model: TopicObject
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Topic
+        name: Topic
+        model: Topic
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Topic Descr.'
+        name: TopicDescr
+        model: TopicDescr
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Feature
+        name: Feature
+        model: Feature
+        visible: true
+        type: text
+        default: ''
+    -
+        label: MMYY
+        name: MMYY
+        model: MMYY
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Sequence
+        name: Urut
+        model: Urut
+        visible: true
+        type: text
+        default: ''
+    -
+        label: '# of Page'
+        name: NoPage
+        model: NoPage
+        visible: true
+        type: text
+        default: ''
+    -
+        label: '# of Sheets'
+        name: NoSheet
+        model: NoSheet
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Call Code'
+        name: CallCode
+        model: CallCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: FCallCode
+        model: FCallCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: QRCallCode
+        model: FCallCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Sender
+        name: Sender
+        model: Sender
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Recipient
+        name: Recipient
+        model: Recipient
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Action
+        name: Action
+        model: Action
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Class
+        name: Class
+        model: Class
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Copy To'
+        name: Copy
+        model: Copy
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Location
+        name: Location
+        model: Location
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Store
+        name: Store
+        model: Store
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Status
+        name: Status
+        model: Status
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Keyword
+        name: Keyword
+        model: Keyword
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Expired Date'
+        name: ExpDate
+        model: ExpDate
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Notify To'
+        name: NotifyTo
+        model: NotifyTo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Active Years'
+        name: RetPer
+        model: RetPer
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Retain Until'
+        name: RetDate
+        model: RetDate
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Disposal Period'
+        name: DispPer
+        model: DispPer
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Disposal Date'
+        name: DispDate
+        model: DispDate
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Dispatch
+        name: Dispatch
+        model: Dispatch
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Boxing
+        name: Boxing
+        model: Boxing
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Box ID'
+        name: BoxId
+        model: BoxId
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'End Disposal'
+        name: EndDisp
+        model: EndDisp
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'File Status'
+        name: Filestat
+        model: Filestat
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Link
+        name: Linked
+        model: Linked
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Soft File'
+        name: urlDisplay
+        model: FileUrl
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Upload File'
+        name: FileUrl
+        model: FileUrl
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Doc base'
+        name: DocBase
+        model: DocBase
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Doc Path'
+        name: DocPath
+        model: DocPath
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: printLabel
+        model: FCallCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Print Label'
+        name: previewLabel
+        model: FCallCode
+        visible: true
+        type: text
+        default: ''

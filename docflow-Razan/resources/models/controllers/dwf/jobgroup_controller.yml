@@ -1,0 +1,327 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Group
+        name: group
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Sub Group'
+        name: subGroup
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Divisi
+        name: division
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Jabatan
+        name: jobTitle
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Kode Jabatan'
+        name: jobTitleCode
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Nama Personil'
+        name: personnelName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: NIK
+        name: employeeId
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Email
+        name: email
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Group Alias'
+        name: groupTag
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Doc Type'
+        name: docType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Group
+        name: group
+        create: true
+        edit: true
+        type: text
+        model: group
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Sub Group'
+        name: subGroup
+        create: true
+        edit: true
+        type: text
+        model: subGroup
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Divisi
+        name: division
+        create: true
+        edit: true
+        type: text
+        model: division
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Jabatan
+        name: jobTitle
+        create: true
+        edit: true
+        type: text
+        model: jobTitle
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Jabatan'
+        name: jobTitleCode
+        create: true
+        edit: true
+        type: text
+        model: jobTitleCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Personil'
+        name: personnelName
+        create: true
+        edit: true
+        type: text
+        model: personnelName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: NIK
+        name: employeeId
+        create: true
+        edit: true
+        type: text
+        model: employeeId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Email
+        name: email
+        create: true
+        edit: true
+        type: text
+        model: email
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Group Alias'
+        name: groupTag
+        create: true
+        edit: true
+        type: text
+        model: groupTag
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Doc Type'
+        name: docType
+        create: true
+        edit: true
+        type: text
+        model: docType
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: group
+        visible: true
+        type: string
+        default: ''
+    -
+        model: subGroup
+        visible: true
+        type: string
+        default: ''
+    -
+        model: division
+        visible: true
+        type: string
+        default: ''
+    -
+        model: jobTitle
+        visible: true
+        type: string
+        default: ''
+    -
+        model: jobTitleCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: personnelName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: employeeId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: email
+        visible: true
+        type: string
+        default: ''
+    -
+        model: groupTag
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docType
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Group
+        name: group
+        visible: true
+        type: text
+        model: group
+    -
+        label: 'Sub Group'
+        name: subGroup
+        visible: true
+        type: text
+        model: subGroup
+    -
+        label: Divisi
+        name: division
+        visible: true
+        type: text
+        model: division
+    -
+        label: Jabatan
+        name: jobTitle
+        visible: true
+        type: text
+        model: jobTitle
+    -
+        label: 'Kode Jabatan'
+        name: jobTitleCode
+        visible: true
+        type: text
+        model: jobTitleCode
+    -
+        label: 'Nama Personil'
+        name: personnelName
+        visible: true
+        type: text
+        model: personnelName
+    -
+        label: NIK
+        name: employeeId
+        visible: true
+        type: text
+        model: employeeId
+    -
+        label: Email
+        name: email
+        visible: true
+        type: text
+        model: email
+    -
+        label: 'Group Alias'
+        name: groupTag
+        visible: true
+        type: text
+        model: groupTag
+    -
+        label: 'Doc Type'
+        name: docType
+        visible: true
+        type: text
+        model: docType

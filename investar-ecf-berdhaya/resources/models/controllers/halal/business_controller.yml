@@ -1,0 +1,606 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Business No'
+        name: farmId
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Business Name'
+        name: farmName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Owner'
+        name: masterName
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Address
+        name: address
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Kelurahan
+        name: kelurahan
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Kecamatan
+        name: kecamatan
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: ZIP
+        name: zip
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Kabupaten
+        name: kabupaten
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Province
+        name: province
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Coord
+        name: lngLat
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: ''
+        name: latLng
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Lat
+        name: lat
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Long
+        name: lng
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Geo Fence'
+        name: geoFence
+        show: false
+        search: false
+        sort: false
+        datatype: array
+    -
+        label: 'Active'
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+        column_classes: text-center text-50
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master ID'
+        name: masterId
+        create: true
+        edit: true
+        type: text
+        model: masterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master Name'
+        name: masterName
+        create: true
+        edit: true
+        type: text
+        model: masterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company ID'
+        name: companyId
+        create: true
+        edit: true
+        type: text
+        model: companyId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Company Name'
+        name: companyName
+        create: true
+        edit: true
+        type: text
+        model: companyName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Business ID'
+        name: farmId
+        create: false
+        edit: RO
+        type: text
+        model: farmId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Business Name'
+        name: farmName
+        create: true
+        edit: true
+        type: text
+        model: farmName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Province
+        name: province
+        create: true
+        edit: true
+        type: text
+        model: province
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Kabupaten
+        name: kabupaten
+        create: true
+        edit: true
+        type: simpleselect
+        model: kabupatenObject
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Kecamatan
+        name: kecamatan
+        create: true
+        edit: true
+        type: text
+        model: kecamatan
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Kelurahan
+        name: kelurahan
+        create: true
+        edit: true
+        type: text
+        model: kelurahan
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Address
+        name: address
+        create: true
+        edit: true
+        type: text
+        model: address
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: ZIP
+        name: zip
+        create: true
+        edit: true
+        type: text
+        model: zip
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Active
+        name: isActive
+        create: true
+        edit: true
+        type: simpleswitch
+        model: isActive
+        position: top
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Coord
+        name: lngLat
+        create: true
+        edit: true
+        type: text
+        model: lngLat
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: ''
+        name: latLng
+        create: true
+        edit: true
+        type: text
+        model: latLng
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Latitude
+        name: lat
+        create: true
+        edit: true
+        type: text
+        model: lat
+        default: ''
+        validator: 'decimal:8'
+        param: {}
+        attr: {}
+    -
+        label: Longitude
+        name: lng
+        create: true
+        edit: true
+        type: text
+        model: lng
+        default: ''
+        validator: 'decimal:8'
+        param: {}
+        attr: {}
+    -
+        label: ''
+        name: geoFence
+        create: true
+        edit: true
+        type: simpletableinputmodaltemplate
+        model: geoFence
+        default: ''
+        validator: ''
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        hide_util_button: true
+        entity_name_key: subject
+        modal_entity: 'Coordinate'
+        param: {}
+        attr:
+          show_all_buttons: true
+          style: "height: 800px;width: 100%;min-height: 500px; padding-top: 0.8em;"
+    -
+        label: 'Geo Fence'
+        name: geoFenceMap
+        create: true
+        edit: true
+        type: mapdisplay
+        model: geoFence
+        default: ''
+        validator: ''
+        markerIcon: "/"
+        markerIconRetina: "/"
+        close_polygon: true
+        param: {}
+        attr:
+          show_all_buttons: true
+          style: "height: 800px;width: 100%;min-height: 500px; padding-top: 0.8em;"
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: masterId
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: masterName
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: companyId
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: farmId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: farmName
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: province
+        visible: true
+        type: string
+        default: ''
+        im: false
+    -
+        model: kabupatenObject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: kabupaten
+        visible: true
+        type: string
+        default: ''
+    -
+        model: provinceCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: kabupatenCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: kecamatan
+        visible: true
+        type: string
+        default: ''
+    -
+        model: kelurahan
+        visible: true
+        type: string
+        default: ''
+    -
+        model: seq
+        visible: true
+        type: double
+        default: ''
+    -
+        model: address
+        visible: true
+        type: string
+        default: ''
+    -
+        model: zip
+        visible: true
+        type: string
+        default: ''
+    -
+        model: lngLat
+        visible: true
+        type: array
+        default: []
+    -
+        model: latLng
+        visible: true
+        type: array
+        default: []
+    -
+        model: lat
+        visible: true
+        type: string
+        default: ''
+    -
+        model: lng
+        visible: true
+        type: string
+        default: ''
+    -
+        model: geoFence
+        visible: true
+        type: array
+        default: []
+    -
+        model: isActive
+        visible: true
+        type: boolean
+        default: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Master ID'
+        name: masterId
+        visible: true
+        type: text
+        model: masterId
+    -
+        label: 'Master Name'
+        name: masterName
+        visible: true
+        type: text
+        model: masterName
+    -
+        label: 'Company ID'
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: 'Business ID'
+        name: farmId
+        visible: true
+        type: text
+        model: farmId
+    -
+        label: 'Business Name'
+        name: farmName
+        visible: true
+        type: text
+        model: farmName
+    -
+        label: Province
+        name: province
+        visible: true
+        type: text
+        model: province
+    -
+        label: Kabupaten
+        name: kabupaten
+        visible: true
+        type: text
+        model: kabupaten
+    -
+        label: Province Code
+        name: provinceCode
+        visible: true
+        type: text
+        model: provinceCode
+    -
+        label: Kabupaten Code
+        name: kabupatenCode
+        visible: true
+        type: text
+        model: kabupatenCode
+    -
+        label: Kecamatan
+        name: kecamatan
+        visible: true
+        type: text
+        model: kecamatan
+    -
+        label: Kelurahan
+        name: kelurahan
+        visible: true
+        type: text
+        model: kelurahan
+    -
+        label: Address
+        name: address
+        visible: true
+        type: text
+        model: address
+    -
+        label: ZIP
+        name: zip
+        visible: true
+        type: text
+        model: zip
+    -
+        label: Coord
+        name: lngLat
+        visible: true
+        type: text
+        model: lngLat
+    -
+        label: ''
+        name: latLng
+        visible: true
+        type: text
+        model: latLng
+    -
+        label: Lat
+        name: lat
+        visible: true
+        type: text
+        model: lat
+    -
+        label: Long
+        name: lng
+        visible: true
+        type: text
+        model: lng
+    -
+        label: 'Geo Fence'
+        name: geoFence
+        visible: true
+        type: arrayview
+        show_table_header: true
+        model: geoFence
+    -
+        label: 'Geo Fence'
+        name: geoFenceMap
+        visible: true
+        type: mapdisplay
+        model: geoFence
+        show_all_buttons: true
+        attr:
+          style: "height: 800px;width: 100%;min-height: 500px; padding-top: 0.8em;"

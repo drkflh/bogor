@@ -1,0 +1,127 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Breed
+        name: breed
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-left text-200
+    -
+        label: Seq
+        name: seq
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-75
+    -
+        label: Active
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+        column_classes: text-center text-75
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Breed
+        name: breed
+        create: true
+        edit: true
+        type: text
+        model: breed
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Seq
+        name: seq
+        create: true
+        edit: true
+        type: number
+        model: seq
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Active
+        name: isActive
+        create: true
+        edit: true
+        type: simpleswitch
+        model: isActive
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: breed
+        visible: true
+        type: string
+        default: ''
+    -
+        model: seq
+        visible: true
+        type: string
+        default: ''
+    -
+        model: isActive
+        visible: true
+        type: boolean
+        default: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Breed
+        name: breed
+        visible: true
+        type: text
+        model: breed
+    -
+        label: Seq
+        name: seq
+        visible: true
+        type: text
+        model: seq
+    -
+        label: Active
+        name: isActive
+        visible: true
+        type: text
+        model: isActive

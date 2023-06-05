@@ -1,0 +1,305 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Name
+        name: name
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-center text-100'
+    -
+        label: Cost
+        name: cost
+        show: true
+        search: false
+        sort: false
+        datatype: integer
+        column_classes: 'text-center text-100'
+    -
+        label: 'Origin'
+        name: origin
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-center text-100'
+    -
+        label: Destination
+        name: destination
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-center text-100'
+    -
+        label: 'Weight Cost Unit'
+        name: weightCostUnit
+        show: true
+        search: false
+        sort: false
+        datatype: integer
+        column_classes: 'text-right text-100'
+    -
+        label: 'Min Weight'
+        name: minWeight
+        show: true
+        search: false
+        sort: false
+        datatype: integer
+        column_classes: 'text-center text-50'
+    # -
+    #     label: 'Max Weight'
+    #     name: maxWeight
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: integer
+    #     row_text_alignment: text-left
+    #     column_classes: 'text-left text-100'
+    #     thClass: 'text-center text-50'
+    -
+        label: Description
+        name: description
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Name
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Cost
+        name: cost
+        create: true
+        edit: true
+        type: number
+        model: cost
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Origin'
+        name: origin
+        create: true
+        edit: true
+        type: text
+        model: origin
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Weight Cost Unit'
+        name: weightCostUnit
+        create: true
+        edit: true
+        type: number
+        model: weightCostUnit
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Min Weight'
+        name: minWeight
+        create: true
+        edit: true
+        type: number
+        model: minWeight
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Max Weight'
+        name: maxWeight
+        create: true
+        edit: true
+        type: number
+        model: maxWeight
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Destination
+        name: destination
+        create: true
+        edit: true
+        type: text
+        model: destination
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: markdown
+        model: description
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: cost
+        visible: true
+        type: integer
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: origin
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: weightCostUnit
+        visible: true
+        type: integer
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: minWeight
+        visible: true
+        type: integer
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: maxWeight
+        visible: true
+        type: integer
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: destination
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Name
+        name: name
+        visible: true
+        type: text
+        model: name
+    -
+        label: Cost
+        name: cost
+        visible: true
+        type: text
+        model: cost
+    -
+        label: 'Origin'
+        name: origin
+        visible: true
+        type: text
+        model: origin
+    -
+        label: 'Weight Cost Unit'
+        name: weightCostUnit
+        visible: true
+        type: text
+        model: weightCostUnit
+    -
+        label: 'Min Weight'
+        name: minWeight
+        visible: true
+        type: text
+        model: minWeight
+    -
+        label: 'Max Weight'
+        name: maxWeight
+        visible: true
+        type: text
+        model: maxWeight
+    -
+        label: Destination
+        name: destination
+        visible: true
+        type: text
+        model: destination
+    -
+        label: Description
+        name: description
+        visible: true
+        type: text
+        model: description

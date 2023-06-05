@@ -1,0 +1,430 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: false
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Category Name'
+        name: categoryName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'Category Code'
+        name: categoryCode
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'Section Code'
+        name: sectionCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-150'
+        thClass: ''
+    -
+        label: 'Menu'
+        name: menuShow
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: boolean
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: 'Menu Seq'
+        name: menuSeq
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-75'
+        thClass: ''
+    -
+        label: 'Category Description'
+        name: categoryDescription
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left'
+        thClass: ''
+
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: 'Section'
+        name: sectionObject
+        create: true
+        edit: true
+        type: simpleselect
+        model: sectionObject
+        default: ''
+        validator: ''
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: 'Category Code'
+        name: categoryCode
+        create: true
+        edit: true
+        type: text
+        model: categoryCode
+        default: ''
+        validator: ''
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: 'Category Name'
+        name: categoryName
+        create: true
+        edit: true
+        type: text
+        model: categoryName
+        default: ''
+        validator: required
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: 'Category Description'
+        name: categoryDescription
+        create: true
+        edit: true
+        type: textarea
+        model: categoryDescription
+        default: ''
+        validator: required
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: 'Show'
+        name: menuShow
+        create: true
+        edit: true
+        type: simpleswitch
+        model: menuShow
+        default: ''
+        validator: required
+        position: top
+        param: {}
+        attr: {}
+    -
+        label: 'Menu Title'
+        name: menuTitle
+        create: true
+        edit: true
+        type: text
+        model: menuTitle
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Seq'
+        name: menuSeq
+        create: true
+        edit: true
+        type: number
+        model: menuSeq
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Menu Auth'
+        name: menuAuth
+        create: true
+        edit: true
+        type: text
+        model: menuAuth
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: sectionCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: sectionObject
+        visible: true
+        type: object
+        default: '{}'
+    -
+        model: categoryCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: categoryName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: categoryDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: menuShow
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: menuTitle
+        visible: true
+        type: string
+        default: ''
+    -
+        model: menuSeq
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: menuAuth
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Section Code'
+        name: sectionCode
+        model: categoryCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Category Code'
+        name: categoryCode
+        model: categoryCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Category Name'
+        name: categoryName
+        model: categoryName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Show In Menu'
+        name: menuShow
+        visible: true
+        type: text
+        model: menuShow
+    -
+        label: 'Menu Title'
+        name: menuTitle
+        visible: true
+        type: text
+        model: menuTitle
+    -
+        label: 'Menu Seq'
+        name: menuSeq
+        visible: true
+        type: text
+        model: menuSeq
+    -
+        label: 'Menu Auth'
+        name: menuAuth
+        visible: true
+        type: text
+        model: menuAuth

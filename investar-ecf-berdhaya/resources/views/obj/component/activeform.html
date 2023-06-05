@@ -1,0 +1,21 @@
+
+    <li>
+        <i class="si si-wallet text-success"></i>
+        <div class="font-w600">Next Visit</div>
+        <div>
+            {{ value.nextDescr }}
+        </div>
+
+
+        <b-modal id="myModal"
+                 @ok="hideModal('myModal')"
+                 size="lg"
+                 title="Next Visit"
+                 hide-backdrop
+                 modal-class="modal-bv" >
+
+            <input type="text" class="form-control" v-model="value.nextDescr" ></input>
+
+        </b-modal>
+
+    </li>

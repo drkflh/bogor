@@ -1,0 +1,338 @@
+- label: Action
+  name: _id
+  show: true
+  sort: false
+  uniqueId: true
+  row_text_alignment: text-left
+  column_classes: "col-action"
+  thClass: 'text-center text-50'
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: id
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Created
+  name: createdAt
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: createdAt
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: updatedAt
+  name: updatedAt
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: date
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: updatedAt
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ownerId
+  name: ownerId
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerId
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: ownerName
+  name: ownerName
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerName
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: handle
+  name: handle
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: handle
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: deleted
+  name: deleted
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: deleted
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: "Document View"
+  name: docViewer
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  filterOptions:
+    enabled: false
+    placeholder: All
+    filterDropdownItems: [{ value: '01', text: 'Paramanusa Utama' },{ value: '02', text: 'Cipta Guna' },{ value: '03', text: 'Sembada Perdana Insan' }, { value: '04', text: 'Paramanusa Balikpapan' }]
+
+  form:
+    create: true
+    edit: true
+    type: pdfviewer
+    model: docViewer
+    row: 1
+    col: 1
+    options: [{ value: '01', text: 'Paramanusa Utama' },{ value: '02', text: 'Cipta Guna' },{ value: '03', text: 'Sembada Perdana Insan' }, { value: '04', text: 'Paramanusa Balikpapan' }]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+- label: 'Upload Files'
+  name: docUpload
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: docupload
+    model: docUpload
+    row: 1
+    col: 1
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+      buttonlabel: 'Upload PDF'
+      filename: FCallCode
+      dir: documents
+      useHandle: false
+      baseUrl: DocBase
+      docPath: DocPath
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: Scan
+  name: scanCallCode
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  filterOptions:
+    enabled: false
+    placeholder: All
+    filterDropdownItems: [{ value: '01', text: 'Paramanusa Utama' },{ value: '02', text: 'Cipta Guna' },{ value: '03', text: 'Sembada Perdana Insan' }, { value: '04', text: 'Paramanusa Balikpapan' }]
+
+  form:
+    create: true
+    edit: true
+    type: scannerinput
+    model: scanCallCode
+    row: 1
+    col: 1
+    options:
+      url: "dms/repository/scan"
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+
+- label: Documents
+  name: docList
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-center text-50'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: RO
+    type: text
+    model: docList
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na

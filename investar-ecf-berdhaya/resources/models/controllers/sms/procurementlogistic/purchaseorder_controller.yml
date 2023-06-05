@@ -1,0 +1,3399 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: orderNo
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-250'
+        thClass: ''
+    -
+        label: Status
+        name: approvalStatus
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: requestDate
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: companyCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: companyFax
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: companyPhone
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: companyPhone2
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: companyAddress
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: companyAddress1
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: companyAddress2
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: jobNo
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: vendorCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-400'
+        thClass: ''
+    -
+        label: ''
+        name: purposeOfPurchase
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-300'
+        thClass: ''
+    -
+        label: ''
+        name: vendorObject
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: companyObject
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: noNpwp
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: companyName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Purchase Prefix'
+        name: PurchaseReqPrefix
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: ''
+        name: purchaseOrderDate
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-center text-400'
+        thClass: ''
+    -
+        label: ''
+        name: prNo
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-350'
+        thClass: ''
+    -
+        label: ''
+        name: purchaseSequence
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: integer
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ''
+        name: vendorName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: ''
+        name: vendorAddress
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: ''
+        name: vendorAddress2
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: ''
+        name: vendorCity
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: ''
+        name: vendorProvince
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: ''
+        name: vendorCountry
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: ''
+        name: vendorPostal
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: ''
+        name: vendorPic
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: vendorPhone
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: vendorEmail
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: referenceNo
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: referenceDate
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: job
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: costCenter
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: authorizedBy
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: authorizationDate
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: shippingInstansi
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: shippingAddress
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: shippingAddress2
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: contactEmail
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: shippingPostalCode
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: shippingProvince
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: shippingCountry
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: shippingCity
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: contactPerson
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: contactNo
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: incoTerm
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: 'Shipping Point'
+        name: shippingPoint
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: rev
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: modaShipment
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: deliveryPeriod
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: deliveryPeriodOptions
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: deliveryDate
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ' '
+        name: discountPercentage
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: Percentage
+        name: discountSwitch
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ' '
+        name: discountLumpSum
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: 'Lump Sum'
+        name: discountLumpSumSwitch
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: totalDisc
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: status
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ' '
+        name: vat
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: totalVat
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: currency
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: 'Detail Item'
+        name: details
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: 'Add Document'
+        name: addDocument
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-200'
+        thClass: ''
+    -
+        label: ''
+        name: termOfPayment
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: shippingInst
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: generalTerms
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: communication
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: total
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: currency
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: ''
+        name: grandTotal
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: currency
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: ''
+    -
+        label: X-Rate
+        name: xrate
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: currency
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: ''
+        name: vendorAcknowledge
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        placeholder: Action
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        placeholder: Created
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        placeholder: updatedAt
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        placeholder: ownerId
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        placeholder: ownerName
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        placeholder: handle
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        placeholder: deleted
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Purchase Order No'
+        name: orderNo
+        create: RO
+        edit: RO
+        type: text
+        model: orderNo
+        placeholder: 'generate number'
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Status
+        name: approvalStatus
+        create: false
+        edit: RO
+        type: text
+        model: approvalStatus
+        placeholder: 'generate number'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: requestDate
+        create: true
+        edit: true
+        type: datepicker
+        model: requestDate
+        placeholder: ''
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: companyCode
+        create: RO
+        edit: RO
+        type: text
+        model: companyCode
+        placeholder: ''
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: companyFax
+        create: RO
+        edit: RO
+        type: text
+        model: companyFax
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: companyPhone
+        create: RO
+        edit: RO
+        type: text
+        model: companyPhone
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: companyPhone2
+        create: RO
+        edit: RO
+        type: text
+        model: companyPhone2
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: companyAddress
+        create: RO
+        edit: RO
+        type: text
+        model: companyAddress
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: companyAddress1
+        create: RO
+        edit: RO
+        type: text
+        model: companyAddress1
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: companyAddress2
+        create: RO
+        edit: RO
+        type: text
+        model: companyAddress2
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Job Number'
+        name: jobNo
+        create: RO
+        edit: RO
+        type: text
+        model: jobNo
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorCode
+        create: RO
+        edit: RO
+        type: text
+        model: vendorCode
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        vendorText: vendorCode
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: purposeOfPurchase
+        create: true
+        edit: true
+        type: text
+        model: purposeOfPurchase
+        placeholder: ''
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        vendorText: vendorCode
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorObject
+        create: true
+        edit: false
+        type: vendorselector
+        model: vendorObject
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        vendorText: vendorCode
+        vendorName: vendorName
+        vendorAddress: vendorAddress
+        vendorAddress2: vendorAddress2
+        vendorCity: vendorCity
+        vendorCountry: vendorCountry
+        vendorProvince: vendorProvince
+        vendorPostal: vendorPostal
+        vendorPhone: vendorPhone
+        vendorPic: vendorPic
+        vendorEmail: vendorEmail
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: companyObject
+        create: true
+        edit: true
+        type: companyselector
+        model: companyObject
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        vendorText: vendorCode
+        vendorName: vendorName
+        vendorAddress: vendorAddress
+        vendorAddress2: vendorAddress2
+        vendorCity: vendorCity
+        vendorCountry: vendorCountry
+        vendorProvince: vendorProvince
+        vendorPostal: vendorPostal
+        vendorPhone: vendorPhone
+        vendorPic: vendorPic
+        vendorEmail: vendorEmail
+        companyCode: companyCode
+        companyFax: companyFax
+        companyPhone: companyPhone
+        companyPhone2: companyPhone2
+        companyAddress: companyAddress
+        companyAddress1: companyAddress1
+        companyAddress2: companyAddress2
+        companyLogo: companyLogo
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: noNpwp
+        create: true
+        edit: true
+        type: text
+        model: noNpwp
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Company'
+        name: companyName
+        create: RO
+        edit: RO
+        type: text
+        model: companyName
+        placeholder: company
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Purchase Prefix'
+        name: PurchaseReqPrefix
+        create: RO
+        edit: RO
+        type: text
+        model: PurchaseReqPrefix
+        placeholder: 'Purchase Prefix'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Purchase Order Date'
+        name: purchaseOrderDate
+        create: true
+        edit: true
+        type: datepicker
+        model: purchaseOrderDate
+        placeholder: ''
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Purchase Request No'
+        name: prNo
+        create: true
+        edit: RO
+        type: localsearchselect
+        model: prNo
+        placeholder: 'query PR No'
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: purchaseSequence
+        create: RO
+        edit: RO
+        type: text
+        model: purchaseSequence
+        placeholder: ''
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorName
+        create: RO
+        edit: RO
+        type: text
+        model: vendorName
+        placeholder: 'Vendor Name'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorAddress
+        create: RO
+        edit: RO
+        type: text
+        model: vendorAddress
+        placeholder: Address1
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorAddress2
+        create: RO
+        edit: RO
+        type: text
+        model: vendorAddress2
+        placeholder: Address2
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorCity
+        create: RO
+        edit: RO
+        type: text
+        model: vendorCity
+        placeholder: City
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorProvince
+        create: RO
+        edit: RO
+        type: text
+        model: vendorProvince
+        placeholder: Province
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorCountry
+        create: RO
+        edit: RO
+        type: text
+        model: vendorCountry
+        placeholder: Country
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorPostal
+        create: RO
+        edit: RO
+        type: text
+        model: vendorPostal
+        placeholder: 'Postal Code'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorPic
+        create: RO
+        edit: RO
+        type: text
+        model: vendorPic
+        placeholder: PIC
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorPhone
+        create: RO
+        edit: RO
+        type: text
+        model: vendorPhone
+        placeholder: 'PIC Phone'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorEmail
+        create: RO
+        edit: RO
+        type: text
+        model: vendorEmail
+        placeholder: 'PIC Email'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Vendor Quotation'
+        name: referenceNo
+        create: RO
+        edit: RO
+        type: text
+        model: referenceNo
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Quotation Date'
+        name: referenceDate
+        create: true
+        edit: true
+        type: datepicker
+        model: referenceDate
+        placeholder: ''
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: job
+        create: RO
+        edit: RO
+        type: text
+        model: job
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Cost Center'
+        name: costCenter
+        create: RO
+        edit: RO
+        type: text
+        model: costCenter
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Authorized By'
+        name: authorizedBy
+        create: true
+        edit: true
+        type: text
+        model: authorizedBy
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Date'
+        name: authorizationDate
+        create: true
+        edit: true
+        type: datepicker
+        model: authorizationDate
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: shippingInstansi
+        create: RO
+        edit: RO
+        type: text
+        model: shippingInstansi
+        placeholder: 'Name Instansi'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: shippingAddress
+        create: RO
+        edit: RO
+        type: text
+        model: shippingAddress
+        placeholder: Address1
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: shippingAddress2
+        create: RO
+        edit: RO
+        type: text
+        model: shippingAddress2
+        placeholder: Address2
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: contactEmail
+        create: RO
+        edit: RO
+        type: text
+        model: contactEmail
+        placeholder: 'PIC Email'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: shippingPostalCode
+        create: RO
+        edit: RO
+        type: text
+        model: shippingPostalCode
+        placeholder: 'Postal Code'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: shippingProvince
+        create: RO
+        edit: RO
+        type: text
+        model: shippingProvince
+        placeholder: Province
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: shippingCountry
+        create: RO
+        edit: RO
+        type: text
+        model: shippingCountry
+        placeholder: Country
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: shippingCity
+        create: RO
+        edit: RO
+        type: text
+        model: shippingCity
+        placeholder: City
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: contactPerson
+        create: RO
+        edit: RO
+        type: text
+        model: contactPerson
+        placeholder: PIC
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: contactNo
+        create: RO
+        edit: RO
+        type: text
+        model: contactNo
+        placeholder: 'PIC Phone'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Inco Term'
+        name: incoTerm
+        create: RO
+        edit: RO
+        type: text
+        model: incoTerm
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: {  }
+        attr: {}
+    -
+        label: 'Shipping Point'
+        name: shippingPoint
+        create: RO
+        edit: RO
+        type: text
+        model: shippingPoint
+        placeholder: 'Shipping Point'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Rev.'
+        name: rev
+        create: RO
+        edit: RO
+        type: text
+        model: rev
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: ''
+        attr: {}
+    -
+        label: 'Shipment Mode'
+        name: modaShipment
+        create: RO
+        edit: RO
+        type: simpleselect
+        model: modaShipment
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: 'Land Freight'
+                value: 'Land Freight'
+            -
+                text: 'Sea Freight'
+                value: 'Sea Freight'
+            -
+                text: 'Air Freight'
+                value: 'Air Freight'
+            -
+                text: 'Pick Up'
+                value: 'Pick Up'
+        attr: {}
+    -
+        label: ''
+        name: deliveryPeriod
+        create: RO
+        edit: RO
+        type: number
+        model: deliveryPeriod
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: deliveryPeriodOptions
+        create: RO
+        edit: RO
+        type: simpleselect
+        model: deliveryPeriodOptions
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Days
+                value: Days
+            -
+                text: Weeks
+                value: Weeks
+            -
+                text: Months
+                value: Months
+        attr: {}
+    -
+        label: ''
+        name: deliveryDate
+        create: true
+        edit: true
+        type: datepicker
+        model: deliveryDate
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: discountPercentage
+        create: true
+        edit: true
+        type: number
+        model: discountPercentage
+        placeholder: ' '
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Percentage
+        name: discountSwitch
+        create: true
+        edit: true
+        type: simpleswitch
+        model: discountSwitch
+        placeholder: Percentage
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: discountLumpSum
+        create: true
+        edit: true
+        type: nominal
+        model: discountLumpSum
+        placeholder: ' '
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Lump Sum'
+        name: discountLumpSumSwitch
+        create: true
+        edit: true
+        type: simpleswitch
+        model: discountLumpSumSwitch
+        placeholder: 'Lump Sum'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: totalDisc
+        create: true
+        edit: RO
+        type: nominal
+        model: totalDisc
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: status
+        create: true
+        edit: true
+        type: text
+        model: status
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: vat
+        create: true
+        edit: true
+        type: number
+        model: vat
+        placeholder: ' '
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: totalVat
+        create: true
+        edit: true
+        type: nominal
+        model: totalVat
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Currency'
+        name: currency
+        create: RO
+        edit: RO
+        type: text
+        model: currency
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Detail Item'
+        name: details
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: details
+        placeholder: 'Detail Item'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        use_dms: true
+        on_item_change: detailCalc
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Add Document'
+        name: addDocument
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: addDocument
+        placeholder: 'Add Document'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: termOfPayment
+        create: true
+        edit: true
+        type: editor
+        model: termOfPayment
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        param: ''
+        attr: {}
+    -
+        label: ''
+        name: shippingInst
+        create: true
+        edit: true
+        type: editor
+        model: shippingInst
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        companyText: companyFax
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        param: ''
+        attr: {}
+    -
+        label: ''
+        name: generalTerms
+        create: true
+        edit: true
+        type: editor
+        model: generalTerms
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        param: ''
+        attr: {}
+    -
+        label: ''
+        name: communication
+        create: true
+        edit: true
+        type: editor
+        model: communication
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        param: ''
+        attr: {}
+    -
+        label: ''
+        name: total
+        create: true
+        edit: RO
+        type: nominal
+        model: total
+        placeholder: ''
+        default: ''
+        validator: 'required'
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: grandTotal
+        create: true
+        edit: true
+        type: nominal
+        model: grandTotal
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: X-Rate
+        name: xrate
+        create: true
+        edit: true
+        type: currency
+        model: xrate
+        placeholder: X-Rate
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        currency: '''IDR'''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ''
+        name: vendorAcknowledge
+        create: true
+        edit: true
+        type: text
+        model: vendorAcknowledge
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        date_constraint: minDay
+        on_item_change: discCalc
+        position: top
+        fields:
+            -
+                key: ProductID
+                class: text-100
+                label: 'Product ID'
+            -
+                key: Descriptions
+                label: Descriptions
+            -
+                key: Notes
+                label: Notes
+            -
+                key: Delivery
+                label: Delivery
+            -
+                key: Period
+                label: Period
+            -
+                key: DeliveryDate
+                label: DeliveryDate
+            -
+                key: QTY
+                label: Quantity
+            -
+                key: UOM
+                label: Uom
+            -
+                key: UnitPrice
+                label: 'Unit Price'
+            -
+                key: AmountOrdered
+                label: 'Amount Ordered'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        entity_name_key: ProductID
+        modal_entity: 'PO Item'
+        currency: '''IDR'''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: orderNo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requestDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyFax
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyPhone
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyPhone2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyAddress
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyAddress1
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyAddress2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: jobNo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: purposeOfPurchase
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorObject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyObject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: noNpwp
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: PurchaseReqPrefix
+        visible: true
+        type: string
+        default: ''
+    -
+        model: purchaseOrderDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: prNo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: purchaseSequence
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorAddress
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorAddress2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorCity
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorProvince
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorCountry
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorPostal
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorPic
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorPhone
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorEmail
+        visible: true
+        type: string
+        default: ''
+    -
+        model: referenceNo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: referenceDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: job
+        visible: true
+        type: string
+        default: ''
+    -
+        model: costCenter
+        visible: true
+        type: string
+        default: ''
+    -
+        model: authorizedBy
+        visible: true
+        type: string
+        default: ''
+    -
+        model: authorizationDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingInstansi
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingAddress
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingAddress2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: contactEmail
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingPostalCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingProvince
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingCountry
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingCity
+        visible: true
+        type: string
+        default: ''
+    -
+        model: contactPerson
+        visible: true
+        type: string
+        default: ''
+    -
+        model: contactNo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: incoTerm
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingPoint
+        visible: true
+        type: string
+        default: ''
+    -
+        model: rev
+        visible: true
+        type: string
+        default: ''
+    -
+        model: modaShipment
+        visible: true
+        type: string
+        default: ''
+    -
+        model: deliveryPeriod
+        visible: true
+        type: string
+        default: ''
+    -
+        model: deliveryPeriodOptions
+        visible: true
+        type: string
+        default: ''
+    -
+        model: deliveryDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: discountPercentage
+        visible: true
+        type: string
+        default: ''
+    -
+        model: discountSwitch
+        visible: true
+        type: string
+        default: ''
+    -
+        model: discountLumpSum
+        visible: true
+        type: string
+        default: ''
+    -
+        model: discountLumpSumSwitch
+        visible: true
+        type: string
+        default: ''
+    -
+        model: totalDisc
+        visible: true
+        type: string
+        default: ''
+    -
+        model: status
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vat
+        visible: true
+        type: string
+        default: ''
+    -
+        model: totalVat
+        visible: true
+        type: string
+        default: ''
+    -
+        model: currency
+        visible: true
+        type: string
+        default: IDR
+    -
+        model: details
+        visible: true
+        type: array
+        default: {  }
+    -
+        model: addDocument
+        visible: true
+        type: array
+        default: {  }
+    -
+        model: termOfPayment
+        visible: true
+        type: string
+        default: ''
+    -
+        model: shippingInst
+        visible: true
+        type: string
+        default: ''
+    -
+        model: generalTerms
+        visible: true
+        type: string
+        default: ''
+    -
+        model: communication
+        visible: true
+        type: string
+        default: ''
+    -
+        model: total
+        visible: true
+        type: string
+        default: ''
+    -
+        model: grandTotal
+        visible: true
+        type: string
+        default: ''
+    -
+        model: xrate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorAcknowledge
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ''
+        name: orderNo
+        model: orderNo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Status
+        name: approvalStatus
+        model: approvalStatus
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: requestDate
+        model: requestDate
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: null
+        name: companyCode
+        model: companyCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: companyFax
+        model: companyFax
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: companyPhone
+        model: companyPhone
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: companyPhone2
+        model: companyPhone2
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: companyAddress
+        model: companyAddress
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: companyAddress1
+        model: companyAddress1
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: companyAddress2
+        model: companyAddress2
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: jobNo
+        model: jobNo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: vendorCode
+        model: vendorCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: purposeOfPurchase
+        model: purposeOfPurchase
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorObject
+        model: vendorObject
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: companyObject
+        model: companyObject
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: noNpwp
+        model: noNpwp
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: companyName
+        model: companyName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Purchase Prefix'
+        name: PurchaseReqPrefix
+        model: PurchaseReqPrefix
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: purchaseOrderDate
+        model: purchaseOrderDate
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: ''
+        name: prNo
+        model: prNo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: null
+        name: purchaseSequence
+        model: purchaseSequence
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorName
+        model: vendorName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorAddress
+        model: vendorAddress
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorAddress2
+        model: vendorAddress2
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorCity
+        model: vendorCity
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorProvince
+        model: vendorProvince
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorCountry
+        model: vendorCountry
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorPostal
+        model: vendorPostal
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorPic
+        model: vendorPic
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorPhone
+        model: vendorPhone
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorEmail
+        model: vendorEmail
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: referenceNo
+        model: referenceNo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: referenceDate
+        model: referenceDate
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: ''
+        name: job
+        model: job
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: costCenter
+        model: costCenter
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: authorizedBy
+        model: authorizedBy
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: authorizationDate
+        model: authorizationDate
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: ''
+        name: shippingInstansi
+        model: shippingInstansi
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: shippingAddress
+        model: shippingAddress
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: shippingAddress2
+        model: shippingAddress2
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: contactEmail
+        model: contactEmail
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: shippingPostalCode
+        model: shippingPostalCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: shippingProvince
+        model: shippingProvince
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: shippingCountry
+        model: shippingCountry
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: shippingCity
+        model: shippingCity
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: contactPerson
+        model: contactPerson
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: contactNo
+        model: contactNo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: incoTerm
+        model: incoTerm
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Shipping Point'
+        name: shippingPoint
+        model: shippingPoint
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: rev
+        model: rev
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: modaShipment
+        model: modaShipment
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: deliveryPeriod
+        model: deliveryPeriod
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: deliveryPeriodOptions
+        model: deliveryPeriodOptions
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: deliveryDate
+        model: deliveryDate
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: ' '
+        name: discountPercentage
+        model: discountPercentage
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Percentage
+        name: discountSwitch
+        model: discountSwitch
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: discountLumpSum
+        model: discountLumpSum
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Lump Sum'
+        name: discountLumpSumSwitch
+        model: discountLumpSumSwitch
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: totalDisc
+        model: totalDisc
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: status
+        model: status
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: vat
+        model: vat
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: totalVat
+        model: totalVat
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: currency
+        model: currency
+        visible: true
+        type: text
+        default: ''
+    -
+        label: false
+        name: details
+        model: details
+        visible: true
+        type: arrayview
+        default: ''
+    -
+        label: false
+        name: addDocument
+        model: addDocument
+        visible: true
+        type: arrayview
+        default: ''
+    -
+        label: ''
+        name: termOfPayment
+        model: termOfPayment
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: shippingInst
+        model: shippingInst
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: generalTerms
+        model: generalTerms
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: communication
+        model: communication
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: total
+        model: total
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: grandTotal
+        model: grandTotal
+        visible: true
+        type: text
+        default: ''
+    -
+        label: X-Rate
+        name: xrate
+        model: xrate
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ''
+        name: vendorAcknowledge
+        model: vendorAcknowledge
+        visible: true
+        type: text
+        default: ''

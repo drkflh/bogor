@@ -1,0 +1,222 @@
+-
+    label: Action
+    name: _id
+    show: true
+    sort: false
+    uniqueId: true
+    row_text_alignment: text-left
+    column_classes: col_action
+    thClass: 'text-center text-50'
+    datatype: text
+    search:
+        visible: false
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: id
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+    label: Created
+    name: createdAt
+    show: false
+    sort: true
+    row_text_alignment: text-left
+    row_classes: date
+    datatype: true
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+    label: updatedAt
+    name: updatedAt
+    show: false
+    sort: false
+    row_text_alignment: text-left
+    row_classes: date
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+    label: handle
+    name: handle
+    show: false
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: handle
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+-
+    label: deleted
+    name: deleted
+    show: false
+    sort: false
+    row_text_alignment: text-left
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-
+    label: 'UOM'
+    name: uom
+    show: true
+    sort: false
+    row_text_alignment: text-center
+    row_classes: text-200
+    column_classes: 'text-left text-200'
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: text
+        model: uom
+        validator: 'required'
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-
+    label: 'Description'
+    name: description
+    show: true
+    sort: false
+    row_text_alignment: text-center
+    row_classes: text-200
+    column_classes: 'text-left text-500'
+    datatype: text
+    search:
+        visible: true
+    filter:
+        visible: false
+    form:
+        create: true
+        edit: true
+        type: text
+        model: description
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: true
+        type: text
+    view:
+        visible: true
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na

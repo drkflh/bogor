@@ -1,0 +1,482 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Role Name'
+        name: rolename
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: Slug
+        name: slug
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: 'Role Login Redirect'
+        name: roleredirect
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: 'Role Layout'
+        name: rolelayout
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: ACL
+        name: roleACL
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Role Description'
+        name: roleDescription
+        show: true
+        search: true
+        sort: true
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-400
+        thClass: ''
+    -
+        label: ''
+        name: filler
+        show: true
+        sort: false
+        row_text_alignment: text-center
+        column_classes: text-left
+        datatype: text
+        search: true
+        filter: false
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Role Name'
+        name: rolename
+        create: true
+        edit: true
+        type: text
+        model: rolename
+        default: ''
+        validator: 'required'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Slug
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        default: ''
+        validator: 'required'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Role Login Redirect'
+        name: roleredirect
+        create: true
+        edit: true
+        type: text
+        model: roleredirect
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Role Layout'
+        name: rolelayout
+        create: true
+        edit: true
+        type: simpleselect
+        model: rolelayout
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ACL
+        name: roleACL
+        create: true
+        edit: true
+        type: activechecklist
+        model: roleACL
+        default: ''
+        validator: ''
+        template: roleACL
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr:
+            cols: 10
+    -
+        label: 'Role Description'
+        name: roleDescription
+        create: true
+        edit: true
+        type: textarea
+        model: roleDescription
+        default: ''
+        validator: ''
+        template: roleACL
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr:
+            cols: 10
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: rolename
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: roleredirect
+        visible: true
+        type: string
+        default: ''
+    -
+        model: rolelayout
+        visible: true
+        type: string
+        default: ''
+    -
+        model: roleACL
+        visible: true
+        type: array
+        default: {  }
+    -
+        model: roleDescription
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Role Name'
+        name: rolename
+        model: rolename
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Slug
+        name: slug
+        model: slug
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Role Login Redirect'
+        name: roleredirect
+        model: roleredirect
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ACL
+        name: roleACL
+        model: roleACL
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Role Description'
+        name: roleDescription
+        model: roleDescription
+        visible: true
+        type: text
+        default: ''

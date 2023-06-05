@@ -1,0 +1,28 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Qontak/WaTemplate_table_label,Qontak/WaTemplate_table_name,Qontak/WaTemplate_table_show,Qontak/WaTemplate_table_search,Qontak/WaTemplate_table_sort,Qontak/WaTemplate_table_datatype,Qontak/WaTemplate_form_label,Qontak/WaTemplate_form_name,Qontak/WaTemplate_form_create,Qontak/WaTemplate_form_edit,Qontak/WaTemplate_form_type,Qontak/WaTemplate_form_model,Qontak/WaTemplate_form_default,Qontak/WaTemplate_form_validator,Qontak/WaTemplate_form_param,Qontak/WaTemplate_form_attr,Qontak/WaTemplate_vue_model,Qontak/WaTemplate_vue_visible,Qontak/WaTemplate_vue_type,Qontak/WaTemplate_vue_default,Qontak/WaTemplate_view_label,Qontak/WaTemplate_view_name,Qontak/WaTemplate_view_visible,Qontak/WaTemplate_view_type,Qontak/WaTemplate_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+masterId,,,,,,,,,,,,Master ID,masterId,no,,,,Master ID,masterId,,,,masterId,,,,,masterId,,,,Master ID,masterId,,,masterId
+masterName,,,,,,,,,,,,Master Name,masterName,no,,,,Master Name,masterName,,,,masterName,,,,,masterName,,,,Master Name,masterName,,,masterName
+companyId,,,,,,,,,,,,Company ID,companyId,no,,,,Company ID,companyId,,,,companyId,,,,,companyId,,,,Company ID,companyId,,,companyId
+companyName,,,,,,,,,,,,Company Name,companyName,no,,,,Company Name,companyName,,,,companyName,,,,,companyName,,,,Company Name,companyName,,,companyName
+sbuId,,,,,,,,,,,,SBU ID,sbuId,no,,,,SBU ID,sbuId,,,,sbuId,,,,,sbuId,,,,SBU ID,sbuId,,,sbuId
+sbuName,,,,,,,,,,,,SBU Name,sbuName,no,,,,SBU Name,sbuName,,,,sbuName,,,,,sbuName,,,,SBU Name,sbuName,,,sbuName
+deptId,,,,,,,,,,,,Dept ID,deptId,no,,,,Dept ID,deptId,,,,deptId,,,,,deptId,,,,Dept ID,deptId,,,deptId
+deptName,,,,,,,,,,,,Dept Name,deptName,no,,,,Dept Name,deptName,,,,deptName,,,,,deptName,,,,Dept Name,deptName,,,deptName
+name,,,,,,,,,,,,Name,name,,,,,Name,name,,,,name,,,,,name,,,,Name,name,,,name
+template_id,,,,,,,,,,,,Template ID,template_id,,,,,Template ID,template_id,,,,template_id,,,,,template_id,,,,Template ID,template_id,,,template_id
+language,,,,,,,,,,,,Language,language,,,,,Language,language,,,,language,,,,,language,,,,Language,language,,,language
+header,,,,,,,,,,,,Header,header,,,,,Header,header,,,,header,,,,,header,,,,Header,header,,,header
+body,,,,,,,,,,,,Body,body,,,,,Body,body,,,,body,,,,,body,,,,Body,body,,,body
+footer,,,,,,,,,,,,Footer,footer,,,,,Footer,footer,,,,footer,,,,,footer,,,,Footer,footer,,,footer
+buttons,,,,,,,,,,,,Buttons,buttons,,,,,Buttons,buttons,,,,buttons,,,,,buttons,,,,Buttons,buttons,,,buttons
+status,,,,,,,,,,,,Status,status,,,,,Status,status,,,,status,,,,,status,,,,Status,status,,,status
+category,,,,,,,,,,,,Category,category,,,,,Category,category,,,,category,,,,,category,,,,Category,category,,,category

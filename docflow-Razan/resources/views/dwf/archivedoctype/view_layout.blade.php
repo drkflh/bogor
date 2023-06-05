@@ -1,0 +1,5 @@
+<div>
+
+{!! $docType ?? '' !!}
+{!! $docTypeCode ?? '' !!}
+</div>

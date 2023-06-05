@@ -1,0 +1,448 @@
+-
+  label: Action
+  name: _id
+  show: true
+  sort: false
+  scopedSlots: { customRender: 'action' }
+  uniqueId: true
+  row_text_alignment: text-left
+  column_classes: text-25
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: id
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+    attr:
+    - class: "form-data"
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: 'Title'
+  name: title
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-350
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: title
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Permalink'
+  name: slug
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-350
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: slug
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: 'Validity'
+  name: validFrom
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: text-200
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: validFrom
+    fields:
+    row: 1
+    col: 2
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+    default: na
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: 'Valid Until'
+  name: validUntil
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: validUntil
+    fields:
+    row: 1
+    col: 2
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+    default: na
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: 'Status'
+  name: status
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: status
+    row: 1
+    col: 1
+    options: '[
+    { text: "Draft", value: "Draft" },
+    { text: "Published", value: "Published" },
+    { text: "Unpublished", value: "Unpublished" }]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: 'Sections'
+  name: section
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: section
+    row: 1
+    col: 1
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Category'
+  name: category
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: category
+    row: 1
+    col: 1
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Description'
+  name: description
+  show: false
+  sort: false
+  ellipsis: true
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: textarea
+    model: description
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Hierarchy'
+  name: body
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: body
+    row: 1
+    col: 3
+    options: '[ { text: "Select", value: "Select" } ]'
+    attr:
+      style: "height:800px;min-height: 800px;"
+  vue:
+    visible: true
+    type: object
+    default:
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: 'Organization Tree'
+  name: chartTree
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: orgtree
+    model: body
+    row: 1
+    col: 3
+    lang: 'javascript'
+    options: '[ { text: "Select", value: "Select" } ]'
+    attr:
+      style: "height:800px;min-height: 800px;"
+  vue:
+    visible: true
+    type: array
+    default: []
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: Name
+  name: itemName
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: itemName
+    row: 3
+    col: 2
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: Description
+  name: itemDescription
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: itemDescription
+    row: 3
+    col: 2
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: Picture
+  name: picture
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  datatype: imagearray
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: imagegridupload
+    model: picture
+    row: 3
+    col: 2
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+  vue:
+    visible: true
+    type: array
+    default: []
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+

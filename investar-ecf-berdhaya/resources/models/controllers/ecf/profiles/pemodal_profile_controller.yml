@@ -1,0 +1,1722 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Verifikasi'
+        name: approvalStatus
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-50 ellipsis'
+        thClass: 'text-center text-100'
+    -
+        label: 'Nama Lengkap'
+        name: name
+        show: true
+        # search: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100 ellipsis'
+        thClass: 'text-center text-50'
+    -
+        label: 'Email'
+        name: email
+        # show: true
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100 ellipsis'
+        thClass: 'text-center text-200'
+    -
+        label: 'Nama Depan'
+        name: firstName
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100 ellipsis'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Belakang'
+        name: lastName
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-130'
+        thClass: 'text-center text-50'
+    -
+        label: 'Jenis Kelamin'
+        name: gender
+        show: true
+        # search: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-150'
+    -
+        label: 'Kewarganegaraan'
+        name: citizenship
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-150'
+    -
+        label: 'Status Pernikahan'
+        name: maritalStatus
+        # show: true
+        show: false
+        # search: false
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: 'text-center text-150'
+    -
+        label: 'Alamat Sesuai KTP'
+        name: IdCardAddress
+        # show: true
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: 'text-center text-50'
+    -
+        label: 'Alamat Tinggal Sekarang '
+        name: address
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Pendidikan Terakhir '
+        name: lastEducation
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Pekerjaan Sekarang '
+        name: currentJob
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Penghasilan Perbulan '
+        name: monthlyIncome
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Sumber Pemghasilan'
+        name: incomeSource
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Deskripsi tentang bidang usaha yang dikerjakan  '
+        name: currentJobDesc
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Deskripsi sumber Pemghasilan '
+        name: incomeSourceDesc
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Foto Selfie KTP ' 
+        name: idCardSelfie
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Foto NPWP '
+        name: npwpPicture
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Foto Selfie NPWP'
+        name: npwpSelfie
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Foto Kartu Keluarga'
+        name: kkPicture
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Nomor SID
+        name: noSid
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Tipe Investor'
+        name: investorType
+        # show: false
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Bank '
+        name: bankName
+        # show: false
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-150'
+    -
+        label: 'No Rekening '
+        name: bankNo
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Pemilik Rekening'
+        name: bankNoOwner
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Ibu Kandung'
+        name: motherName
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Nama Ahli Waris '
+        name: heirName
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Hubungan Ahli Waris '
+        name: heirRelation
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Budget Investasi '
+        name: investmentBudget
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Tujuan Investasi '
+        name: investmentGoal
+        # show: false
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: 'text-center text-100'
+    -
+        label: 'Risiko'
+        name: risk
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Preferensi Investasi'
+        name: investmentPreference
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Darimana mengetahui INVESTAR Pertama kali '
+        name: getToKnowInvestar
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master ID'
+        name: masterId
+        create: true
+        edit: true
+        type: text
+        model: masterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Master Name'
+        name: masterName
+        create: true
+        edit: true
+        type: text
+        model: masterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    - 
+        label: Mobile
+        name: mobile
+        create: true
+        edit: true
+        type: mobileinput
+        model: mobile
+        default: ''
+        validator: 'required|numeric'
+        param: { }
+        attr:
+        class: form-data
+    - 
+        label: Photo
+        name: avatar
+        create: true
+        edit: true
+        type: avatarupload
+        model: avatar
+        default: ''
+        validator: 'required'
+        bucket: avatar
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload Avatar'
+    - 
+        label: ZIP
+        name: ZIP
+        create: true
+        edit: true
+        type: text
+        model: ZIP
+        default: ''
+        validator: 'required|numeric|min:5|max:5'
+        param: { }
+        attr:
+            class: form-data
+    - 
+        label: ZIP
+        name: relativeZIP
+        create: true
+        edit: true
+        type: text
+        model: relativeZIP
+        default: ''
+        validator: 'numeric|min:5|max:5'
+        param: { }
+        attr:
+            class: form-data
+    - 
+        label: 'ID Number'
+        name: idNumber
+        create: true
+        edit: true
+        type: text
+        model: idNumber
+        default: ''
+        validator: 'required|numeric|min:16|max:16'
+        param: { }
+        attr:
+            class: form-data
+    - 
+        label: 'Jenis ID'
+        name: idType
+        create: true
+        edit: true
+        type: simpleselect
+        model: idType
+        default: ''
+        validator: required
+        selector: city
+        ref: city
+        param: { }
+        attr:
+            class: form-data
+    - 
+        label: Province
+        name: province
+        create: true
+        edit: true
+        type: text
+        model: province
+        default: ''
+        validator: ''
+        param: { }
+        attr:
+        class: form-data
+    - 
+        label: 'Kabupaten / Kota'
+        name: kabupaten
+        create: true
+        edit: true
+        type: simpleselect2
+        model: kabupaten
+        default: ''
+        validator: required
+        param: { }
+        attr: { }
+    -
+        label: 'Email '
+        name: email
+        create: true
+        edit: true
+        type: text
+        model: email
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Foto Kartu Identitas'
+        name: idPic
+        create: true
+        edit: true
+        type: imagecardupload
+        model: idPic
+        default: ''
+        validator: required
+        bucket: document
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload ID Picture'
+    -
+        label: Nama Lengkap
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: 'required'
+        param: {}
+        attr: {}
+    -
+        label: 'Place Of Birth'
+        name: placeOfBirth
+        create: true
+        edit: true
+        type: text
+        model: placeOfBirth
+        default: ''
+        validator: 'required'
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: 'Date of Birth'
+        name: dateOfBirth
+        create: true
+        edit: true
+        type: datepicker
+        model: dateOfBirth
+        default: ''
+        validator: ''
+        date_constraint: maxDob
+        param: {}
+        attr:
+            class: form-data
+    -
+        label: 'Wajib Diatas 17 Tahun'
+        name: userAge
+        create: VO
+        edit: VO
+        type: text
+        model: userAge
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Depan'
+        name: firstName
+        create: true
+        edit: true
+        type: text
+        model: firstName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Belakang'
+        name: lastName
+        create: true
+        edit: true
+        type: text
+        model: lastName
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Kelamin'
+        name: gender
+        create: true
+        edit: true
+        type: radioselect
+        model: gender
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kewarganegaraan '
+        name: citizenship
+        create: true
+        edit: true
+        type: simpleselect
+        model: citizenship
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Saya menjamin bahwa informasi yang saya berikan diatas adalah benar dan saya siap bertanggung jawab di kemudian hari, jika ada konsekuensi atau kekeliruan dari data diri saya yang akan berakibat terhadap analisa risiko terhadap saham Penerbit dan dalam memenuhi kriteria bagi Pemodal sesuai peraturan Layanan Urun Dana yang berlaku '
+        name: legality
+        create: true
+        edit: true
+        type: checkboxselect
+        model: legality
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Status Pernikahan '
+        name: maritalStatus
+        create: true
+        edit: true
+        type: simpleselect
+        model: maritalStatus
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Alamat Sesuai KTP '
+        name: IdCardAddress
+        create: true
+        edit: true
+        type: text
+        model: IdCardAddress
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Alamat Tinggal Sekarang '
+        name: address
+        create: true
+        edit: true
+        type: textarea
+        model: address
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Pendidikan Terakhir '
+        name: lastEducation
+        create: true
+        edit: true
+        type: simpleselect2
+        model: lastEducation
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Pekerjaan Sekarang'
+        name: currentJob
+        create: true
+        edit: true
+        type: simpleselect2
+        model: currentJob
+        default: ''
+        validator: 
+        param: {}
+        attr: {}
+    -
+        label: 'Penghasilan Perbulan'
+        name: monthlyIncome
+        create: true
+        edit: true
+        type: simpleselect2
+        model: monthlyIncome
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Sumber Penghasilan'
+        name: incomeSource
+        create: true
+        edit: true
+        type: simpleselect2
+        model: incomeSource
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Deskripsi tentang bidang usaha yang dikerjakan'
+        name: currentJobDesc
+        create: true
+        edit: true
+        type: text
+        model: currentJobDesc
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Hubungan Orang Terdekat
+        name: relativeRelation
+        create: true
+        edit: true
+        type: simpleselect2
+        model: relativeRelation
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Nama Orang Terdekat
+        name: relativeName
+        create: true
+        edit: true
+        type: text
+        model: relativeName
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: No HP orang terdekat
+        name: relativeMobile
+        create: true
+        edit: true
+        type: mobileinput
+        model: relativeMobile
+        default: ''
+        validator: 'numeric|min:8|max:13'
+        param: {}
+        attr: {}
+    -
+        label: 'Deskripsi sumber Penghasilan  '
+        name: incomeSourceDesc
+        create: true
+        edit: true
+        type: text
+        model: incomeSourceDesc
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Foto Selfie KTP '
+        name: idCardSelfie
+        create: true
+        edit: true
+        type: imagecardupload
+        model: idCardSelfie
+        default: ''
+        validator: required
+        bucket: document        
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload Avatar'
+
+    -
+        label: 'Foto NPWP (Opsional)'
+        name: npwpPicture
+        create: true
+        edit: true
+        type: attachmentupload
+        model: npwpPicture
+        default: ''
+        validator: ''
+        mode: multi
+        show_list: true
+        bucket: document
+        acceptedFiles: "image/*"
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload File" }
+    - 
+        label: Nomor yang bisa dihubungi
+        name: phone
+        create: true
+        edit: true
+        type: mobileinput
+        model: phone
+        default: ''
+        validator: 'numeric|min:8|max:13'
+        param: { }
+        attr:
+            class: form-data
+    -
+        label: 'Foto Selfie NPWP (Opsional)'
+        name: npwpSelfie
+        create: true
+        edit: true
+        type: attachmentupload
+        model: npwpSelfie
+        default: ''
+        validator: ''
+        mode: multi
+        show_list: true
+        bucket: document
+        acceptedFiles: "image/*"
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload File" }
+    -
+        label: 'Foto Kartu Keluarga (Opsional)'
+        name: kkPicture
+        create: true
+        edit: true
+        type: attachmentupload
+        model: kkPicture
+        default: ''
+        validator: ''
+        mode: multi
+        show_list: true
+        bucket: document
+        acceptedFiles: "image/*"
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload File" }
+    -
+        label: 'Nomor SID (Optional)'
+        name: noSid
+        create: true
+        edit: true
+        type: text
+        model: noSid
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Bank'
+        name: bankName
+        create: true
+        edit: true
+        type: simpleselect
+        model: bankName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'No Rekening '
+        name: bankNo
+        create: true
+        edit: true
+        type: text
+        model: bankNo
+        default: ''
+        validator: required|numeric
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Pemilik Rekening'
+        name: bankNoOwner
+        create: true
+        edit: true
+        type: text
+        model: bankNoOwner
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Ibu Kandung '
+        name: motherName
+        create: true
+        edit: true
+        type: text
+        model: motherName
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Ahli Waris '
+        name: heirName
+        create: true
+        edit: true
+        type: text
+        model: heirName
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Hubungan Ahli Waris 
+        name: heirRelation
+        create: true
+        edit: true
+        type: simpleselect2
+        model: heirRelation
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Budget Investasi '
+        name: investmentBudget
+        create: true
+        edit: true
+        type: simpleselect2
+        model: investmentBudget
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Tujuan Investasi '
+        name: investmentGoal
+        create: true
+        edit: true
+        type: simpleselect
+        model: investmentGoal
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Risiko'
+        name: risk
+        create: true
+        edit: true
+        type: simpleselect2
+        model: risk
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Preferensi Investasi'
+        name: investmentPreference
+        create: true
+        edit: true
+        type: simpleselect
+        model: investmentPreference
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Tipe Investor'
+        name: investorType
+        create: true
+        edit: true
+        type: simpleselect
+        model: investorType
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Is Complete'
+        name: isComplete
+        create: VO
+        edit: VO
+        type: text
+        model: isComplete
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Darimana mengetahui INVESTAR Pertama kali '
+        name: getToKnowInvestar
+        create: true
+        edit: true
+        type: simpleselect2
+        model: getToKnowInvestar
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: email
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    - 
+        model: mobileString
+        visible: true
+        type: string
+        default: ''
+    - 
+        model: mobileCountry
+        visible: true
+        type: string
+        default: '+62'
+    - 
+        model: mobile
+        visible: true
+        type: string
+        default: ''
+    - 
+        model: avatar
+        visible: true
+        type: string
+        default: ''
+    - 
+        model: ZIP
+        visible: true
+        type: string
+        default: ''
+    - 
+        model: idNumber
+        visible: true
+        type: string
+        default: ''
+    - 
+        model: idType
+        visible: true
+        type: string
+        default: KTP
+    -
+        model: kabupatenObject
+        visible: true
+        type: string
+        default: ''
+    - 
+        model: kabupaten
+        visible: true
+        type: string
+        default: ''
+    - 
+        model: province
+        visible: true
+        type: string
+        default: ''
+    -
+        model: placeOfBirth
+        visible: true
+        type: string
+        default: ''
+    -
+        model: dateOfBirth
+        visible: true
+        type: string
+        default: ''
+    -
+        model: idPic
+        visible: true
+        type: string
+        default: ''
+    -
+        model: relativeName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: relativeMobile
+        visible: true
+        type: string
+        default: ''
+    -
+        model: relativeMobileCountry
+        visible: true
+        type: string
+        default: ''
+    -
+        model: relativeRelation
+        visible: true
+        type: string
+        default: ''
+    -
+        model: userAge
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ageStatus
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: firstName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: isComplete
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: lastName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: gender
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: citizenship
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: legality
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: maritalStatus
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    - 
+        model: phoneCountry
+        visible: true
+        type: string
+        default: ''
+    - 
+        model: phone
+        visible: true
+        type: string
+        default: ''
+    -
+        model: IdCardAddress
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: address
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: currentJob
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: monthlyIncome
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: incomeSource
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: lastEducation
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: currentJobDesc
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: incomeSourceDesc
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: idCardSelfie
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: npwpSelfie
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: npwpSelfieObjects
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: npwpPicture
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: npwpPictureObjects
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: kkPicture
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: kkPictureObjects
+        visible: true
+        type: array
+        default: []
+        im: true
+        ex: true
+        search: true
+    -
+        model: noSid
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bankName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bankNo
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: bankNoOwner
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: motherName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: heirName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: heirRelation
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: investmentBudget
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: investmentGoal
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: risk
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: investmentPreference
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: investorType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: getToKnowInvestar
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Nama Lengkap'
+        name: name
+        visible: true
+        type: text
+        model: name
+    -
+        label: 'email'
+        name: email
+        visible: true
+        type: text
+        model: email
+    -
+        label: 'Jenis Kelamin'
+        name: gender
+        visible: true
+        type: text
+        model: gender
+    -
+        label: 'Kewarganegaraan'
+        name: citizenship
+        visible: true
+        type: text
+        model: citizenship
+    -
+        label: 'Status Pernikahan'
+        name: maritalStatus
+        visible: true
+        type: text
+        model: maritalStatus
+    -
+        label: 'Alamat Sesuai KTP'
+        name: IdCardAddress
+        visible: true
+        type: text
+        model: IdCardAddress
+    -
+        label: 'Tipe Investor'
+        name: investorType
+        visible: true
+        type: text
+        model: investorType 
+    -
+        label: 'Bank'
+        name: bankName
+        visible: true
+        type: text
+        model: bankName
+    -
+        label: 'Pemilik Rekening'
+        name: bankNoOwner
+        visible: true
+        type: text
+        model: bankNoOwner
+    -
+        label: 'Tujuan Investasi'
+        name: investmentGoal
+        visible: true
+        type: text
+        model: investmentGoal
+    -
+        label: 'Preferensi Investas'
+        name: investmentPreference
+        visible: true
+        type: text
+        model: investmentPreference   
+    -
+        label: 'Company ID'
+        name: companyId
+        visible: true
+        type: text
+        model: companyId
+    -
+        label: 'Company Name'
+        name: companyName
+        visible: true
+        type: text
+        model: companyName
+    -
+        label: 'SBU ID'
+        name: sbuId
+        visible: true
+        type: text
+        model: sbuId
+    -
+        label: 'SBU Name'
+        name: sbuName
+        visible: true
+        type: text
+        model: sbuName
+    -
+        label: 'Dept ID'
+        name: deptId
+        visible: true
+        type: text
+        model: deptId
+    -
+        label: 'Dept Name'
+        name: deptName
+        visible: true
+        type: text
+        model: deptName
+    -
+        label: 'Email '
+        name: bizPicEmail
+        visible: true
+        type: text
+        model: bizPicEmail
+    -
+        label: 'Nama Lengkap '
+        name: bizPicName
+        visible: true
+        type: text
+        model: bizPicName
+    -
+        label: 'Alamat '
+        name: address
+        visible: true
+        type: text
+        model: address
+    -
+        label: 'Pendidikan Terakhir '
+        name: lastEducation
+        visible: true
+        type: text
+        model: lastEducation
+    -
+        label: 'Deskripsi tentang bidang usaha yang dikerjakan'
+        name: currentJobDesc
+        visible: true
+        type: text
+        model: currentJobDesc
+    -
+        label: 'Deskripsi sumber Pemghasilan  '
+        name: incomeSourceDesc
+        visible: true
+        type: text
+        model: incomeSourceDesc
+    -
+        label: 'Alamat Domisili Usaha '
+        name: idCard
+        visible: true
+        type: text
+        model: idCard
+    -
+        label: 'Foto Selfie KTP '
+        name: idCardSelfie
+        visible: true
+        type: text
+        model: idCardSelfie
+    -
+        label: 'Nama Badan Usaha sesuai Akta Perusahaan'
+        name: bizRegisteredName
+        visible: true
+        type: text
+        model: bizRegisteredName
+    -
+        label: 'Bentuk Badan Usaha '
+        name: bizCompanyType
+        visible: true
+        type: text
+        model: bizCompanyType
+    -
+        label: 'Konfirmasi legalitas perusahaan '
+        name: legality
+        visible: true
+        type: text
+        model: legality
+    -
+        label: 'Lampiran Akta Perusahaan '
+        name: attAktaPerusahaan
+        visible: true
+        type: text
+        model: attAktaPerusahaan
+    -
+        label: 'Lampiran Dokumen '
+        name: lamDokumen
+        visible: true
+        type: text
+        model: lamDokumen
+    -
+        label: 'Lampiran SK Kemenhumham '
+        name: attSKKemenhumham
+        visible: true
+        type: text
+        model: attSKKemenhumham
+    -
+        label: 'Lampiran TDP'
+        name: attTDP
+        visible: true
+        type: text
+        model: attTDP
+    -
+        label: 'Lampiran NPWP'
+        name: attNPWP
+        visible: true
+        type: text
+        model: attNPWP
+    -
+        label: NPWP
+        name: noNPWP
+        visible: true
+        type: text
+        model: noNPWP
+    -
+        label: 'SLIK OJK Perusahaan '
+        name: slikOJK
+        visible: true
+        type: text
+        model: slikOJK
+    -
+        label: 'Produk/ Jasa yang ditawarkan '
+        name: productServices
+        visible: true
+        type: text
+        model: productServices
+    -
+        label: 'Lama Bisnis berdiri (Tahun)'
+        name: establishedSinceYear
+        visible: true
+        type: text
+        model: establishedSinceYear
+    -
+        label: 'Lama Bisnis berdiri'
+        name: establishedYear
+        visible: true
+        type: text
+        model: establishedYear
+    -
+        label: 'Dokumen Company Profile '
+        name: attCompanyProfile
+        visible: true
+        type: text
+        model: attCompanyProfile
+    -
+        label: 'Sudah berapa banyak cabang bisnis'
+        name: noOfBranches
+        visible: true
+        type: text
+        model: noOfBranches
+    -
+        label: 'Deskripsi singkat tentang produk/jasa yang ditawarkan '
+        name: productServicesDescription
+        visible: true
+        type: text
+        model: productServicesDescription
+    -
+        label: 'Jalur pemasaran produk/jasa yang ditawarkan '
+        name: marketingFunnels
+        visible: true
+        type: text
+        model: marketingFunnels
+    -
+        label: 'Omset perbulan (Rp)'
+        name: monthlyGrossRevenue
+        visible: true
+        type: text
+        model: monthlyGrossRevenue
+    -
+        label: 'Penghasilan bersih perbulan (Rp)'
+        name: monthlyNettRevenue
+        visible: true
+        type: text
+        model: monthlyNettRevenue
+    -
+        label: 'Laporan Keuangan '
+        name: attFinancialReports
+        visible: true
+        type: text
+        model: attFinancialReports
+    -
+        label: 'Rencana Bisnis 3 tahun kedepan '
+        name: bizPlanTriennial
+        visible: true
+        type: text
+        model: bizPlanTriennial
+    -
+        label: 'Dokumen Rencana Bisnis ( Draft untuk bahan prospektus)'
+        name: attBizPlan
+        visible: true
+        type: text
+        model: attBizPlan
+    -
+        label: 'Jumlah pendanaan yang dibutuhkan (Rp)'
+        name: requiredFunding
+        visible: true
+        type: text
+        model: requiredFunding
+    -
+        label: 'Jenis pendanaan yang diinginkan '
+        name: typeOfFunding
+        visible: true
+        type: text
+        model: typeOfFunding
+    -
+        label: 'Khusus skema obligasi/Sukuk, Apakah sudah memiliki project yang akan dikerjakan ditandai dengan Kontrak/PO/Invoice dari Perusahaan/Pemerintah'
+        name: contractReference
+        visible: true
+        type: text
+        model: contractReference
+    -
+        label: 'Strategi bisnis dalam masa Pandemi Covid 19 '
+        name: covidStrategy
+        visible: true
+        type: text
+        model: covidStrategy
+    -
+        label: 'Darimana mengetahui INVESTAR Pertama kali '
+        name: getToKnowInvestar
+        visible: true
+        type: text
+        model: getToKnowInvestar
+    -
+        label: false
+        name: logo
+        model: logo
+        visible: true
+        type: squaresingleimage
+        default: ''

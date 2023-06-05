@@ -1,0 +1,182 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Name
+        name: entity
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Auto Release'
+        name: isAutoRelease
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+    -
+        label: 'All Must Approves'
+        name: allMustApprove
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+    -
+        label: 'Minimum Approval'
+        name: minimumApprovers
+        show: true
+        search: false
+        sort: false
+        datatype: number
+    -
+        label: Active
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Name
+        name: entity
+        create: true
+        edit: true
+        type: text
+        model: entity
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Auto Release'
+        name: isAutoRelease
+        create: true
+        edit: true
+        type: text
+        model: isAutoRelease
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'All Must Approves'
+        name: allMustApprove
+        create: true
+        edit: true
+        type: text
+        model: allMustApprove
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Minimum Approval'
+        name: minimumApprovers
+        create: true
+        edit: true
+        type: text
+        model: minimumApprovers
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Active
+        name: isActive
+        create: true
+        edit: true
+        type: text
+        model: isActive
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: entity
+        visible: true
+        type: string
+        default: ''
+    -
+        model: isAutoRelease
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: allMustApprove
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: minimumApprovers
+        visible: true
+        type: integer
+        default: 1
+    -
+        model: isActive
+        visible: true
+        type: boolean
+        default: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Name
+        name: entity
+        visible: true
+        type: text
+        model: entity
+    -
+        label: 'Auto Release'
+        name: isAutoRelease
+        visible: true
+        type: text
+        model: isAutoRelease
+    -
+        label: 'All Must Approves'
+        name: allMustApprove
+        visible: true
+        type: text
+        model: allMustApprove
+    -
+        label: 'Minimum Approval'
+        name: minimumApprovers
+        visible: true
+        type: text
+        model: minimumApprovers
+    -
+        label: Active
+        name: isActive
+        visible: true
+        type: text
+        model: isActive

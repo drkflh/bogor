@@ -1,0 +1,37 @@
+- title: "Workflow"
+  auth: workflow-menu
+  icon: "<i  data-feather=\"edit\" class=\"mdi mdi-alert link-icon\" style=\"color:red;\"></i>"
+  id: workflowMenu
+  children:
+    - title: Dashboard
+      url: "workflow/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+#    - title: "Incoming Request"
+#      url: "workflow/approval/approval-request"
+#      auth: approval-request
+#      icon: "<i class=\"las la-signature link-icon\"></i>"
+#    - title: "Calendar"
+#      auth: time-calendar
+#      url: "workflow/time/calendar"
+#      icon: "<i class=\"las la-calendar-day link-icon\"></i>"
+    - title: "Time Tracker"
+      auth: time-tracker
+      url: "workflow/time/tracker"
+      icon: "<i class=\"las la-user-clock link-icon\"></i>"
+    - title: "Tasks"
+      auth: time-task
+      url: "workflow/time/task-list"
+      icon: "<i class=\"las la-tasks link-icon\"></i>"
+    - title: "Time Report"
+      auth: time-report
+      url: "workflow/time/report"
+      icon: "<i class=\"las la-calendar-day link-icon\"></i>"
+    - title: Organizer
+      auth: organizer-menu
+      icon: "<i  data-feather=\"inbox\"  class=\"mdi mdi-calendar  link-icon\"></i>"
+      id: organizerMenu
+      children:
+      - title: "File Downloads"
+        auth: file-download
+        url: "workflow/utility/file-download"
+        icon: "<i class=\"las la-file-download\"></i>"

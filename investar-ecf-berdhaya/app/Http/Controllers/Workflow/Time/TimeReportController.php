@@ -1,0 +1,486 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: awidarto
+ * Date: 13/12/19
+ * Time: 23.33
+ */
+namespace App\Http\Controllers\Workflow\Time;
+
+use App\Helpers\AuthUtil;
+use App\Helpers\ImportUtil;
+use App\Helpers\Util;
+use App\Helpers\RefUtil;
+use App\Helpers\App\SmsUtil;
+use App\Helpers\Injector;
+use App\Http\Controllers\Core\AdminController;
+use App\Models\Sms\ProcurementLogistic\PowerAttorney;
+use App\Models\Sms\ProcurementLogistic\PurchaseRequisition;
+use App\Models\Workflow\Time\SpentTime;
+use App\Models\Workflow\Time\TimeReport;
+use App\Models\Reference\Company;
+use App\Models\Core\Mongo\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
+use App\Models\Reference\ExchangeRate;
+use App\Helpers\WorkflowUtil;
+use MongoDB\BSON\ObjectId;
+use Carbon\Carbon;
+use Carbon\CarbonInterval;
+
+class TimeReportController extends AdminController
+
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->res_path = 'models/controllers/workflow/time';
+
+        $this->yml_file = 'timereport_controller';
+
+        $this->entity = 'Time Report';
+
+        $this->auth_entity = 'time-tracker';
+
+        $this->controller_base = 'workflow/time/report';
+
+        $this->view_base = 'workflow.time.timereport';
+
+        $this->model = new TimeReport();
+
+        $this->print_template = 'time-sheet-template';
+
+        $this->print_modal_size = 'xl';
+
+    }
+
+    public function getIndex()
+    {
+        $this->title = 'Time Report';
+
+        $cname = substr(strrchr(get_class($this), '\\'), 1);
+        $this->controller_name = str_replace('Controller', '', $cname);
+        $this->show_title = true;
+
+        $this->form_layout = 'workflow.time.timereport.form_layout';
+
+        /* Use custom form layout */
+        $this->form_view = 'form.html'; // use plain html
+        $this->viewer_layout = 'workflow.time.timereport.view_layout';
+        $this->form_dialog_size = 'xl';
+
+        $this->runAcl();
+        $this->runUrlSet();
+        $this->runViewSet();
+        $this->runMoreMenu();
+
+        $this->can_add = true;
+        $this->can_clone = false;
+        $this->can_multi_clone = false;
+        $this->can_multi_delete = false;
+        $this->can_print = true;
+        $this->can_upload = true;
+
+        $this->view_item_url = $this->controller_base.'/pdf';
+
+        $this->viewer_as_document = false;
+
+        $this->add_as_page = true;
+        $this->edit_as_page = true;
+        $this->revise_as_page = true;
+        $this->view_as_page = true;
+
+        $this->print_template = 'time-sheet-template';
+
+        $this->add_title_fields = sprintf('"%s<div style=\"float: right;padding-left: 8px;\"><h4 style=\"margin-bottom: 0px;\">"+ "%s : Purchase Requisition" + "</h4></div>"',  '<img src=\"'.url('images/icons/purchasereq.png').'\" style=\"width:42px;height:auto;\"/>', __('Add') );
+        $this->view_title_fields = sprintf('"%s<div style=\"float: right;padding-left: 8px;\"><h4 style=\"margin-bottom: 0px;\">%s "+" PR "+ this.jobNo + "</h4></div>"',  '<img src=\"'.url('images/icons/purchasereq.png').'\" style=\"width:42px;height:auto;\"/>', __('View') );
+        $this->update_title_fields = sprintf('"<h4>%s %s "  + " PR " + this.jobNo + "</h4>"',  '<img src=\"'.url('images/icons/purchasereq.png').'\" style=\"width:50px;height:auto;margin-top:-18px;\"/>', __('Edit') );
+
+        return parent::getIndex();
+    }
+
+    public function getAdd(Request $request, $keyword0 = null, $keyword1 = null, $keyword2 = null)
+    {
+        $add_titles = [
+            '-'=>'Time Report',
+            'attendance'=>'Attendance',
+        ];
+
+        $this->title = __('Add').' '.$this->entity.' - '.( $add_titles[$keyword0] ?? '' );
+
+        /* Use custom form layout */
+        $this->form_view = 'form.html'; // use plain html
+
+        $form_layout = 'form_layout';
+
+        $template_name = strtolower($keyword0);
+
+        if($keyword0 != ''){
+            $layout = str_replace('-', '_', $keyword0);
+            if( View::exists('workflow.time.timereport.'.$layout) ){
+                $form_layout = $layout;
+            }
+        }
+
+        $this->print_template = 'time-sheet-template';
+
+        $this->form_layout = 'workflow.time.timereport.'.$form_layout;
+
+        $this->runAcl();
+        $this->runUrlSet('add');
+        $this->runPageViewSet('add');
+
+        $uiOptions = [];
+
+        $uiOptions = $this->setupInjector($uiOptions);
+
+        $formOptions = Util::loadResYaml($this->yml_file, $this->res_path)->toFormOption();
+
+        $formOptions = $this->setupFormOptions($formOptions);
+
+        $this->aux_data = array_merge( $uiOptions ,$formOptions);
+
+        $this->page_redirect_after_save = true;
+
+        return parent::getAdd($request, $keyword0, $keyword1, $keyword2); // TODO: Change the autogenerated stub
+    }
+
+    public function getEdit(Request $request, $id, $keyword0 = null, $keyword1 = null, $keyword2 = null)
+    {
+        $item = $this->model->find($id);
+
+        $this->item_id = $id;
+
+        $this->title = __('Edit').' '.$item->reportId;
+
+        /* Use custom form layout */
+        $this->form_layout = 'workflow.time.timereport.form_layout';
+
+        $this->runAcl();
+        $this->runUrlSet('edit');
+        $this->runPageViewSet('edit');
+
+        $this->page_redirect_after_save = true;
+
+        return parent::getEdit($request, $id, $keyword0, $keyword1, $keyword2); // TODO: Change the autogenerated stub
+    }
+
+    public function getRevise(Request $request, $id, $keyword0 = null, $keyword1 = null, $keyword2 = null)
+    {
+        $item = $this->model->find($id);
+
+        $this->item_id = $id;
+
+        $this->title = __('Revise').' '.$item->reportId;
+
+        /* Use custom form layout */
+        $this->form_layout = 'workflow.time.timereport.form_layout';
+
+        $this->runAcl();
+        $this->runUrlSet('revise');
+        $this->runPageViewSet('revise');
+
+        $this->page_redirect_after_save = true;
+
+        return parent::getRevise($request, $id, $keyword0, $keyword1, $keyword2); // TODO: Change the autogenerated stub
+    }
+
+    public function getView(Request $request, $id, $keyword0 = null, $keyword1 = null, $keyword2 = null)
+    {
+        $item = $this->model->find($id);
+
+        $this->item_id = $id;
+
+        $this->title = __('View').' '.$item->reportId;
+
+        /* Use custom form layout */
+        $this->viewer_view = 'form.viewhtml'; // use plain html
+        $this->form_layout = 'workflow.time.timereport.view_layout';
+
+        $this->runAcl();
+        $this->runUrlSet('edit');
+        $this->runPageViewSet('view');
+
+        $this->viewer_can_print = true;
+
+        $this->page_redirect_after_save = true;
+
+        return parent::getView($request, $id, $keyword0, $keyword1, $keyword2); // TODO: Change the autogenerated stub
+    }
+
+    public function setupFormOptions($formOptions, $data = null)
+    {
+        $formOptions['currencyOptions'] = RefUtil::toOptions(RefUtil::getCurrency(),'name','name', false);
+        $formOptions['costCenterOptions'] = SmsUtil::toOptions(SmsUtil::getCostCenter(),'costCenterCode','costCenterCode', false);
+        $formOptions['uomOptions'] = RefUtil::toOptions(RefUtil::getUom(),'uom','uom', false);
+        $formOptions['vendorObjectOptions'] = SmsUtil::toOptions( SmsUtil::getVendors(), 'vendorCode', '_object', true );
+        $formOptions['companyObjectOptions'] = SmsUtil::toOptions( SmsUtil::getCompanies(), 'companyName', '_object', true );
+        $formOptions['companyCodeOptions'] = SmsUtil::toOptions( SmsUtil::getCompanies(), 'companyName', 'companyCode', true );
+        $formOptions['jobNoOptions'] = SmsUtil::toOptions(SmsUtil::getPrJobNumber(), ['jobNo', 'tenderTitle'], 'jobNo', true);
+        $formOptions['nameOptions'] = SmsUtil::toOptions( SmsUtil::getUsers(), 'name', 'name', true );
+        $formOptions['companyCodeMap'] = SmsUtil::getCompanyCodeMap();
+
+        $formOptions['incoTermOptions'] =SmsUtil::toOptions( SmsUtil::getIncoterm(), 'name', 'name', true );
+
+        $formOptions['modaShipmentOptions'] = [
+            [ 'text'=> 'Land Freight', 'value'=> 'Land Freight' ],
+            [ 'text'=> 'Sea Freight', 'value'=> 'Sea Freight' ],
+            [ 'text'=> 'Air Freight', 'value'=> 'Air Freight' ],
+            [ 'text'=> 'Pick Up', 'value'=> 'Pick Up' ]
+        ];
+
+        return parent::setupFormOptions($formOptions, $data); // TODO: Change the autogenerated stub
+    }
+
+    public function setupInjector($uiOptions, $data = null)
+    {
+        $uiOptions = Injector::setObject('details') // name variable / field yang akan diinject
+            ->setObjFields( // menambahkan setting field untuk table
+                [
+                    [ 'label'=>'Event', 'key'=>'event', 'class'=>'text-100' , 'type'=>'String' , 'validator'=>'required'  ],
+                    //[ 'label'=>'Clock In Time', 'key'=>'clockInTime', 'class'=>'text-100', 'type'=>'String', 'validator'=>''  ],
+                    //[ 'label'=>'Clock Out Time', 'key'=>'clockOutTime', 'class'=>'text-100', 'type'=>'String' , 'validator'=>''  ],
+                    [ 'label'=>'Timer Start', 'key'=>'timerStart', 'class'=>'text-100 text-center', 'type'=>'date','validator'=>''  ],
+                    [ 'label'=>'Timer Stop', 'key'=>'timerStop', 'class'=>'text-100 text-center', 'type'=>'date' , 'validator'=>''  ],
+                    [ 'label'=>'Timer Sec', 'key'=>'timerSec', 'class'=>'text-100 text-center', 'type'=>'String', 'validator'=>'' ],
+                    [ 'label'=>'Duration', 'key'=>'durationMinute', 'class'=>'text-50 text-center', 'type'=>'String' , 'validator'=>''  ],
+                    [ 'label'=>'Description', 'key'=>'timeDescription', 'class'=>'text-150 text-right', 'type'=>'String', 'validator'=>'' ],
+                    [ 'label'=>'Name', 'key'=>'userName', 'class'=>'text-70 text-right', 'type'=>'String', 'validator'=>'required' ]
+                ]
+            )->setObjDef( // set object default
+                [
+                    'event'=>'',
+                    //'clockInTime'=>'',
+                    //'clockOutTime'=>'',
+                    'timerStart'=> '',
+                    'timerStop'=>'',
+                    'timerSec'=> '',
+                    'durationMinute'=> '',
+                    'timeDescription'=> '',
+                    'userName'=> ''
+                ]
+            )->setObjParams(
+                [
+                    'uom' => $formOptions['uomOptions'] = RefUtil::toOptions(RefUtil::getUom(),'uom','uom', false),
+                ]
+            )
+            ->setObjTemplate(file_get_contents( resource_path('views/workflow/time/timereport/doc.html') )) // set template
+            ->injectObject($uiOptions); // inject
+
+        //start $adddocument
+        $uiOptions = Injector::setObject('addDocument') // name variable / field yang akan diinject
+            ->setObjFields( // mwnambahkan setting field untuk table
+                [
+                    [ 'label'=>'Name', 'key'=>'Name', 'class'=>'text-100' , 'type'=>'String' ],
+                ]
+            )->setObjDef( // set object default
+                [
+                    'Name'=>'',
+                ]
+            )->setObjParams(
+                [
+                    'Name' => $formOptions['NameOptions'] = RefUtil::toOptions(RefUtil::getDocName(),'name','name', false),
+                ]
+            )
+            ->setObjTemplate(file_get_contents( resource_path('views/workflow/time/timereport/addDoc.html') )) // set template
+            ->injectObject($uiOptions); // inject
+
+        //start $picContacts
+        // use injector to provide parameter for simpletablemodaltemplate / simpletable
+        $uiOptions = Injector::setObject('invitationToBid') // name variable / field yang akan diinject
+            ->setObjFields( // mwnambahkan setting field untuk table
+                [
+                    ['label' => 'Doc. Date', 'key' => 'DocDate', 'class' => 'text-100'],
+                    ['label' => 'Doc. Ref', 'key' => 'DocRef', 'class' => 'text-100'],
+                    ['label' => 'Subject', 'key' => 'Subject', 'class' => 'text-100'],
+                    ['label' => 'Call Code', 'key' => 'FCallCode', 'class' => 'text-100']
+                ]
+            )->setObjDef( // set object default
+                [
+                    'DocDate' => '',
+                    'DocRef' => '',
+                    'Subject' => '',
+                    'FCallCode' => '',
+                ]
+            )
+            ->setObjParams(
+                [
+                    'baseUrl' => url('/'),
+                    'uploadUrl' => url('api/v1/core/upload')
+                ]
+            )
+            ->setObjTemplate(file_get_contents(resource_path('views/sms/procurementlogistic/purchaserequisition/item.html'))) // set template
+            ->injectObject($uiOptions); // inject into uiOption array
+
+        return parent::setupInjector($uiOptions, $data); // TODO: Change the autogenerated stub
+    }
+
+
+    public function postClone(Request $request)
+    {
+        $this->revision_key = 'reportId';
+        return parent::postClone($request);
+    }
+
+    public function postIndex(Request $request)
+    {
+//        $this->defOrderField = 'Item';
+//        $this->defOrderDir = 'asc';
+        return parent::postIndex($request); // TODO: Change the autogenerated stub
+    }
+
+    public function additionalQuery($model, Request $request)
+    {
+        /* sample query modifier */
+        //$model = $model->where('roleId','=', AuthUtil::getRoleId('Employee') );
+        return $model;
+    }
+
+    public function beforeSave($data)
+    {
+        /* sample callback / hook */
+        //$data['roleId'] = AuthUtil::getRoleId('Employee');
+        return parent::beforeSave($data);
+    }
+
+    public function beforeUpdateForm($population)
+    {
+        if(!isset($population['reportIdPrefix']) || $population['reportIdPrefix'] == '' ){
+            $rp = explode('-', $population['reportId'] );
+            array_pop($rp);
+            $rp = implode('-', $rp);
+            $population['reportIdPrefix'] = $rp;
+        }
+        return parent::beforeUpdateForm($population); // TODO: Change the autogenerated stub
+    }
+
+    public function getParam()
+    {
+        $currency = request()->get('curr');
+        $curr = ExchangeRate::where('currencyCode', '=', trim($currency))->first();
+        if($curr){
+            $this->def_param = $curr->toArray();
+        }
+        $this->def_param['currency'] = 'IDR';
+        $this->def_param['rev'] = 0;
+        $this->def_param['total'] = 0;
+        $this->def_param['grandTotal'] = 0;
+
+        return parent::getParam(); // TODO: Change the autogenerated stub
+    }
+
+    public function approvalItemQuery($model, Request $request)
+    {
+        $model = $model->where('requestByObj.value.email', '=', Auth::user()->email)
+            ->orWhere('authorizedByObj.value.email', '=', Auth::user()->email)
+            ->orWhere('auditedByObj.value.email', '=', Auth::user()->email)
+            ->orWhere('recomendedByObj.value.email', '=', Auth::user()->email);
+
+        return parent::approvalItemQuery($model, $request); // TODO: Change the autogenerated stub
+    }
+
+    public function approvalItemTransform($items)
+    {
+        $its = [];
+        foreach ($items as $item){
+            $item['approvalTitle'] = $item['reportId'] ?? '-';
+            $item['approvalDescription'] = $item['purposeOfPurchase'] ?? '-';
+            $its[] = $item;
+        }
+
+        $items = $its;
+
+        return parent::approvalItemTransform($items); // TODO: Change the autogenerated stub
+    }
+
+
+    protected function rowPostProcess($row)
+    {
+        /* modify or add new fields */
+        //$row['linkConsult'] = url('clinic/patient/km/'.$row['_id']);
+        //$row['linkOp'] = url('clinic/patient/op/'.$row['_id']);
+
+        return parent::rowPostProcess($row);
+    }
+
+    public function beforeImportCommit($data)
+    {
+
+        return parent::beforeImportCommit($data); // TODO: Change the autogenerated stub
+    }
+
+    /** function untuk post get sequence purchase rquisition number */
+
+    public function postGetSeq(Request $request)
+    {
+        $entity = $request->get('entity');
+        $date = $request->get('date');
+
+        if( $request->has('padding') ){
+            $padding = $request->get('padding')??env('NUM_PAD', 1);
+        }else{
+            $padding = env('NUM_PAD', 1);
+        }
+
+        if( is_null($entity) && $entity != ''){
+            $seq = false;
+        }else{
+            $rec = $this->model->where('reportNoPrefix', '=', $entity)->max('reportSequence');
+            $seq = $rec + 1;
+        }
+
+        //$seq = CedarUtil::getSequence($entity);
+
+        if($seq){
+            return response()->json([
+                'result'=>'OK',
+                'entity'=>$entity,
+                'seq'=>$seq,
+                'padded'=> str_pad($seq, $padding , '0', STR_PAD_LEFT )
+            ]);
+
+        }else{
+            return response()->json([
+                'result'=>'ERR',
+                'msg'=>'NOENTITY'
+            ]);
+        }
+
+
+    }
+
+    public function getDetail(Request $request)
+    {
+        $employeeName = request()->get('employeeName') ?? null;
+        $from = request()->get('dateFrom') ?? null;
+        $to = request()->get('dateTo') ?? null;
+
+        if($from){
+            $dateFrom = Carbon::parse($from);
+        }
+
+        if($to){
+            $dateTo = Carbon::parse($to);
+        }
+
+        $spent = SpentTime::where('userName','=', $employeeName)
+                ->where('event','=','TIMER_ADJ')
+                ->whereBetween('timerStart', [$dateFrom , $dateTo])
+                ->get();
+
+        $total = 0;
+        if($spent){
+            foreach($spent as $spen => $value){
+                $total += $value['timerSec'];
+            }
+        }
+
+        $res = array("result" => "OK","data" => $spent,"total"=>$total);
+
+        return response()->json($res, 200);
+    }
+
+}

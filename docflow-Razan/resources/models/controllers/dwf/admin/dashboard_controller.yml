@@ -1,0 +1,535 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Repository
+        name: repoCount
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Dispatch
+        name: dispatchCount
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Dispose
+        name: disposeCount
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Search
+        name: searchDoc
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'User Profile'
+        name: userProfile
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Settings
+        name: userProfile
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Repository
+        name: repoCount
+        create: true
+        edit: true
+        type: df.infoblock
+        model: repoCount
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Dispatch
+        name: dispatchCount
+        create: true
+        edit: true
+        type: df.infoblock
+        model: dispatchCount
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Dispose
+        name: disposeCount
+        create: true
+        edit: true
+        type: df.infoblock
+        model: disposeCount
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Search
+        name: searchDoc
+        create: true
+        edit: true
+        type: df.infoblock
+        model: searchDoc
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'User Profile'
+        name: userProfile
+        create: true
+        edit: true
+        type: df.infoblock
+        model: userProfile
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Settings
+        name: userProfile
+        create: true
+        edit: true
+        type: df.infoblock
+        model: userProfile
+        default: ''
+        validator: ''
+        icon_img:
+            style: 'width: 45px;'
+            src: images/icons/yellow-file.png
+        url: cedar/repository
+        infotype: primary
+        show_ribbon: true
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: repoCount
+        visible: true
+        type: number
+        default: 15
+    -
+        model: dispatchCount
+        visible: true
+        type: number
+        default: 15
+    -
+        model: disposeCount
+        visible: true
+        type: number
+        default: 15
+    -
+        model: searchDoc
+        visible: true
+        type: number
+        default: 15
+    -
+        model: userProfile
+        visible: true
+        type: number
+        default: 15
+    -
+        model: userProfile
+        visible: true
+        type: number
+        default: 15
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Repository
+        name: repoCount
+        model: repoCount
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Dispatch
+        name: dispatchCount
+        model: dispatchCount
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Dispose
+        name: disposeCount
+        model: disposeCount
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Search
+        name: searchDoc
+        model: searchDoc
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'User Profile'
+        name: userProfile
+        model: userProfile
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Settings
+        name: userProfile
+        model: userProfile
+        visible: true
+        type: text
+        default: ''

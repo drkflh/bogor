@@ -1,0 +1,401 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+        uniqueId: true
+    -
+        label: Jenis Naskah
+        name: group
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: Group Jabatan
+        name: subGroup
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: Kode Jabatan
+        name: jobCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: Title
+        name: jobTitle
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: Deskripsi
+        name: description
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-500'
+        thClass: ''
+    -
+        label: Urutan
+        name: seq
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-50'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        placeholder: Action
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        placeholder: Created
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        placeholder: updatedAt
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        placeholder: handle
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        placeholder: deleted
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Group
+        name: group
+        create: true
+        edit: true
+        type: text
+        model: group
+        placeholder: Group
+        default: ''
+        validator: required
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Sub Group
+        name: subGroup
+        create: true
+        edit: true
+        type: text
+        model: subGroup
+        placeholder: Sub Group
+        default: ''
+        validator: required
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Code
+        name: jobCode
+        create: true
+        edit: true
+        type: text
+        model: jobCode
+        placeholder: Code
+        default: ''
+        validator: required
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Title
+        name: jobTitle
+        create: true
+        edit: true
+        type: text
+        model: jobTitle
+        placeholder: Title
+        default: ''
+        validator: required
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: text
+        model: description
+        placeholder: Description
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Seq
+        name: seq
+        create: true
+        edit: true
+        type: number
+        model: seq
+        placeholder: Seq
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: group
+        visible: true
+        type: string
+        default: ''
+    -
+        model: subGroup
+        visible: true
+        type: string
+        default: ''
+    -
+        model: jobCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: jobTitle
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: seq
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Group
+        name: group
+        model: group
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Sub Group
+        name: subGroup
+        model: subGroup
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Code
+        name: jobCode
+        model: jobCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Title
+        name: jobTitle
+        model: jobTitle
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Description
+        name: description
+        model: description
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Seq
+        name: seq
+        model: seq
+        visible: true
+        type: text
+        default: ''

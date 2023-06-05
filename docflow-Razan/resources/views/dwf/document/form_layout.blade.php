@@ -1,0 +1,24 @@
+
+{!! $regDate ?? '' !!}
+{!! $docDate ?? '' !!}
+{!! $receivedDate ?? '' !!}
+{!! $location ?? '' !!}
+{!! $docNo ?? '' !!}
+{!! $docClass ?? '' !!}
+{!! $docYear ?? '' !!}
+{!! $titleCode ?? '' !!}
+{!! $confidentiality ?? '' !!}
+{!! $subject ?? '' !!}
+{!! $dispositionContent ?? '' !!}
+{!! $recipient ?? '' !!}
+{!! $copy ?? '' !!}
+{!! $body ?? '' !!}
+{!! $attachments ?? '' !!}
+{!! $attachments ?? '' !!}
+{!! $delegates ?? '' !!}
+{!! $signer ?? '' !!}
+{!! $signatures ?? '' !!}
+{!! $draftRecipient ?? '' !!}
+{!! $remarks ?? '' !!}
+{!! $docType ?? '' !!}
+{!! $formTemplate ?? '' !!}

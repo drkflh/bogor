@@ -1,0 +1,78 @@
+- title: "Business Administration"
+  auth: business-main-menu
+  icon: "<i data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Dashboard
+      auth: dashboard-business
+      url: "biz/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: "Sales Process"
+      auth: storefront-transaction-menu
+      url: "biz/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+      children:
+        - title: "Prospects"
+          auth: project-list
+          icon: '<i class="link-icon" data-feather="folder"></i>'
+          url: "biz/project-list"
+        - title: "Quotations"
+          auth: project-list
+          icon: '<i class="link-icon" data-feather="folder"></i>'
+          url: "biz/project-list"
+        - title: "Contracts"
+          auth: project-list
+          icon: '<i class="link-icon" data-feather="folder"></i>'
+          url: "biz/project-list"
+    - title: "Directory"
+      auth: storefront-directory-menu
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: "Customer"
+          auth: customer-directory
+          url: "biz/directory/customer-directory"
+        - title: "Vendor"
+          auth: vendor-directory
+          url: "biz/directory/vendor-directory"
+        - title: "Vendor Product Catalog"
+          auth: vendor-product-catalog
+          url: "biz/directory/vendor-product-list"
+    - title: Transactions
+      auth: storefront-transaction-menu
+      url: "biz/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+      children:
+        - title: "Purchase Orders"
+          auth: project-list
+          icon: '<i class="link-icon" data-feather="folder"></i>'
+          url: "biz/project-list"
+        - title: "Invoices"
+          auth: project-list
+          icon: '<i class="link-icon" data-feather="folder"></i>'
+          url: "biz/project-list"
+        - title: "Payments"
+          auth: project-list
+          icon: '<i class="link-icon" data-feather="folder"></i>'
+          url: "biz/project-list"
+    - title: "Reports"
+      auth: storefront-report-menu
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: "Revenue Report"
+          auth: sales-report
+          url: "biz/reference/project-type"
+        - title: "Cost Report"
+          auth: inventory-report
+          url: "biz/reference/project-model"
+        - title: "Resource Usage Report"
+          auth: inventory-report
+          url: "biz/reference/project-model"
+    - title: "Reference"
+      auth: storefront-reference-menu
+      icon: '<i class="link-icon" data-feather="sliders"></i>'
+      children:
+        - title: "Group Companies"
+          auth: storefront-outlets
+          url: "biz/reference/project-type"
+        - title: "Contract Template"
+          auth: storefront-channel
+          url: "biz/reference/project-type"

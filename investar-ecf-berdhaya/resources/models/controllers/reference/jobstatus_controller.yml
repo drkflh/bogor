@@ -1,0 +1,342 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: 'Job Status'
+        name: name
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'Status Group'
+        name: statusGroup
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Display Seq.'
+        name: seq
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: number
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: 'Active'
+        name: isActive
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: boolean
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: Description
+        name: description
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-500'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Status'
+        name: name
+        create: true
+        edit: true
+        type: text
+        model: name
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Status Group'
+        name: statusGroup
+        create: true
+        edit: true
+        type: text
+        model: statusGroup
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Display Seq.'
+        name: seq
+        create: true
+        edit: true
+        type: number
+        model: seq
+        default: 0
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Active'
+        name: isActive
+        create: true
+        edit: true
+        type: simpleswitch
+        model: isActive
+        default: true
+        validator: required
+        position: top
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: text
+        model: description
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: name
+        visible: true
+        type: string
+        default: ''
+    -
+        model: statusGroup
+        visible: true
+        type: string
+        default: ''
+    -
+        model: seq
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: isActive
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Status'
+        name: name
+        model: name
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Status Group'
+        name: statusGroup
+        model: statusGroup
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Display Seq'
+        name: seq
+        model: seq
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Active'
+        name: isActive
+        model: isActive
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Description
+        name: description
+        model: description
+        visible: true
+        type: text
+        default: ''

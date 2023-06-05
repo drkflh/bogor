@@ -1,0 +1,1301 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ' '
+        uniqueId: true
+    -
+        label: 'Type'
+        name: companyType
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-100'
+        thClass: ''
+    -
+        label: 'Name'
+        name: coyName
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-250'
+        thClass: ''
+    -
+        label: 'Vendor Prefix'
+        name: vendorPrefix
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-200'
+        thClass: ''
+    -
+        label: 'Vendor Code'
+        name: vendorCode
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-200'
+        thClass: ''
+    -
+        label: 'Vendor Sequence'
+        name: vendorSeq
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Product & Services'
+        name: services
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-top text-200'
+        thClass: ''
+    -
+        label: 'Address'
+        name: address
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-300'
+        thClass: ''
+    -
+        label: ' '
+        name: address2
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-top text-200'
+        thClass: ''
+    -
+        label: 'Contact Person'
+        name: picContacts
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: array
+        row_text_alignment: text-left
+        column_classes: 'text-left text-top text-200'
+        thClass: ''
+    -
+        label: 'City'
+        name: city
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: 'Province'
+        name: province
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: ''
+    -
+        label: 'ZIP'
+        name: postalCode
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Country'
+        name: country
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: 'Phone'
+        name: offPhones
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Fax'
+        name: offFaxes
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Email'
+        name: offEmails
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-top text-100'
+        thClass: ''
+    -
+        label: 'Web'
+        name: website
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Products'
+        name: products
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Brands'
+        name: brands
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Class'
+        name: vendorClass
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-200'
+        thClass: ''
+    -
+        label: 'TaxId'
+        name: vendorTaxId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: 'PKP No'
+        name: pkpNo
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: 'Coy Profile'
+        name: companyProfileUrl
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Catalog'
+        name: mediaUrlCatalog
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'NPWP'
+        name: taxIdNpwp
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Soft File'
+        name: urlDisplay
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Doc base'
+        name: DocBase
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Doc Path'
+        name: DocPath
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: 'Tax Collector'
+        name: taxCollector
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-25'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: companyType
+        create: true
+        edit: true
+        type: simpleselect
+        model: companyType
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: coyName
+        create: true
+        edit: true
+        type: text
+        model: coyName
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Vendor Prefix'
+        name: vendorPrefix
+        create: RO
+        edit: RO
+        type: text
+        model: vendorPrefix
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: vendorCode
+        create: RO
+        edit: RO
+        type: text
+        model: vendorCode
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr:
+            style: 'font-weight: bolder; font-size: 14px;'
+    -
+        label: 'Vendor Sequence'
+        name: vendorSeq
+        create: RO
+        edit: RO
+        type: text
+        model: vendorSeq
+        default: ''
+        validator: ''
+        param: '{ width: 75 }'
+        attr: {}
+    -
+        label: ' '
+        name: services
+        create: true
+        edit: true
+        type: tagsinput
+        model: services
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Address
+        name: address
+        create: true
+        edit: true
+        type: text
+        model: address
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Address 1'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: address2
+        create: true
+        edit: true
+        type: text
+        model: address2
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Address 2'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: picContacts
+        create: true
+        edit: true
+        type: text
+        model: picContacts
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'PIC'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: city
+        create: true
+        edit: true
+        type: text
+        model: city
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'City'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: province
+        create: true
+        edit: true
+        type: text
+        model: province
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Province'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: postalCode
+        create: true
+        edit: true
+        type: text
+        model: postalCode
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'ZIP / Postal Code'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: country
+        create: true
+        edit: true
+        type: text
+        model: country
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Country'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: offPhones
+        create: true
+        edit: true
+        type: tagsinput
+        model: offPhones
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Office Phones'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: ' '
+        name: offFaxes
+        create: true
+        edit: true
+        type: tagsinput
+        model: offFaxes
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Office Faxes'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: ' '
+        name: offEmails
+        create: true
+        edit: true
+        type: tagsinput
+        model: offEmails
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Office Emails'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: ' '
+        name: website
+        create: true
+        edit: true
+        type: text
+        model: website
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Website'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: products
+        create: true
+        edit: true
+        type: tagsinput
+        model: products
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Products'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: ' '
+        name: brands
+        create: true
+        edit: true
+        type: tagsinput
+        model: brands
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Brands'
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: ' '
+        name: vendorClass
+        create: true
+        edit: true
+        type: simpleselect
+        model: vendorClass
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Brands'
+        param: {  }
+        attr: {}
+    -
+        label: ' '
+        name: vendorTaxId
+        create: true
+        edit: true
+        type: text
+        model: vendorTaxId
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Vendor Tax ID'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: pkpNo
+        create: true
+        edit: true
+        type: text
+        model: pkpNo
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'No PKP'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: companyProfileUrl
+        create: true
+        edit: true
+        type: singleupload
+        model: companyProfileUrl
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Company Profile'
+        param:
+            url: api/v1/core/upload
+            paramName: file
+            buttonlabel: 'Company Profile'
+            filename: DocBaseName
+            dir: documents
+            useHandle: true
+            rawUpload: false
+            baseUrl: DocBase
+            docPath: DocPath
+            acceptedFiles: 'video/*,image/*,application/pdf'
+        attr: {}
+    -
+        label: ' '
+        name: mediaUrlCatalog
+        create: true
+        edit: true
+        type: singleupload
+        model: mediaUrlCatalog
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Catalog'
+        param:
+            url: api/v1/core/upload
+            paramName: file
+            buttonlabel: Catalog
+            filename: DocBaseName
+            dir: documents
+            useHandle: true
+            rawUpload: false
+            baseUrl: DocBase
+            docPath: DocPath
+            acceptedFiles: 'video/*,image/*,application/pdf'
+        attr: {}
+    -
+        label: ' '
+        name: taxIdNpwp
+        create: true
+        edit: true
+        type: singleupload
+        model: taxIdNpwp
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'NPWP'
+        param:
+            url: api/v1/core/upload
+            paramName: file
+            buttonlabel: 'Tax ID (NPWP)'
+            filename: DocBaseName
+            dir: documents
+            useHandle: true
+            rawUpload: false
+            baseUrl: DocBase
+            docPath: DocPath
+            acceptedFiles: 'video/*,image/*,application/pdf'
+        attr: {}
+    -
+        label: 'Soft File'
+        name: urlDisplay
+        create: RO
+        edit: RO
+        type: text
+        model: getDocUrl()
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Address 1'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Doc base'
+        name: DocBase
+        create: RO
+        edit: RO
+        type: text
+        model: DocBase
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Address 1'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Doc Path'
+        name: DocPath
+        create: RO
+        edit: RO
+        type: text
+        model: DocPath
+        default: ''
+        validator: ''
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Address 1'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ' '
+        name: taxCollector
+        create: true
+        edit: true
+        type: simpleswitch
+        model: taxCollector
+        default: ''
+        validator: required
+        ordered: false
+        show_table_header: true
+        modal_size: md
+        placeholder: 'Address 1'
+        position: left
+        labels: '{checked: "On", unchecked: "Off"}'
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: companyType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: coyName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorPrefix
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorSeq
+        visible: true
+        type: string
+        default: ''
+    -
+        model: services
+        visible: true
+        type: string
+        default: ''
+    -
+        model: address
+        visible: true
+        type: string
+        default: ''
+    -
+        model: address2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: picContacts
+        visible: true
+        type: array
+        default: {  }
+    -
+        model: city
+        visible: true
+        type: string
+        default: ''
+    -
+        model: province
+        visible: true
+        type: string
+        default: ''
+    -
+        model: postalCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: country
+        visible: true
+        type: string
+        default: ''
+    -
+        model: offPhones
+        visible: true
+        type: string
+        default: ''
+    -
+        model: offFaxes
+        visible: true
+        type: string
+        default: ''
+    -
+        model: offEmails
+        visible: true
+        type: string
+        default: ''
+    -
+        model: website
+        visible: true
+        type: string
+        default: ''
+    -
+        model: products
+        visible: true
+        type: string
+        default: ''
+    -
+        model: brands
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorClass
+        visible: true
+        type: string
+        default: ''
+    -
+        model: vendorTaxId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: pkpNo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyProfileUrl
+        visible: true
+        type: string
+        default: ''
+    -
+        model: mediaUrlCatalog
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taxIdNpwp
+        visible: true
+        type: string
+        default: ''
+    -
+        model: getDocUrl
+        visible: false
+        type: string
+        default: ''
+    -
+        model: DocBase
+        visible: true
+        type: string
+        default: ''
+    -
+        model: DocPath
+        visible: true
+        type: string
+        default: ''
+    -
+        model: taxCollector
+        visible: true
+        type: boolean
+        default: 'false'
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: companyType
+        model: companyType
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: coyName
+        model: coyName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Vendor Prefix'
+        name: vendorPrefix
+        model: vendorPrefix
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: vendorCode
+        model: vendorCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Vendor Sequence'
+        name: vendorSeq
+        model: vendorSeq
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Product & Services'
+        name: services
+        model: services
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Address
+        name: address
+        model: address
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: address2
+        model: address2
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Contact Person'
+        name: picContacts
+        model: picContacts
+        visible: true
+        type: arrayview
+        default: ''
+    -
+        label: ' '
+        name: city
+        model: city
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: province
+        model: province
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: postalCode
+        model: postalCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: country
+        model: country
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: offPhones
+        model: offPhones
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: offFaxes
+        model: offFaxes
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: offEmails
+        model: offEmails
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: website
+        model: website
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: products
+        model: products
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: brands
+        model: brands
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: vendorClass
+        model: vendorClass
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: vendorTaxId
+        model: vendorTaxId
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: pkpNo
+        model: pkpNo
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Company Profile'
+        name: companyProfileUrl
+        model: companyProfileUrl
+        visible: true
+        type: doclink
+        default: ''
+    -
+        label: Catalog
+        name: mediaUrlCatalog
+        model: mediaUrlCatalog
+        visible: true
+        type: doclink
+        default: ''
+    -
+        label: 'Tax ID / NPWP'
+        name: taxIdNpwp
+        model: taxIdNpwp
+        visible: true
+        type: doclink
+        default: ''
+    -
+        label: 'Soft File'
+        name: urlDisplay
+        model: getDocUrl()
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Doc base'
+        name: DocBase
+        model: DocBase
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Doc Path'
+        name: DocPath
+        model: DocPath
+        visible: true
+        type: text
+        default: ''
+    -
+        label: ' '
+        name: taxCollector
+        model: taxCollector
+        visible: true
+        type: text
+        default: ''

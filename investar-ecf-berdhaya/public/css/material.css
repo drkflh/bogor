@@ -1,0 +1,6 @@
+select.custom-select {
+    border: none;
+    border-bottom: 1px solid #080000 !important;
+    border-radius: 0px;
+    margin-top: 8px; /* material design style */
+}

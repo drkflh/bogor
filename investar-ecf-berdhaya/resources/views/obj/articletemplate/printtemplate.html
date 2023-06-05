@@ -1,0 +1,19 @@
+<div style="width: 100%; text-align: left;position: relative;">
+    <table class="table">
+        <tr v-for="c in content">
+            <td style="width: 80px !important;max-width: 80px;">
+                <h5>{{ c._id }}</h5>
+                <table class="table">
+                    <tr v-for="(v, k, i) in c">
+                        <td class="text-150">
+                            {{ k }}
+                        </td>
+                        <td>
+                            {{ v }}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>

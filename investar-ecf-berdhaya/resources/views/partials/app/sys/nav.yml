@@ -1,0 +1,150 @@
+- title: "System"
+  auth: system-menu
+  icon: "<i class=\"mdi mdi-alert\" style=\"color:red;\"></i>"
+  children:
+    - title: User Management
+      icon: "<i class=\"link-icon\"  data-feather=\"users\"></i>"
+      auth: user-menu
+      id: userMenu
+      children:
+        - title: "Users"
+          auth: all-users
+          url: "user"
+          icon: "<i class=\"las la-account-multiple link-icon\"></i>"
+        - title: "Members"
+          auth: member-list
+          url: "member"
+          icon: "<i class=\"las la-account-multiple link-icon\"></i>"
+        - title: "API Users"
+          auth: api-users
+          url: "api-user"
+          icon: "<i class=\"las la-account-multiple link-icon\"></i>"
+        - title: "Roles"
+          auth: roles
+          url: "role"
+          icon: "<i class=\"link-icon\"  data-feather=\"user-check\"></i>"
+    - title: Reference
+      icon: "<i class=\"link-icon\"  data-feather=\"sliders\"></i>"
+      auth: reference-sys-menu
+      children:
+        - title: "Select Options"
+          auth: sys-select-options
+          url: "reference/select-options"
+        - title: "Group Company"
+          auth: company
+          url: "reference/company"
+        - title: "Company Type"
+          auth: company-type
+          url: "reference/company-type"
+    - title: Assets
+      auth: system-assets-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"server\"></i>"
+      id: sysAssetMenu
+      children:
+        - title: "Digital Assets"
+          auth: digital-assets
+          url: "assets/digital-asset"
+          icon: "<i class=\"las la-account-multiple link-icon\"></i>"
+    - title: "Messaging"
+      auth: messaging-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"message-square\"></i>"
+      id: messagingMenu
+      children:
+        - title: "Message Queue"
+          auth: messaging-queue
+          url: "mms/message-queue"
+        - title: "Email Message Log"
+          auth: messaging-log
+          url: "mms/message-log"
+        - title: "WA Message Log"
+          auth: messaging-log
+          url: "mms/wa-message-log"
+        - title: "Message Gateway"
+          auth: messaging-gateway
+          url: "mms/message-gateway"
+    - title: "Notification"
+      auth: messaging-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"message-square\"></i>"
+      id: notificationMenu
+      children:
+        - title: "Notifications"
+          auth: messaging-queue
+          url: "mms/notification"
+        - title: "Notification Sub"
+          auth: messaging-log
+          url: "mms/notification-sub"
+        - title: "Notification Channel"
+          auth: messaging-gateway
+          url: "mms/notification-channel"
+        - title: "Notification Template"
+          auth: mms-notification-template
+          url: "mms/notification-template"
+        - title: "FCM Register"
+          auth: mms-fcm-register
+          url: "mms/fcm-register"
+    - title: "WA By Qontak"
+      auth: messaging-menu
+      icon: "<i class=\"link-icon\"  data-feather=\"message-square\"></i>"
+      id: whatsAppMenu
+      children:
+        - title: "Send Log"
+          url: "mms/qontak/send-log"
+        - title: "Broadcast Log"
+          url: "mms/qontak/broadcast-status-log"
+        - title: "Templates"
+          url: "mms/qontak/wa-template"
+        - title: "Channel"
+          url: "mms/qontak/channel"
+        - title: "Language"
+          url: "mms/qontak/lang"
+        - title: "Category"
+          url: "mms/qontak/category"
+        - title: "File Uploads"
+          url: "mms/qontak/file-upload"
+    - title: "Logs & Monitors"
+      auth: logs-menu
+      icon: "<i data-feather=\"database\" class=\"mdi mdi-account-multiple link-icon\"></i>"
+      id: logsMenu
+      children:
+        - title: "API Log"
+          auth: api-log
+          url: "api-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Console Log"
+          auth: console-log
+          url: "core/console-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Action Log"
+          auth: action-log
+          url: "action-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Approval Log"
+          auth: approval-log
+          url: "approval-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Message Log"
+          auth: message-log
+          url: "mms/message-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Change Status Log"
+          auth: change-status-log
+          url: "change-status-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+        - title: "Queue Failed Log"
+          auth: queue-failed-log
+          url: "queue-failed-log"
+          icon: "<i class=\"mdi mdi-file\"></i>"
+#        - title: "Git Log"
+#          auth: git-log
+#          url: "obj/git-log"
+#          target: blank
+#          icon: "<i class=\"mdi mdi-file\"></i>"
+    - title: Testing
+      icon: "<i  data-feather=\"hexagon\" class=\"mdi mdi-account-multiple  link-icon\"></i>"
+      auth: logs-menu
+      id: docsMenu
+      children:
+        - title: "Crash Test"
+          url: "test/ctd"
+          badge: false
+          icon: "<i class=\"mdi mdi-account-multiple\"></i>"

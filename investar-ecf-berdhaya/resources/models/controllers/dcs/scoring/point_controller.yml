@@ -1,0 +1,211 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Form Code
+        name: formCode
+        show: true
+        search: true
+        sort: false
+        datatype: string
+        column_classes: 'text-center text-top text-100'
+    -
+        label: Method
+        name: method
+        show: true
+        search: true
+        sort: false
+        datatype: string
+        column_classes: 'text-center text-top'
+    -
+        label: Category
+        name: category
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-200 text-top'
+    -
+        label: 'Criteria 1'
+        name: state1
+        show: true
+        search: false
+        sort: false
+        datatype: number
+        column_classes: 'text-center text-top'
+    -
+        label: 'Criteria 2'
+        name: state2
+        show: true
+        search: false
+        sort: false
+        datatype: number
+        column_classes: 'text-center text-top'
+    -
+        label: Status
+        name: status
+        show: true
+        search: true
+        sort: false
+        datatype: string
+        column_classes: 'text-center text-top'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Method
+        name: method
+        create: true
+        edit: true
+        type: simpleselect
+        model: method
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Category
+        name: category
+        create: true
+        edit: true
+        type: text
+        model: category
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'State 1'
+        name: state1
+        create: true
+        edit: true
+        type: number
+        model: state1
+        default: ''
+        validator: ''
+        append: select
+        select_model: stateOp2
+        select_class: text-100
+        param: {}
+        attr: {}
+    -
+        label: 'State 2'
+        name: state2
+        create: true
+        edit: true
+        type: number
+        model: state2
+        default: ''
+        validator: ''
+        append: select
+        select_model: stateOp2
+        select_class: text-100
+        param: {}
+        attr: {}
+    -
+        label: Status
+        name: status
+        create: true
+        edit: true
+        type: text
+        model: status
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: method
+        visible: true
+        type: string
+        default: ''
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+    -
+        model: state1
+        visible: true
+        type: string
+        default: ''
+    -
+        model: state2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: stateOp1
+        visible: true
+        type: string
+        default: ''
+    -
+        model: stateOp2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: status
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Method
+        name: method
+        visible: true
+        type: text
+        model: method
+    -
+        label: Category
+        name: category
+        visible: true
+        type: text
+        model: category
+    -
+        label: 'Score 1'
+        name: state1
+        visible: true
+        type: text
+        model: state1
+    -
+        label: 'Score 2'
+        name: state2
+        visible: true
+        type: text
+        model: state2
+    -
+        label: Status
+        name: status
+        visible: true
+        type: text
+        model: status

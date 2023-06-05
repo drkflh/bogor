@@ -1,0 +1,29 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Test/Ctd_table_label,Test/Ctd_table_name,Test/Ctd_table_show,Test/Ctd_table_search,Test/Ctd_table_sort,Test/Ctd_table_datatype,Test/Ctd_form_label,Test/Ctd_form_name,Test/Ctd_form_create,Test/Ctd_form_edit,Test/Ctd_form_type,Test/Ctd_form_model,Test/Ctd_form_default,Test/Ctd_form_validator,Test/Ctd_form_param,Test/Ctd_form_attr,Test/Ctd_vue_model,Test/Ctd_vue_visible,Test/Ctd_vue_type,Test/Ctd_vue_default,Test/Ctd_view_label,Test/Ctd_view_name,Test/Ctd_view_visible,Test/Ctd_view_type,Test/Ctd_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+applicationDate,datetime,,,,,,,,,,,Application Date,applicationDate,,,,,Application Date,applicationDate,,,,applicationDate,,,,,applicationDate,,,,Application Date,applicationDate,,,applicationDate
+applicationNo,,,,,,,,,,,,Application No,applicationNo,,,,,Application No,applicationNo,,,,applicationNo,,,,,applicationNo,,,,Application No,applicationNo,,,applicationNo
+requestingCompanyId,,,,,,,,,,,,Req Company ID,requestingCompanyId,,,,,Req Company ID,requestingCompanyId,,,,requestingCompanyId,,,,,requestingCompanyId,,,,Req Company ID,requestingCompanyId,,,requestingCompanyId
+employeeNo,,,,,,,,,,,,Employee No,employeeNo,,,,,Employee No,employeeNo,,,,employeeNo,,,,,employeeNo,,,,Employee No,employeeNo,,,employeeNo
+employeeName,,,,,,,,,,,,Employee Name,employeeName,,,,,Employee Name,employeeName,,,,employeeName,,,,,employeeName,,,,Employee Name,employeeName,,,employeeName
+employeePosition,,,,,,,,,,,,Employee Position,employeePosition,,,,,Employee Position,employeePosition,,,,employeePosition,,,,,employeePosition,,,,Employee Position,employeePosition,,,employeePosition
+companyName,,,,,,,,,,,,Company Name,companyName,,,,,Company Name,companyName,,,,companyName,,,,,companyName,,,,Company Name,companyName,,,companyName
+companyId,,,,,,,,,,,,Company ID,companyId,,,,,Company ID,companyId,,,,companyId,,,,,companyId,,,,Company ID,companyId,,,companyId
+requestType,,,,,,,,,,,,Request Type,requestType,,,,,Request Type,requestType,,,,requestType,,,,,requestType,,,,Request Type,requestType,,,requestType
+employeeDateHired,datetime,,,,,,,,,,,Empl. Date Hired,employeeDateHired,,,,,Empl. Date Hired,employeeDateHired,,,,employeeDateHired,,,,,employeeDateHired,,,,Empl. Date Hired,employeeDateHired,,,employeeDateHired
+employeeDept,,,,,,,,,,,,Empl. Dept,employeeDept,,,,,Empl. Dept,employeeDept,,,,employeeDept,,,,,employeeDept,,,,Empl. Dept,employeeDept,,,employeeDept
+costCenter,,,,,,,,,,,,Cost Center,costCenter,,,,,Cost Center,costCenter,,,,costCenter,,,,,costCenter,,,,Cost Center,costCenter,,,costCenter
+advanceDate,datetime,,,,,,,,,,,Advance Date ,advanceDate,,,,,Advance Date ,advanceDate,,,,advanceDate,,,,,advanceDate,,array,,Advance Date ,advanceDate,,,advanceDate
+advanceReqNo,,,,,,,,,,,,Advance Req No,advanceReqNo,,,,,Advance Req No,advanceReqNo,,,,advanceReqNo,,,,,advanceReqNo,,array,,Advance Req No,advanceReqNo,,,advanceReqNo
+advanceCurrency,,,,,,,,,,,,Advance Currency,advanceCurrency,,,,,Advance Currency,advanceCurrency,,,,advanceCurrency,,,,,advanceCurrency,,,,Advance Currency,advanceCurrency,,,advanceCurrency
+advanceExchRate,,,,,,,,,,,,Advance Exch Rate,advanceExchRate,,,,,Advance Exch Rate,advanceExchRate,,,,advanceExchRate,,,,,advanceExchRate,,,,Advance Exch Rate,advanceExchRate,,,advanceExchRate
+advanceAmount,array,,,,,,,,,,,Advance Amount,advanceAmount,,,,array,Advance Amount,advanceAmount,,,,advanceAmount,,,,,advanceAmount,,array,,Advance Amount,advanceAmount,,,advanceAmount
+advanceIDREquiv,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

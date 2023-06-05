@@ -1,0 +1,375 @@
+- label: "cardEfisiensi"
+  name: cardEfisiensi
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: df.nobleui.silani.efisiensicard
+    model: cardEfisiensi
+    percent_efisiensi: cardEfisiensi.percentEfisiensi
+    percent_cancel: cardEfisiensi.percentCancel
+    chart_options: circularBarOptionEfisiensi
+    chart_options_cancel: circularBarOptionCancel
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data"  }
+    infotype: danger
+    show_ribbon: false
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: "cardRequestTotal"
+  name: cardRequestTotal
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: df.nobleui.silani.requesttotalcard
+    model: cardRequestTotal
+    label_notadinas: cardRequestTotal.labelNotaDinas
+    total_notadinas: cardRequestTotal.totalNotaDinas
+    this_month_notadinas: cardRequestTotal.thisMonthNotaDinas
+    sys_notadinas: cardRequestTotal.sysNotaDinas
+    label_suratdinas: cardRequestTotal.labelSuratDinas
+    total_suratdinas: cardRequestTotal.totalSuratDinas
+    this_month_suratdinas: cardRequestTotal.thisMonthSuratDinas
+    sys_suratdinas: cardRequestTotal.sysSuratDinas
+    label_disposisi: cardRequestTotal.labelDisposisi
+    total_disposisi: cardRequestTotal.totalDisposisi
+    this_month_disposisi: cardRequestTotal.thisMonthDisposisi
+    sys_disposisi: cardRequestTotal.sysLembarDisposisi
+    label_memo: cardRequestTotal.labelMemo
+    total_memo: cardRequestTotal.totalMemo
+    this_month_memo: cardRequestTotal.thisMonthMemo
+    sys_memo: cardRequestTotal.sysMemoInternal
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data"  }
+    infotype: danger
+    show_ribbon: false
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: "cardRequestTotalByRole"
+  name: cardRequestTotalByRole
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: df.nobleui.silani.reqtotalbyrole
+    model: cardRequestTotalByRole
+    title: cardRequestTotalByRole.title
+    total_cm: cardRequestTotalByRole.totalCm
+    total_ln: cardRequestTotalByRole.totalLn
+    total_ad: cardRequestTotalByRole.totalAd
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data"  }
+    infotype: danger
+    show_ribbon: false
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Card Response'
+  name: cardResponse
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.silani.responsecard"
+    model: cardResponse
+    title: cardResponse.title
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    url: "dwf/dashboard/transaksi"
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Card Lansia Info'
+  name: cardInfoLansia
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.silani.lansiainfocard"
+    model: cardInfoLansia
+    label: cardInfoLansia.label
+    total_user: cardInfoLansia.totalUser
+    detail: cardInfoLansia.detail
+    th_table: cardInfoLansia.thTable
+    th_class: cardInfoLansia.thClass
+    td_table: cardInfoLansia.tdTable
+    lansiaGender: cardInfoLansia.lansiaGender
+    lansiaKotaCount: cardInfoLansia.lansiaKotaCount
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    url: "silani/dashboard/gender"
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+    chart_options: circularBarOptionGender
+    chart_model: circularBarGenderSeries
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Info Case Manager'
+  name: infoCaseManager
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.silani.infocasemanager"
+    model: infoCaseManager
+    label: infoCaseManager.label
+    total_user: infoCaseManager.totalUser
+    btn_view: infoCaseManager.BtnView
+    th_table: infoCaseManager.thTable
+    th_class: infoCaseManager.thClass
+    td_table: infoCaseManager.tdTable
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Card Layanan'
+  name: cardLayanan
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.silani.layanancard"
+    model: circularBarLayananSeries
+    title: cardLayanan.title
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    url: "silani/dashboard/layanan"
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+    chart_options: circularBarOptionLayanan
+    percent_efisiensi: cardLayanan
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Card Pendidikan'
+  name: cardPendidikan
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.silani.graphcardpendidikan"
+    model: cardPendidikan
+    title: cardPendidikan.title
+    pendidikanLansiaCount: cardPendidikan.pendidikanLansiaCount
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    url: "silani/dashboard/pendidikan"
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Card Article'
+  name: cardArticle
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.silani.cardarticle"
+    model: cardArticle
+    data: cardArticle.data
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: 'Card Age'
+  name: cardAge
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: "df.nobleui.silani.graphcardage"
+    model: cardAge
+    title: cardAge.title
+    lansiaUsiaCount: cardAge.lansiaUsiaCount
+    test: cardAge.test
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    url: "silani/dashboard/age"
+    attr: { class: "form-data"  }
+    infotype: primary
+    show_ribbon: true
+  vue:
+    visible: true
+    type: number
+    default: 15
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na

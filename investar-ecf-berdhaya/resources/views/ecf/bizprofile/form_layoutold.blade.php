@@ -1,0 +1,45 @@
+<div>
+
+{!! $masterId ?? '' !!}
+{!! $masterName ?? '' !!}
+{!! $companyId ?? '' !!}
+{!! $companyName ?? '' !!}
+{!! $sbuId ?? '' !!}
+{!! $sbuName ?? '' !!}
+{!! $deptId ?? '' !!}
+{!! $deptName ?? '' !!}
+{!! $email ?? '' !!}
+{!! $name ?? '' !!}
+{!! $position ?? '' !!}
+{!! $contactWA ?? '' !!}
+{!! $ownerIdCard ?? '' !!}
+{!! $bizTradeMark ?? '' !!}
+{!! $bizAddress ?? '' !!}
+{!! $bizType ?? '' !!}
+{!! $bizRegisteredName ?? '' !!}
+{!! $bizCompanyType ?? '' !!}
+{!! $legality ?? '' !!}
+{!! $attAktaPerusahaan ?? '' !!}
+{!! $attSKKemenhumham ?? '' !!}
+{!! $attTDP ?? '' !!}
+{!! $attNPWP ?? '' !!}
+{!! $noNPWP ?? '' !!}
+{!! $slikOJK ?? '' !!}
+{!! $productServices ?? '' !!}
+{!! $establishedSinceYear ?? '' !!}
+{!! $establishedYear ?? '' !!}
+{!! $attCompanyProfile ?? '' !!}
+{!! $noOfBranches ?? '' !!}
+{!! $productServicesDescription ?? '' !!}
+{!! $marketingFunnels ?? '' !!}
+{!! $monthlyGrossRevenue ?? '' !!}
+{!! $monthlyNettRevenue ?? '' !!}
+{!! $attFinancialReports ?? '' !!}
+{!! $bizPlanTriennial ?? '' !!}
+{!! $attBizPlan ?? '' !!}
+{!! $requiredFunding ?? '' !!}
+{!! $typeOfFunding ?? '' !!}
+{!! $contractReference ?? '' !!}
+{!! $covidStrategy ?? '' !!}
+{!! $getToKnowInvestar ?? '' !!}
+</div>

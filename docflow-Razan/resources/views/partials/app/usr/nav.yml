@@ -1,0 +1,45 @@
+- title: "Development Tool"
+  icon: "<i  data-feather=\"edit\" class=\"mdi mdi-alert link-icon\" style=\"color:red;\"></i>"
+  auth: devtool-menu
+  id: authoringMenu
+  children:
+    - title: "ACL Entity"
+      icon: "<i  data-feather=\"hexagon\" class=\"mdi mdi-account-multiple  link-icon\" style=\"color: #EC6839;\"></i>"
+      url: "obj/acl-object"
+      auth: acl-object
+    - title: Templates
+      icon: "<i  data-feather=\"code\" class=\"mdi mdi-account-multiple  link-icon\" style=\"color: #EC6839;\"></i>"
+      auth: template-menu
+      id: templatesMenu
+      children:
+      - title: "Email"
+        url: "obj/email-template"
+        auth: email-template
+        icon: "<i class=\"mdi mdi-file\"></i>"
+#      - title: "Print"
+#        url: "obj/print-template"
+#        auth: print-template
+#        icon: "<i class=\"mdi mdi-file\"></i>"
+#    - title: "View"
+#      url: "obj/view-template"
+#      auth: view-template
+#      icon: "<i class=\"mdi mdi-file\"></i>"
+#  - title: Objects
+#    icon: "<i  data-feather=\"hexagon\" class=\"mdi mdi-account-multiple  link-icon\" style=\"color: #EC6839;\"></i>"
+#    auth: objects-menu
+#    id: objectsMenu
+#    children:
+#    - title: "Roles"
+#      url: "role"
+#      auth: roles
+#      icon: "<i class=\"mdi mdi-account-check\"></i>"
+#  - title: Documentation
+#    icon: "<i  data-feather=\"hexagon\" class=\"mdi mdi-account-multiple  link-icon\"></i>"
+#    auth: docs-menu
+#    id: docsMenu
+#    children:
+#      - title: "API Doc"
+#        url: "api-docs"
+#        auth: api-docs
+#        badge: false
+#        icon: "<i class=\"mdi mdi-account-multiple\"></i>"

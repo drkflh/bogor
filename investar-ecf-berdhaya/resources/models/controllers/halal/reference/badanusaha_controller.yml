@@ -1,0 +1,145 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Kode'
+        name: ref_id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-225'
+        thClass: 'text-center text-50'
+    -
+        label: 'Kode Grup'
+        name: ref_group_id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-225'
+        thClass: 'text-center text-50'
+    -
+        label: 'Jenis Badan Usaha'
+        name: ref_desc
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-300'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode'
+        name: ref_id
+        create: true
+        edit: true
+        type: text
+        model: ref_id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Grup'
+        name: ref_group_id
+        create: true
+        edit: true
+        type: text
+        model: ref_group_id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Badan Usaha'
+        name: ref_desc
+        create: true
+        edit: true
+        type: text
+        model: ref_desc
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ref_id
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ref_group_id
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ref_desc
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Kode'
+        name: ref_id
+        visible: true
+        type: text
+        model: ref_id
+    -
+        label: 'Kode Grup'
+        name: ref_group_id
+        visible: true
+        type: text
+        model: ref_group_id
+    -
+        label: 'Jenis Badan Usaha'
+        name: ref_desc
+        visible: true
+        type: text
+        model: ref_desc

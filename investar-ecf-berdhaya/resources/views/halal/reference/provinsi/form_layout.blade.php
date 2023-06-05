@@ -1,0 +1,5 @@
+<div>
+
+{!! $kodeProvinsi ?? '' !!}
+{!! $namaProvinsi ?? '' !!}
+</div>

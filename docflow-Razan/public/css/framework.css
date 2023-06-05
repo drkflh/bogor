@@ -1,0 +1,461 @@
+/* .btn.btn-secondary.vbt-reset-button,
+.btn.btn-secondary.vbt-refresh-button,
+.btn.btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    color: darkslategrey;
+    border-color: lightgrey;
+}
+
+.table-active,
+.table-active td {
+    background-color: transparent !important;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+}
+.daterangepicker {
+    display: block !important;
+    top: 25px !important;
+    min-width: 400px;
+}
+
+.vue-daterange-picker {
+    padding-left: 0px !important;
+}
+
+.ant-input-lg {
+    height: 38px;
+    padding: 6px 11px;
+    font-size: 15px;
+}
+
+.ant-time-picker-large .ant-time-picker-input {
+    height: 38px;
+    padding: 6px 11px;
+    font-size: 14px;
+}
+.col-action {
+    width: 100px;
+    min-width: 100px;
+}
+.fill-parent {
+    width: 50%;
+    max-width: 50%;
+}
+h2.mt-2 {
+    font-size: 18px;
+    vertical-align: middle;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+/* vue2 datepicker */
+.mx-datepicker-popup {
+    z-index: 2000 !important;
+}
+
+.mx-datepicker {
+    width: auto !important;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-50 {
+    max-width: 50px;
+    width: 50px;
+    text-overflow: ellipsis;
+}
+
+.text-100 {
+    max-width: 100px;
+    width: 100px;
+    text-overflow: ellipsis;
+}
+
+.text-150 {
+    max-width: 150px;
+    width: 150px;
+    text-overflow: ellipsis;
+}
+
+.text-200 {
+    max-width: 200px;
+    width: 200px;
+    text-overflow: ellipsis;
+}
+
+.text-500 {
+    max-width: 500px;
+    width: 500px;
+    text-overflow: ellipsis;
+}
+.pre-container {
+    z-index: 10000 !important;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: 0;*/
+    /*background-color: #0e0e0e;*/
+}
+
+.thumb-container {
+    display: block;
+    height: auto;
+    width: 150px;
+    position: relative;
+}
+.vue-preview .list {
+}
+.vue-preview .list .list__img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.vue-preview .list .list__img img {
+    padding: 0.25rem;
+    background-color: #f0f2f5;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.vue-preview .list .list__img:not(:first-child) {
+    display: none;
+}
+
+.modal-bv {
+    z-index: 20050 !important;
+}
+
+.fish .content {
+    padding: 0px !important;
+}
+
+.block {
+    box-shadow: 0 6px 6px lightgrey !important;
+    border-radius: 6px;
+}
+
+.block-header {
+    padding: 2px 14px !important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.modal-content {
+    border-radius: 6px !important;
+}
+
+.loader {
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    padding: 8px;
+    display: block;
+    background-color: white;
+    border: thin solid lightblue;
+    z-index: 1000;
+}
+
+body {
+    background-color: white;
+}
+
+#page-container.page-header-modern #page-header {
+    background-color: white;
+}
+
+.dropdown-menu.show {
+    display: block;
+    box-shadow: 0 6px 6px lightgrey !important;
+    z-index: 1050;
+}
+
+fieldset {
+    border: none !important;
+}
+
+legend {
+    font-weight: 900;
+    font-size: 1.1rem !important;
+}
+
+.ti-autocomplete {
+    z-index: 500 !important;
+}
+
+.view-label{
+    font-size: 9pt;
+    font-weight: bolder;
+}
+.underlined{
+    padding-top: 8px;
+    border-bottom: thin solid lightgray;
+}
+
+/*.card {*/
+    /*margin-bottom: 24px;*/
+    /*-webkit-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3) !important;*/
+    /*box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3) !important;*/
+/*}*/
+/* .custom-control-inline {
+    display: block;
+    margin-right: 1m;
+}
+
+.col-form-label{
+    padding-bottom: 8px !important;
+} */
+
+.btn.btn-secondary.vbt-reset-button,
+.btn.btn-secondary.vbt-refresh-button,
+.btn.btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    color: darkslategrey;
+    border-color: lightgrey;
+}
+
+.table-active,
+.table-active td {
+    background-color: transparent !important;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+}
+.daterangepicker {
+    display: block !important;
+    top: 25px !important;
+    min-width: 400px;
+}
+
+.vue-daterange-picker {
+    padding-left: 0px !important;
+}
+
+.ant-input-lg {
+    height: 38px;
+    padding: 6px 11px;
+    font-size: 15px;
+}
+
+.ant-time-picker-large .ant-time-picker-input {
+    height: 38px;
+    padding: 6px 11px;
+    font-size: 14px;
+}
+.col-action {
+    width: 100px;
+    min-width: 100px;
+}
+.fill-parent {
+    width: 50%;
+    max-width: 50%;
+}
+h2.mt-2 {
+    font-size: 18px;
+    vertical-align: middle;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+/* vue2 datepicker */
+.mx-datepicker-popup {
+    z-index: 2000 !important;
+}
+
+.mx-datepicker {
+    width: auto !important;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-50 {
+    max-width: 50px;
+    width: 50px;
+    text-overflow: ellipsis;
+}
+
+.text-100 {
+    max-width: 100px;
+    width: 100px;
+    text-overflow: ellipsis;
+}
+
+.text-150 {
+    max-width: 150px;
+    width: 150px;
+    text-overflow: ellipsis;
+}
+
+.text-200 {
+    max-width: 200px;
+    width: 200px;
+    text-overflow: ellipsis;
+}
+
+.text-500 {
+    max-width: 500px;
+    width: 500px;
+    text-overflow: ellipsis;
+}
+.pre-container {
+    z-index: 10000 !important;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: 0;*/
+    /*background-color: #0e0e0e;*/
+}
+
+.thumb-container {
+    display: block;
+    height: auto;
+    width: 150px;
+    position: relative;
+}
+.vue-preview .list {
+}
+.vue-preview .list .list__img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.vue-preview .list .list__img img {
+    padding: 0.25rem;
+    background-color: #f0f2f5;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.vue-preview .list .list__img:not(:first-child) {
+    display: none;
+}
+
+.modal-bv {
+    z-index: 20050 !important;
+}
+
+.fish .content {
+    padding: 0px !important;
+}
+
+.block {
+    box-shadow: 0 6px 6px lightgrey !important;
+    border-radius: 6px;
+}
+
+.block-header {
+    padding: 2px 14px !important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.modal-content {
+    border-radius: 6px !important;
+}
+
+.loader {
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    padding: 8px;
+    display: block;
+    background-color: white;
+    border: thin solid lightblue;
+    z-index: 1000;
+}
+
+body {
+    background-color: white;
+}
+
+#page-container.page-header-modern #page-header {
+    background-color: white;
+}
+
+.dropdown-menu.show {
+    display: block;
+    box-shadow: 0 6px 6px lightgrey !important;
+    z-index: 1050;
+}
+
+fieldset {
+    border: none !important;
+}
+
+legend {
+    font-weight: 900;
+    font-size: 1.1rem !important;
+}
+
+.ti-autocomplete {
+    z-index: 500 !important;
+}
+
+.view-label{
+    font-size: 9pt;
+    font-weight: bolder;
+}
+.underlined {
+    padding-top: 8px;
+    border-bottom: thin solid lightgray;
+}
+
+/*.card {*/
+    /*margin-bottom: 24px;*/
+    /*-webkit-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3) !important;*/
+    /*box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3) !important;*/
+/*}*/
+.custom-control-inline {
+    display: inline-block !important;
+    margin-right: 1m;
+}

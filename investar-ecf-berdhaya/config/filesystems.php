@@ -1,0 +1,134 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default Filesystem Disk
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify the default filesystem disk that should be used
+    | by the framework. The "local" disk, as well as a variety of cloud
+    | based disks are available to your application. Just store away!
+    |
+    */
+
+    'default' => env('FILESYSTEM_DRIVER', 'local'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default Cloud Filesystem Disk
+    |--------------------------------------------------------------------------
+    |
+    | Many applications store files both locally and in the cloud. For this
+    | reason, you may specify a default "cloud" driver here. This driver
+    | will be bound as the Cloud disk implementation in the container.
+    |
+    */
+
+    'cloud' => env('FILESYSTEM_CLOUD', 'minio'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Filesystem Disks
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure as many filesystem "disks" as you wish, and you
+    | may even configure multiple disks of the same driver. Defaults have
+    | been setup for each driver as an example of the required options.
+    |
+    | Supported Drivers: "local", "ftp", "sftp", "s3"
+    |
+    */
+
+    'disks' => [
+
+        'local' => [
+            'driver' => 'local',
+            'root' => storage_path('app'),
+        ],
+
+        'public' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+
+        's3' => [
+            'driver' => 's3',
+            'key' => env('AWS_ACCESS_KEY_ID'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY'),
+            'region' => env('AWS_DEFAULT_REGION'),
+            'bucket' => env('AWS_BUCKET'),
+            'url' => env('AWS_URL'),
+        ],
+
+        'minio' => [
+            'driver' => 'minio',
+            'key' => env('MINIO_KEY', 'your minio server key'),
+            'secret' => env('MINIO_SECRET', 'your minio server secret'),
+            'region' => env('MINIO_REGION', 'ap-southeast-1'),
+            'bucket' => env('MINIO_BUCKET','your minio bucket name'),
+            'endpoint' => env('MINIO_ENDPOINT','http://localhost:9000')
+        ],
+        'minio_document' => [
+            'driver' => 'minio',
+            'key' => env('MINIO_KEY', 'your minio server key'),
+            'secret' => env('MINIO_SECRET', 'your minio server secret'),
+            'region' => env('MINIO_REGION', 'ap-southeast-1'),
+            'bucket' => 'document',
+            'endpoint' => env('MINIO_ENDPOINT','http://localhost:9000')
+        ],
+        'minio_dms' => [
+            'driver' => 'minio',
+            'key' => env('MINIO_KEY', 'your minio server key'),
+            'secret' => env('MINIO_SECRET', 'your minio server secret'),
+            'region' => env('MINIO_REGION', 'ap-southeast-1'),
+            'bucket' => 'dms',
+            'endpoint' => env('MINIO_ENDPOINT','http://localhost:9000')
+        ],
+        'minio_archive' => [
+            'driver' => 'minio',
+            'key' => env('MINIO_KEY', 'your minio server key'),
+            'secret' => env('MINIO_SECRET', 'your minio server secret'),
+            'region' => env('MINIO_REGION', 'ap-southeast-1'),
+            'bucket' => 'archive',
+            'endpoint' => env('MINIO_ENDPOINT','http://localhost:9000')
+        ],
+        'minio_avatar' => [
+            'driver' => 'minio',
+            'key' => env('MINIO_KEY', 'your minio server key'),
+            'secret' => env('MINIO_SECRET', 'your minio server secret'),
+            'region' => env('MINIO_REGION', 'ap-southeast-1'),
+            'bucket' => 'avatar',
+            'endpoint' => env('MINIO_ENDPOINT','http://localhost:9000')
+        ],
+        'minio_media' => [
+            'driver' => 'minio',
+            'key' => env('MINIO_KEY', 'your minio server key'),
+            'secret' => env('MINIO_SECRET', 'your minio server secret'),
+            'region' => env('MINIO_REGION', 'ap-southeast-1'),
+            'bucket' => 'media',
+            'endpoint' => env('MINIO_ENDPOINT','http://localhost:9000')
+        ],
+        'minio_encr' => [
+            'driver' => 'minio',
+            'key' => env('MINIO_KEY', 'your minio server key'),
+            'secret' => env('MINIO_SECRET', 'your minio server secret'),
+            'region' => env('MINIO_REGION', 'ap-southeast-1'),
+            'bucket' => 'encrypted',
+            'endpoint' => env('MINIO_ENDPOINT','http://localhost:9000')
+        ],
+        'minio_temp' => [
+            'driver' => 'minio',
+            'key' => env('MINIO_KEY', 'your minio server key'),
+            'secret' => env('MINIO_SECRET', 'your minio server secret'),
+            'region' => env('MINIO_REGION', 'ap-southeast-1'),
+            'bucket' => 'tmp',
+            'endpoint' => env('MINIO_ENDPOINT','http://localhost:9000')
+        ],
+
+    ],
+
+];

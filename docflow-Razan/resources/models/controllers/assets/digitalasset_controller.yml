@@ -1,0 +1,417 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Asset ID'
+        name: assetId
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Active
+        name: active
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Title
+        name: title
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Description
+        name: description
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Publish From'
+        name: publishFrom
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Publish Until'
+        name: publishUntil
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Program Constraint'
+        name: constraintProgram
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Entity Constraint'
+        name: constraintEntity
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Master
+        name: masterImage
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Master Handle'
+        name: masterHandle
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Variants
+        name: variants
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Asset Group'
+        name: assetGroup
+        show: false
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Publish Status'
+        name: publishStatus
+        show: false
+        search: true
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Asset ID'
+        name: assetId
+        create: true
+        edit: true
+        type: text
+        model: assetId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Active
+        name: active
+        create: true
+        edit: true
+        type: simpleswitch
+        model: active
+        default: ''
+        validator: required
+        position: top
+        param: {}
+        attr: {}
+    -
+        label: Title
+        name: title
+        create: true
+        edit: true
+        type: text
+        model: title
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: text
+        model: description
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Publish From'
+        name: publishFrom
+        create: true
+        edit: true
+        type: datepicker
+        model: publishFrom
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Publish Until'
+        name: publishUntil
+        create: true
+        edit: true
+        type: datepicker
+        model: publishUntil
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Program Constraint'
+        name: constraintProgram
+        create: true
+        edit: true
+        type: tagsinput
+        model: constraintProgram
+        default: ''
+        validator: required
+        param: { url: 'api/v1/tags' }
+        attr: {}
+    -
+        label: 'Entity Constraint'
+        name: constraintEntity
+        create: true
+        edit: true
+        type: tagsinput
+        model: constraintEntity
+        default: ''
+        validator: required
+        param: { url: 'api/v1/tags' }
+        attr: {}
+    -
+        label: Master
+        name: masterImage
+        create: true
+        edit: true
+        type: imagecardupload
+        model: masterImage
+        default: ''
+        validator: required
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Artwork" }
+    -
+        label: 'Master Handle'
+        name: masterHandle
+        create: true
+        edit: true
+        type: text
+        model: masterHandle
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Variants
+        name: variants
+        create: true
+        edit: true
+        type: text
+        model: variants
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Asset Group'
+        name: assetGroup
+        create: true
+        edit: true
+        type: text
+        model: assetGroup
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Publish Status'
+        name: publishStatus
+        create: true
+        edit: true
+        type: text
+        model: publishStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: assetId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: active
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: title
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: publishFrom
+        visible: true
+        type: string
+        default: ''
+    -
+        model: publishUntil
+        visible: true
+        type: string
+        default: ''
+    -
+        model: constraintProgram
+        visible: true
+        type: string
+        default: ''
+    -
+        model: constraintEntity
+        visible: true
+        type: string
+        default: ''
+    -
+        model: masterImage
+        visible: true
+        type: string
+        default: ''
+    -
+        model: masterHandle
+        visible: true
+        type: string
+        default: ''
+    -
+        model: variants
+        visible: true
+        type: array
+        default: []
+    -
+        model: assetGroup
+        visible: true
+        type: string
+        default: ''
+    -
+        model: publishStatus
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Asset ID'
+        name: assetId
+        visible: true
+        type: text
+        model: assetId
+    -
+        label: Active
+        name: active
+        visible: true
+        type: text
+        model: active
+    -
+        label: Title
+        name: title
+        visible: true
+        type: text
+        model: title
+    -
+        label: Description
+        name: description
+        visible: true
+        type: text
+        model: description
+    -
+        label: 'Publish From'
+        name: publishFrom
+        visible: true
+        type: text
+        model: publishFrom
+    -
+        label: 'Publish Until'
+        name: publishUntil
+        visible: true
+        type: text
+        model: publishUntil
+    -
+        label: 'Program Constraint'
+        name: constraintProgram
+        visible: true
+        type: text
+        model: constraintProgram
+    -
+        label: 'Entity Constraint'
+        name: constraintEntity
+        visible: true
+        type: text
+        model: constraintEntity
+    -
+        label: Master
+        name: masterImage
+        visible: true
+        type: text
+        model: masterImage
+    -
+        label: 'Master Handle'
+        name: masterHandle
+        visible: true
+        type: text
+        model: masterHandle
+    -
+        label: Variants
+        name: variants
+        visible: true
+        type: text
+        model: variants
+    -
+        label: 'Asset Group'
+        name: assetGroup
+        visible: true
+        type: text
+        model: assetGroup
+    -
+        label: 'Publish Status'
+        name: publishStatus
+        visible: true
+        type: text
+        model: publishStatus

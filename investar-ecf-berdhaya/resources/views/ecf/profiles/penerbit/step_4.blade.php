@@ -1,0 +1,4 @@
+<div>
+{!! $getToKnowInvestar ?? '' !!}
+{!! $isComplete !!}
+</div>

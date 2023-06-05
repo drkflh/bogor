@@ -1,0 +1,183 @@
+- label: Action
+  name: _id
+  show: true
+  sort: false
+  uniqueId: true
+  row_text_alignment: text-left
+  column_classes: col_action
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: id
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Endpoint
+  name: url
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: true
+    type: text
+    model: url
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Method
+  name: method
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: true
+    type: text
+    model: method
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Timestamp
+  name: created_at
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: datetime
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: true
+    type: text
+    model: created_at
+    row: 1
+    col: 1
+    options: [{ text: "Select", value: "Select" }]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+- label: Request
+  name: request_data
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: 'text-center text-500 h-300'
+  datatype: pre
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: true
+    type: pre
+    model: prettyReq
+    row: 1
+    col: 1
+    lang: json
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+  view:
+    label: Request
+    visible: true
+    type: json
+  api:
+    visible: false
+    type: text
+    default: na
+- label: Response
+  name: response_data
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  column_classes: 'text-center text-500 h-300'
+  datatype: pre
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: true
+    type: pre
+    model: prettyResp
+    row: 1
+    col: 2
+    lang: json
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data", rows: 25 }
+  vue:
+    visible: true
+    type: text
+  view:
+    label: Response
+    visible: true
+    type: json
+  api:
+    visible: false
+    type: text
+    default: na

@@ -1,0 +1,556 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Entity
+        name: entity
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-100
+    -
+        label: Title
+        name: docTitle
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        column_classes: text-center text-150
+    -
+        label: Requester
+        name: requesterName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-150
+    -
+        label: Requester Auth
+        name: requesterAuthorization
+        show: false
+        search: false
+        sort: false
+        datatype: boolean
+        column_classes: text-center text-150
+    -
+        label: Note
+        name: requestNote
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-left text-200
+    -
+        label: Approvers
+        name: requestApprovers
+        show: true
+        search: false
+        sort: false
+        datatype: array
+        column_classes: text-left text-200
+    -
+        label: 'Requester Signature'
+        name: authorizationSign
+        show: false
+        search: false
+        sort: false
+        datatype: image
+        column_classes: text-center text-100
+    -
+        label: 'Document Id'
+        name: docId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Created
+        name: createdAt
+        show: true
+        search: false
+        sort: false
+        datatype: datetime
+        column_classes: text-center text-150
+    -
+        label: Timezone
+        name: tz
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: text-center text-150
+    -
+        label: 'Approval Policy'
+        name: approvalPolicy
+        show: false
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Requester Id'
+        name: requesterId
+        create: true
+        edit: RO
+        type: text
+        model: requesterId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Requester
+        name: requesterName
+        create: true
+        edit: RO
+        type: text
+        model: requesterName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Note
+        name: requestNote
+        create: true
+        edit: RO
+        type: text
+        model: requestNote
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Approvers
+        name: requestApprovers
+        create: false
+        edit: VO
+        type: tagview
+        model: requestApprovers
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Note
+        name: note
+        create: RO
+        edit: RO
+        type: text
+        model: note
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Requester Signature'
+        name: authorizationSign
+        create: false
+        edit: VO
+        type: imagecardview
+        model: authorizationSign
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Commit URL'
+        name: commitUrl
+        create: true
+        edit: true
+        type: text
+        model: commitUrl
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Entity
+        name: entity
+        create: true
+        edit: true
+        type: text
+        model: entity
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Requester Authorization'
+        name: requesterAuthorization
+        create: true
+        edit: true
+        type: text
+        model: requesterAuthorization
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Document
+        name: doc
+        create: true
+        edit: true
+        type: text
+        model: doc
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: docDescription
+        create: RO
+        edit: RO
+        type: text
+        model: docDescription
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Title
+        name: docTitle
+        create: RO
+        edit: RO
+        type: text
+        model: docTitle
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Document Id'
+        name: docId
+        create: true
+        edit: true
+        type: text
+        model: docId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Timezone
+        name: tz
+        create: true
+        edit: true
+        type: text
+        model: tz
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Approval Policy'
+        name: approvalPolicy
+        create: true
+        edit: true
+        type: text
+        model: approvalPolicy
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Approver Decision'
+        name: approverDecision
+        create: false
+        edit: true
+        type: radioselect
+        model: approverDecision
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Approver Note'
+        name: approverNote
+        create: true
+        edit: true
+        type: textarea
+        model: approverNote
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Approver Decisions'
+        name: approverDecisionList
+        create: VO
+        edit: VO
+        type: decisionlistview
+        model: approverDecisionList
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: PIN
+        name: approverPin
+        create: true
+        edit: true
+        type: pin
+        model: approverPin
+        default: ''
+        validator: 'required'
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            -
+              text: Select
+              value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Signature Specimen'
+        name: approverSignature
+        create: true
+        edit: true
+        type: imagecardupload
+        model: approverSignature
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        hide_upload_button: true
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload ID Picture'
+    -
+        label: 'Signature Pad'
+        name: signatureInput
+        create: true
+        edit: true
+        type: signpad
+        model: approverSignature
+        default: ''
+        validator: ''
+        selector: city
+        ref: city
+        num_inputs: 6
+        input_type: password
+        separator: ''
+        param:
+            url: api/v1/core/form-upload
+            paramName: file
+        attr:
+            class: form-data
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: requesterId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requesterName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requestNote
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requestApprovers
+        visible: true
+        type: array
+        default: []
+    -
+        model: note
+        visible: true
+        type: string
+        default: ''
+    -
+        model: authorizationSign
+        visible: true
+        type: string
+        default: ''
+    -
+        model: commitUrl
+        visible: true
+        type: string
+        default: ''
+    -
+        model: entity
+        visible: true
+        type: string
+        default: ''
+    -
+        model: requesterAuthorization
+        visible: true
+        type: string
+        default: ''
+    -
+        model: doc
+        visible: true
+        type: object
+        default: {}
+    -
+        model: docId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docTitle
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docDescription
+        visible: true
+        type: string
+        default: ''
+    -
+        model: tz
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approvalPolicy
+        visible: true
+        type: object
+        default: {}
+    -
+        model: approverPin
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approverSignature
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approverDecision
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approverNote
+        visible: true
+        type: string
+        default: ''
+    -
+        model: approverDecisionList
+        visible: true
+        type: array
+        default: []
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Note
+        name: note
+        visible: true
+        type: text
+        model: note
+    -
+        label: 'Requester Signature'
+        name: authorizationSign
+        visible: true
+        type: imagecardview
+        model: authorizationSign
+    -
+        label: 'Commit URL'
+        name: commitUrl
+        visible: true
+        type: text
+        model: commitUrl
+    -
+        label: Entity
+        name: entity
+        visible: true
+        type: text
+        model: entity
+    -
+        label: Document
+        name: doc
+        visible: true
+        type: pre
+        model: doc
+    -
+        label: 'Document Id'
+        name: docId
+        visible: true
+        type: text
+        model: docId
+    -
+        label: 'Title'
+        name: docTitle
+        visible: true
+        type: text
+        model: docId
+    -
+        label: 'Description'
+        name: docDescription
+        visible: true
+        type: text
+        model: docId
+    -
+        label: Timezone
+        name: tz
+        visible: true
+        type: text
+        model: tz
+    -
+        label: Approver Signature
+        name: approverSignature
+        visible: true
+        type: text
+        model: approverSignature
+    -
+        label: Approver Decision
+        name: approverDecision
+        visible: true
+        type: text
+        model: approverDecision
+    -
+        label: Approver Note
+        name: approverNote
+        visible: true
+        type: text
+        model: approverNote
+    -
+        label: Approver Note
+        name: approverDecisionList
+        visible: true
+        type: arrayview
+        model: approverDecisionList

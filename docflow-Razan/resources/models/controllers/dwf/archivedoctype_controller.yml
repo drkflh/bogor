@@ -1,0 +1,95 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Doc Type'
+        name: docType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Doc Type Code'
+        name: docTypeCode
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Doc Type'
+        name: docType
+        create: true
+        edit: true
+        type: text
+        model: docType
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Doc Type Code'
+        name: docTypeCode
+        create: true
+        edit: true
+        type: text
+        model: docTypeCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: docType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docTypeCode
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Doc Type'
+        name: docType
+        visible: true
+        type: text
+        model: docType
+    -
+        label: 'Doc Type Code'
+        name: docTypeCode
+        visible: true
+        type: text
+        model: docTypeCode

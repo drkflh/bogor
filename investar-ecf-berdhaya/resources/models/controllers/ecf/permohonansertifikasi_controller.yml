@@ -1,0 +1,812 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Business _Id'
+        name: businessExtId
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Email'
+        name: businessBizPicEmail
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Name'
+        name: businessBizPicName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Position'
+        name: businessBizPosition
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Contact'
+        name: businessBizContactWA
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Owner Id Card'
+        name: businessBizOwnerIdCard
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Trade Mark'
+        name: businessBizTradeMark
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Address'
+        name: businessBizAddress
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Type'
+        name: businessBizType
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Id Type'
+        name: businessBizIdType
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Id Number'
+        name: businessBizIdNumber
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Registered Name'
+        name: businessBizRegisteredName
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Company Type'
+        name: businessBizCompanytType
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Facebook'
+        name: businessBizFacebook
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Instagram'
+        name: businessBizInstagram
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Twitter'
+        name: businessBizTwitter
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Legality'
+        name: businessBizLegality
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Penyelia'
+        name: businessBizPenyelia
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Factories'
+        name: bizFactories
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Business Outlets'
+        name: bizOutlets
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Status'
+        name: statusSertifikasi
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Business _Id'
+        name: businessExtId
+        create: true
+        edit: true
+        type: text
+        model: businessExtId
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Email'
+        name: businessBizPicEmail
+        create: true
+        edit: true
+        type: text
+        model: businessBizPicEmail
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Nama'
+        name: businessBizPicName
+        create: true
+        edit: true
+        type: text
+        model: businessBizPicName
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Jabatan'
+        name: businessBizPosition
+        create: true
+        edit: true
+        type: text
+        model: businessBizPosition
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Kontak'
+        name: businessBizContactWA
+        create: true
+        edit: true
+        type: mobileinput
+        model: businessBizContactWA
+        default: ''
+        placeholder: 'Nomor yang Dapat Dihubungi'
+        validator: 'numeric|max:12'
+        Business: null
+        param: {}
+        attr: 
+            class: form-data
+    -
+        label: 'Business Owner Id Card'
+        name: businessBizOwnerIdCard
+        create: true
+        edit: true
+        type: text
+        model: businessBizOwnerIdCard
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Merk Bisnis'
+        name: businessBizTradeMark
+        create: true
+        edit: true
+        type: text
+        model: businessBizTradeMark
+        default: ''
+        placeholder: 'Sesuai Akta Usaha'
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Alamat'
+        name: businessBizAddress
+        create: true
+        edit: true
+        type: textarea
+        model: businessBizAddress
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Usaha'
+        name: businessBizType
+        create: true
+        edit: true
+        type: text
+        model: businessBizType
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Id'
+        name: businessBizIdType
+        create: true
+        edit: true
+        type: radioselect
+        model: businessBizIdType
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Id Usaha'
+        name: businessBizIdNumber
+        create: true
+        edit: true
+        type: text
+        model: businessBizIdNumber
+        default: ''
+        placeholder: 'Sesuai Akta Usaha'
+        validator: 'numeric|max:12'
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Nama Badan Usaha'
+        name: businessBizRegisteredName
+        create: true
+        edit: true
+        type: text
+        model: businessBizRegisteredName
+        default: ''
+        placeholder: 'Sesuai Akta Perusahaan'
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Bentuk Badan Usaha'
+        name: businessBizCompanytType
+        create: true
+        edit: true
+        type: text
+        model: businessBizCompanytType
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Business Facebook'
+        name: businessBizFacebook
+        create: true
+        edit: true
+        type: text
+        model: businessBizFacebook
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Business Instagram'
+        name: businessBizInstagram
+        create: true
+        edit: true
+        type: text
+        model: businessBizInstagram
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Business Twitter'
+        name: businessBizTwitter
+        create: true
+        edit: true
+        type: text
+        model: businessBizTwitter
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: ''
+        name: statusSertifikasi
+        create: false
+        edit: false
+        type: text
+        model: statusSertifikasi
+        default: ''
+        Business: null
+        param: {}
+        attr: {}
+    -
+        label: 'Business Legality'
+        name: businessBizLegality
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: businessBizLegality
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        use_dms: false
+        entity_name_key: ''
+        modal_entity: 'Legality'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Business Penyelia'
+        name: businessBizPenyelia
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: businessBizPenyelia
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        use_dms: false
+        entity_name_key: ''
+        modal_entity: 'Penyelia'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Business Factories'
+        name: bizFactories
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: bizFactories
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        use_dms: false
+        entity_name_key: ''
+        modal_entity: 'Factory'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Business Outlets'
+        name: bizOutlets
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: bizOutlets
+        placeholder: ''
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        ordered: true
+        show_table_header: true
+        show_panel: false
+        use_dms: false
+        entity_name_key: ''
+        modal_entity: 'Outlet'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessExtId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizPicEmail
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizPicName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizPosition
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizContactWA
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizOwnerIdCard
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizTradeMark
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: statusSertifikasi
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizAddress
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizIdType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizIdNumber
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizRegisteredName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizCompanytType
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizFacebook
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizInstagram
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizTwitter
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizLegality
+        type: array
+        default: {  }
+        im: true
+        ex: true
+        search: true
+    -
+        model: businessBizPenyelia
+        type: array
+        default: {  }
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizFactories
+        visible: true
+        type: array
+        default: {  }
+        im: true
+        ex: true
+        search: true
+    -
+        model: bizOutlets
+        type: array
+        default: {  }
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Business _Id'
+        name: businessExtId
+        visible: true
+        type: text
+        model: businessExtId
+    -
+        label: 'Business Email'
+        name: businessBizPicEmail
+        visible: true
+        type: text
+        model: businessBizPicEmail
+    -
+        label: 'Business Name'
+        name: businessBizPicName
+        visible: true
+        type: text
+        model: businessBizPicName
+    -
+        label: 'Business Position'
+        name: businessBizPosition
+        visible: true
+        type: text
+        model: businessBizPosition
+    -
+        label: 'Business Contact'
+        name: businessBizContactWA
+        visible: true
+        type: text
+        model: businessBizContactWA
+    -
+        label: 'Business Owner Id Card'
+        name: businessBizOwnerIdCard
+        visible: true
+        type: text
+        model: businessBizOwnerIdCard
+    -
+        label: 'Business Trade Mark'
+        name: businessBizTradeMark
+        visible: true
+        type: text
+        model: businessBizTradeMark
+    -
+        label: 'Business Address'
+        name: businessBizAddress
+        visible: true
+        type: text
+        model: businessBizAddress
+    -
+        label: 'Business Type'
+        name: businessBizType
+        visible: true
+        type: text
+        model: businessBizType
+    -
+        label: 'Business Id Type'
+        name: businessBizIdType
+        visible: true
+        type: text
+        model: businessBizIdType
+    -
+        label: 'Business Id Number'
+        name: businessBizIdNumber
+        visible: true
+        type: text
+        model: businessBizIdNumber
+    -
+        label: 'Business Registered Name'
+        name: businessBizRegisteredName
+        visible: true
+        type: text
+        model: businessBizRegisteredName
+    -
+        label: 'Business Company Type'
+        name: businessBizCompanytType
+        visible: true
+        type: text
+        model: businessBizCompanytType
+    -
+        label: 'Business Facebook'
+        name: businessBizFacebook
+        visible: true
+        type: text
+        model: businessBizFacebook
+    -
+        label: 'Business Instagram'
+        name: businessBizInstagram
+        visible: true
+        type: text
+        model: businessBizInstagram
+    -
+        label: 'Business Twitter'
+        name: businessBizTwitter
+        visible: true
+        type: text
+        model: businessBizTwitter
+    -
+        label: 'Business Legality'
+        name: businessBizLegality
+        visible: true
+        type: text
+        model: businessBizLegality
+    -
+        label: 'Business Penyelia'
+        name: businessBizPenyelia
+        visible: true
+        type: text
+        model: businessBizPenyelia
+    -
+        label: 'Business Factories'
+        name: bizFactories
+        visible: true
+        type: text
+        model: bizFactories
+    -
+        label: 'Business Outlets'
+        name: bizOutlets
+        visible: true
+        type: text
+        model: bizOutlets
+    -
+        label: 'Status'
+        name: statusSertifikasi
+        visible: true
+        type: text
+        model: statusSertifikasi
+    

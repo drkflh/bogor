@@ -1,0 +1,18 @@
+- title: "DCS :: Data Collection"
+  icon: "<i   data-feather=\"message-square\" class=\"fa fa-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+  children:
+    - title: Form Library
+      url: "dcs/scoring/form"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Questions
+      url: "dcs/scoring/question"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Section
+      url: "dcs/admin/section"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Category
+      url: "dcs/admin/category"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+    - title: Group
+      url: "dcs/admin/group"
+      icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"

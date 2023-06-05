@@ -1,0 +1,395 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Timestamp
+        name: ts
+        show: false
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Proc. Date'
+        name: checkDate
+        show: true
+        search: false
+        sort: true
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Farm
+        name: farmNo
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: Cattle
+        name: cattleId
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: State
+        name: state
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+    -
+        label: State Start
+        name: currentCycleStart
+        show: true
+        search: true
+        sort: true
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-100'
+    -
+        label: Elapsed
+        name: elapsed
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-50'
+        thClass: 'text-center text-50'
+    -
+        label: 'Estrus'
+        name: isEstrus
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+        column_classes: text-center text-50
+    -
+        label: 'Estrus Date'
+        name: isEstrusDate
+        show: true
+        search: false
+        sort: false
+        datatype: date
+        column_classes: text-center text-100
+    -
+        label: 'Inseminated'
+        name: isInseminated
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+        column_classes: text-center text-50
+    -
+        label: 'Inseminated Date'
+        name: isInseminatedDate
+        show: true
+        search: false
+        sort: false
+        datatype: date
+        column_classes: text-center text-100
+    -
+        label: 'USG'
+        name: isUSG
+        show: false
+        search: false
+        sort: false
+        datatype: boolean
+        column_classes: text-center text-50
+    -
+        label: 'USG Date'
+        name: isUSGDate
+        show: false
+        search: false
+        sort: false
+        datatype: date
+        column_classes: text-center text-50
+    -
+        label: 'Pregnant'
+        name: isPregnant
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+        column_classes: text-center text-50
+    -
+        label: 'Pregnant Date'
+        name: isPregnantDate
+        show: true
+        search: false
+        sort: false
+        datatype: date
+        column_classes: text-center text-100
+
+    -
+        label: Key
+        name: key
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: 'text-center text-50'
+    -
+        label: Value
+        name: val
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-100'
+        thClass: 'text-center text-50'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Timestamp
+        name: ts
+        create: true
+        edit: true
+        type: text
+        model: ts
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: State
+        name: state
+        create: true
+        edit: true
+        type: number
+        model: state
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Elapsed
+        name: elapsed
+        create: true
+        edit: true
+        type: number
+        model: elapsed
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Check Date'
+        name: checkDate
+        create: true
+        edit: true
+        type: number
+        model: checkDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Cattle
+        name: cattleId
+        create: true
+        edit: true
+        type: number
+        model: cattleId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Farm
+        name: farmNo
+        create: true
+        edit: true
+        type: text
+        model: farmNo
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Key
+        name: key
+        create: true
+        edit: true
+        type: text
+        model: key
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Value
+        name: val
+        create: true
+        edit: true
+        type: text
+        model: val
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: ts
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: state
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: elapsed
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: checkDate
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: cattleId
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: farmNo
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: key
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: val
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Timestamp
+        name: ts
+        visible: true
+        type: text
+        model: ts
+    -
+        label: State
+        name: state
+        visible: true
+        type: text
+        model: state
+    -
+        label: Elapsed
+        name: elapsed
+        visible: true
+        type: text
+        model: elapsed
+    -
+        label: 'Check Date'
+        name: checkDate
+        visible: true
+        type: text
+        model: checkDate
+    -
+        label: Cattle
+        name: cattleId
+        visible: true
+        type: text
+        model: cattleId
+    -
+        label: Farm
+        name: farmNo
+        visible: true
+        type: text
+        model: farmNo
+    -
+        label: Key
+        name: key
+        visible: true
+        type: text
+        model: key
+    -
+        label: Value
+        name: val
+        visible: true
+        type: text
+        model: val

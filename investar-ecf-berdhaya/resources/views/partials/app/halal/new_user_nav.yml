@@ -1,0 +1,7 @@
+- title: ''
+  url: "ecf/dashboard"
+  icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+  children:
+    - title: Dashboard
+      url: "halal/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"

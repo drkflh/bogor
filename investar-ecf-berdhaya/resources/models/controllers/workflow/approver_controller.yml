@@ -1,0 +1,204 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Name
+        name: userId
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Slug
+        name: userName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Type
+        name: entity
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Can Release'
+        name: canRelease
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+    -
+        label: Active
+        name: isActive
+        show: true
+        search: false
+        sort: false
+        datatype: boolean
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Name
+        name: userId
+        create: true
+        edit: true
+        type: text
+        model: userId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Slug
+        name: userName
+        create: true
+        edit: true
+        type: text
+        model: userName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Type
+        name: entity
+        create: true
+        edit: true
+        type: text
+        model: entity
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Can Release'
+        name: canRelease
+        create: true
+        edit: true
+        type: text
+        model: canRelease
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Active
+        name: isActive
+        create: true
+        edit: true
+        type: text
+        model: isActive
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Options
+        name: options
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: options
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: userId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: userName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: entity
+        visible: true
+        type: string
+        default: ''
+    -
+        model: canRelease
+        visible: true
+        type: string
+        default: ''
+    -
+        model: isActive
+        visible: true
+        type: string
+        default: ''
+    -
+        model: options
+        visible: true
+        type: object
+        default: {}
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Name
+        name: userId
+        visible: true
+        type: text
+        model: userId
+    -
+        label: Slug
+        name: userName
+        visible: true
+        type: text
+        model: userName
+    -
+        label: Type
+        name: entity
+        visible: true
+        type: text
+        model: entity
+    -
+        label: 'Can Release'
+        name: canRelease
+        visible: true
+        type: text
+        model: canRelease
+    -
+        label: Active
+        name: isActive
+        visible: true
+        type: text
+        model: isActive
+    -
+        label: Options
+        name: options
+        visible: true
+        type: text
+        model: options

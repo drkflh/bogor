@@ -1,0 +1,74 @@
+- title: "Main"
+  children:
+    - title: Dashboard
+      url: "admin/dashboard"
+      icon: "<i class=\"mdi mdi-view-dashboard\"></i>"
+    - title: Calendar
+      url: "admin/calendar"
+      icon: "<i class=\"mdi mdi-calendar-check\"></i>"
+    - title: Trips
+      icon: "<i class=\"mdi mdi-bus\"></i>"
+      children:
+      - title: Incoming
+        url: "trip/incoming"
+      - title: Scheduled
+        url: "trip/scheduled"
+      - title: "In Transit"
+        url: "trip/intransit"
+      - title: Finished
+        url: "trip/finished"
+      - title: Canceled
+        url: "trip/canceled"
+    - title: Locations
+      icon: "<i class=\"mdi mdi-map-marker-radius\"></i>"
+      children:
+      - title: Tracking
+        url: "admin/tracker"
+      - title: "Route Planner"
+        url: "admin/routeplanner"
+    - title: Assets
+      icon: "<i class=\"mdi mdi-tag-multiple\"></i>"
+      children:
+      - title: Devices
+        url: "assets/tracker"
+      - title: Vehicles
+        url: "assets/vehicle"
+      - title: "Hubs & Branches"
+        url: "assets/location"
+    - title: "Push Messages"
+      icon: "<i class=\"mdi mdi-message\"></i>"
+      children:
+      - title: "FCM Register"
+        url: "fcmregister"
+      - title: "Broadcast"
+        url: "broadcast"
+- title: "Reports"
+  icon: "<i class=\"mdi mdi-chart-line\"></i>"
+  children:
+    - title: "Overview"
+      url: "reports"
+      icon: "<i class=\"mdi mdi-chart-line\"></i>"
+- title: "Admin"
+  icon: "<i class=\"mdi mdi-alert\" style=\"color:red;\"></i>"
+  children:
+    - title: Users
+      icon: "<i class=\"mdi mdi-account-multiple\"></i>"
+      children:
+        - title: "All Users"
+          url: "user"
+          icon: "<i class=\"mdi mdi-account-multiple\"></i>"
+        - title: Employees
+          url: "employee"
+          icon: "<i class=\"mdi mdi-account\"></i>"
+        - title: Company
+          url: "company"
+          icon: "<i class=\"mdi mdi-account\"></i>"
+        - title: Branch
+          url: "branch"
+          icon: "<i class=\"mdi mdi-account\"></i>"
+        - title: Drivers
+          url: "trip/driver"
+          icon: "<i class=\"mdi mdi-account\"></i>"
+        - title: Admins
+          url: "trip/admin"
+          icon: "<i class=\"mdi mdi-account\"></i>"

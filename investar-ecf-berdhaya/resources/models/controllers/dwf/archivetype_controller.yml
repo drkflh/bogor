@@ -1,0 +1,407 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Group
+        name: group
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Group Code'
+        name: groupCode
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Sub Group'
+        name: subGroup
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Sub Group Code'
+        name: subGroupCode
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Doc Type'
+        name: docType
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Doc Type Code'
+        name: docTypeCode
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Location
+        name: location
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Location Code'
+        name: locationCode
+        show: true
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: 'Call Code'
+        name: callCode
+        show: true
+        search: true
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Group
+        name: group
+        create: true
+        edit: true
+        type: simpleselect
+        model: groupObject
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Group Code'
+        name: groupCode
+        create: true
+        edit: true
+        type: text
+        model: groupCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Sub Group'
+        name: subGroup
+        create: true
+        edit: true
+        type: simpleselect
+        model: subGroupObject
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Sub Group Code'
+        name: subGroupCode
+        create: true
+        edit: true
+        type: text
+        model: subGroupCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Doc Type'
+        name: docType
+        create: true
+        edit: true
+        type: simpleselect
+        model: docTypeObject
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Doc Type Code'
+        name: docTypeCode
+        create: true
+        edit: true
+        type: text
+        model: docTypeCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Location
+        name: location
+        create: true
+        edit: true
+        type: simpleselect
+        model: locationObject
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Location Code'
+        name: locationCode
+        create: true
+        edit: true
+        type: text
+        model: locationCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Call Code'
+        name: callCode
+        create: true
+        edit: true
+        type: text
+        model: callCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Show'
+        name: menuShow
+        create: true
+        edit: true
+        type: simpleswitch
+        model: menuShow
+        default: ''
+        validator: required
+        position: top
+        param: {}
+        attr: {}
+    -
+        label: 'Menu Title'
+        name: menuTitle
+        create: true
+        edit: true
+        type: text
+        model: menuTitle
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Seq'
+        name: menuSeq
+        create: true
+        edit: true
+        type: text
+        model: menuSeq
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Menu Auth'
+        name: menuAuth
+        create: true
+        edit: true
+        type: text
+        model: menuAuth
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: groupObject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: group
+        visible: true
+        type: string
+        default: ''
+    -
+        model: groupCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: subGroup
+        visible: true
+        type: string
+        default: ''
+    -
+        model: subGroupObject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: subGroupCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docTypeObject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docTypeCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: locationObject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: location
+        visible: true
+        type: string
+        default: ''
+    -
+        model: locationCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: callCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: menuShow
+        visible: true
+        type: boolean
+        default: true
+    -
+        model: menuTitle
+        visible: true
+        type: string
+        default: ''
+    -
+        model: menuSeq
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: menuAuth
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Group
+        name: group
+        visible: true
+        type: text
+        model: group
+    -
+        label: 'Group Code'
+        name: groupCode
+        visible: true
+        type: text
+        model: groupCode
+    -
+        label: 'Sub Group'
+        name: subGroup
+        visible: true
+        type: text
+        model: subGroup
+    -
+        label: 'Sub Group Code'
+        name: subGroupCode
+        visible: true
+        type: text
+        model: subGroupCode
+    -
+        label: 'Doc Type'
+        name: docType
+        visible: true
+        type: text
+        model: docType
+    -
+        label: 'Doc Type Code'
+        name: docTypeCode
+        visible: true
+        type: text
+        model: docTypeCode
+    -
+        label: Location
+        name: location
+        visible: true
+        type: text
+        model: location
+    -
+        label: 'Location Code'
+        name: locationCode
+        visible: true
+        type: text
+        model: locationCode
+    -
+        label: 'Call Code'
+        name: callCode
+        visible: true
+        type: text
+        model: callCode
+    -
+        label: 'Show In Menu'
+        name: menuShow
+        visible: true
+        type: text
+        model: menuShow
+    -
+        label: 'Menu Title'
+        name: menuTitle
+        visible: true
+        type: text
+        model: menuTitle
+    -
+        label: 'Menu Seq'
+        name: menuSeq
+        visible: true
+        type: text
+        model: menuSeq
+    -
+        label: 'Menu Auth'
+        name: menuAuth
+        visible: true
+        type: text
+        model: menuAuth

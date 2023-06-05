@@ -1,0 +1,182 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: 'Prev Token'
+        name: prevToken
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'Current Token'
+        name: currentToken
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: AppId
+        name: appId
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: 'User Id'
+        name: userId
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Platform
+        name: platform
+        show: true
+        search: true
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Prev Token'
+        name: prevToken
+        create: true
+        edit: true
+        type: text
+        model: prevToken
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Current Token'
+        name: currentToken
+        create: true
+        edit: true
+        type: text
+        model: currentToken
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: AppId
+        name: appId
+        create: true
+        edit: true
+        type: text
+        model: appId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'User Id'
+        name: userId
+        create: true
+        edit: true
+        type: simpletableinputtemplate
+        model: userId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Platform
+        name: platform
+        create: true
+        edit: true
+        type: text
+        model: platform
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: prevToken
+        visible: true
+        type: string
+        default: ''
+    -
+        model: currentToken
+        visible: true
+        type: string
+        default: ''
+    -
+        model: appId
+        visible: true
+        type: string
+        default: ''
+    -
+        model: userId
+        visible: true
+        type: object
+        default: {}
+    -
+        model: platform
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Prev Token'
+        name: prevToken
+        visible: true
+        type: text
+        model: prevToken
+    -
+        label: 'Current Token'
+        name: currentToken
+        visible: true
+        type: text
+        model: currentToken
+    -
+        label: AppId
+        name: appId
+        visible: true
+        type: text
+        model: appId
+    -
+        label: 'User Id'
+        name: userId
+        visible: true
+        type: text
+        model: userId
+    -
+        label: Platform
+        name: platform
+        visible: true
+        type: text
+        model: platform

@@ -1,0 +1,148 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: 'text-left text-top'
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+form:
+    -
+        label: 'Change Date'
+        name: changeDate
+        create: true
+        edit: true
+        type: text
+        model: 'value.changeDate'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: true
+        class: text-200
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+    -
+        label: 'Change By'
+        name: changeBy
+        create: true
+        edit: true
+        type: text
+        model: 'value.changeBy'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: true
+        class: text-200
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+    -
+        label: 'Change By ID'
+        name: changeById
+        create: false
+        edit: false
+        type: text
+        model: 'value.changeById'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: true
+        class: text-200
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+    -
+        label: 'Mobile to verify'
+        name: mobile
+        create: true
+        edit: true
+        type: text
+        model: 'value.mobile'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: true
+        class: text-200
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+    -
+        label: 'Email to verify'
+        name: email
+        create: true
+        edit: true
+        type: text
+        model: 'value.email'
+        placeholder: ''
+        default: ''
+        validator: ''
+        inline: true
+        class: text-200
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: { }
+
+vue:
+    -
+        model: changeDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: changeBy
+        visible: true
+        type: string
+        default: ''
+    -
+        model: changeById
+        visible: true
+        type: string
+        default: ''
+    -
+        model: mobile
+        visible: true
+        type: string
+        default: ''
+    -
+        model: email
+        visible: true
+        type: string
+        default: ''
+
+view:
+    -
+        label: Change Date
+        name: changeDate
+        model: changeDate
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Change By
+        name: changeBy
+        model: changeBy
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Change By ID
+        name: changeById
+        model: changeById
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Mobile to verify'
+        name: mobile
+        model: mobile
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Email to verify'
+        name: email
+        model: email
+        visible: false
+        type: text
+        default: ''

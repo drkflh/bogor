@@ -1,0 +1,694 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Location Code'
+        name: locationCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-150'
+        thClass: ''
+    -
+        label: 'Location Name'
+        name: locationName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: Address
+        name: address
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'City Name'
+        name: cityName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Province Name'
+        name: provinceName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: District
+        name: district
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Zip Code'
+        name: zipCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Time Zone'
+        name: timezone
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: Latitude
+        name: latitude
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: Longitude
+        name: longitude
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: Active
+        name: active
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Active From'
+        name: activeFrom
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Location Code'
+        name: locationCode
+        create: true
+        edit: RO
+        type: text
+        model: locationCode
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Location Name'
+        name: locationName
+        create: true
+        edit: true
+        type: text
+        model: locationName
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Address
+        name: address
+        create: true
+        edit: true
+        type: text
+        model: address
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'City Name'
+        name: cityName
+        create: true
+        edit: true
+        type: text
+        model: cityName
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Province Name'
+        name: provinceName
+        create: true
+        edit: true
+        type: text
+        model: provinceName
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: District
+        name: district
+        create: true
+        edit: true
+        type: text
+        model: district
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Zip Code'
+        name: zipCode
+        create: true
+        edit: true
+        type: text
+        model: zipCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Time Zone'
+        name: timezone
+        create: true
+        edit: true
+        type: text
+        model: timezone
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Latitude
+        name: latitude
+        create: true
+        edit: true
+        type: text
+        model: latitude
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Longitude
+        name: longitude
+        create: true
+        edit: true
+        type: text
+        model: longitude
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Active
+        name: active
+        create: true
+        edit: true
+        type: simpleswitch
+        model: active
+        default: ''
+        validator: ''
+        position: left
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Active From'
+        name: activeFrom
+        create: true
+        edit: true
+        type: datepicker
+        model: activeFrom
+        default: ''
+        validator: required
+        position: left
+        date_constraint: minToday
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        create: true
+        edit: true
+        type: datepicker
+        model: inactiveDate
+        default: ''
+        validator: required
+        position: left
+        date_constraint: minToday
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: locationCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: locationName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: address
+        visible: true
+        type: string
+        default: ''
+    -
+        model: cityName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: provinceName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: district
+        visible: true
+        type: string
+        default: ''
+    -
+        model: zipCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: timezone
+        visible: true
+        type: string
+        default: ''
+    -
+        model: latitude
+        visible: true
+        type: string
+        default: ''
+    -
+        model: longitude
+        visible: true
+        type: string
+        default: ''
+    -
+        model: active
+        visible: true
+        type: string
+        default: ''
+    -
+        model: activeFrom
+        visible: true
+        type: string
+        default: ''
+    -
+        model: inactiveDate
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Location Code'
+        name: locationCode
+        model: locationCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Location Name'
+        name: locationName
+        model: locationName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Address
+        name: address
+        model: address
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'City Name'
+        name: cityName
+        model: cityName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Province Name'
+        name: provinceName
+        model: provinceName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: District
+        name: district
+        model: district
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Zip Code'
+        name: zipCode
+        model: zipCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Time Zone'
+        name: timezone
+        model: timezone
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Lattitude
+        name: latitude
+        model: latitude
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Longitude
+        name: longitude
+        model: longitude
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Active
+        name: active
+        model: active
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Active From'
+        name: activeFrom
+        model: activeFrom
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        model: inactiveDate
+        visible: true
+        type: text
+        default: ''

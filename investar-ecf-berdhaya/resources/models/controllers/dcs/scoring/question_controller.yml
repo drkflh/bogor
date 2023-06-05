@@ -1,0 +1,704 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Form Code
+        name: formCode
+        show: true
+        search: true
+        sort: true
+        datatype: string
+        column_classes: 'text-left text-100'
+    -
+        label: Section
+        name: questionSection
+        show: true
+        search: true
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-top text-100 ellipsis'
+    -
+        label: Category
+        name: questionCategory
+        show: true
+        search: true
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-top text-100 ellipsis'
+    -
+        label: Seq
+        name: seq
+        show: true
+        search: true
+        sort: true
+        datatype: string
+        column_classes: 'text-center text-50'
+    -
+        label: 'Object Key'
+        name: objectKey
+        show: false
+        search: true
+        sort: false
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: 'Question Type'
+        name: questionType
+        show: true
+        search: true
+        sort: false
+        filter: true
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-150
+        thClass: ''
+    -
+        label: Question
+        name: question
+        show: true
+        search: true
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-200 text-top ellipsis'
+    -
+        label: 'Default'
+        name: defaultAnswer
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-125 text-top'
+    -
+        label: 'Default Score'
+        name: defaultScore
+        show: false
+        search: false
+        sort: false
+        datatype: number
+        column_classes: 'text-left text-50 text-top'
+    -
+        label: 'Answer 1'
+        name: answer1
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-125 text-top'
+    -
+        label: 'Answer 2'
+        name: answer2
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-125 text-top'
+    -
+        label: 'Answer 3'
+        name: answer3
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-125 text-top'
+    -
+        label: 'Answer 4'
+        name: answer4
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-125 text-top'
+    -
+        label: 'Answer 5'
+        name: answer5
+        show: true
+        search: false
+        sort: false
+        datatype: string
+        column_classes: 'text-left text-125 text-top'
+    -
+        label: 'Score 1'
+        name: score1
+        show: false
+        search: false
+        sort: false
+        datatype: number
+        column_classes: 'text-center text-top'
+    -
+        label: 'Score 2'
+        name: score2
+        show: false
+        search: false
+        sort: false
+        datatype: number
+        column_classes: 'text-center text-top'
+    -
+        label: 'Score 3'
+        name: score3
+        show: false
+        search: false
+        sort: false
+        datatype: number
+        column_classes: 'text-center text-top'
+    -
+        label: 'Score 4'
+        name: score4
+        show: false
+        search: false
+        sort: false
+        datatype: number
+        column_classes: 'text-center text-top'
+    -
+        label: 'Score 5'
+        name: score5
+        show: false
+        search: false
+        sort: false
+        datatype: number
+        column_classes: 'text-center text-top'
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Form Code
+        name: formCode
+        create: true
+        edit: true
+        type: text
+        model: formCode
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Question Type
+        name: questionType
+        create: true
+        edit: true
+        type: simpleselect
+        model: questionType
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Total Score
+        name: totalScore
+        create: true
+        edit: true
+        type: number
+        model: totalScore
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Seq
+        name: seq
+        create: true
+        edit: true
+        type: number
+        model: seq
+        default: 0
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: Question
+        name: question
+        create: true
+        edit: true
+        type: textarea
+        model: question
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Default / Single Answer'
+        name: defaultAnswer
+        create: true
+        edit: true
+        type: text
+        model: defaultAnswer
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Default / Single Score'
+        name: defaultScore
+        create: true
+        edit: true
+        type: number
+        model: defaultScore
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Answer 1'
+        name: answer1
+        create: true
+        edit: true
+        type: text
+        model: answer1
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Answer 2'
+        name: answer2
+        create: true
+        edit: true
+        type: text
+        model: answer2
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Answer 3'
+        name: answer3
+        create: true
+        edit: true
+        type: text
+        model: answer3
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Answer 4'
+        name: answer4
+        create: true
+        edit: true
+        type: text
+        model: answer4
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Answer 5'
+        name: answer5
+        create: true
+        edit: true
+        type: text
+        model: answer5
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Score 1'
+        name: score1
+        create: true
+        edit: true
+        type: number
+        model: score1
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Score 2'
+        name: score2
+        create: true
+        edit: true
+        type: number
+        model: score2
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Score 3'
+        name: score3
+        create: true
+        edit: true
+        type: number
+        model: score3
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Score 4'
+        name: score4
+        create: true
+        edit: true
+        type: number
+        model: score4
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Score 5'
+        name: score5
+        create: true
+        edit: true
+        type: number
+        model: score5
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Object Key'
+        name: objectKey
+        create: true
+        edit: true
+        type: text
+        model: objectKey
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Form Section'
+        name: formSection
+        create: true
+        edit: true
+        type: text
+        model: formSection
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Form Category'
+        name: formCategory
+        create: true
+        edit: true
+        type: text
+        model: formCategory
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Remark'
+        name: remark
+        create: true
+        edit: true
+        type: text
+        model: remark
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'With Remark'
+        name: useRemark
+        create: true
+        edit: true
+        type: simpleswitch
+        model: useRemark
+        default: false
+        validator: ''
+        position: top
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Remark Label'
+        name: remarkLabel
+        create: true
+        edit: true
+        type: text
+        model: remarkLabel
+        default: 'Remark'
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Remark Type'
+        name: remarkType
+        create: true
+        edit: true
+        type: simpleselect
+        model: remarkLabel
+        default: 'textarea'
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: formCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: seq
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: question
+        visible: true
+        type: string
+        default: ''
+    -
+        model: questionType
+        visible: true
+        type: string
+        default: 'radioselect'
+    -
+        model: defaultAnswer
+        visible: true
+        type: string
+        default: ''
+    -
+        model: defaultScore
+        visible: true
+        type: integer
+        default: ''
+    -
+        model: answer1
+        visible: true
+        type: string
+        default: ''
+    -
+        model: answer2
+        visible: true
+        type: string
+        default: ''
+    -
+        model: answer3
+        visible: true
+        type: string
+        default: ''
+    -
+        model: answer4
+        visible: true
+        type: string
+        default: ''
+    -
+        model: answer5
+        visible: true
+        type: string
+        default: ''
+    -
+        model: score1
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: score2
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: score3
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: score4
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: score5
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: totalScore
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: formSection
+        visible: true
+        type: string
+        default: ''
+    -
+        model: formCategory
+        visible: true
+        type: string
+        default: ''
+    -
+        model: objectKey
+        visible: true
+        type: string
+        default: ''
+    -
+        model: useRemark
+        visible: true
+        type: boolean
+        default: false
+    -
+        model: remarkLabel
+        visible: true
+        type: string
+        default: 'Remarks'
+    -
+        model: remarkType
+        visible: true
+        type: string
+        default: 'textarea'
+    -
+        model: remark
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Code
+        name: code
+        visible: true
+        type: text
+        model: code
+    -
+        label: Form Code
+        name: formCode
+        visible: true
+        type: text
+        model: code
+    -
+        label: Question
+        name: question
+        visible: true
+        type: text
+        model: question
+    -
+        label: Question Type
+        name: questionType
+        visible: true
+        type: text
+        model: question
+    -
+        label: 'Answer 1'
+        name: answer1
+        visible: true
+        type: text
+        model: answer1
+    -
+        label: 'Default Answer'
+        name: defaultAnswer
+        visible: true
+        type: text
+        model: defaultAnswer
+    -
+        label: 'Answer 2'
+        name: answer2
+        visible: true
+        type: text
+        model: answer2
+    -
+        label: 'Answer 3'
+        name: answer3
+        visible: true
+        type: text
+        model: answer3
+    -
+        label: 'Answer 4'
+        name: answer4
+        visible: true
+        type: text
+        model: answer4
+    -
+        label: 'Answer 5'
+        name: answer5
+        visible: true
+        type: text
+        model: answer4
+    -
+        label: 'Score 1'
+        name: score1
+        visible: true
+        type: number
+        model: score1
+    -
+        label: 'Score 2'
+        name: score2
+        visible: true
+        type: number
+        model: score2
+    -
+        label: 'Score 3'
+        name: score3
+        visible: true
+        type: number
+        model: score3
+    -
+        label: 'Score 4'
+        name: score4
+        visible: true
+        type: number
+        model: score4
+    -
+        label: 'Score 5'
+        name: score5
+        visible: true
+        type: number
+        model: score5
+    -
+        label: 'Total Score'
+        name: totalScore
+        visible: true
+        type: number
+        model: totalScore
+    -
+        label: 'Object Key'
+        name: objectKey
+        model: objectKey
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'With Remark'
+        name: useRemark
+        model: useRemark
+        visible: true
+        type: simpleswitch
+        default: ''
+    -
+        label: 'Remark Label'
+        name: remarkLabel
+        model: remarkLabel
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Remark'
+        name: remark
+        model: remark
+        visible: true
+        type: text
+        default: ''

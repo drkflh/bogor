@@ -1,0 +1,14 @@
+/opt/mongo/bin/mongodump -d gl -o objectstudio --username=admin -p=pisangkeju --authenticationDatabase=admin
+
+/opt/mongo/bin/mongorestore -d objectstudio --username=admin -p=pisangkeju --authenticationDatabase=admin objectstudio/gl/
+
+
+db.createUser(
+        {
+                user: "studio",
+                pwd: "5tud10",
+                roles: [
+                        { role: "readWrite", db: "objectstudio" }
+                ]
+        }
+)

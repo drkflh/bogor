@@ -1,0 +1,441 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: 'Valid From'
+        name: validFrom
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-center text-125'
+        thClass: ''
+    -
+        label: 'Valid Until'
+        name: validUntil
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-center text-125'
+        thClass: ''
+    -
+        label: Status
+        name: status
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Tags
+        name: tags
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Sections
+        name: section
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-300'
+        thClass: ''
+    -
+        label: Category
+        name: category
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Title
+        name: title
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Slug
+        name: slug
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Description
+        name: description
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Body
+        name: body
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Picture
+        name: picture
+        show: false
+        search: false
+        sort: false
+        filter: false
+        datatype: imagearray
+        row_text_alignment: text-center
+        column_classes: ''
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr:
+            -
+                class: form-data
+    -
+        label: 'Valid From'
+        name: validFrom
+        create: true
+        edit: true
+        type: datepicker
+        model: validFrom
+        default: ''
+        validator: ''
+        fields: null
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Valid Until'
+        name: validUntil
+        create: true
+        edit: true
+        type: datepicker
+        model: validUntil
+        default: ''
+        validator: ''
+        fields: null
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Status
+        name: status
+        create: true
+        edit: true
+        type: simpleselect
+        model: status
+        default: ''
+        validator: ''
+        fields: null
+        param: '[ { text: "Draft", value: "Draft" }, { text: "Published", value: "Published" }, { text: "Unpublished", value: "Unpublished" }]'
+        attr: {}
+    -
+        label: Tags
+        name: tags
+        create: true
+        edit: true
+        type: tagsinput
+        model: tags
+        default: ''
+        validator: ''
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Sections
+        name: section
+        create: RO
+        edit: RO
+        type: simpleselect
+        model: section
+        default: ''
+        validator: ''
+        fields: null
+        param: ''
+        attr: {}
+    -
+        label: Category
+        name: category
+        create: true
+        edit: true
+        type: simpleselect
+        model: category
+        default: ''
+        validator: ''
+        fields: null
+        param: ''
+        attr: {}
+    -
+        label: Title
+        name: title
+        create: true
+        edit: true
+        type: text
+        model: title
+        default: ''
+        validator: ''
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Slug
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        default: ''
+        validator: ''
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: textarea
+        model: description
+        default: ''
+        validator: ''
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Body
+        name: body
+        create: true
+        edit: true
+        type: editor
+        model: body
+        default: ''
+        validator: ''
+        fields: null
+        param:
+            url: api/v1/core/auto/tag
+        attr: {}
+    -
+        label: Picture
+        name: picture
+        create: true
+        edit: true
+        type: imagegridupload
+        model: picture
+        default: ''
+        validator: ''
+        fields: null
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr: {}
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: validFrom
+        visible: true
+        type: string
+        default: na
+    -
+        model: validUntil
+        visible: true
+        type: string
+        default: na
+    -
+        model: status
+        visible: true
+        type: string
+        default: ''
+    -
+        model: tags
+        visible: true
+        type: string
+        default: ''
+    -
+        model: section
+        visible: true
+        type: string
+        default: ''
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+    -
+        model: title
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: body
+        visible: true
+        type: string
+        default: ''
+    -
+        model: picture
+        visible: true
+        type: array
+        default: {  }
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Valid From'
+        name: validFrom
+        model: validFrom
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Valid Until'
+        name: validUntil
+        model: validUntil
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Status
+        name: status
+        model: status
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Tags
+        name: tags
+        model: tags
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Sections
+        name: section
+        model: section
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Category
+        name: category
+        model: category
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Title
+        name: title
+        model: title
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Slug
+        name: slug
+        model: slug
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Description
+        name: description
+        model: description
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Body
+        name: body
+        model: body
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Picture
+        name: picture
+        model: picture
+        visible: true
+        type: text
+        default: ''

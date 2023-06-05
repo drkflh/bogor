@@ -1,0 +1,373 @@
+-
+  label: Action
+  name: _id
+  show: true
+  sort: false
+  scopedSlots: { customRender: 'action' }
+  uniqueId: true
+  row_text_alignment: text-left
+  column_classes: col_action
+  datatype: text
+  search:
+    visible: false
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: id
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+    attr:
+    - class: "form-data"
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+-
+  label: 'Valid From'
+  name: validFrom
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: validFrom
+    fields:
+    row: 1
+    col: 2
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+    default: na
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: 'Valid Until'
+  name: validUntil
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: datepicker
+    model: validUntil
+    fields:
+    row: 1
+    col: 2
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: true
+    type: text
+    default: na
+  view:
+    visible: true
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: 'Status'
+  name: status
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: status
+    row: 1
+    col: 1
+    options: '[
+    { text: "Draft", value: "Draft" },
+    { text: "Published", value: "Published" },
+    { text: "Unpublished", value: "Unpublished" }]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: 'Tags'
+  name: tags
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: tagsinput
+    model: tags
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Sections'
+  name: section
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: section
+    row: 1
+    col: 1
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Title'
+  name: title
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: title
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Slug'
+  name: slug
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: text
+    model: slug
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Category'
+  name: category
+  show: true
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: simpleselect
+    model: category
+    row: 1
+    col: 1
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Description'
+  name: description
+  show: true
+  sort: false
+  ellipsis: true
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: textarea
+    model: description
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: 'Body'
+  name: body
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: codeeditor
+    lang: html
+    model: body
+    row: 1
+    col: 1
+    options:
+      url: 'api/v1/core/auto/tag'
+  vue:
+    visible: true
+    type: text
+  view:
+    label: 'Body'
+    visible: true
+    type: pre
+  api:
+    visible: true
+    type: text
+    default: na
+-
+  label: Picture
+  name: picture
+  show: false
+  sort: false
+  row_text_alignment: text-center
+  datatype: imagearray
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: true
+    edit: true
+    type: imagegridupload
+    model: picture
+    row: 3
+    col: 2
+    options:
+      url: "api/v1/core/upload"
+      paramName: "file"
+  vue:
+    visible: true
+    type: array
+    default: []
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na

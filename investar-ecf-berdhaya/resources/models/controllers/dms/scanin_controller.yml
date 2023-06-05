@@ -1,0 +1,442 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerId
+        name: ownerId
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: ownerName
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: 'Document View'
+        name: docViewer
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: 'Upload Files'
+        name: docUpload
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: text-100
+        thClass: ''
+    -
+        label: Scan
+        name: scanCallCode
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-center text-50'
+        thClass: ''
+    -
+        label: Documents
+        name: docList
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-50'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        placeholder: Action
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        placeholder: Created
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        placeholder: updatedAt
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerId
+        name: ownerId
+        create: false
+        edit: false
+        type: text
+        model: ownerId
+        placeholder: ownerId
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: ownerName
+        name: ownerName
+        create: false
+        edit: false
+        type: text
+        model: ownerName
+        placeholder: ownerName
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        placeholder: handle
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        placeholder: deleted
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+    -
+        label: 'Add QR Code'
+        name: addQR
+        create: true
+        edit: true
+        type: simpleswitch
+        model: addQR
+        position: right
+        placeholder: 'Document View'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: {}
+        attr: {}
+    -
+        label: 'Document View'
+        name: docViewer
+        create: true
+        edit: true
+        type: pdfviewer
+        model: docViewer
+        placeholder: 'Document View'
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        param: {}
+        attr: {}
+
+    -
+        label: Upload Files
+        name: docUpload
+        create: true
+        edit: true
+        type: attachmentupload
+        model: docUpload
+        default: ''
+        validator: ''
+        mode: multi
+        show_list: true
+        use_caption: false
+        caption_required: false
+        caption_label: Deskripsi Lampiran
+        on_attachment_click: addAttachmentClick
+        direct_view_action: false
+        bucket: tmp
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        extra_data: docSelected
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Files" }
+    -
+        label: Scan
+        name: scanCallCode
+        create: true
+        edit: true
+        type: scannerinput
+        model: scanCallCode
+        placeholder: Scan
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        result: scanResult
+        auxData: docViewer
+        auxRequired: true
+        auxReqMessage: 'No Document selected'
+        extra_data: "{ selected : docSelected, bucket: 'tmp', addQR : addQR }"
+        param:
+            url: dms/scan-in
+        attr: {}
+    -
+        label: Documents
+        name: docList
+        create: true
+        edit: RO
+        type: sortablelist
+        model: docList
+        placeholder: Documents
+        default: ''
+        validator: ''
+        column_classes: 'text-left text-100'
+        result: scanResult
+        auxData: docViewer
+        auxRequired: true
+        auxReqMessage: 'No Document selected'
+        selected: docViewer
+        param: '[ { text: "Select", value: "Select" } ]'
+        attr: {}
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerId
+        visible: false
+        type: string
+        default: ''
+    -
+        model: ownerName
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: docViewer
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docUpload
+        visible: true
+        type: string
+        default: ''
+    -
+        model: addQR
+        visible: true
+        type: boolean
+        default: false
+    -
+        model: scanCallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docList
+        visible: true
+        type: array
+        default: []
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerId
+        name: ownerId
+        model: ownerId
+        visible: false
+        type: text
+        default: ''
+    -
+        label: ownerName
+        name: ownerName
+        model: ownerName
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: 'Document View'
+        name: docViewer
+        model: docViewer
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Upload Files'
+        name: docUpload
+        model: docUpload
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Scan
+        name: scanCallCode
+        model: scanCallCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: Documents
+        name: docList
+        model: docList
+        visible: true
+        type: text
+        default: ''

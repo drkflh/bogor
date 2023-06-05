@@ -1,0 +1,115 @@
+<div>
+    <div v-for="c in content">
+
+        <div class="row">
+            <div class="col-7" style="border-right: thin solid #800000;">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="coyName" class="view-label" >Company Name</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.coyName}}</p>
+
+                    </div>
+                    <div class="col-4">
+                        <label for="vendorCode" class="view-label" >Vendor Code</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.vendorCode}}</p>
+
+                    </div>
+                    <div class="col-4">
+                        <label for="vendorClass" class="view-label" >Vendor Class</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.vendorClass}}</p>
+
+                    </div>
+                </div>
+                <label for="address" class="view-label" >Address</label>
+                <p class="underlined" style="word-break: break-word;">{{ c.address}}</p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label for="city" class="view-label" >City</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.city}}</p>
+
+                        <label for="country" class="view-label" >Country</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.country}}</p>
+
+                    </div>
+                    <div class="col-6">
+                        <label for="province" class="view-label" >State/Province</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.province}}</p>
+
+                        <label for="postalCode" class="view-label" >Postal Code</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.postalCode}}</p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="offPhones" class="view-label" >Phone</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.offPhones}}</p>
+
+                        <label for="offEmails" class="view-label" >Email</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.offEmails}}</p>
+
+                    </div>
+                    <div class="col-6">
+                        <label for="offFaxes" class="view-label" >Fax</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.offFaxes}}</p>
+
+                        <label for="website" class="view-label" >Website</label>
+                        <p class="underlined" style="word-break: break-word;">{{ c.website}}</p>
+
+                    </div>
+                    <div class="container">
+
+                        <label style="color:#800000; font-size:12px;" for="picContacts" >Contact Person</label><br>
+                        <div
+                            style="display: block; padding:6px; overflow-scrolling: auto;"
+                        >
+                            <table class="table table-striped" >
+                                <thead >
+                                <tr>
+                                    <th>
+                                        No
+                                    </th>
+                                    <th v-for="val in c.picContactsFields">
+                                        {{ val.label }}
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr v-for="(value, index) in c.picContacts">
+                                    <td style="font-size:12px;">
+                                        {{ index + 1 }}
+                                    </td>
+                                    <td v-for="val in value" style="font-size:14px;">
+                                        {{ val }}
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <label for="products" class="view-label" >Products</label>
+                            <p class="underlined" style="word-break: break-word;">{{ c.products}}</p>
+
+                            <label for="services" class="view-label" >Services</label>
+                            <p class="underlined" style="word-break: break-word;">{{ c.services}}</p>
+
+                            <label for="brands" class="view-label" >Brands</label>
+                            <p class="underlined" style="word-break: break-word;">{{ c.brands}}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

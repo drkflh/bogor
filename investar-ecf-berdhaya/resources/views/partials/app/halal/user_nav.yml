@@ -1,0 +1,59 @@
+- title: ''
+  url: "ecf/dashboard"
+  icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+  children:
+    - title: Dashboard
+      auth: halal-dashboard
+      url: "halal/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Owner's Dashboard
+      auth: halal-dashboard-owner
+      url: "halal/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Validator Dashboard
+      auth: halal-dashboard-validator
+      url: "halal/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Sponsor Dashboard
+      auth: halal-dashboard-sponsor
+      url: "halal/dashboard"
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Owner's Profile
+      url: "profile"
+      icon: "<i class=\"las la-user-circle link-icon\"></i>"
+    - title: Validator Profile
+      url: "profile"
+      icon: "<i class=\"las la-user-circle link-icon\"></i>"
+    - title: Sponsor Profile
+      url: "halal/profile-sponsor"
+      icon: "<i class=\"las la-user-circle link-icon\"></i>"
+    - title: Business Profile
+      url: "halal/biz-profile"
+      icon: "<i class=\"las la-building link-icon\"></i>"
+    - title: "Products"
+      icon: "<i class=\"las la-coffee link-icon\" ></i>"
+      children:
+        - title: All Products
+          url: "halal/halal-product"
+          icon: "<i class=\"las la-coffee link-icon\" ></i>"
+        - title: Not Certified
+          url: "halal/halal-product/list/not-certified"
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: In Progress
+          url: "halal/halal-product/list/in-progress"
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: Certified
+          url: "halal/halal-product/list/certified"
+          icon: "<i class=\"las la-certificate link-icon\" ></i>"
+    - title: "Halal Certification"
+      icon: "<i class=\"las la-certificate link-icon\" ></i>"
+      children:
+        - title: Draft
+          url: "halal/halal-certification/list/draft"
+          icon: "<i class=\"las la-user-alt link-icon\" ></i>"
+        - title: In Progress
+          url: "halal/halal-certification/list/in-progress"
+          icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"
+        - title: Final
+          url: "halal/halal-certification/list/certified"
+          icon: "<i class=\"las la-user-alt link-icon\"  data-feather=\"user\"></i>"

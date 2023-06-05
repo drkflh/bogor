@@ -1,0 +1,71 @@
+body,
+td,
+th,
+label,
+input,
+button,
+select,
+optgroup,
+textarea,
+.line-numbers,
+select.custom-select
+{
+    font-family: "Overpass","Nunito Sans", "Merriweather Sans", Muli, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-weight: 300;
+    font-size: 10pt;
+    color: black !important;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    font-family: "Overpass","Nunito Sans", "Merriweather Sans", Muli, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    color: black !important;
+}
+
+.btn-primary,.btn-warning,.btn-danger  {
+    font-family: Overpass,Raleway,"Merriweather Sans", Muli, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-weight: 400;
+    color: whitesmoke !important;
+}
+.navbar .navbar-content .navbar-nav .nav-item.nav-apps .dropdown-menu .dropdown-body .apps a {
+    float: left;
+    color: #000;
+    width: 65px;
+    height: 65px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.apps a p {
+    text-align: center !important;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+    box-shadow: grey 2px 2px 6px;
+}
+i.las.la-angle-down {
+    font-size: 9pt !important;
+}

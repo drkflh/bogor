@@ -1,0 +1,99 @@
+body,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+th,
+label,
+input,
+button,
+select,
+optgroup,
+textarea,
+.line-numbers,
+select.custom-select
+{
+    font-family: "Overpass","Nunito Sans", "Merriweather Sans", Muli, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-weight: 300;
+    font-size: 10pt;
+    color: black !important;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    position: relative;
+    line-height: 26px;
+    color: #6c757d;
+    font-size: 16px;
+    display: inline-block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: transparent !important;
+    padding: 10px 0;
+    margin: 0 20px;
+    font-weight: 500;
+    font-family: "Overpass","Mandali", sans-serif;
+}
+li.nav-item.dropdown.nav-profile  li {
+    padding-left: 8px !important;
+}
+
+li.nav-item.dropdown.nav-profile  li a.nav-link {
+    margin-left: 0px;
+    padding: 0px;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-left: 8px !important;
+}
+
+li.nav-item.dropdown.nav-profile a > span {
+    font-size: 11pt;
+    margin-left: 4px !important;
+}
+
+li.nav-item.dropdown.nav-profile  a {
+    padding: 6px 0px !important;
+    font-weight: 200 !important;
+}
+
+#profileDropdown > span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+    width: 120px !important;
+    font-weight: normal !important;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+
+.back-to-top-btn {
+    position: fixed;
+    padding: 0px 10px !important;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    text-align: center;
+    border-radius: 3px;
+}
+
+h1.title{
+    font-size: 24pt !important;
+}
+
+.hero-agency {
+    background-image: url(../images/agency/hero-bg.png);
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0 40px;
+}

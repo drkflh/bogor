@@ -1,0 +1,67 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Ecf/Campaign_table_label,Ecf/Campaign_table_name,Ecf/Campaign_table_show,Ecf/Campaign_table_search,Ecf/Campaign_table_sort,Ecf/Campaign_table_datatype,Ecf/Campaign_form_label,Ecf/Campaign_form_name,Ecf/Campaign_form_create,Ecf/Campaign_form_edit,Ecf/Campaign_form_type,Ecf/Campaign_form_model,Ecf/Campaign_form_default,Ecf/Campaign_form_validator,Ecf/Campaign_form_param,Ecf/Campaign_form_attr,Ecf/Campaign_vue_model,Ecf/Campaign_vue_visible,Ecf/Campaign_vue_type,Ecf/Campaign_vue_default,Ecf/Campaign_view_label,Ecf/Campaign_view_name,Ecf/Campaign_view_visible,Ecf/Campaign_view_type,Ecf/Campaign_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+masterId,,,,,,,,,,,,Master ID,masterId,no,,,,Master ID,masterId,,,,masterId,,,,,masterId,,,,Master ID,masterId,,,masterId
+masterName,,,,,,,,,,,,Master Name,masterName,no,,,,Master Name,masterName,,,,masterName,,,,,masterName,,,,Master Name,masterName,,,masterName
+companyId,,,,,,,,,,,,Company ID,companyId,no,,,,Company ID,companyId,,,,companyId,,,,,companyId,,,,Company ID,companyId,,,companyId
+companyName,,,,,,,,,,,,Company Name,companyName,no,,,,Company Name,companyName,,,,companyName,,,,,companyName,,,,Company Name,companyName,,,companyName
+sbuId,,,,,,,,,,,,SBU ID,sbuId,no,,,,SBU ID,sbuId,,,,sbuId,,,,,sbuId,,,,SBU ID,sbuId,,,sbuId
+sbuName,,,,,,,,,,,,SBU Name,sbuName,no,,,,SBU Name,sbuName,,,,sbuName,,,,,sbuName,,,,SBU Name,sbuName,,,sbuName
+deptId,,,,,,,,,,,,Dept ID,deptId,no,,,,Dept ID,deptId,,,,deptId,,,,,deptId,,,,Dept ID,deptId,,,deptId
+deptName,,,,,,,,,,,,Dept Name,deptName,no,,,,Dept Name,deptName,,,,deptName,,,,,deptName,,,,Dept Name,deptName,,,deptName
+email,,,,,,,,,,,,Email ,email,,,,,Email ,email,,,,email,,,,,email,,,,Email ,email,,,email
+name,,,,,,,,,,,,Nama Lengkap ,name,,,,,Nama Lengkap ,name,,,,name,,,,,name,,,,Nama Lengkap ,name,,,name
+position,,,,,,,,,,,,Posisi di perusahaan ,position,,,,,Posisi di perusahaan ,position,,,,position,,,,,position,,,,Posisi di perusahaan ,position,,,position
+contactWA,,,,,,,,,,,,No Whats app yang dapat dihubungi ,contactWA,,,,,No Whats app yang dapat dihubungi ,contactWA,,,,contactWA,,,,,contactWA,,,,No Whats app yang dapat dihubungi ,contactWA,,,contactWA
+ownerIdCard,,,,,,,,,,,,KTP Pemilik dan Direksi,ownerIdCard,,,,,KTP Pemilik dan Direksi,ownerIdCard,,,,ownerIdCard,,,,,ownerIdCard,,,,KTP Pemilik dan Direksi,ownerIdCard,,,ownerIdCard
+bizTradeMark,,,,,,,,,,,,Merek Bisnis ,bizTradeMark,,,,,Merek Bisnis ,bizTradeMark,,,,bizTradeMark,,,,,bizTradeMark,,,,Merek Bisnis ,bizTradeMark,,,bizTradeMark
+bizAddress,,,,,,,,,,,,Alamat Domisili Usaha ,bizAddress,,,,,Alamat Domisili Usaha ,bizAddress,,,,bizAddress,,,,,bizAddress,,,,Alamat Domisili Usaha ,bizAddress,,,bizAddress
+bizType,,,,,,,,,,,,Jenis Usaha ,bizType,,,,,Jenis Usaha ,bizType,,,,bizType,,,,,bizType,,,,Jenis Usaha ,bizType,,,bizType
+bizRegisteredName,,,,,,,,,,,,Nama Badan Usaha sesuai Akta Perusahaan,bizRegisteredName,,,,,Nama Badan Usaha sesuai Akta Perusahaan,bizRegisteredName,,,,bizRegisteredName,,,,,bizRegisteredName,,,,Nama Badan Usaha sesuai Akta Perusahaan,bizRegisteredName,,,bizRegisteredName
+bizCompanyType,,,,,,,,,,,,Bentuk Badan Usaha ,bizCompanyType,,,,,Bentuk Badan Usaha ,bizCompanyType,,,,bizCompanyType,,,,,bizCompanyType,,,,Bentuk Badan Usaha ,bizCompanyType,,,bizCompanyType
+legality,,,,,,,,,,,,Konfirmasi legalitas perusahaan ,legality,,,,,Konfirmasi legalitas perusahaan ,legality,,,,legality,,,,,legality,,,,Konfirmasi legalitas perusahaan ,legality,,,legality
+attAktaPerusahaan,,,,,,,,,,,,Lampiran Akta Perusahaan ,attAktaPerusahaan,,,,,Lampiran Akta Perusahaan ,attAktaPerusahaan,,,attachmentupload,attAktaPerusahaan,,,,,attAktaPerusahaan,,,,Lampiran Akta Perusahaan ,attAktaPerusahaan,,,attAktaPerusahaan
+attSKKemenhumham,,,,,,,,,,,,Lampiran SK Kemenhumham ,attSKKemenhumham,,,,,Lampiran SK Kemenhumham ,attSKKemenhumham,,,attachmentupload,attSKKemenhumham,,,,,attSKKemenhumham,,,,Lampiran SK Kemenhumham ,attSKKemenhumham,,,attSKKemenhumham
+attTDP,,,,,,,,,,,,Lampiran TDP,attTDP,,,,,Lampiran TDP,attTDP,,,attachmentupload,attTDP,,,,,attTDP,,,,Lampiran TDP,attTDP,,,attTDP
+attNPWP,,,,,,,,,,,,Lampiran NPWP,attNPWP,,,,,Lampiran NPWP,attNPWP,,,attachmentupload,attNPWP,,,,,attNPWP,,,,Lampiran NPWP,attNPWP,,,attNPWP
+noNPWP,,,,,,,,,,,,NPWP,noNPWP,,,,,NPWP,noNPWP,,,,noNPWP,,,,,noNPWP,,,,NPWP,noNPWP,,,noNPWP
+slikOJK,,,,,,,,,,,,SLIK OJK Perusahaan ,slikOJK,,,,,SLIK OJK Perusahaan ,slikOJK,,,,slikOJK,,,,,slikOJK,,,,SLIK OJK Perusahaan ,slikOJK,,,slikOJK
+productServices,,,,,,,,,,,,Produk/ Jasa yang ditawarkan ,productServices,,,,,Produk/ Jasa yang ditawarkan ,productServices,,,,productServices,,,,,productServices,,,,Produk/ Jasa yang ditawarkan ,productServices,,,productServices
+establishedSinceYear,,,,,,,,,,,,Lama Bisnis berdiri (Tahun),establishedSinceYear,,,,,Lama Bisnis berdiri (Tahun),establishedSinceYear,,,,establishedSinceYear,,,,,establishedSinceYear,,,,Lama Bisnis berdiri (Tahun),establishedSinceYear,,,establishedSinceYear
+establishedYear,,,,,,,,,,,,Lama Bisnis berdiri,establishedYear,,,,,Lama Bisnis berdiri,establishedYear,,,,establishedYear,,,,,establishedYear,,,,Lama Bisnis berdiri,establishedYear,,,establishedYear
+attCompanyProfile,,,,,,,,,,,,Dokumen Company Profile ,attCompanyProfile,,,,,Dokumen Company Profile ,attCompanyProfile,,,attachmentupload,attCompanyProfile,,,,,attCompanyProfile,,,,Dokumen Company Profile ,attCompanyProfile,,,attCompanyProfile
+noOfBranches,,,,,,,,,,,,Sudah berapa banyak cabang bisnis,noOfBranches,,,,,Sudah berapa banyak cabang bisnis,noOfBranches,,,,noOfBranches,,,,,noOfBranches,,,,Sudah berapa banyak cabang bisnis,noOfBranches,,,noOfBranches
+productServicesDescription,,,,,,,,,,,,Deskripsi singkat tentang produk/jasa yang ditawarkan ,productServicesDescription,,,,,Deskripsi singkat tentang produk/jasa yang ditawarkan ,productServicesDescription,,,,productServicesDescription,,,,,productServicesDescription,,,,Deskripsi singkat tentang produk/jasa yang ditawarkan ,productServicesDescription,,,productServicesDescription
+marketingFunnels,,,,,,,,,,,,Jalur pemasaran produk/jasa yang ditawarkan ,marketingFunnels,,,,,Jalur pemasaran produk/jasa yang ditawarkan ,marketingFunnels,,,,marketingFunnels,,,,,marketingFunnels,,,,Jalur pemasaran produk/jasa yang ditawarkan ,marketingFunnels,,,marketingFunnels
+monthlyGrossRevenue,,,,,,,,,,,,Omset perbulan (Rp),monthlyGrossRevenue,,,,,Omset perbulan (Rp),monthlyGrossRevenue,,,,monthlyGrossRevenue,,,,,monthlyGrossRevenue,,,,Omset perbulan (Rp),monthlyGrossRevenue,,,monthlyGrossRevenue
+monthlyNettRevenue,,,,,,,,,,,,Penghasilan bersih perbulan (Rp),monthlyNettRevenue,,,,,Penghasilan bersih perbulan (Rp),monthlyNettRevenue,,,,monthlyNettRevenue,,,,,monthlyNettRevenue,,,,Penghasilan bersih perbulan (Rp),monthlyNettRevenue,,,monthlyNettRevenue
+attFinancialReports,,,,,,,,,,,,Laporan Keuangan ,attFinancialReports,,,,,Laporan Keuangan ,attFinancialReports,,,attachmentupload,attFinancialReports,,,,,attFinancialReports,,,,Laporan Keuangan ,attFinancialReports,,,attFinancialReports
+bizPlanTriennial,,,,,,,,,,,,Rencana Bisnis 3 tahun kedepan ,bizPlanTriennial,,,,,Rencana Bisnis 3 tahun kedepan ,bizPlanTriennial,,,attachmentupload,bizPlanTriennial,,,,,bizPlanTriennial,,,,Rencana Bisnis 3 tahun kedepan ,bizPlanTriennial,,,bizPlanTriennial
+attBizPlan,,,,,,,,,,,,Dokumen Rencana Bisnis ( Draft untuk bahan prospektus),attBizPlan,,,,,Dokumen Rencana Bisnis ( Draft untuk bahan prospektus),attBizPlan,,,attachmentupload,attBizPlan,,,,,attBizPlan,,,,Dokumen Rencana Bisnis ( Draft untuk bahan prospektus),attBizPlan,,,attBizPlan
+requiredFunding,,,,,,,,,,,,Jumlah pendanaan yang dibutuhkan (Rp),requiredFunding,,,,,Jumlah pendanaan yang dibutuhkan (Rp),requiredFunding,,,,requiredFunding,,,,,requiredFunding,,,,Jumlah pendanaan yang dibutuhkan (Rp),requiredFunding,,,requiredFunding
+typeOfFunding,,,,,,,,,,,,Jenis pendanaan yang diinginkan ,typeOfFunding,,,,,Jenis pendanaan yang diinginkan ,typeOfFunding,,,,typeOfFunding,,,,,typeOfFunding,,,,Jenis pendanaan yang diinginkan ,typeOfFunding,,,typeOfFunding
+contractReference,,,,,,,,,,,,"Khusus skema obligasi/Sukuk, Apakah sudah memiliki project yang akan dikerjakan ditandai dengan Kontrak/PO/Invoice dari Perusahaan/Pemerintah",contractReference,,,,,"Khusus skema obligasi/Sukuk, Apakah sudah memiliki project yang akan dikerjakan ditandai dengan Kontrak/PO/Invoice dari Perusahaan/Pemerintah",contractReference,,,,contractReference,,,,,contractReference,,,,"Khusus skema obligasi/Sukuk, Apakah sudah memiliki project yang akan dikerjakan ditandai dengan Kontrak/PO/Invoice dari Perusahaan/Pemerintah",contractReference,,,contractReference
+covidStrategy,,,,,,,,,,,,Strategi bisnis dalam masa Pandemi Covid 19 ,covidStrategy,,,,,Strategi bisnis dalam masa Pandemi Covid 19 ,covidStrategy,,,,covidStrategy,,,,,covidStrategy,,,,Strategi bisnis dalam masa Pandemi Covid 19 ,covidStrategy,,,covidStrategy
+campaignTitle,,,,,,,,,,,,Nama Kampanye,campaignTitle,,,,,Nama Kampanye,campaignTitle,,,,campaignTitle,,,,,campaignTitle,,,,Nama Kampanye,campaignTitle,,,campaignTitle
+campaignPeriod,,,,,,,,,,,,Periode Kampanye,campaignPeriod,,,,,Periode Kampanye,campaignPeriod,,,,campaignPeriod,,,,,campaignPeriod,,,,Periode Kampanye,campaignPeriod,,,campaignPeriod
+campaignStart,,,,,,,,,,,,Mulai,campaignStart,,,,,Mulai,campaignStart,,,,campaignStart,,,,,campaignStart,,,,Mulai,campaignStart,,,campaignStart
+campaignEnd,,,,,,,,,,,,Berakhir,campaignEnd,,,,,Berakhir,campaignEnd,,,,campaignEnd,,,,,campaignEnd,,,,Berakhir,campaignEnd,,,campaignEnd
+campaignExecSummary,,,,,,,,,,,,Ringkasan Rencana Bisnis,campaignExecSummary,,,,,Ringkasan Rencana Bisnis,campaignExecSummary,,,,campaignExecSummary,,,,,campaignExecSummary,,,,Ringkasan Rencana Bisnis,campaignExecSummary,,,campaignExecSummary
+campaignProspectus,,,,,,,,,,,,Prospektus,campaignProspectus,,,,,Prospektus,campaignProspectus,,,,campaignProspectus,,,,,campaignProspectus,,,,Prospektus,campaignProspectus,,,campaignProspectus
+projectROI,,,,,,,,,,,,ROI,projectROI,,,,,ROI,projectROI,,,,projectROI,,,,,projectROI,,,,ROI,projectROI,,,projectROI
+projectDuration,,,,,,,,,,,,Durasi projek,projectDuration,,,,,Durasi projek,projectDuration,,,,projectDuration,,,,,projectDuration,,,,Durasi projek,projectDuration,,,projectDuration
+lotEmitted,,,,,,,,,,,,Jumlah Lot,lotEmitted,,,,,Jumlah Lot,lotEmitted,,,,lotEmitted,,,,,lotEmitted,,,,Jumlah Lot,lotEmitted,,,lotEmitted
+pricePerLot,,,,,,,,,,,,Harga Per Lot,pricePerLot,,,,,Harga Per Lot,pricePerLot,,,,pricePerLot,,,,,pricePerLot,,,,Harga Per Lot,pricePerLot,,,pricePerLot
+unitPerLot,,,,,,,,,,,,Unit Per Lot,unitPerLot,,,,,Unit Per Lot,unitPerLot,,,,unitPerLot,,,,,unitPerLot,,,,Unit Per Lot,unitPerLot,,,unitPerLot
+minLot,,,,,,,,,,,,Minimum Lot,minLot,,,,,Minimum Lot,minLot,,,,minLot,,,,,minLot,,,,Minimum Lot,minLot,,,minLot
+dividendPeriod,,,,,,,,,,,,Periode Dividen,dividendPeriod,,,,,Periode Dividen,dividendPeriod,,,,dividendPeriod,,,,,dividendPeriod,,,,Periode Dividen,dividendPeriod,,,dividendPeriod
+dividendPeriodUnit,,,,,,,,,,,,Satuan Periode,dividendPeriodUnit,,,,,Satuan Periode,dividendPeriodUnit,,,,dividendPeriodUnit,,,,,dividendPeriodUnit,,,,Satuan Periode,dividendPeriodUnit,,,dividendPeriodUnit
+dividendAnnualReturn,,,,,,,,,,,,Estimasi Dividen Tahunan,dividendAnnualReturn,,,,,Estimasi Dividen Tahunan,dividendAnnualReturn,,,,dividendAnnualReturn,,,,,dividendAnnualReturn,,,,Estimasi Dividen Tahunan,dividendAnnualReturn,,,dividendAnnualReturn

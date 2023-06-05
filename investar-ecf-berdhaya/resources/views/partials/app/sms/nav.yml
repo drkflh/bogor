@@ -1,0 +1,161 @@
+- title: "SMS - Sales Management"
+  auth: 'sms-main-menu'
+  children:
+    - title: Dashboard
+      url: "sms/dashboard"
+      auth: 'sms-dashboard'
+      icon: "<i class=\"link-icon\"  data-feather=\"grid\"></i>"
+    - title: Knowledge
+      auth: 'sms-knowledge-menu'
+      icon: "<i class=\"link-icon\"  data-feather=\"help-circle\"></i>"
+      children:
+      - title: Glossary
+        auth: 'sms-knowledge-glossary'
+        url: "sms/knowledge/glossary"
+      - title: Video Library
+        auth: 'sms-knowledge-video-library'
+        url: "sms/knowledge/video-library"
+      - title: Product Catalogue
+        auth: 'sms-knowledge-product-catalogue'
+        url: "sms/knowledge/product-catalogue"
+      - title: AML
+        auth: 'sms-knowledge-aml'
+        url: "sms/knowledge/aml"
+      - title: GA.Drawing
+        auth: 'sms-knowledge-ga-drawing'
+        url: "sms/knowledge/ga-drawing"
+      - title: Regulations
+        auth: 'sms-knowledge-regulations'
+        url: "sms/doc-catalogue/list/knowledge/regulations"
+      # - title: International Standards
+      #   auth: 'sms-international-standards'
+      #   url: "sms/doc-catalogue/list/knowledge/international-standards"
+    - title: Directory
+      auth: 'sms-directory-menu'
+      icon: "<i class=\"link-icon\"  data-feather=\"book-open\" ></i>"
+      children:
+      - title: "Vendor"
+        auth: 'sms-directory-vendor-directory'
+        url: "sms/directory/vendor-directory"
+      - title: "Customer"
+        auth: 'sms-directory-customer-directory'
+        url: "sms/directory/customer-directory"
+    - title: "Sales Operation"
+      auth: 'sms-sales-operation-menu'
+      icon: "<i data-feather=\"message-square\" class=\"las la-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+      children:
+      - title: Job Register
+        auth: 'sms-sales-operation-job-register'
+        url: "sms/sales-operation/job-register"
+      - title: "Sales Order"
+        auth: 'sms-sales-operation-sales-order'
+        url: "sms/sales-operation/sales-order"
+      - title: "Sales Highlight"
+        auth: 'sms-sales-operation-sales-highlight'
+        url: "sms/sales-operation/sales-highlight"
+      - title: "Request For Quotation"
+        auth: 'sms-sales-operation-request-for-quotation'
+        url: "sms/sales-operation/request-for-quotation"
+      - title: "Request For Information"
+        auth: 'sms-sales-operation-request-for-information'
+        url: "sms/sales-operation/request-for-information"
+      - title: "Material Take Off"
+        auth: 'sms-sales-operation-material-take-off'
+        url: "sms/sales-operation/material-take-off"
+      - title: "Logistic & Clearance Calc"
+        auth: 'sms-sales-operation-logistic-clearance-calc'
+        url: "sms/sales-operation/logistic-clearance-calc"
+      - title: "Cost Structure"
+        auth: 'sms-sales-operation-cost-structure'
+        url: "sms/sales-operation/cost-structure"
+      - title: "Outgoing Quotation"
+        auth: 'sms-sales-operation-outgoing-quotation'
+        url: "sms/sales-operation/outgoing-quotation"
+      - title: "Budgetary Proposal"
+        auth: 'sms-sales-operation-budgetary-proposal'
+        url: "sms/sales-operation/budgetary-proposal"
+      - title: "On Going Quotation"
+        auth: 'sms-sales-operation-on-going-quotation'
+        url: "sms/sales-operation/on-going-quotation"
+    - title: "QC & Documentation"
+      auth: 'sms-qc-documentation-menu'
+      icon: "<i class=\"link-icon\"  data-feather=\"check-circle\" ></i>"
+      children:
+        - title: "Quality Control"
+          auth: 'sms-qc-documentation-quality-control'
+          url: "sms/qc-documentation/quality-control"
+        - title: "Document Control"
+          auth: 'sms-qc-documentation-document-control'
+          url: "sms/qc-documentation/document-control"
+    - title: Procurement & Logistic
+      auth: 'sms-procurement-logistic-menu'
+      icon: "<i class=\"link-icon\"  data-feather=\"truck\" ></i>"
+      children:
+        - title: "Purchase Requisition"
+          auth: 'sms-procurement-logistic-purchase-requisition'
+          url: "sms/procurement-logistics/purchase-requisition"
+        - title: "Purchase Order"
+          auth: 'sms-procurement-logistic-purchase-order'
+          url: "sms/procurement-logistics/purchase-order"
+        - title: "Material Receiving Report"
+          auth: 'sms-procurement-logistic-material-receiving'
+          url: "sms/procurement-logistics/material-receiving"
+        - title: "Non Conforming Report"
+          auth: 'sms-procurement-logistic-non-confirming'
+          url: "sms/procurement-logistics/non-conforming"
+        - title: "Service Requisition"
+          auth: 'sms-procurement-logistic-service-requisition'
+          url: "sms/procurement-logistics/service-requisition"
+        - title: "Work Order"
+          auth: 'sms-procurement-logistic-work-order'
+          url: "sms/procurement-logistics/work-order"
+        - title: "Power Attorney"
+          auth: 'sms-procurement-logistic-power-attorney'
+          url: "sms/procurement-logistics/power-attorney"
+        - title: "Work Acceptance Notes"
+          auth: 'sms-procurement-logistic-work-accept-notes'
+          url: "sms/procurement-logistics/work-accept-notes"
+        - title: "Warehouse Issue Ticket"
+          auth: 'sms-procurement-logistic-warehouse-issue'
+          url: "sms/procurement-logistics/warehouse-issue"
+        - title: "Warehouse Return Ticket"
+          auth: 'sms-procurement-logistic-warehouse-return'
+          url: "sms/procurement-logistics/warehouse-return"
+        - title: "Delivery Request"
+          auth: 'sms-procurement-logistic-delivery-request'
+          url: "sms/procurement-logistics/delivery-request"
+        - title: "Delivery Order"
+          auth: 'sms-procurement-logistic-delivery-order'
+          url: "sms/procurement-logistics/delivery-order"
+        - title: "Packing List"
+          auth: 'sms-procurement-logistic-packing-list'
+          url: "sms/procurement-logistics/packing-list"
+        - title: "Stock Issue"
+          auth: 'sms-procurement-logistic-stock-issue'
+          url: "sms/procurement-logistics/stock-issue"
+#    - title: "Reference"
+#      icon: "<i   data-feather=\"message-square\" class=\"las la-comment-dots uil-comment-alt-exclamation  link-icon\"></i>"
+#      children:
+#        - title: "Group Company"
+#          url: "sms/reference/company"
+#        - title: "Company Type"
+#          url: "sms/reference/company-type"
+#        - title: "Cost Center"
+#          url: "sms/reference/costcenter"
+#        - title: "Area"
+#          url: "sms/reference/area"
+#        - title: "Zipcode"
+#          url: "sms/reference/zipcode"
+#        - title: "Country"
+#          url: "sms/reference/country"
+#        - title: "Currency"
+#          url: "sms/reference/currency"
+#        - title: "Exchange Rate"
+#          url: "sms/reference/exchange-rate"
+#        - title: "UOM"
+#          url: "reference/uom"
+#          icon: "<i class=\"link-icon\"  data-feather=\"file-text\"></i>"
+#        - title: "Job Status"
+#          url: "sms/reference/jobstatus"
+#        - title: "Incoterm"
+#          url: "reference/incoterm"

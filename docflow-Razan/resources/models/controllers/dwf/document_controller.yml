@@ -1,0 +1,986 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-top text-50'
+    -
+        label: Persetujuan
+        name: approvalAction
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-150'
+        thClass: ''
+    -
+        label: Kirim
+        name: sendAction
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-75'
+        thClass: ''
+    -
+        label: Arsip
+        name: archiveAction
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-75'
+        thClass: ''
+    -
+        label: Tgl Registrasi
+        name: regDate
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-150'
+        thClass: ''
+    -
+        label: Tgl Naskah
+        name: docDate
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: date
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-150'
+        thClass: ''
+    -
+        label: Tempat
+        name: location
+        show: false
+        search: false
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-left text-150'
+        thClass: ''
+    -
+        label: Nomor
+        name: docNo
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-left text-250'
+        thClass: ''
+    -
+        label: Tahun
+        name: docYear
+        show: true
+        search: true
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-100'
+        thClass: ''
+    -
+        label: Asal
+        name: origin
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-150'
+        thClass: ''
+    -
+        label: Sifat
+        name: confidentiality
+        show: true
+        search: false
+        sort: true
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-100'
+        thClass: ''
+    -
+        label: Tujuan
+        name: recipient
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-left text-200'
+        thClass: ''
+    -
+        label: Dari
+        name: sender
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-left text-200'
+        thClass: ''
+    -
+        label: Tembusan
+        name: copy
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-left text-200'
+        thClass: ''
+    -
+        label: Penandatangan
+        name: signer
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-left text-200'
+        thClass: ''
+    -
+        label: Drafter
+        name: draftRecipient
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-left text-200'
+        thClass: ''
+    -
+        label: Lampiran
+        name: attachments
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-left text-200'
+        thClass: ''
+    -
+        label: Creator
+        name: ownerName
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-200'
+        thClass: ''
+    -
+        label: Status
+        name: docStatus
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-200'
+        thClass: ''
+    -
+        label: Send Status
+        name: sendStatus
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-top text-center text-200'
+        thClass: ''
+
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Tanggal Registrasi'
+        name: regDate
+        create: RO
+        edit: RO
+        type: text
+        model: regDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Tanggal Naskah'
+        name: docDate
+        create: RO
+        edit: RO
+        type: datepicker
+        model: docDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Tanggal Terima'
+        name: receivedDate
+        create: true
+        edit: true
+        type: datepicker
+        model: receivedDate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Tempat
+        name: location
+        create: true
+        edit: true
+        type: text
+        model: location
+        default: ''
+        inline: true
+        label_class: text-100
+        class: text-250
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Nomor
+        name: docNo
+        create: RO
+        edit: RO
+        type: text
+        model: docNo
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Dokumen Sebelumnya'
+        name: docRef
+        create: true
+        edit: true
+        type: text
+        model: docRef
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Klasifikasi'
+        name: docClass
+        create: true
+        edit: true
+        type: simpleselect
+        model: docClass
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Tahun
+        name: docYear
+        create: RO
+        edit: RO
+        type: text
+        model: docYear
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Kode Jabatan'
+        name: titleCode
+        create: true
+        edit: RO
+        type: simpleselect
+        model: titleCode
+        default: ''
+        disabled: titleCodeDisable
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Sifat Naskah'
+        name: confidentiality
+        create: true
+        edit: true
+        type: simpleselect
+        model: confidentiality
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Perihal
+        name: subject
+        create: true
+        edit: true
+        type: text
+        model: subject
+        default: ''
+        validator: required
+        inline: false
+        label_class: text-100
+        param: {}
+        attr: {}
+    -
+        label: 'Isi Disposisi'
+        name: dispositionContent
+        create: true
+        edit: true
+        type: checkboxselect
+        model: dispositionContent
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Tujuan
+        name: recipient
+        create: true
+        edit: true
+        type: userselectorlist
+        model: recipient
+        default: ''
+        validator: required
+        inline: true
+        label_class: text-100
+        class: text-250
+        extra_data: "{ keyword0: keyword0, keyword1: keyword1, keyword2: keyword2, model: 'recipient', titleCode: titleCode }"
+        param: { url: "user/auto-user" }
+        attr: {}
+    -
+        label: Dari
+        name: sender
+        create: true
+        edit: true
+        type: text
+        model: sender
+        default: ''
+        validator: required
+        param: { url: "user/auto-user" }
+        attr: {}
+    -
+        label: Tembusan
+        name: copy
+        create: true
+        edit: true
+        type: userselectorlist
+        model: copy
+        default: ''
+        validator: required
+        inline: true
+        label_class: text-100
+        class: text-250
+        extra_data: "{ keyword0: keyword0, keyword1: keyword1, keyword2: keyword2, model: 'copy' }"
+        param: { url: "user/auto-user" }
+        attr: {}
+    -
+        label: ''
+        name: body
+        create: true
+        edit: true
+        type: editor
+        model: body
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Lampiran
+        name: attachments
+        create: true
+        edit: true
+        type: attachmentupload
+        model: attachments
+        default: ''
+        validator: required
+        mode: multi
+        show_list: true
+        use_caption: true
+        caption_required: true
+        caption_label: Deskripsi Lampiran
+        bucket: document
+        acceptedFiles: "application/pdf, image/*, video/*,application/msword,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload File" }
+    -
+        label: ''
+        name: attachmentList
+        create: true
+        edit: true
+        type: fileattachmentlist
+        model: attachmentsObjects
+        default: ''
+        validator: ''
+        direct_view_action: true
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload File" }
+    -
+        label: '  '
+        name: delegates
+        create: true
+        edit: true
+        type: radioselect
+        model: delegates
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Penandatangan
+        name: signer
+        create: true
+        edit: true
+        type: userselectorlist
+        model: signer
+        default: ''
+        validator: ''
+        mode: single
+        extra_data: "{ keyword0: keyword0, keyword1: keyword1, keyword2: keyword2, model: 'signer', titleCode: titleCode }"
+        inline: false
+        param: { url: "user/auto-user" }
+        attr: {}
+    -
+        label: 'Tanda Tangan'
+        name: signatures
+        create: false
+        edit: false
+        type: text
+        model: signatures
+        default: ''
+        validator: ''
+        inline: true
+        label_class: text-100
+        class: text-250
+        param: {}
+        attr: {}
+    -
+        label: 'Tujuan Draft'
+        name: draftRecipient
+        create: true
+        edit: true
+        type: userselectorlist
+        model: draftRecipient
+        default: ''
+        validator: ''
+        inline: true
+        label_class: text-100
+        class: text-250
+        param: { url: "user/auto-user" }
+        attr: {}
+    -
+        label: Catatan
+        name: remarks
+        create: true
+        edit: true
+        type: textarea
+        model: remarks
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Jenis Naskah'
+        name: docType
+        create: false
+        edit: false
+        type: text
+        model: docType
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Template Form'
+        name: formTemplate
+        create: false
+        edit: false
+        type: text
+        model: formTemplate
+        default: ''
+        validator: ''
+        param: {}
+        attr: {}
+    -
+        label: 'Header'
+        name: header
+        create: false
+        edit: false
+        type: text
+        model: formTemplate
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Footer'
+        name: footer
+        create: true
+        edit: true
+        type: simpleselect
+        model: footer
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Status Naskah'
+        name: docStatus
+        create: RO
+        edit: RO
+        type: text
+        model: docStatus
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: regDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: receivedDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: location
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docNo
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docSeq
+        visible: true
+        type: integer
+        default: 0
+    -
+        model: docNoPrefix
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docRef
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docClass
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docYear
+        visible: true
+        type: string
+        default: ''
+    -
+        model: titleCode
+        visible: true
+        type: object
+        default: ''
+    -
+        model: confidentiality
+        visible: true
+        type: string
+        default: ''
+    -
+        model: subject
+        visible: true
+        type: string
+        default: ''
+    -
+        model: dispositionContent
+        visible: true
+        type: array
+        default: []
+    -
+        model: recipient
+        visible: true
+        type: array
+        default: []
+    -
+        model: sender
+        visible: true
+        type: array
+        default: ''
+    -
+        model: copy
+        visible: true
+        type: array
+        default: []
+    -
+        model: body
+        visible: true
+        type: string
+        default: ''
+    -
+        model: attachments
+        visible: true
+        type: array
+        default: []
+    -
+        model: attachmentsObjects
+        visible: true
+        type: array
+        default: []
+    -
+        model: delegates
+        visible: true
+        type: string
+        default: ''
+    -
+        model: signer
+        visible: true
+        type: array
+        default: []
+    -
+        model: signatures
+        visible: true
+        type: string
+        default: ''
+    -
+        model: draftRecipient
+        visible: true
+        type: array
+        default: []
+    -
+        model: remarks
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docType
+        visible: true
+        type: string
+        default: ''
+    -
+        model: formTemplate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: docStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: draftStatus
+        visible: true
+        type: array
+        default: []
+    -
+        model: copyRecipient
+        visible: true
+        type: array
+        default: []
+    -
+        model: sendRecipient
+        visible: true
+        type: array
+        default: []
+    -
+        model: sendStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: receiveStatus
+        visible: true
+        type: array
+        default: []
+    -
+        model: docStatus
+        visible: true
+        type: string
+        default: ''
+    -
+        model: archiveStatus
+        visible: true
+        type: string
+        default: 'UNARCHIVED'
+    -
+        model: archiveCallCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: header
+        visible: true
+        type: string
+        default: ''
+    -
+        model: footer
+        visible: true
+        type: object
+        default: ''
+    -
+        model: approverIds
+        visible: true
+        type: array
+        default: []
+    -
+        model: approverIdStr
+        visible: true
+        type: string
+        default: ''
+    -
+        model: authRequest
+        visible: true
+        type: object
+        default: ''
+    -
+        model: approvalSession
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: 'Tanggal Registrasi'
+        name: regDate
+        visible: true
+        type: text
+        model: regDate
+    -
+        label: 'Tanggal Naskah'
+        name: docDate
+        visible: true
+        type: text
+        model: docDate
+    -
+        label: 'Tanggal Terima'
+        name: receivedDate
+        visible: true
+        type: text
+        model: receivedDate
+    -
+        label: Tempat
+        name: location
+        visible: true
+        type: text
+        model: location
+    -
+        label: Nomor
+        name: docNo
+        visible: true
+        type: text
+        model: docNo
+    -
+        label: Prefix Nomor
+        name: docNoPrefix
+        visible: true
+        type: text
+        model: docNoPrefix
+    -
+        label: Dokumen Sebelumnya
+        name: docRef
+        visible: true
+        type: text
+        model: docRef
+    -
+        label: Status Naskah
+        name: docStatus
+        visible: true
+        type: text
+        model: docStatus
+    -
+        label: Status Draft
+        name: draftStatus
+        visible: true
+        type: text
+        model: draftStatus
+    -
+        label: Status Penerima
+        name: receiveStatus
+        visible: true
+        type: text
+        model: receiveStatus
+    -
+        label: Status Naskah
+        name: sendStatus
+        visible: true
+        type: text
+        model: sendStatus
+    -
+        label: 'Kode Klasifikasi'
+        name: docClass
+        visible: true
+        type: text
+        model: docClass
+    -
+        label: Tahun
+        name: docYear
+        visible: true
+        type: text
+        model: docYear
+    -
+        label: 'Kode Jabatan'
+        name: titleCode
+        visible: true
+        type: text
+        model: titleCode
+    -
+        label: 'Sifat Naskah'
+        name: confidentiality
+        visible: true
+        type: text
+        model: confidentiality
+    -
+        label: Hal
+        name: subject
+        visible: true
+        type: text
+        model: subject
+    -
+        label: 'Isi Disposisi'
+        name: dispositionContent
+        visible: true
+        type: text
+        model: dispositionContent
+    -
+        label: Tujuan
+        name: recipient
+        visible: true
+        type: text
+        model: recipient
+    -
+        label: Dari
+        name: sender
+        visible: true
+        type: text
+        model: sender
+    -
+        label: Tembusan
+        name: copy
+        visible: true
+        type: text
+        model: copy
+    -
+        label: Isi
+        name: body
+        visible: true
+        type: text
+        model: body
+    -
+        label: Lampiran
+        name: attachments
+        visible: true
+        type: text
+        model: attachments
+    -
+        label: Wewenang
+        name: delegates
+        visible: true
+        type: text
+        model: delegates
+    -
+        label: Penandatangan
+        name: signer
+        visible: true
+        type: text
+        model: signer
+    -
+        label: 'Tanda Tangan'
+        name: signatures
+        visible: true
+        type: text
+        model: signatures
+    -
+        label: 'Tujuan Draft'
+        name: draftRecipient
+        visible: true
+        type: text
+        model: draftRecipient
+    -
+        label: Catatan
+        name: remarks
+        visible: true
+        type: text
+        model: remarks
+    -
+        label: 'Jenis Naskah'
+        name: docType
+        visible: true
+        type: text
+        model: docType
+    -
+        label: 'Template Form'
+        name: formTemplate
+        visible: true
+        type: text
+        model: formTemplate
+    -
+        label: 'Header'
+        name: header
+        visible: true
+        type: text
+        model: header
+    -
+        label: 'Footer'
+        name: footer
+        visible: true
+        type: text
+        model: footer

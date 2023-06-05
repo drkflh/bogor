@@ -1,0 +1,716 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: ''
+        uniqueId: true
+    -
+        label: Created
+        name: createdAt
+        show: false
+        search: true
+        sort: true
+        filter: false
+        datatype: true
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: handle
+        name: handle
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: deleted
+        name: deleted
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: ''
+        thClass: ''
+    -
+        label: Cover
+        name: productImage
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: image
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Product Name'
+        name: productName
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-300'
+        thClass: ''
+    -
+        label: 'Company Code'
+        name: companyCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-left
+        column_classes: 'text-left text-125'
+        thClass: ''
+    -
+        label: 'Brand Code'
+        name: brandCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-150'
+        thClass: ''
+    -
+        label: 'Product Code'
+        name: productCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-150'
+        thClass: ''
+    -
+        label: 'Category Code'
+        name: categoryCode
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-150'
+        thClass: ''
+    -
+        label: 'Barcode EAN'
+        name: barcodeEAN
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Retail Value Before Tax'
+        name: retailValueBeforeTax
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: currency
+        row_text_alignment: text-center
+        column_classes: 'text-right text-100'
+        thClass: ''
+    -
+        label: 'Non Taxable'
+        name: nonTaxable
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-75'
+        thClass: ''
+    -
+        label: Photos
+        name: productPhotos
+        show: false
+        search: true
+        sort: false
+        filter: false
+        datatype: imagearray
+        row_text_alignment: text-center
+        column_classes: 'text-left text-100'
+        thClass: ''
+    -
+        label: 'Active From'
+        name: activeFrom
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-center text-125'
+        thClass: ''
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: date
+        row_text_alignment: text-center
+        column_classes: 'text-center text-125'
+        thClass: ''
+    -
+        label: Active
+        name: active
+        show: true
+        search: true
+        sort: false
+        filter: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-75'
+        thClass: ''
+form:
+    -
+        label: Action
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: id
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Created
+        name: createdAt
+        create: false
+        edit: false
+        type: text
+        model: createdAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: updatedAt
+        name: updatedAt
+        create: false
+        edit: false
+        type: text
+        model: updatedAt
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: handle
+        name: handle
+        create: false
+        edit: false
+        type: text
+        model: handle
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: deleted
+        name: deleted
+        create: false
+        edit: false
+        type: text
+        model: deleted
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Cover
+        name: productImage
+        create: true
+        edit: true
+        type: imagecardupload
+        model: productImage
+        default: ''
+        validator: ''
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload ID Picture'
+    -
+        label: 'Product Name'
+        name: productName
+        create: true
+        edit: true
+        type: text
+        model: productName
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Company Code'
+        name: companyCode
+        create: true
+        edit: true
+        type: simpleselect
+        model: companyCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: company123
+                value: company123
+            -
+                text: company124
+                value: company124
+            -
+                text: company125
+                value: company125
+        attr:
+            class: form-data
+    -
+        label: 'Brand Code'
+        name: brandCode
+        create: true
+        edit: true
+        type: simpleselect
+        model: brandCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: brand11
+                value: brand11
+            -
+                text: brand12
+                value: brand12
+            -
+                text: brand13
+                value: brand13
+            -
+                text: brand14
+                value: brand14
+            -
+                text: brand15
+                value: brand15
+        attr:
+            class: 'form-control col-lg-12 col-sm-12'
+    -
+        label: 'Product Code'
+        name: productCode
+        create: true
+        edit: true
+        type: text
+        model: productCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: Select1
+                value: Select1
+        attr:
+            class: form-data
+    -
+        label: 'Category Code'
+        name: categoryCode
+        create: true
+        edit: true
+        type: simpleselect
+        model: categoryCode
+        default: ''
+        validator: required
+        param:
+            -
+                text: ''
+                value: ''
+        attr:
+            class: form-data
+    -
+        label: 'Barcode EAN'
+        name: barcodeEAN
+        create: true
+        edit: true
+        type: text
+        model: barcodeEAN
+        default: ''
+        validator: ''
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Retail Value Before Tax'
+        name: retailValueBeforeTax
+        create: true
+        edit: true
+        type: number
+        model: retailValueBeforeTax
+        default: ''
+        validator: ''
+        position: left
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Non Taxable'
+        name: nonTaxable
+        create: true
+        edit: true
+        type: simpleswitch
+        model: nonTaxable
+        default: ''
+        validator: ''
+        position: left
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Photos
+        name: productPhotos
+        create: true
+        edit: true
+        type: imagegridupload
+        model: productPhotos
+        default: ''
+        validator: ''
+        position: left
+        param:
+            url: api/v1/core/upload
+            paramName: file
+        attr:
+            class: form-data
+            buttonlabel: 'Upload ID Picture'
+    -
+        label: 'Active From'
+        name: activeFrom
+        create: true
+        edit: true
+        type: datepicker
+        model: activeFrom
+        default: ''
+        validator: required
+        position: left
+        date_constraint: minToday
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        create: true
+        edit: true
+        type: datepicker
+        model: inactiveDate
+        default: ''
+        validator: required
+        position: left
+        date_constraint: minToday
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+    -
+        label: Active
+        name: active
+        create: true
+        edit: true
+        type: simpleswitch
+        model: active
+        default: ''
+        validator: ''
+        position: left
+        date_constraint: minToday
+        param:
+            -
+                text: Select
+                value: Select
+        attr:
+            class: form-data
+vue:
+    -
+        model: id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: createdAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: updatedAt
+        visible: false
+        type: string
+        default: ''
+    -
+        model: handle
+        visible: false
+        type: string
+        default: ''
+    -
+        model: deleted
+        visible: false
+        type: string
+        default: ''
+    -
+        model: productImage
+        visible: true
+        type: string
+        default: ''
+    -
+        model: productName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: companyCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: brandCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: productCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: categoryCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: barcodeEAN
+        visible: true
+        type: string
+        default: ''
+    -
+        model: retailValueBeforeTax
+        visible: true
+        type: string
+        default: ''
+    -
+        model: nonTaxable
+        visible: true
+        type: string
+        default: ''
+    -
+        model: productPhotos
+        visible: true
+        type: string
+        default: ''
+    -
+        model: activeFrom
+        visible: true
+        type: string
+        default: ''
+    -
+        model: inactiveDate
+        visible: true
+        type: string
+        default: ''
+    -
+        model: active
+        visible: true
+        type: string
+        default: ''
+view:
+    -
+        label: Action
+        name: _id
+        model: id
+        visible: false
+        type: text
+        default: ''
+    -
+        label: Created
+        name: createdAt
+        model: createdAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: updatedAt
+        name: updatedAt
+        model: updatedAt
+        visible: false
+        type: text
+        default: ''
+    -
+        label: handle
+        name: handle
+        model: handle
+        visible: false
+        type: text
+        default: ''
+    -
+        label: deleted
+        name: deleted
+        model: deleted
+        visible: false
+        type: text
+        default: ''
+    -
+        label: false
+        name: productImage
+        model: productImage
+        visible: true
+        type: squaresingleimage
+        default: ''
+    -
+        label: 'Product Name'
+        name: productName
+        model: productName
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Company Code'
+        name: companyCode
+        model: companyCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Brand Code'
+        name: brandCode
+        model: brandCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Product Code'
+        name: productCode
+        model: productCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Category Code'
+        name: categoryCode
+        model: categoryCode
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Barcode EAN'
+        name: barcodeEAN
+        model: barcodeEAN
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Retail Value Before Tax'
+        name: retailValueBeforeTax
+        model: retailValueBeforeTax
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Non Taxable'
+        name: nonTaxable
+        model: nonTaxable
+        visible: true
+        type: text
+        default: ''
+    -
+        label: false
+        name: productPhotos
+        model: productPhotos
+        visible: true
+        type: text
+        default: ''
+    -
+        label: 'Active From'
+        name: activeFrom
+        model: activeFrom
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: 'Inactive Date'
+        name: inactiveDate
+        model: inactiveDate
+        visible: true
+        type: dateview
+        default: ''
+    -
+        label: Active
+        name: active
+        model: active
+        visible: true
+        type: text
+        default: ''

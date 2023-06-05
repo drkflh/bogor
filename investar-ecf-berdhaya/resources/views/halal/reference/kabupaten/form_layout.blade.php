@@ -1,0 +1,5 @@
+<div>
+
+{!! $kodeKabupaten ?? '' !!}
+{!! $namaKabupaten ?? '' !!}
+</div>

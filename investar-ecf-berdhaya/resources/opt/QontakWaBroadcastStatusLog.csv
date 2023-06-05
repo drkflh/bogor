@@ -1,0 +1,29 @@
+name,type,default,nullable,api_show,api_create,api_edit,api_view,api_validator,api_default,api_transform,doc,Qontak/BroadcastStatusLog_table_label,Qontak/BroadcastStatusLog_table_name,Qontak/BroadcastStatusLog_table_show,Qontak/BroadcastStatusLog_table_search,Qontak/BroadcastStatusLog_table_sort,Qontak/BroadcastStatusLog_table_datatype,Qontak/BroadcastStatusLog_form_label,Qontak/BroadcastStatusLog_form_name,Qontak/BroadcastStatusLog_form_create,Qontak/BroadcastStatusLog_form_edit,Qontak/BroadcastStatusLog_form_type,Qontak/BroadcastStatusLog_form_model,Qontak/BroadcastStatusLog_form_default,Qontak/BroadcastStatusLog_form_validator,Qontak/BroadcastStatusLog_form_param,Qontak/BroadcastStatusLog_form_attr,Qontak/BroadcastStatusLog_vue_model,Qontak/BroadcastStatusLog_vue_visible,Qontak/BroadcastStatusLog_vue_type,Qontak/BroadcastStatusLog_vue_default,Qontak/BroadcastStatusLog_view_label,Qontak/BroadcastStatusLog_view_name,Qontak/BroadcastStatusLog_view_visible,Qontak/BroadcastStatusLog_view_type,Qontak/BroadcastStatusLog_view_model
+_id,object,,,no,RO,RO,,,,,,,_id,no,no,no,object,,_id,no,no,,_id,,,,,_id,no,,,,_id,no,,_id
+ajax,,,,,,,,,,,,,ajax,no,no,no,boolean,,ajax,no,no,,ajax,,,,,ajax,no,,,,ajax,no,,ajax
+handle,,,,,,,,,,,,,handle,no,no,no,string,,handle,no,no,,handle,,,,,handle,no,,,,handle,no,,handle
+deleted,integer,0,,,,,,,,,,,deleted,no,no,no,integer,,deleted,no,no,,deleted,,,,,deleted,no,,,,deleted,no,,deleted
+createdAt,datetime,,,,,,,,,,,,createdAt,no,no,no,datetime,,createdAt,no,no,,createdAt,,,,,createdAt,no,,,,createdAt,no,,createdAt
+updatedAt,datetime,,,,,,,,,,,,updatedAt,no,no,no,datetime,,updatedAt,no,no,,updatedAt,,,,,updatedAt,no,,,,updatedAt,no,,updatedAt
+updated_at,datetime,,,,,,,,,,,,updated_at,no,no,no,datetime,,updated_at,no,no,,updated_at,,,,,updated_at,no,,,,updated_at,no,,updated_at
+created_at,datetime,,,,,,,,,,,,created_at,no,no,no,datetime,,created_at,no,no,,created_at,,,,,created_at,no,,,,created_at,no,,created_at
+ownerId,,,,,,,,,,,,,ownerId,no,no,no,string,,ownerId,no,no,,ownerId,,,,,ownerId,no,,,,ownerId,no,,ownerId
+ownerName,,,,,,,,,,,,,ownerName,no,no,no,string,,ownerName,no,no,,ownerName,,,,,ownerName,no,,,,ownerName,no,,ownerName
+masterId,,,,,,,,,,,,Master ID,masterId,no,,,,Master ID,masterId,,,,masterId,,,,,masterId,,,,Master ID,masterId,,,masterId
+masterName,,,,,,,,,,,,Master Name,masterName,no,,,,Master Name,masterName,,,,masterName,,,,,masterName,,,,Master Name,masterName,,,masterName
+companyId,,,,,,,,,,,,Company ID,companyId,no,,,,Company ID,companyId,,,,companyId,,,,,companyId,,,,Company ID,companyId,,,companyId
+companyName,,,,,,,,,,,,Company Name,companyName,no,,,,Company Name,companyName,,,,companyName,,,,,companyName,,,,Company Name,companyName,,,companyName
+sbuId,,,,,,,,,,,,SBU ID,sbuId,no,,,,SBU ID,sbuId,,,,sbuId,,,,,sbuId,,,,SBU ID,sbuId,,,sbuId
+sbuName,,,,,,,,,,,,SBU Name,sbuName,no,,,,SBU Name,sbuName,,,,sbuName,,,,,sbuName,,,,SBU Name,sbuName,,,sbuName
+deptId,,,,,,,,,,,,Dept ID,deptId,no,,,,Dept ID,deptId,,,,deptId,,,,,deptId,,,,Dept ID,deptId,,,deptId
+deptName,,,,,,,,,,,,Dept Name,deptName,no,,,,Dept Name,deptName,,,,deptName,,,,,deptName,,,,Dept Name,deptName,,,deptName
+organization_id,,,,,,,,,,,,Organization ID,organization_id,,,,,Organization ID,organization_id,,,,organization_id,,,,,organization_id,,,,Organization ID,organization_id,,,organization_id
+messages_broadcast_id,,,,,,,,,,,,Broadcast ID,messages_broadcast_id,,,,,Broadcast ID,messages_broadcast_id,,,,messages_broadcast_id,,,,,messages_broadcast_id,,,,Broadcast ID,messages_broadcast_id,,,messages_broadcast_id
+contact_phone_number,,,,,,,,,,,,MSISDN,contact_phone_number,,,,,MSISDN,contact_phone_number,,,,contact_phone_number,,,,,contact_phone_number,,,,MSISDN,contact_phone_number,,,contact_phone_number
+contact_full_name,,,,,,,,,,,,Recipient,contact_full_name,,,,,Recipient,contact_full_name,,,,contact_full_name,,,,,contact_full_name,,,,Recipient,contact_full_name,,,contact_full_name
+status,,,,,,,,,,,,Status,status,,,,,Status,status,,,,status,,,,,status,,,,Status,status,,,status
+whatsapp_message_id,,,,,,,,,,,,WA Message ID,whatsapp_message_id,,,,,WA Message ID,whatsapp_message_id,,,,whatsapp_message_id,,,,,whatsapp_message_id,,,,WA Message ID,whatsapp_message_id,,,whatsapp_message_id
+whatsapp_error_message,,,,,,,,,,,,WA Error Msg,whatsapp_error_message,,,,,WA Error Msg,whatsapp_error_message,,,,whatsapp_error_message,,,,,whatsapp_error_message,,,,WA Error Msg,whatsapp_error_message,,,whatsapp_error_message
+messages_response,object,,,,,,,,,,,Message Response,messages_response,,,,,Message Response,messages_response,,,,messages_response,,,,,messages_response,,,,Message Response,messages_response,,,messages_response
+messages,object,,,,,,,,,,,Message Object,messages,,,,,Message Object,messages,,,,messages,,,,,messages,,,,Message Object,messages,,,messages
+mid,,,,,,,,,,,,Message ID,mid,,,,,Message ID,mid,,,,mid,,,,,mid,,,,Message ID,mid,,,mid

@@ -1,0 +1,22 @@
+<div id="contact">
+  <simple-switch
+    label="Default"
+    v-model="value.contactDefault"
+    :model="value.contactDefault"
+    position="right"
+    :checkedlabel="true"
+  >
+  </simple-switch>
+  <label for="contactName">Name</label>
+  <input class="form-control" name="contactName" type="text" v-model="value.contactName" />
+  <div class="row">
+    <div class="col-6">
+      <label for="contactPhone">Phone</label>
+      <input class="form-control" name="contactPhone" type="text" v-model="value.contactPhone" />
+    </div>
+      <div class="col-6">
+          <label for="contactEmail">Email</label>
+          <input class="form-control" name="contactEmail" type="email" v-model="value.contactEmail" />
+      </div>
+  </div>
+</div>

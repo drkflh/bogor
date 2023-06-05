@@ -1,0 +1,580 @@
+-
+    label: Action
+    name: _id
+    show: true
+    sort: false
+    uniqueId: true
+    row_text_alignment: text-left
+    column_classes: col_action
+    datatype: text
+    search:
+        visible: false
+    filter:
+        visible: false
+    form:
+        create: false
+        edit: false
+        type: text
+        model: id
+        row: 1
+        col: 1
+        options: [ { text: "Select", value: "Select" } ]
+        attr: { class: "form-data" }
+    vue:
+        visible: false
+        type: text
+    view:
+        visible: false
+        type: text
+    api:
+        visible: false
+        type: text
+        default: na
+
+-
+  label: Created
+  name: createdAt
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-150
+  row_classes: date
+  datatype: true
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: createdAt
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: updatedAt
+  name: updatedAt
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  row_classes: date
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: updatedAt
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: ownerId
+  name: ownerId
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerId
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: ownerName
+  name: ownerName
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: ownerName
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: handle
+  name: handle
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: handle
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+-
+  label: deleted
+  name: deleted
+  show: false
+  sort: false
+  row_text_alignment: text-left
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: deleted
+    row: 1
+    col: 1
+    options: [ { text: "Select", value: "Select" } ]
+    attr: { class: "form-data" }
+  vue:
+    visible: false
+    type: text
+  view:
+    visible: false
+    type: text
+  api:
+    visible: false
+    type: text
+    default: na
+
+-
+  label: "Object Name"
+  name: objectName
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-150
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: true
+    edit: true
+    type: text
+    model: objectName
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: "Object Key"
+  name: objectKey
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-150
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: true
+    edit: true
+    type: text
+    model: objectKey
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: "Check Method"
+  name: checkMethod
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-150
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: RO
+    edit: RO
+    type: radio
+    model: checkMethod
+    row: 1
+    col: 1
+    text: true
+    options: [ { text: "Boolean Check", value: "BooleanCheck" }, { text: "In Array", value: InArray }, { text: "Look Up", value: LookUp }]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: "Entity Type"
+  name: objectType
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-150
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: false
+    edit: false
+    type: radio
+    model: objectType
+    row: 1
+    col: 1
+    text: true
+    options: [ { text: "Boolean", value: "Boolean" }, { text: "String", value: "String" },{ text: "Object", value: "Object" }, { text: "Array", value: "Array" }]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: "Form Type"
+  name: formType
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-150
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: true
+    edit: true
+    type: radio
+    model: formType
+    row: 1
+    col: 1
+    text: true
+    options: [ { text: "Radio", value: "Radio" }, { text: "Checkbox", value: "Checkbox" }, { text: "Select", value: "Select" }, { text: "Multiselect", value: "Multiselect" }, { text: "Tag", value: "Tag" } ]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: "Use Standard CRUD"
+  name: standardCrud
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-150
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: RO
+    edit: RO
+    type: simpleswitch
+    model: standardCrud
+    row: 1
+    col: 1
+    text: true
+    position: left
+    options: [ { text: "Radio", value: "Radio" }, { text: "Checkbox", value: "Checkbox" }, { text: "Select", value: "Select" }, { text: "Multiselect", value: "Multiselect" }, { text: "Tag", value: "Tag" } ]
+  vue:
+    visible: true
+    type: boolean
+    default: true
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: "Value Array"
+  name: valueArray
+  show: false
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-250
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: false
+    edit: false
+    type: tagsinput
+    model: valueArray
+    row: 1
+    col: 1
+    text: true
+    options:
+      url: "opt/tags"
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: "Lookup To"
+  name: lookupTo
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: RO
+    edit: RO
+    type: radio
+    model: lookupTo
+    row: 1
+    col: 1
+    text: true
+    options: [ { text: "Db", value: "Db" }, { text: "Config", value: "Config" } ]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+
+
+-
+  label: "Parameter"
+  name: lookupParam
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: text-100
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: RO
+    edit: RO
+    type: text
+    model: lookupParam
+    row: 1
+    col: 1
+    text: true
+    options: [ { text: "Object", value: "Object" }, { text: "Action", value: "Action" }, { text: "Value", value: "Value" }, { text: "Lookup", value: "Lookup" } ]
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+-
+  label: "Object Description"
+  name: objectDescription
+  show: true
+  sort: true
+  row_text_alignment: text-left
+  column_classes: "text-left text-300"
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: true
+    type: simple
+  form:
+    create: true
+    edit: true
+    type: textarea
+    model: objectDescription
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+    attr:
+      cols: 10
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na
+
+- label: ""
+  name: filler
+  show: true
+  sort: false
+  row_text_alignment: text-center
+  column_classes: 'text-left'
+  datatype: text
+  search:
+    visible: true
+  filter:
+    visible: false
+  form:
+    create: false
+    edit: false
+    type: text
+    model: filler
+    row: 1
+    col: 1
+    options: '[ { text: "Select", value: "Select" } ]'
+  vue:
+    visible: true
+    type: text
+  view:
+    visible: true
+    type: text
+  api:
+    visible: true
+    type: text
+    default: na

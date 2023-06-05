@@ -1,0 +1,257 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: Picture
+        name: picture
+        show: true
+        search: false
+        sort: false
+        datatype: imagearray
+        column_classes: text-center text-75
+    -
+        label: Category Code
+        name: categoryCode
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        column_classes: text-center text-100
+    -
+        label: Category
+        name: category
+        show: true
+        search: true
+        sort: false
+        datatype: text
+        column_classes: text-center text-150
+    -
+        label: Company
+        name: company
+        show: false
+        search: false
+        sort: false
+        datatype: text
+    -
+        label: Description
+        name: description
+        show: true
+        search: true
+        sort: false
+        datatype: text
+    -
+        label: Specifications
+        name: specifications
+        show: false
+        search: false
+        sort: false
+        datatype: text
+
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Category Code
+        name: categoryCode
+        create: true
+        edit: true
+        type: text
+        model: categoryCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Category
+        name: category
+        create: true
+        edit: true
+        type: text
+        model: category
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Permalink
+        name: slug
+        create: true
+        edit: true
+        type: text
+        model: slug
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Description
+        name: description
+        create: true
+        edit: true
+        type: markdown
+        model: description
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Picture
+        name: picture
+        create: true
+        edit: true
+        type: attachmentupload
+        model: picture
+        default: ''
+        show_list: true
+        param:
+            url: "api/v1/core/upload"
+            paramName: "file"
+        attr: { class: "form-data", buttonlabel: "Upload Picture" }
+    -
+        label: Specifications
+        name: specifications
+        create: true
+        edit: true
+        type: text
+        model: specifications
+        default: ''
+        validator: required
+        param: {}
+    -
+        label: 'Location ID'
+        name: propertyLocationId
+        create: true
+        edit: true
+        type: text
+        model: propertyLocationId
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: 'Location Name'
+        name: propertyLocationName
+        create: true
+        edit: true
+        type: text
+        model: propertyLocationName
+
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+    -
+        model: categoryCode
+        visible: true
+        type: string
+        default: ''
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+    -
+        model: slug
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: locationName
+        visible: true
+        type: string
+        default: ''
+    -
+        model: description
+        visible: true
+        type: string
+        default: ''
+    -
+        model: picture
+        visible: true
+        type: array
+        default: []
+        search: true
+        im: true
+        ex: true
+    -
+        model: pictureObjects
+        visible: true
+        type: array
+        default: []
+        search: true
+        im: true
+        ex: true
+    -
+        model: specifications
+        visible: true
+        type: array
+        default: []
+
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: Category Code
+        name: categoryCode
+        visible: true
+        type: text
+        model: categoryCode
+    -
+        label: Category
+        name: category
+        visible: true
+        type: text
+        model: category
+    -
+        label: Permalink
+        name: slug
+        visible: true
+        type: text
+        model: slug
+    -
+        label: Description
+        name: description
+        visible: true
+        type: text
+        model: description
+    -
+        label: Picture
+        name: picture
+        visible: true
+        type: squaresingleimage
+        model: picture
+    -
+        label: Specifications
+        name: specifications
+        visible: true
+        type: arrayview
+        model: specifications

@@ -1,0 +1,414 @@
+table:
+    -
+        label: Action
+        name: _id
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        uniqueId: true
+        row_text_alignment: text-left
+        column_classes: col_action
+        thClass: 'text-center text-50'
+    -
+        label: SKU
+        name: productCode
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-150'
+    -
+        label: Product Name
+        name: productName
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        column_classes: 'text-center text-200'
+    # -
+    #     label: Category
+    #     name: category
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     column_classes: 'text-center text-150'
+    -
+        label: Price
+        name: price
+        show: true
+        search: false
+        sort: false
+        datatype: currency
+        column_classes: text-right text-150
+    # -
+    #     label: Unit
+    #     name: unit
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-center
+    #     column_classes: 'text-center text-100'
+    #     thClass: 'text-center text-50'
+    -
+        label: 'Unit Count'
+        name: unitCount
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    -
+        label: 'Order Price'
+        name: orderPrice
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-150'
+        thClass: 'text-center text-50'
+    # -
+    #     label: 'Order Time'
+    #     name: orderTime
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-center
+    #     column_classes: 'text-center text-100'
+    #     thClass: 'text-center text-50'
+    -
+        label: 'Order Sub Total'
+        name: orderSubTotal
+        show: true
+        search: false
+        sort: false
+        datatype: text
+        row_text_alignment: text-center
+        column_classes: 'text-center text-100'
+        thClass: 'text-center text-50'
+    # -
+    #     label: 'Order Quantity'
+    #     name: orderQty
+    #     show: true
+    #     search: false
+    #     sort: false
+    #     datatype: text
+    #     row_text_alignment: text-center
+    #     column_classes: 'text-center text-100'
+    #     thClass: 'text-center text-50'
+    -
+        label: Weight
+        name: weight
+        show: true
+        search: false
+        sort: false
+        datatype: text
+form:
+    -
+        label: ''
+        name: _id
+        create: false
+        edit: false
+        type: text
+        model: _id
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: SKU
+        name: productCode
+        create: true
+        edit: true
+        type: text
+        model: productCode
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Product Name
+        name: productName
+        create: true
+        edit: true
+        type: text
+        model: productName
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Category
+        name: category
+        create: true
+        edit: true
+        type: simpleselect
+        model: category
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Price
+        name: price
+        create: true
+        edit: true
+        type: nominal
+        model: price
+        default: '0'
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Unit
+        name: unit
+        create: true
+        edit: true
+        type: simpleselect
+        model: unit
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Unit Count
+        name: unitCount
+        create: true
+        edit: true
+        type: number
+        model: unitCount
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Order Price
+        name: orderPrice
+        create: true
+        edit: true
+        type: nominal
+        model: orderPrice
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Order Time
+        name: orderTime
+        create: true
+        edit: true
+        type: datepicker
+        model: orderTime
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Order Sub Total
+        name: orderSubTotal
+        create: true
+        edit: true
+        type: nominal
+        model: orderSubTotal
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Order Quantity
+        name: orderQty
+        create: true
+        edit: true
+        type: nominal
+        model: orderQty
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+    -
+        label: Weight
+        name: weight
+        create: true
+        edit: true
+        type: text
+        model: weight
+        default: ''
+        validator: required
+        param: {}
+        attr: {}
+vue:
+    -
+        model: _id
+        visible: false
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productCode
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: productName
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: category
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: price
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: unit
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: unitCount
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderTime
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderQty
+        visible: true
+        type: double
+        default: 0
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderPrice
+        visible: true
+        type: double
+        default: 0
+        im: true
+        ex: true
+        search: true
+    -
+        model: orderSubTotal
+        visible: true
+        type: double
+        default: 0
+        im: true
+        ex: true
+        search: true
+    -
+        model: weight
+        visible: true
+        type: string
+        default: ''
+        im: true
+        ex: true
+        search: true
+view:
+    -
+        label: ''
+        name: _id
+        visible: false
+        type: text
+        model: _id
+    -
+        label: SKU
+        name: productCode
+        visible: true
+        type: text
+        model: productCode
+    -
+        label: Product Name
+        name: productName
+        visible: true
+        type: text
+        model: productName
+    -
+        label: Category
+        name: category
+        visible: true
+        type: text
+        model: category
+    -
+        label: Price
+        name: price
+        visible: true
+        type: text
+        model: price
+    -
+        label: Unit
+        name: unit
+        visible: true
+        type: text
+        model: unit
+    -
+        label: 'Unit Count'
+        name: unitCount
+        visible: true
+        type: text
+        model: unitCount
+    -
+        label: 'Order Time'
+        name: orderTime
+        visible: true
+        type: text
+        model: orderTime
+    -
+        label: Order Quantity
+        name: orderQty
+        visible: true
+        type: text
+        model: orderQty
+    -
+        label: Order Price
+        name: orderPrice
+        visible: true
+        type: text
+        model: orderPrice
+    -
+        label: Order Sub Total
+        name: orderSubTotal
+        visible: true
+        type: text
+        model: orderSubTotal
+    -
+        label: Weight
+        name: weight
+        visible: true
+        type: text
+        model: weight

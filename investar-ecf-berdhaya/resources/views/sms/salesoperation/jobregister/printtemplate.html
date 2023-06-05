@@ -1,0 +1,180 @@
+<div v-for="c in content" >
+
+    <hr style="border: 1px solid;">
+
+    <div class="form-row">
+        <div class="col-2 mr-3">
+            {{   c.participatingCompany }}
+        </div>
+        <div class="col-2 mr-3">
+            {{   c.area }}
+        </div>
+        <div class="col-2 mr-3">
+            {{   c.status }}
+        </div>
+        <div class="col-2 mr-3">
+            {{   c.inquiryDate }}
+        </div>
+        <div class="col-2 font-weight-bold">
+            {{   c.jobNo }}
+        </div>
+    </div>
+
+    <hr style="border: 1px solid;">
+    <div class="row">
+        <div class="col-4" style="border-right: thin solid #800000;">
+            <div class="row">
+                <div class="col-6">
+                    {{   c.rfqReference }}
+                    {{ c.company }}
+                </div>
+                <div class="col-6">
+                    {{   c.tenderTitle}}
+                    {{ c.projectOwner }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {{   c.project }}
+                    {{ c.scope }}
+                </div>
+            </div>
+            <div class="row">
+                @if( c.evaluationMethod != 'NULL')
+                <div class="col-6">
+                    {{   c.evaluationMethod }}
+                </div>
+                @else
+                <div class="col-6">
+                    {{   '-' }}
+                </div>
+                @endif
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    {{   c.alternativeQuotation }}
+                </div>
+                <div class="col-6">
+                    {{   c.specificPrequalification }}
+
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-3">
+                    {{   c.bidSubmission }}
+                </div>
+                <div class="col-3">
+                    {{   c.itbIkppValidity }}
+                </div>
+                <div class="col-1" style="margin-top: 50px;">
+                    <span style="font-size:12px;">*Days</span>
+                </div>
+                <div class="col-3">
+                    {{   c.validityThru }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    {{   c.submissionMedia }}
+                </div>
+                <div class="col-3">
+                    {{   c.submissionMethod }}
+                </div>
+                <div class="col-3">
+                    {{   c.bidOpeningDate }}
+                </div>
+                <div class="col-3">
+                    {{   c.bidOpeningLoc }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    {{   c.prebidMeetingDate }}
+                </div>
+                <div class="col-3">
+                    {{   c.requestDelivery}}
+                </div>
+                <div class="col-3">
+                    {{   c.actualDelivery}}
+                </div>
+            </div>
+            <hr style="border: 1px solid;" class="mb-2">
+            <div class="row">
+                <div class="col-2">
+                    {{   c.incoterm }}
+                </div>
+                <div class="col-2">
+                    {{   c.bidAmount }}
+                </div>
+                <div class="col-2">
+                    {{   c.currency }}
+                </div>
+                <div class="col-3">
+                    {{   c.xrate }}
+                </div>
+                <div class="col-3">
+                    {{   c.idrEquiv}}
+                </div>
+            </div>
+            <hr style="border: 1px solid;" class="mb-2">
+            <div class="row">
+                <div class="col-3">
+                    {{   c.buyerName }}
+                </div>
+                <div class="col-3">
+                    {{   c.buyerPositionName }}
+                </div>
+                <div class="col-3">
+                    {{   c.salesPerson }}
+                </div>
+                <div class="col-3">
+                    {{   c.proposalBy }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <label style="font-size:13pt;" ><b>Status</b></label>
+    <hr style="border: 1px solid;margin-top:2px;" >
+    <div class="row">
+        <div class="col-3" >
+            {{   c.bidStatus }}
+        </div>
+        <div class="col-1" style="margin-top:35px;border-right: thin solid #800000;">
+            {{   c.showPost}}
+        </div>
+        <div class="col-2">
+            {{   c.jobStatus }}
+        </div>
+        <div class="col-2">
+            {{   c.pocontract }}
+        </div>
+        <div class="col-2">
+            {{   c.poAmount }}
+        </div>
+    </div>
+    <hr style="border: 1px solid;">
+
+    <label style="font-size:13pt;"><b>Bid Documents/Data</b></label>
+
+    <hr  style="border: 1px solid;margin-top:2px;margin-bottom:10px;" align="left">
+    <div class="row">
+        <div class="col-12">
+            <div style="color:#800000;font-size:12pt;">
+                {{   c.invitationToBid }}
+            </div>
+            {{   c.instructionToBid }}
+            {{ c.preBidMeeting1 }}
+            {{ c.technicalClarification }}
+            {{ c.commercialClarification }}
+            {{ c.BidNegotiation }}
+            {{ c.awardNotification }}
+            {{ c.momKickOff }}
+            {{ c.dataSheet }}
+            {{ c.companyCategory }}
+        </div>
+    </div>
+
+</div>
